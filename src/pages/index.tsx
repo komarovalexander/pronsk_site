@@ -1,9 +1,12 @@
+import '../table/ka-bootstrap.scss';
+
 import { ITableProps, kaReducer, Table } from 'ka-table';
 import { DataType, EditingMode, SortingMode } from 'ka-table/enums';
 import { DispatchFunc } from 'ka-table/types';
 import * as React from 'react';
+import Button from 'react-bootstrap/Button';
 
-import type { HeadFC } from "gatsby"
+import { bootstrapChildComponents } from '../table/bootstrap-child-components';
 
 const dataArray = Array(10).fill(undefined).map(
   (_, index) => ({
@@ -173,8 +176,10 @@ const IndexPage =() => {
     <main style={pageStyles}>
       <Table
         {...tableProps}
+        childComponents={bootstrapChildComponents}
         dispatch={dispatch}
       />
+      <Button>123</Button>
       <h1 style={headingStyles}>
         Congratulations
         <br />
