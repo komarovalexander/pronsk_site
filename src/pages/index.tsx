@@ -8,6 +8,7 @@ import * as React from 'react';
 import Button from 'react-bootstrap/Button';
 
 import { bootstrapChildComponents } from '../table/bootstrap-child-components';
+import Slider from './home/Slider';
 import Navigation from './Navigation';
 
 const dataArray = Array(10).fill(undefined).map(
@@ -177,6 +178,7 @@ const IndexPage =() => {
   return (
     <>
       <Navigation />
+      <Slider />
       <main style={pageStyles}>
         <Table
           {...tableProps}
