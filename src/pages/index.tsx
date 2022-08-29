@@ -14,7 +14,7 @@ import { bootstrapChildComponents } from '../table/bootstrap-child-components';
 import Slider from './home/Slider';
 import Navigation from './Navigation';
 
-const dataArray = Array(10).fill(undefined).map(
+const dataArray = Array(6).fill(undefined).map(
   (_, index) => ({
     column1: `column:1 row:${index}`,
     column2: `column:2 row:${index}`,
@@ -39,7 +39,7 @@ const tablePropsInit: ITableProps = {
 
 const pageStyles = {
   color: "#232129",
-  padding: 96,
+  padding: "50px 0",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 
@@ -54,19 +54,15 @@ const IndexPage =() => {
       <Navigation />
       <Slider />
       <main style={pageStyles} className='content'>
-      <Container>
-      <Row>
-        <Col>
+        <Container>
+          <h3>Планируемые События</h3>
           <Table
             {...tableProps}
             childComponents={bootstrapChildComponents}
             dispatch={dispatch}
           />
           <Button>123</Button>
-        </Col>
-      </Row>
-
-      </Container>
+        </Container>
       </main>
     </>
   )
