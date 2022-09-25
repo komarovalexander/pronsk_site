@@ -1,10 +1,10 @@
 import Link from 'gatsby-link';
 import React from 'react';
 
-const IndexPage = () => (
+const pronskSplav = () => (
   <div>
    
   </div>
 );
 
-export default IndexPage;
+export default pronskSplav;
