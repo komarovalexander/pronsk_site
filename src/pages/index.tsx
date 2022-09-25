@@ -13,6 +13,7 @@ import Row from 'react-bootstrap/esm/Row';
 import { bootstrapChildComponents } from '../table/bootstrap-child-components';
 import Slider from './home/Slider';
 import Navigation from './Navigation';
+import pronskSplav from './pronskSplav';
 
 const dataArray = Array(6).fill(undefined).map(
   (_, index) => ({
