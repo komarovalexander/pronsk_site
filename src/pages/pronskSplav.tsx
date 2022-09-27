@@ -1,10 +1,14 @@
 import Link from 'gatsby-link';
 import React from 'react';
 
+import Layout from './layout';
+
 const pronskSplav = () => (
-  <div>
+  <Layout>  
+    <div>
    
-  </div>
+    </div>
+  </Layout>
 );
 
 export default pronskSplav;

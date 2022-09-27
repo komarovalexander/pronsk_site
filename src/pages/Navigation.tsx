@@ -24,7 +24,7 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Главная</Nav.Link>
+            <Nav.Link href="/">Главная</Nav.Link>
             <Nav.Link href="/pronskSplav/">Пронские сплавы</Nav.Link>
             <NavDropdown title="Жителям" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

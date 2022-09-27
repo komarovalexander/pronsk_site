@@ -6,13 +6,11 @@ import { DataType, EditingMode, SortingMode } from 'ka-table/enums';
 import { DispatchFunc } from 'ka-table/types';
 import * as React from 'react';
 import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/esm/Col';
 import Container from 'react-bootstrap/esm/Container';
-import Row from 'react-bootstrap/esm/Row';
 
 import { bootstrapChildComponents } from '../table/bootstrap-child-components';
 import Slider from './home/Slider';
-import Navigation from './Navigation';
+import Layout from './layout';
 
 const dataArray = Array(6).fill(undefined).map(
   (_, index) => ({
@@ -50,8 +48,7 @@ const IndexPage =() => {
   };
 
   return (
-    <>
-      <Navigation />
+    <Layout>
       <Slider />
       <main style={pageStyles} className='content'>
         <Container>
@@ -64,7 +61,7 @@ const IndexPage =() => {
           <Button>123</Button>
         </Container>
       </main>
-    </>
+    </Layout>
   )
 }
 
