@@ -1,6 +1,7 @@
 {
   "name": "pronsk_site",
   "version": "1.0.0",
+  "homepage": "http://vpronske.ru",
   "private": true,
   "description": "pronsk_site",
   "author": "Komarov Alexander",
