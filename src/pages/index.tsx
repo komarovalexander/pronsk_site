@@ -55,7 +55,6 @@ const IndexPage =() => {
   const dispatch: DispatchFunc = (action) => {
     changeTableProps((prevState: ITableProps) => kaReducer(prevState, action));
   };
-console.log(data.map((d, index) => ({...d, index: index})));
   return (
     <>
       <Navigation />
@@ -86,4 +85,4 @@ console.log(data.map((d, index) => ({...d, index: index})));
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>В Пронске - Народный сайт Пронска и Пронского района</title>
+export const Head: HeadFC = () => <title>В Пронске - Полезный сайт о Пронске и Пронском районе</title>
