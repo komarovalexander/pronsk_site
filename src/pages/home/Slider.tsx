@@ -5,6 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 const IMAGE_HEIGHT = 500;
 const imageStyle: CSSProperties = {
   objectFit: 'cover',
+  minHeight: 400,
   margin: 'auto'
 };
 
