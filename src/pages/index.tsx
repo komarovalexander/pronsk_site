@@ -1,4 +1,5 @@
 import '../table/ka-bootstrap.scss';
+import 'moment/locale/ru'; // without this line it didn't work
 
 import { HeadFC } from 'gatsby';
 import { ITableProps, kaReducer, Table } from 'ka-table';
@@ -50,7 +51,7 @@ const pageStyles = {
     tableData.push(rowData);
   });
   console.log(data.blocks[2].c[4], tableData) */
-   
+
 const IndexPage =() => {
   const [tableProps, changeTableProps] = React.useState(tablePropsInit);
   const dispatch: DispatchFunc = (action) => {
@@ -103,7 +104,7 @@ const IndexPage =() => {
             </p>
         </Container>
         <Container>
-            <h3>Ближайщие мероприятия в Пронском районе (за декабрь)</h3>
+            <h3>Ближайщие мероприятия в Пронском районе (за {moment().locale("ru").format('MMMM')})</h3>
             <Table
               {...tableProps}
               childComponents={bootstrapChildComponents}
