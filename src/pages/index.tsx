@@ -27,7 +27,7 @@ const tablePropsInit: ITableProps = {
       return value &&  moment(value).format('DD.MM.YYYY') ;
     }
   },
-  data: data.map((d: any) => ({...d, 3: moment(d['3'], 'DD.MM.YYYY')})).filter((d: any) => d['3'].isAfter(moment().subtract(1, 'days'))),
+  data: data.map((d: any, index) => ({...d, index, 3: moment(d['3'], 'DD.MM.YYYY')})).filter((d: any) => d['3'].isAfter(moment().subtract(1, 'days'))),
   rowKeyField: 'index',
   sortingMode: SortingMode.Single,
 };
@@ -38,18 +38,19 @@ const pageStyles = {
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 /**
- * https://alldocs.app/convert-word-docx-to-pandoc-json
- * const tableData: any[] = [];
-  data.blocks[2].c[4].forEach((row:any, index:any) => {
-    const rowData: any[] = row.map((column:any) => column.map(c => c.c.reduce((acc: any, d: any) => {
+ * https://alldocs.app/convert-word-docx-to-pandoc-json */
+ /* const tableData: any[] = [];
+  console.log(data);
+  data.blocks[3].c[4].forEach((row:any, index:any) => {
+    const rowData: any = row.map((column:any) => column.map(c => c.c.reduce((acc: any, d: any) => {
       acc += d.t === 'Str' ? d.c : ' ';
       return acc;
     }, '')).join('\r\n'));
     rowData.index = index;
     tableData.push(rowData);
   });
-  console.log(data.blocks[2].c[4], tableData)
-   */
+  console.log(data.blocks[2].c[4], tableData) */
+   
 const IndexPage =() => {
   const [tableProps, changeTableProps] = React.useState(tablePropsInit);
   const dispatch: DispatchFunc = (action) => {
