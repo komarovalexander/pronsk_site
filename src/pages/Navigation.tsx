@@ -21,7 +21,7 @@ const Navigation = () => {
           <div style={{
             fontWeight: 'bold'
             }}>В Пронске</div></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+       {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Главная</Nav.Link>
@@ -36,9 +36,9 @@ const Navigation = () => {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
+          </NavDropdown>
           </Nav>
-        </Navbar.Collapse>
+        </Navbar.Collapse>*/}
       </Container>
     </Navbar>
   );

@@ -5,6 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 const IMAGE_HEIGHT = 500;
 const imageStyle: CSSProperties = {
   objectFit: 'cover',
+  minHeight: 400,
   margin: 'auto'
 };
 
@@ -56,7 +57,7 @@ function Slider() {
           <StaticImage src="../../images/slider/церковь.png" height={IMAGE_HEIGHT} style={imageStyle}  quality={100} alt="Елшино" />
           <Carousel.Caption style={captionStyle}>
             <h4>Увидьте первозданную историю</h4>
-            <p>Около 15 столетиями нетронутых Храмов можно найти в разных локациях района. Прошлое ближе чем кажется</p>
+            <p> Множества столетиями нетронутых Храмов можно найти в разных локациях района. Прошлое ближе чем кажется</p>
           </Carousel.Caption>
         </div>
       </Carousel.Item>
@@ -101,7 +102,7 @@ function Slider() {
           <StaticImage src="../../images/slider/танцы.jpg" height={IMAGE_HEIGHT} style={imageStyle}  quality={100} alt="Елшино" />
           <Carousel.Caption style={captionStyle}>
             <h4>Почувствуйте Русскую душу</h4>
-            <p>Народные коллективы и опытные наставники сохраняют Русскую культуру для следующих поколений</p>
+            <p>Народные коллективы и опытные наставники сохраняют и развивают Русскую культуру</p>
           </Carousel.Caption>
         </div>
       </Carousel.Item>

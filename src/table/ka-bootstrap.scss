@@ -8,8 +8,17 @@
   position: absolute;
 }
 
+.ka-thead-background{
+  background-color: #539462 !important;
+  color: white;
+}
+
 .ka-tr {
   line-height: 40px;
   min-height: 40px;
   height: 40px;
+}
+
+.ka-table-wrapper{
+  max-height: 800px;
 }
