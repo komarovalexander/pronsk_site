@@ -1,14 +1,30 @@
+import 'react-big-calendar/lib/css/react-big-calendar.css';
+import 'moment/locale/ru'; // without this line it didn't work
+
 import Link from 'gatsby-link';
 import { StaticImage } from 'gatsby-plugin-image';
+import moment from 'moment';
 import React, { CSSProperties } from 'react';
+import { Calendar, momentLocalizer } from 'react-big-calendar';
 import { Carousel } from 'react-bootstrap';
 
 import Layout from '../layout';
 
+moment.locale('ru')
+
+const localizer = momentLocalizer(moment)
 const captionStyle: CSSProperties = {
   padding: '10px 30px',
   backgroundColor: '#00000059'
 };
+const events = [
+  {
+    end: '10.02.2023',
+    start: '09.02.2023',
+    title: 'Сплав 2 дня'
+  }];
+
+const calenderEvents = events.map(e => ({ title: e.title, start: moment(e.start, 'DD.MM.YYYY'), end: moment(e.end, 'DD.MM.YYYY').add(1, 'd')}))
 
 const kerd1 = () => (
   <Layout>
@@ -24,6 +40,20 @@ const kerd1 = () => (
         </Carousel.Item>
       </Carousel>
     </div>
+    <Calendar
+      localizer={localizer}
+      culture={'ru'}
+      startAccessor="start"
+      endAccessor="end"
+      style={{ height: 500 }}
+      views={['month']}
+      events={calenderEvents}
+      messages={ {
+        previous: 'Предыдущий месяц',
+        next: 'Следующий месяц',
+        today: `Сегодня`,
+      }}
+    />
 
     <div className="container text" style={{paddingTop: 50}}>
       <h2 style={{textAlign: 'center'}}>Кердь</h2>
