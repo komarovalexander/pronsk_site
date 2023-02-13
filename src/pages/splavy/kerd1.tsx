@@ -32,7 +32,7 @@ const kerd1 = () => (
       <Carousel controls={false} indicators={false}>
         <Carousel.Item>
           <div>
-            <StaticImage src="../images/Splav/Kerd/CollageKerd.png" className="rounded" alt="Пронские сплавы" style={{width: '100%', height: 'auto'}}/>
+            <StaticImage src="../images/Splav/Kerd/CollageKerd.png" className="rounded" alt="Пронские сплавы?"/>
             <Carousel.Caption style={captionStyle}>
             <h1>1 День</h1>
             </Carousel.Caption>
@@ -54,7 +54,7 @@ const kerd1 = () => (
       - гермомешки<br />
       - туристические коврики<br />
       - трансфер к месту старта и обратно<br /></i>
-      <b style={{fontSize: '18px', textAlign: "justify"}}>Для бронирования и по всем возникающим вопросам звоните или пишите в мессенджер по телефону 8(952)123-35-39 (c 10:00 до 20:00).</b>
+      <b style={{fontSize: '18px', textAlign: "justify"}}>Для бронирования и по всем возникающим вопросам звоните или пишите в мессенджеры по телефону 8(952)123-35-39 (c 10:00 до 20:00).</b>
     </div>
 
     <div className="container text" style={{paddingTop: 50}}>
@@ -79,7 +79,7 @@ const kerd1 = () => (
     <div className="container text" style={{paddingTop: 50}}>
       <b style={{fontSize: '18px', textAlign: "justify"}}>Примерная программа однодневного сплава:</b>
       <p style={{fontSize: '18px', textAlign: "justify"}}>
-      10:30 – прибытие в г.Пронск к нашему дому, трансфер на место старта. Добраться до города можно на общественном транспорте или на собственном автомобиле, припаркуем его у нашего дома<br />
+      10:30 – прибытие в г.Пронск к нашему дому, трансфер на место старта. Добраться до города можно на общественном транспорте или на собственном автомобиле, припаркуем его у нашего дома (от Рязани до нас 30-40 минут езды)<br />
       11:00 - 11:30 - инструктаж, получение снаряжение, загрузка байдарок, старт<br />
       11:30 - 17:00 - сплав на байдарках с остановками для фотографирования и купания<br />
       17:00 - финиширование у Пронского моста, обратный трансфер к дому
@@ -92,19 +92,24 @@ const kerd1 = () => (
       <p style={{fontSize: '18px', textAlign: "justify"}}>в удобной бутылке или нескольких маленьких</p>
       <b style={{fontSize: '18px', textAlign: "justify"}}>Головной убор и солнце защитные очки</b>
       <p style={{fontSize: '18px', textAlign: "justify"}}>уберегут вас от солнечных лучей</p>
-      <b style={{fontSize: '18px', textAlign: "justify"}}>Крем</b>
-      <p style={{fontSize: '18px', textAlign: "justify"}}>крем от загара пригодится вам если вы склонны к обгоранию кожи на солнце</p>
-      <b style={{fontSize: '18px', textAlign: "justify"}}>Бутерброды, фрукты, овощи</b>
-      <p style={{fontSize: '18px', textAlign: "justify"}}>на воде тратится много калорий, так что перекусить точно захочется</p>
-      <b style={{fontSize: '18px', textAlign: "justify"}}>Обувь в байдарку</b>
-      <p style={{fontSize: '18px', textAlign: "justify"}}>сланцы, кроксы</p>
+      <b style={{fontSize: '18px', textAlign: "justify"}}>Крем от загара</b>
+      <p style={{fontSize: '18px', textAlign: "justify"}}>пригодится вам если вы склонны к обгоранию кожи на солнце</p>
+      <b style={{fontSize: '18px', textAlign: "justify"}}>Термос с чаем, печеньки, бутерброды, фрукты, овощи</b>
+      <p style={{fontSize: '18px', textAlign: "justify"}}>на воде тратится много калорий, так что перекусить точно захочется, а отдохнуть на воде попивая чай это отдельное удовольствие</p>
+      <b style={{fontSize: '18px', textAlign: "justify"}}>Запасная одежда</b>
+      <p style={{fontSize: '18px', textAlign: "justify"}}>обувь в байдарку (сланцы, кроксы), обувь на стоянки (кроссовки, кеды), головной убор, солнце защитные очки</p>
     </div>
 
     <div className="container text" style={{paddingTop: 50, paddingBottom: 50}}>
       <Carousel>
         <Carousel.Item>
           <div>
-          <iframe width='100%' height='700' src="https://www.youtube.com/embed/A9zsM14ONlI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          <iframe width='100%' height='730' src="https://www.youtube.com/embed/A9zsM14ONlI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div>
+          <iframe width='100%' height='730' src="https://www.youtube.com/embed/JOSEilZ7slQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
           </div>
         </Carousel.Item>
         <Carousel.Item>

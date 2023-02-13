@@ -16,7 +16,7 @@ const pronskSplav = () => (
       <Carousel controls={false} indicators={false}>
         <Carousel.Item>
           <div>
-            <StaticImage  src="../images/Splav/Prony/14.png" className="rounded" alt="Пронские сплавы"/>
+            <StaticImage  src="../images/Splav/Prony/CollageProny.png" className="rounded" alt="Пронские сплавы"/>
             <Carousel.Caption style={captionStyle}>
             <h1>ПРОНСКИЕ СПЛАВЫ</h1>
           </Carousel.Caption>
@@ -50,11 +50,11 @@ const pronskSplav = () => (
         </div>
         <div className="col">
           <div className="card">
-            <StaticImage width={1000}  src="../images/Splav/Prony/8.jpg" className="card-img-top" alt="Проня" style={{width: '100%', height: 'auto'}}/>
+            <StaticImage width={1000}  src="../images/Splav/Prony/4-2.jpg" className="card-img-top" alt="Проня" style={{width: '100%', height: 'auto'}}/>
             <div className="card-body">
               <h5 className="card-title">2 Дня/1 Ночь</h5>
               <p className="card-text">Цена 4000р., детям до 14 скидка 2000р.</p>
-              <a href="#" className="btn btn-primary">Подробнее</a>
+              <a href="/splavy/prony" className="btn btn-primary">Подробнее</a>
             </div>
           </div> 
         </div>
