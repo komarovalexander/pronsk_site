@@ -34,7 +34,7 @@ const prony = () => (
           <Carousel controls={false} indicators={false}>
             <Carousel.Item>
               <div>
-                <StaticImage src="../images/Splav/Prony/CollageProny1.png" className="rounded" alt="Пронские сплавы"/>
+                <StaticImage src="../../images/Splav/Prony/CollageProny1.png" className="rounded" alt="Пронские сплавы"/>
                 <Carousel.Caption style={captionStyle}>
                 <h1>Проня (2 Дня/1 Ночь)</h1>
                 </Carousel.Caption>
@@ -48,13 +48,13 @@ const prony = () => (
     <Row style={{backgroundColor: '#eef0f2', padding: '40px 0'}}>
       <Col>
         <div className="container text">
-          <p style={{fontSize: '18px', textAlign: "justify"}}>Данный маршрут, со спокойным течением (протяженность ≈ 25 км),  отличается умиротворением, тишиной и спокойствием. 
-          Здесь в нетронутом уголке среднерусской природы встречают рассветы, слушают пени птиц, рыбачат и отдыхают от городской суеты. 
+          <p style={{fontSize: '18px', textAlign: "justify"}}>Данный маршрут, со спокойным течением (протяженность ≈ 25 км),  отличается умиротворением, тишиной и спокойствием.
+          Здесь в нетронутом уголке среднерусской природы встречают рассветы, слушают пени птиц, рыбачат и отдыхают от городской суеты.
           Здесь нет шумных компаний и большой публики, места, здесь отдаленные для «купальщиков и любителей шашлыков».</p>
           <p style={{fontSize: '18px', textAlign: "justify"}}>В Проне водятся разнообразные рыбы, мидии и раки, т.к. условия для размножения и обитания в ней подходящие. Они оптимальны для всех типов, даже хищных.
           Места тут красивые, для отдыха, для души. Луга, поля, холмы, перелески – вот, что находится по разные стороны от берегов Прони.
           Если стоять на одном берегу, то открывается необъятный обзор на долины и равнины, можно долго смотреть на красивые пейзажи.
-          Отдых на реке заряжает энергией и дарит массу приятных ощущений. Данный маршрут подходит всем желающим, включая новичков. 
+          Отдых на реке заряжает энергией и дарит массу приятных ощущений. Данный маршрут подходит всем желающим, включая новичков.
           Взрослый могут взять с собой детей, которым исполнилось уже 6 лет. Байдарки у нас пластиковые очень надежные и устойчивые.</p>
           <i style={{fontSize: '18px', textAlign: "justify"}}>Стоимость 2-дневного сплава 5000 р.(от 4-х человек), для детей до 14 лет скидка 2000р. Входит:<br />
           - байдарки в собранном виде, спасжилеты, в т.ч. детские, костровое оборудование<br />
@@ -108,10 +108,10 @@ const prony = () => (
           10:30 - сплав на байдарках с остановками для фотографирования и купания<br />
           13:00 - горячий обед на свободной стоянке, отдых<br />
           14:00 - сплав на байдарках<br />
-          16:00 – финиширование у Пронского моста, обратный трансфер к дому 
+          16:00 – финиширование у Пронского моста, обратный трансфер к дому
           </p>
           <p style={{fontSize: '18px', textAlign: "justify"}}>
-          Все передвижения проходят на байдарках, не отягощенных грузом, так как все нужные вещи для лагеря мы берем на себя и подготавливаем его во время вашего сплава. 
+          Все передвижения проходят на байдарках, не отягощенных грузом, так как все нужные вещи для лагеря мы берем на себя и подготавливаем его во время вашего сплава.
           Это значительно сэкономит и время, и силы участников. На лёгких байдарках передвигаться значительно веселее и комфортнее.</p>
         </div>
       </Col>
@@ -136,10 +136,10 @@ const prony = () => (
           10:30 - сплав на байдарках с остановками для фотографирования и купания<br />
           13:00 - горячий обед на свободной стоянке, отдых<br />
           14:00 - сплав на байдарках<br />
-          16:00 – финиширование у Пронского моста, обратный трансфер к дому 
+          16:00 – финиширование у Пронского моста, обратный трансфер к дому
           </p>
           <p style={{fontSize: '18px', textAlign: "justify"}}>
-          Все передвижения проходят на байдарках, не отягощенных грузом, так как все нужные вещи для лагеря мы берем на себя и подготавливаем его во время вашего сплава. 
+          Все передвижения проходят на байдарках, не отягощенных грузом, так как все нужные вещи для лагеря мы берем на себя и подготавливаем его во время вашего сплава.
           Это значительно сэкономит и время, и силы участников. На лёгких байдарках передвигаться значительно веселее и комфортнее.</p>
         </div>
         <div className="container text">
@@ -183,37 +183,37 @@ const prony = () => (
           <Carousel>
             <Carousel.Item>
               <div>
-                <StaticImage src="../images/Splav/Prony/1.jpg" className="rounded" style={{height: '500'}} alt="Кердь"/>
+                <StaticImage src="../../images/Splav/Prony/1.jpg" className="rounded" style={{height: '500'}} alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Prony/2.jpg" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Prony/2.jpg" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Prony/3-1.jpg" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Prony/3-1.jpg" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Prony/4-2.jpg" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Prony/4-2.jpg" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Prony/5.jpg" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Prony/5.jpg" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Prony/10.jpg" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Prony/10.jpg" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Prony/8.jpg" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Prony/8.jpg" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
           </Carousel>

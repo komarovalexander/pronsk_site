@@ -36,7 +36,7 @@ const calenderEvents = events.map(e => ({ title: e.title, start: moment(e.start,
 
 
 const kerd1 = () => {
-  
+
 const [show, setShow] = useState(false);
 
 const handleClose = () => setShow(false);
@@ -49,7 +49,7 @@ const handleShow = () => setShow(true);
           <Carousel controls={false} indicators={false}>
             <Carousel.Item>
               <div>
-                <StaticImage src="../images/Splav/Kerd/CollageKerd.png" className="rounded" alt="Пронские сплавы?"/>
+                <StaticImage src="../../images/Splav/Kerd/CollageKerd.png" className="rounded" alt="Пронские сплавы?"/>
                 <Carousel.Caption style={captionStyle}>
                 <h1>Кердь-Проня (Дневной сплав)</h1>
                 </Carousel.Caption>
@@ -63,11 +63,11 @@ const handleShow = () => setShow(true);
     <Row style={{backgroundColor: '#eef0f2', padding: '40px 0'}}>
       <Col>
         <div className="container text">
-          <p style={{fontSize: '18px', textAlign: "justify"}}>Кердь - это не большая по ширине речка, извилистая и неглубокая, а скорость течения на ней вполне умеренная. 
-          Во время сплава вас будет окружать пение птиц, шелест листьев, журчание ручья, приятная прохлада от реки и тень от деревьев. 
+          <p style={{fontSize: '18px', textAlign: "justify"}}>Кердь - это не большая по ширине речка, извилистая и неглубокая, а скорость течения на ней вполне умеренная.
+          Во время сплава вас будет окружать пение птиц, шелест листьев, журчание ручья, приятная прохлада от реки и тень от деревьев.
           Вокруг много живности, рядом летают бабочки, плавают утки, пасутся коровки.
-          В этом месте вы точно почувствуете уединение с природой и отдохнете от городского ритма и суеты. 
-          Данный маршрут (протяжённостью ≈ 18 км)  подходит всем желающим, включая новичков. 
+          В этом месте вы точно почувствуете уединение с природой и отдохнете от городского ритма и суеты.
+          Данный маршрут (протяжённостью ≈ 18 км)  подходит всем желающим, включая новичков.
           Взрослый могут взять с собой детей, которым исполнилось уже 6 лет. Байдарки у нас пластиковые очень надежные и устойчивые.</p>
           <i style={{fontSize: '18px', textAlign: "justify"}}>Стоимость 1-дневного сплава 2000 р.(от 2-х человек), для детей до 18 лет скидка 1000р. Входит:<br />
           - байдарки в собранном виде<br/>
@@ -146,52 +146,52 @@ const handleShow = () => setShow(true);
           <Carousel>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/1.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/1.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/2.png" className="rounded" alt="Пороня"/>
+                <StaticImage  src="../../images/Splav/Kerd/2.png" className="rounded" alt="Пороня"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/3.png" className="rounded" alt="Проня"/>
+                <StaticImage  src="../../images/Splav/Kerd/3.png" className="rounded" alt="Проня"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/9.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/9.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/4.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/4.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/5.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/5.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/10.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/10.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/6.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/6.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/7.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/7.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/8.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/8.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
           </Carousel>
@@ -224,52 +224,52 @@ const handleShow = () => setShow(true);
           <Carousel>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/1.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/1.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/2.png" className="rounded" alt="Пороня"/>
+                <StaticImage  src="../../images/Splav/Kerd/2.png" className="rounded" alt="Пороня"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/3.png" className="rounded" alt="Проня"/>
+                <StaticImage  src="../../images/Splav/Kerd/3.png" className="rounded" alt="Проня"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/9.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/9.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/4.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/4.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/5.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/5.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/10.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/10.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/6.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/6.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/7.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/7.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../images/Splav/Kerd/8.png" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/8.png" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
           </Carousel>
