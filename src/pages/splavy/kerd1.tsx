@@ -76,11 +76,13 @@ const handleShow = () => setShow(true);
           - туристические коврики<br/>
           - трансфер к месту старта и обратно<br/></i>
           <b style={{fontSize: '18px', textAlign: "justify"}}>Для бронирования и по всем возникающим вопросам звоните или пишите в мессенджеры по телефону 8(952)123-35-39 (c 10:00 до 20:00).</b>
+          <i style={{fontSize: '18px', textAlign: "justify"}}>* Бронирование производится по 50% предоплате.
+          В случае отказа за 3 дня до мероприятия, предоплата возвращается в полном объеме.</i>
         </div>
       </Col>
     </Row>
 
-    <Row style={{padding: '40px 0'}}>
+    {/* <Row style={{padding: '40px 0'}}>
       <Col>
         <div className="container text">
           <h3 style={{textAlign: 'center'}}>График занятости путешествий</h3>
@@ -127,28 +129,19 @@ const handleShow = () => setShow(true);
           </p>
         </div>
       </Col>
-    </Row>
-
-    <Row style={{backgroundColor: '#eef0f2', padding: '40px 0'}}>
-      <Col>
-        <div className="container text">
-          <h3 style={{textAlign: 'center'}}>Что взять с собой в поход</h3>
-          <b style={{fontSize: '18px', textAlign: "justify"}}>Питьевая вода</b>
-          <p style={{fontSize: '18px', textAlign: "justify"}}>в удобной бутылке или нескольких маленьких</p>
-          <b style={{fontSize: '18px', textAlign: "justify"}}>Головной убор и солнце защитные очки</b>
-          <p style={{fontSize: '18px', textAlign: "justify"}}>уберегут вас от солнечных лучей</p>
-          <b style={{fontSize: '18px', textAlign: "justify"}}>Крем от загара</b>
-          <p style={{fontSize: '18px', textAlign: "justify"}}>пригодится вам если вы склонны к обгоранию кожи на солнце</p>
-          <b style={{fontSize: '18px', textAlign: "justify"}}>Термос с чаем, печеньки, бутерброды, фрукты, овощи</b>
-          <p style={{fontSize: '18px', textAlign: "justify"}}>на воде тратится много калорий, так что перекусить точно захочется, а отдохнуть на воде попивая чай это отдельное удовольствие</p>
-          <b style={{fontSize: '18px', textAlign: "justify"}}>Запасная одежда</b>
-          <p style={{fontSize: '18px', textAlign: "justify"}}>обувь в байдарку (сланцы, кроксы), обувь на стоянки (кроссовки, кеды), головной убор, солнце защитные очки</p>
-        </div>
-      </Col>
-    </Row>
+    </Row> */}
 
     <Row style={{padding: '40px 0'}}>
       <Col>
+        <div className="container text">
+          <h3 style={{textAlign: "center"}}>Примерная программа однодневного сплава</h3>
+          <p style={{fontSize: '18px', textAlign: "justify"}}>
+          10:30 – прибытие в г.Пронск к нашему дому, трансфер на место старта.<br />
+          11:00 - инструктаж, получение снаряжение, загрузка байдарок, старт<br />
+          11:30 - сплав на байдарках с остановками для фотографирования и купания<br />
+          17:00 - финиширование у Пронского моста, обратный трансфер к дому
+          </p>
+        </div>
         <div className="container text">
           <Carousel>
             <Carousel.Item>
@@ -206,7 +199,85 @@ const handleShow = () => setShow(true);
       </Col>
     </Row>
 
+
     <Row style={{backgroundColor: '#eef0f2', padding: '40px 0'}}>
+      <Col>
+        <div className="container text">
+          <h3 style={{textAlign: 'center'}}>Что взять с собой в поход</h3>
+          <b style={{fontSize: '18px', textAlign: "justify"}}>Питьевая вода</b>
+          <p style={{fontSize: '18px', textAlign: "justify"}}>в удобной бутылке или нескольких маленьких</p>
+          <b style={{fontSize: '18px', textAlign: "justify"}}>Головной убор и солнце защитные очки</b>
+          <p style={{fontSize: '18px', textAlign: "justify"}}>уберегут вас от солнечных лучей</p>
+          <b style={{fontSize: '18px', textAlign: "justify"}}>Крем от загара</b>
+          <p style={{fontSize: '18px', textAlign: "justify"}}>пригодится вам если вы склонны к обгоранию кожи на солнце</p>
+          <b style={{fontSize: '18px', textAlign: "justify"}}>Термос с чаем, печеньки, бутерброды, фрукты, овощи</b>
+          <p style={{fontSize: '18px', textAlign: "justify"}}>на воде тратится много калорий, так что перекусить точно захочется, а отдохнуть на воде попивая чай это отдельное удовольствие</p>
+          <b style={{fontSize: '18px', textAlign: "justify"}}>Запасная одежда</b>
+          <p style={{fontSize: '18px', textAlign: "justify"}}>обувь в байдарку (сланцы, кроксы), обувь на стоянки (кроссовки, кеды), головной убор, солнце защитные очки</p>
+        </div>
+      </Col>
+    </Row>
+
+    {/* <Row style={{padding: '40px 0'}}>
+      <Col>
+        <div className="container text">
+          <Carousel>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../images/Splav/Kerd/1.png" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../images/Splav/Kerd/2.png" className="rounded" alt="Пороня"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../images/Splav/Kerd/3.png" className="rounded" alt="Проня"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../images/Splav/Kerd/9.png" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../images/Splav/Kerd/4.png" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../images/Splav/Kerd/5.png" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../images/Splav/Kerd/10.png" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../images/Splav/Kerd/6.png" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../images/Splav/Kerd/7.png" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../images/Splav/Kerd/8.png" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+          </Carousel>
+        </div>
+      </Col>
+    </Row> */}
+
+    <Row style={{padding: '40px 0'}}>
       <Col>
         <div className="container text">
           <Carousel controls={false} indicators={false}>
