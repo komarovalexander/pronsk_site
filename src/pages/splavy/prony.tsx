@@ -1,7 +1,6 @@
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import 'moment/locale/ru'; // without this line it didn't work
 
-import Link from 'gatsby-link';
 import { StaticImage } from 'gatsby-plugin-image';
 import moment from 'moment';
 import React, { CSSProperties } from 'react';
@@ -26,7 +25,7 @@ const events = [
 
 const calenderEvents = events.map(e => ({ title: e.title, start: moment(e.start, 'DD.MM.YYYY'), end: moment(e.end, 'DD.MM.YYYY').add(1, 'd')}))
 
-const prony = () => (
+const pronya = () => (
   <Layout>
     <Row style={{padding: '40px 0'}}>
       <Col>
@@ -223,4 +222,4 @@ const prony = () => (
   </Layout>
 );
 
-export default prony;
+export default pronya;
