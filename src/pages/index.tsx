@@ -102,13 +102,7 @@ const IndexPage =() => {
             </p>
         </Container>
         <Container>
-            <h3>Ближайщие мероприятия в Пронском районе (за декабрь)</h3>
-            <Table
-              {...tableProps}
-              childComponents={bootstrapChildComponents}
-              dispatch={dispatch}
-            />
-            <p>Информация о мероприятиях загружена со страницы <a href="http://prdk.rzn.muzkult.ru/egemesechnuplan">http://prdk.rzn.muzkult.ru/egemesechnuplan</a></p>
+            <h3>Ближайщие мероприятия в Пронском районе <a href="http://prdk.rzn.muzkult.ru/egemesechnuplan">http://prdk.rzn.muzkult.ru/egemesechnuplan</a></h3>
         </Container>
       </main>
     </Layout>
