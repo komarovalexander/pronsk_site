@@ -1,4 +1,3 @@
-import Link from 'gatsby-link';
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { CSSProperties } from 'react';
 import { Carousel, Col, Row } from 'react-bootstrap';
@@ -10,7 +9,7 @@ const captionStyle: CSSProperties = {
   backgroundColor: '#00000059'
 };
 
-const pronskSplav = () => (
+const splav = () => (
   <Layout>
     <Row style={{padding: '40px 0'}}>
       <Col>
@@ -69,7 +68,7 @@ const pronskSplav = () => (
                 <div className="card-body">
                   <h5 className="card-title">2 Дня/1 Ночь</h5>
                   <p className="card-text">Цена 5000р.(от 4-х человек), детям до 14 скидка 2000р.</p>
-                  <a href="/splavy/prony" className="btn btn-primary">Подробнее</a>
+                  <a href="/splavy/pronya" className="btn btn-primary">Подробнее</a>
                 </div>
               </div> 
             </div>
@@ -133,4 +132,4 @@ const pronskSplav = () => (
   </Layout>
 );
 
-export default pronskSplav;
+export default splav;
