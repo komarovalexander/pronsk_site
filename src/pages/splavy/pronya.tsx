@@ -28,7 +28,6 @@ const calenderEvents = events.map(e => ({ title: e.title, start: moment(e.start,
 
 const pronya = () =>  (
   <Layout>
-    <title>Пронские сплавы на байдарках - Рязанская область</title>
     <Row style={{padding: '40px 0'}}>
       <Col>
         <div className="container text">
@@ -219,6 +218,12 @@ const pronya = () =>  (
         </div>
       </Col>
     </Row>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vpronske.ru/splavy/pronya/" />
+    <meta property="og:title" content="Проня (2 Дня/1 Ночь)" />
+    <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
+    <meta property="og:image" content="https://vpronske.ru/splavy/pronya/CollageProny1.png" />
   </Layout>
 );
 

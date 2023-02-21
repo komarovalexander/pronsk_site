@@ -289,6 +289,12 @@ const handleShow = () => setShow(true);
         </div>
       </Col>
     </Row>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vpronske.ru/splavy/kerd1/" />
+    <meta property="og:title" content="Кердь-Проня (Дневной сплав)" />
+    <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
+    <meta property="og:image" content="https://vpronske.ru/splavy/kerd1/CollageKerd.png" />
   </Layout>
 )
 };

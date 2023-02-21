@@ -10,6 +10,7 @@ const captionStyle: CSSProperties = {
   backgroundColor: '#00000059'
 };
 
+
 const splavy = () => (
   <Layout>
     <Row style={{padding: '40px 0'}}>
@@ -130,6 +131,12 @@ const splavy = () => (
         </div>
       </Col>
     </Row>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vpronske.ru/splavy/" />
+    <meta property="og:title" content="Пронские сплавы" />
+    <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
+    <meta property="og:image" content="https://vpronske.ru/splavy/CollageProny2.png" />
   </Layout>
 );
 
