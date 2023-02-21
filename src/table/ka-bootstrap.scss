@@ -23,6 +23,7 @@
   max-height: 800px;
 }
 
-html {
+html, body {
   overflow-y: scroll;
+  overflow-x: hidden;
 }

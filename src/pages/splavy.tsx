@@ -1,3 +1,4 @@
+import { HeadFC } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { CSSProperties } from 'react';
 import { Carousel, Col, Row } from 'react-bootstrap';
@@ -8,6 +9,7 @@ const captionStyle: CSSProperties = {
   padding: '10px 30px',
   backgroundColor: '#00000059'
 };
+
 
 const splavy = () => (
   <Layout>
@@ -24,7 +26,7 @@ const splavy = () => (
               </div>
             </Carousel.Item>
           </Carousel>
-          <i style={{fontSize: '18px', textAlign: "justify"}}>*Бронирование мест по телефону 8(952)123-35-39. <a href="https://vk.com/pronskie_splavy">Мы ВКонтакте</a></i>
+          <i style={{fontSize: '18px', textAlign: "justify"}}>*Бронирование мест по телефону <a href="tel:+79521233539">8(952)123-35-39.</a> <a href="https://vk.com/pronskie_splavy">Мы ВКонтакте</a></i>
         </div>
       </Col>
     </Row>
@@ -81,9 +83,9 @@ const splavy = () => (
       <Col>
         <div className="container text">
           <h3 style={{textAlign: 'center'}}>Как до нас добраться</h3>
-          <p style={{fontSize: '18px', textAlign: "justify"}}> Добраться до города Пронск можно на общественном транспорте или на собственном автомобиле, припаркуем его у нашего дома. Далее уже дело за нами.
+          <p style={{fontSize: '18px', textAlign: "justify"}}> Добраться до р.п. Пронск можно на общественном транспорте или на собственном автомобиле, припаркуем его у нашего дома. Далее уже дело за нами.
           Примерное время в дороге: от Рязани 45 минут; от Москвы 4 часа.</p>
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae7c8483f6c3e0e48c28925ee5fff665d16380e4de53c79868019b90b05cde7d4&amp;source=constructor" width="100%" height="445"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad86e43f60d78d8158fd7d7953ffc5a3ff85f58aa0e5f60805ec54b35c9cbbcf7&amp;source=constructor" width="100%" height="400"></iframe>
           </div>
       </Col>
     </Row>
@@ -124,12 +126,20 @@ const splavy = () => (
           <p style={{fontSize: '18px', textAlign: "justify"}}>Воздух. Качественная разница между воздухом в помещении и свежим воздухом луга или леса огромная.
           Воздух в помещении испорчен газами, исходящими из синтетических материалов. Природный воздух совершенно другой по составу, в нем больше жизни, здоровья.</p>
           <p style={{fontSize: '18px', textAlign: "justify"}}>Биоэнергия. Большой город опустошает человека, забирает энергию. Природа наполняет силами, радостью, жизнью.</p>
-          <p style={{fontSize: '18px', textAlign: "justify"}}>Приезжайте к нам, смотрите на небо, слушайте пение птиц, дышите свежим воздухом! Природа дарит здоровье. Природа лечит от многих болезней.
+          <p style={{fontSize: '18px', textAlign: "justify"}}>Приезжайте к нам, смотрите на небо, слушайте пение птиц, дышите свежим воздухом!
           </p>
         </div>
       </Col>
     </Row>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vpronske.ru/splavy/" />
+    <meta property="og:title" content="Пронские сплавы" />
+    <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
+    <meta property="og:image" content="https://vpronske.ru/splavy/CollageProny2.png" />
   </Layout>
 );
 
 export default splavy;
+
+export const Head: HeadFC = () => <title>Пронские сплавы на байдарках - Рязанская область</title>

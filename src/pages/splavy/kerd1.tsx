@@ -1,6 +1,7 @@
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import 'moment/locale/ru'; // without this line it didn't work
 
+import { HeadFC } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import moment from 'moment';
 import React, { CSSProperties, useState } from 'react';
@@ -69,14 +70,14 @@ const handleShow = () => setShow(true);
           В этом месте вы точно почувствуете уединение с природой и отдохнете от городского ритма и суеты.
           Данный маршрут (протяжённостью ≈ 18 км)  подходит всем желающим, включая новичков.
           Взрослый могут взять с собой детей, которым исполнилось уже 6 лет. Байдарки у нас пластиковые очень надежные и устойчивые.</p>
-          <i style={{fontSize: '18px', textAlign: "justify"}}>Стоимость 1-дневного сплава 2000 р.(от 2-х человек), для детей до 18 лет скидка 1000р. Входит:<br />
+          <i style={{fontSize: '18px', textAlign: "justify"}}>Стоимость 1-дневного сплава 2000 р.(от 2-х человек), для детей до 14 лет скидка 1000р. Входит:<br />
           - байдарки в собранном виде<br/>
           - спасжилеты, в т.ч. детские<br/>
           - гермомешки<br/>
           - туристические коврики<br/>
           - трансфер к месту старта и обратно<br/></i>
-          <b style={{fontSize: '18px', textAlign: "justify"}}>Для бронирования и по всем возникающим вопросам звоните или пишите в мессенджеры по телефону 8(952)123-35-39 (c 10:00 до 20:00).</b>
-          <i style={{fontSize: '18px', textAlign: "justify"}}>* Бронирование производится по 50% предоплате.
+          <b style={{fontSize: '18px', textAlign: "justify"}}>Для бронирования и по всем возникающим вопросам звоните или пишите в мессенджеры по телефону <a href="tel:+79521233539">8(952)123-35-39.</a> (c 10:00 до 20:00).<br /></b>
+          <i style={{fontSize: '18px', textAlign: "justify"}}>*Бронирование производится по 50% предоплате.
           В случае отказа за 3 дня до мероприятия, предоплата возвращается в полном объеме.</i>
         </div>
       </Col>
@@ -122,7 +123,7 @@ const handleShow = () => setShow(true);
         <div className="container text">
           <b style={{fontSize: '18px', textAlign: "justify"}}>Примерная программа однодневного сплава:</b>
           <p style={{fontSize: '18px', textAlign: "justify"}}>
-          10:30 – прибытие в г.Пронск к нашему дому, трансфер на место старта.<br />
+          10:30 – прибытие в р.п. Пронск к нашему дому, трансфер на место старта.<br />
           11:00 - инструктаж, получение снаряжение, загрузка байдарок, старт<br />
           11:30 - сплав на байдарках с остановками для фотографирования и купания<br />
           17:00 - финиширование у Пронского моста, обратный трансфер к дому
@@ -136,7 +137,7 @@ const handleShow = () => setShow(true);
         <div className="container text">
           <h3 style={{textAlign: "center"}}>Примерная программа однодневного сплава</h3>
           <p style={{fontSize: '18px', textAlign: "justify"}}>
-          10:30 – прибытие в г.Пронск к нашему дому, трансфер на место старта.<br />
+          10:30 – прибытие в р.п. Пронск к нашему дому, трансфер на место старта.<br />
           11:00 - инструктаж, получение снаряжение, загрузка байдарок, старт<br />
           11:30 - сплав на байдарках с остановками для фотографирования и купания<br />
           17:00 - финиширование у Пронского моста, обратный трансфер к дому
@@ -206,8 +207,6 @@ const handleShow = () => setShow(true);
           <h3 style={{textAlign: 'center'}}>Что взять с собой в поход</h3>
           <b style={{fontSize: '18px', textAlign: "justify"}}>Питьевая вода</b>
           <p style={{fontSize: '18px', textAlign: "justify"}}>в удобной бутылке или нескольких маленьких</p>
-          <b style={{fontSize: '18px', textAlign: "justify"}}>Головной убор и солнце защитные очки</b>
-          <p style={{fontSize: '18px', textAlign: "justify"}}>уберегут вас от солнечных лучей</p>
           <b style={{fontSize: '18px', textAlign: "justify"}}>Крем от загара</b>
           <p style={{fontSize: '18px', textAlign: "justify"}}>пригодится вам если вы склонны к обгоранию кожи на солнце</p>
           <b style={{fontSize: '18px', textAlign: "justify"}}>Термос с чаем, печеньки, бутерброды, фрукты, овощи</b>
@@ -290,8 +289,16 @@ const handleShow = () => setShow(true);
         </div>
       </Col>
     </Row>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vpronske.ru/splavy/kerd1/" />
+    <meta property="og:title" content="Кердь-Проня (Дневной сплав)" />
+    <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
+    <meta property="og:image" content="https://vpronske.ru/splavy/kerd1/CollageKerd.png" />
   </Layout>
 )
 };
 
 export default kerd1;
+
+export const Head: HeadFC = () => <title>Кердь дневной сплав на байдарках - Пронск, Рязанская область</title>
