@@ -218,15 +218,17 @@ const pronya = () =>  (
         </div>
       </Col>
     </Row>
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://vpronske.ru/splavy/pronya/" />
-    <meta property="og:title" content="Проня (2 Дня/1 Ночь)" />
-    <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
-    <meta property="og:image" content="https://vpronske.ru/splavy/pronya/CollageProny1.png" />
   </Layout>
 );
 
 export default pronya;
 
-export const Head: HeadFC = () => <title>Проня 2дня/1ночь, сплавы на байдарках - Пронск, Рязанская область</title>
+export const Head: HeadFC = () => 
+<>
+  <title>Проня 2дня/1ночь, сплавы на байдарках - Пронск, Рязанская область</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vpronske.ru/splavy/pronya/" />
+  <meta property="og:title" content="Проня (2 Дня/1 Ночь)" />
+  <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
+  <meta property="og:image" content="https://vpronske.ru/splavy/pronya/CollageProny1.png" />
+</>

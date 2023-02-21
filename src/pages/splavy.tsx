@@ -60,7 +60,7 @@ const splavy = () => (
                 <div className="card-body">
                   <h5 className="card-title">1 День </h5>
                   <p className="card-text">Цена 2000р.(от 2-х человек), детям до 14 скидка 1000р.</p>
-                  <a href="/splavy/kerd1" className="btn btn-primary">Подробнее</a>
+                  <a href="/splavy/kerd" className="btn btn-primary">Подробнее</a>
                 </div>
               </div>
             </div>
@@ -131,15 +131,17 @@ const splavy = () => (
         </div>
       </Col>
     </Row>
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://vpronske.ru/splavy/" />
-    <meta property="og:title" content="Пронские сплавы" />
-    <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
-    <meta property="og:image" content="https://vpronske.ru/splavy/CollageProny2.png" />
   </Layout>
 );
 
 export default splavy;
 
-export const Head: HeadFC = () => <title>Пронские сплавы на байдарках - Рязанская область</title>
+export const Head: HeadFC = () => 
+<>
+  <title>Пронские сплавы на байдарках - Рязанская область</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vpronske.ru/splavy/" />
+  <meta property="og:title" content="Пронские сплавы" />
+  <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
+  <meta property="og:image" content="https://vpronske.ru/splavy/CollageProny2.png" />
+</>
