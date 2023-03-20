@@ -112,4 +112,8 @@ const IndexPage =() => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>В Пронске - Полезный сайт о Пронске и Пронском районе</title>
+export const Head: HeadFC = () => 
+<>
+<title>В Пронске - Полезный сайт о Пронске и Пронском районе</title>
+<meta name="google-site-verification" content="lzKUzw_xnhZqxcWF81efDm5H_FDsd_wTPr4mORqtDs0" />
+</>
