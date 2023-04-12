@@ -6,6 +6,7 @@ import * as React from 'react';
 import Container from 'react-bootstrap/esm/Container';
 import { HeadFC } from 'gatsby';
 import Layout from './layout';
+import { StaticImage } from 'gatsby-plugin-image/dist/src/components/static-image.server';
 
 const pageStyles = {
   color: '#232129',
@@ -24,7 +25,7 @@ const EnduroPage = () => {
           <iframe
             src='https://docs.google.com/forms/d/e/1FAIpQLSdNCOOk22OiKfga_3pqHjMlsaZshtlbSSP-T-dDGWXFPCAonQ/viewform?embedded=true'
             width='640'
-            height='614'
+            height='700'
           >
             Loading…
           </iframe>
@@ -37,6 +38,11 @@ const EnduroPage = () => {
           >
             Loading…
           </iframe>
+          <img
+            src='https://sun9-22.userapi.com/impg/ObW_EKcbZO-4TPKk7EzxA8EMIYJexD5Zi55kYQ/qcuEbUjhB6I.jpg?size=636x644&quality=95&sign=a58785622259e2363bf923c06623f73c&type=album'
+            alt='В Пронске'
+            style={{ marginLeft: 2 }}
+          />
         </Container>
       </main>
     </Layout>
