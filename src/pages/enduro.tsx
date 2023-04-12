@@ -32,7 +32,7 @@ const EnduroPage = () => {
 
           <h3>Участники</h3>
           <iframe
-            src='https://docs.google.com/spreadsheets/d/16QWB_9lbt4JRQMCQ8gc1X2Zq9uK5LVUHG9Fa4INr2_A/edit?resourcekey#gid=1361209605'
+            src='https://docs.google.com/spreadsheets/d/16QWB_9lbt4JRQMCQ8gc1X2Zq9uK5LVUHG9Fa4INr2_A/edit?usp=sharing'
             width='1200'
             height='614'
           >
