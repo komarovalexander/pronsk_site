@@ -82,6 +82,15 @@ const handleShow = () => setShow(true);
       </Col>
     </Row>
 
+    <Row style={{padding: '40px 0'}}>
+      <Col>
+        <div className="container text">
+          <h3 style={{textAlign: "center"}}>Маршрут</h3>
+          <iframe src="https://yandex.ru/maps/-/CCU85XCLdA" width="100%" height="400"></iframe>
+        </div>
+      </Col>
+    </Row>
+
     {/* <Row style={{padding: '40px 0'}}>
       <Col>
         <div className="container text">
@@ -131,7 +140,7 @@ const handleShow = () => setShow(true);
       </Col>
     </Row> */}
 
-    <Row style={{padding: '40px 0'}}>
+    <Row style={{backgroundColor: '#eef0f2', padding: '40px 0'}}>
       <Col>
         <div className="container text">
           <h3 style={{textAlign: "center"}}>Примерная программа однодневного сплава</h3>
@@ -140,9 +149,15 @@ const handleShow = () => setShow(true);
           14:30 - инструктаж, получение снаряжение, загрузка байдарок, старт<br />
           15:00 - сплав на байдарках с остановками для фотографирования и купания<br />
           20:00 - финиширование у Пронского моста, обратный трансфер к дому<br />
-          <i style={{fontSize: '18px', textAlign: "justify"}}>По желанию подбирается удобное вам время для сплава.</i>
+          <i style={{fontSize: '18px', textAlign: "justify"}}>По желанию подбирается удобное вам время для сплава.<br /></i>
           </p>
         </div>
+        </Col>
+    </Row>
+
+    
+    <Row style={{padding: '40px 0'}}>
+      <Col>
         <div className="container text">
           <Carousel>
             <Carousel.Item>
