@@ -58,7 +58,7 @@ const splavy = () => (
                 <StaticImage width={1000}  src="../images/Splav/Kerd/1.png" className="card-img-top" alt="Кердь" style={{width: '100%', height: 'auto'}}/>
                 <div className="card-body">
                   <h5 className="card-title">1 День </h5>
-                  <p className="card-text">Цена 2000р. с человека (сплав от 2-х человек), детям до 14 скидка 1000р.</p>
+                  <p className="card-text">Цена 2000р. с человека, детям до 14 скидка 1000р.</p>
                   <a href="/splavy/kerd" className="btn btn-primary">Подробнее</a>
                 </div>
               </div>
@@ -68,7 +68,7 @@ const splavy = () => (
                 <StaticImage width={1000}  src="../images/Splav/Prony/4-2.jpg" className="card-img-top" alt="Проня" style={{width: '100%', height: 'auto'}}/>
                 <div className="card-body">
                   <h5 className="card-title">2 Дня/1 Ночь</h5>
-                  <p className="card-text">Цена 5000р. с человка (сплав от 4-х человек), детям до 14 скидка 2000р.</p>
+                  <p className="card-text">Цена 5000р. с человка, детям до 14 скидка 2000р.</p>
                   <a href="/splavy/pronya" className="btn btn-primary">Подробнее</a>
                 </div>
               </div>
@@ -102,7 +102,7 @@ const splavy = () => (
         </div>
       </Col>
     </Row>
-
+{/* 
     <Row style={{backgroundColor: '#eef0f2', padding: '40px 0'}}>
       <Col>
         <div className="container text">
@@ -126,7 +126,7 @@ const splavy = () => (
           </p>
         </div>
       </Col>
-    </Row>
+    </Row> */}
   </Layout>
 );
 
