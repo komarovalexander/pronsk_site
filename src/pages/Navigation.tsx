@@ -25,7 +25,7 @@ const Navigation = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Главная</Nav.Link>
-            <Nav.Link href="/memorials/">Памятники</Nav.Link>
+           {/* <Nav.Link href="/memorials/">Памятники</Nav.Link>*/}
             <Nav.Link href="/splavy/">Пронские сплавы</Nav.Link>
             {/*<NavDropdown title="Жителям" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
