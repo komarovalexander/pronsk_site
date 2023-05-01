@@ -5,7 +5,7 @@ import { HeadFC } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Table } from 'ka-table';
 import * as React from 'react';
-import { Carousel, Col, Row } from 'react-bootstrap';
+import { Carousel, Col, Nav, Row } from 'react-bootstrap';
 import Container from 'react-bootstrap/esm/Container';
 
 import { bootstrapChildComponents } from '../../table/bootstrap-child-components';
@@ -25,7 +25,18 @@ const IndexPage =() => {
         <Row style={{padding: '40px 0'}}>
           <Col>
             <h1>Памятники Пронского района</h1>
-            <p>Данный список далеко не полный и пока пополняется, полный список памятников и их описание доступны в <a href="https://vk.com/id564883860">Пронская-Детская Библиотека</a></p>
+            <p>Данный список далеко не полный и будет пополняеться, полный список памятников и их описание доступны в <a href="https://vk.com/id564883860">Пронская-Детская Библиотека</a></p>
+            <Table
+              childComponents={{
+                cellText: {
+                  content: ({ column, value }) => {
+                    if(column.key === 'name'){
+                      return  <Nav.Link href="/memorials/vechny">{value}</Nav.Link>
+                    }
+                  }
+                }
+              }}
+              rowKeyField='id' columns={[{key: 'name', title: "Название"}, {key: 'location', title: "Расположение"}]} data={[{ name: "Вечный огонь", location: "Пронск, пл. Новая"}]}/>
           </Col>
         </Row>
       </Container>

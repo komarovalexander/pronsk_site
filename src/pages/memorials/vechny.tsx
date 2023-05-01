@@ -86,11 +86,7 @@ const Page =() => {
               <StaticImage  src="../../images/memorials/vechny/12.jpg" className="rounded" alt="Пороня"/>
             </div>
           </Carousel.Item>
-          <Carousel.Item>
-            <div>
-              <StaticImage  src="../../images/memorials/vechny/13.jpg" className="rounded" alt="Проня"/>
-            </div>
-          </Carousel.Item>
+
           <Carousel.Item>
             <div>
               <StaticImage  src="../../images/memorials/vechny/14.jpg" className="rounded" alt="Кердь"/>
@@ -124,11 +120,6 @@ const Page =() => {
           <Carousel.Item>
             <div>
               <StaticImage  src="../../images/memorials/vechny/20.jpg" className="rounded" alt="Кердь"/>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div>
-              <StaticImage  src="../../images/memorials/vechny/20-1.jpg" className="rounded" alt="Кердь"/>
             </div>
           </Carousel.Item>
           <Carousel.Item>
