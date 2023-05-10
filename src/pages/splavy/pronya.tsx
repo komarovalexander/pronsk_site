@@ -36,7 +36,7 @@ const pronya = () =>  (
               <div>
                 <StaticImage src="../../images/Splav/Prony/CollageProny1.png" className="rounded" alt="Пронские сплавы"/>
                 <Carousel.Caption style={captionStyle}>
-                <h1>Проня (2 Дня/1 Ночь)</h1>
+                <h1>Кердь-Проня (2 Дня/1 Ночь)</h1>
                 </Carousel.Caption>
               </div>
             </Carousel.Item>
@@ -49,22 +49,26 @@ const pronya = () =>  (
       <Col>
         <div className="container text">
           <h3 style={{textAlign: "center"}}>Отдых на природе с комфортом - это про нас</h3>
-          <p style={{fontSize: '18px', textAlign: "justify"}}>Все передвижения проходят на байдарках, не отягощенных грузом, так как все нужные вещи для лагеря мы берем на себя и подготавливаем его во время вашего сплава.
+          <p style={{fontSize: '18px', textAlign: "justify"}}>Все передвижения проходят на байдарках, не отягощенных грузом, так как все нужные вещи для лагеря мы берем на себя и подготавливаем его во время нашего сплава.
           Это значительно сэкономит и время, и силы участников. На лёгких байдарках передвигаться значительно веселее и комфортнее.
-          Возню с едой мы также, берем на себя и предоставляем горячее питание. В наших палатках очень уютно и мягко спать за счет домашнего матраса.
-          Мы попытались создать все условия, чтобы вы могли наслаждаться в полной мере сплавом и природой.</p>
-          <p style={{fontSize: '18px', textAlign: "justify"}}>Данный маршрут, со спокойным течением (протяженность ≈ 25 км),  отличается умиротворением, тишиной и спокойствием.
+          Приготовление еды мы также берем на себя и предоставляем горячее питание. В наших палатках очень уютно и мягко спать за счет домашнего матраса.
+          Мы попытались создать все условия, чтобы вы могли наслаждаться в полной мере сплавом и природой. 
+          Блягодаря сотрудничеству с перкрасным <a href='https://pronyaglamping.ru/'>Глемпинг-парком БЕРЕГ</a> вам будет доступна вся инфраструктура глемпинга (туалет, душ, интернет, пляж и т.д.)</p>
+          <p style={{fontSize: '18px', textAlign: "justify"}}>Кердь - это не большая по ширине речка, извилистая и неглубокая, а скорость течения на ней вполне умеренная.
+          Во время сплава вас будет окружать пение птиц, шелест листьев, журчание ручья, приятная прохлада от реки и тень от деревьев.
+          Вокруг много живности, рядом летают бабочки, плавают утки, пасутся коровки.<br />
+          Проня - широкая речка со спокойным течением,  отличается умиротворением, тишиной и спокойствием.
           Здесь в нетронутом уголке среднерусской природы встречают рассветы, слушают пени птиц, рыбачат и отдыхают от городской суеты.
           Здесь нет шумных компаний и большой публики, места, здесь отдаленные для «купальщиков и любителей шашлыков».</p>
           <p style={{fontSize: '18px', textAlign: "justify"}}>В Проне водятся разнообразные рыбы, мидии и раки, т.к. условия для размножения и обитания в ней подходящие. Они оптимальны для всех типов, даже хищных.
           Места тут красивые, для отдыха, для души. Луга, поля, холмы, перелески – вот, что находится по разные стороны от берегов Прони.
           Если стоять на одном берегу, то открывается необъятный обзор на долины и равнины, можно долго смотреть на красивые пейзажи.
-          Отдых на реке заряжает энергией и дарит массу приятных ощущений. Данный маршрут подходит всем желающим, включая новичков.
-          Взрослый могут взять с собой детей, которым исполнилось уже 6 лет. Байдарки у нас пластиковые очень надежные и устойчивые.</p>
+          Отдых на реке заряжает энергией и дарит массу приятных ощущений. Данный маршрут (протяжённостью ≈ 31 км) подходит всем желающим, включая новичков.
+          Байдарки у нас пластиковые очень надежные и устойчивые.</p>
           <i style={{fontSize: '18px', textAlign: "justify"}}>Стоимость 2-дневного сплава 5000 р. с человека, для детей до 14 лет скидка 2000р. Входит:<br />
           - байдарки в собранном виде, спасжилеты, в т.ч. детские, костровое оборудование<br />
           - палатки, мягкие матрасы в палатку<br />
-          - спальники с вкладышем (стираются после ночевки)<br />
+          - спальники<br />
           - гермомешки<br />
           - трехразовое горячее питание<br />
           - подготовленное для отдыха и ночлега место<br />
@@ -75,6 +79,9 @@ const pronya = () =>  (
         </div>
       </Col>
     </Row>
+    
+{/* карта */}
+    {/* <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A32cdf8701bc032eaf53d635a839918cbb5ccf218ea8d0e38e90e714ac113ac6c&amp;source=constructor" width="979" height="406" frameborder="0"></iframe> */}
 
     {/* <Row style={{padding: '40px 0'}}>
       <Col>
@@ -130,14 +137,16 @@ const pronya = () =>  (
           10:00 – прибытие в р.п. Пронск к нашему дому, трансфер на место старта.<br />
           10:30 - инструктаж, получение снаряжение, загрузка байдарок, старт<br />
           11:00 - сплав на байдарках с остановками для фотографирования и купания<br />
-          15:00 - встречаем вас с готовым лагерем и горячем пловом, отдых, игры на берегу<br />
-          19:00 – приготовление шашлыков, душевные посиделки у костра
+          13:00 - обед на стоянке, отдых<br />
+          14:00 - сплав на байдарках с остановками для фотографирования и купания<br />
+          17:00 – прибытие в глемпинг, прогулка по городу, фотосессия с Пакровского бугра<br /> 
+          19:00 - приготовление шашлыков, душевные посиделки у костра
           </p>
           <i style={{fontSize: '18px', textAlign: "justify"}}>День 2</i>
           <p style={{fontSize: '18px', textAlign: "justify"}}>
           08:00 – подъем, завтрак<br />
-          09:00 - сплав на байдарках с остановками для фотографирования и купания<br />
-          12:00 - финиширование у Пронского моста, обратный трансфер к дому<br />
+          10:00 - сплав на байдарках с остановками для фотографирования и купания<br />
+          14:00 - финиширование в селе Погореловка, обратный трансфер к дому<br />
           <i style={{fontSize: '18px', textAlign: "justify"}}>По желанию подбирается удобное вам время для сплава.</i>
           </p>
         </div>
@@ -165,7 +174,7 @@ const pronya = () =>  (
           <b style={{fontSize: '18px', textAlign: "justify"}}>Запасная одежда</b>
           <p style={{fontSize: '18px', textAlign: "justify"}}>теплый свитер, теплые носки, обувь в байдарку (сланцы, кроксы), обувь на стоянку (кроссовки, кеды), головной убор, солнцезащитные очки, ветровка, шорты, спортивные штаны</p>
           <b style={{fontSize: '18px', textAlign: "justify"}}>Крем от загара и средство от комаров </b>
-          <p style={{fontSize: '18px', textAlign: "justify"}}>пригодится вам, если вы склонны к обгоранию кожи на солнце. От комаров мы развешиваем спирали на месте ночлега, но еще одно средство лишним не будет </p>
+          <p style={{fontSize: '18px', textAlign: "justify"}}>пригодится вам, если вы склонны к обгоранию кожи на солнце</p>
           <b style={{fontSize: '18px', textAlign: "justify"}}>Термос с чаем, печеньки, бутерброды</b>
           <p style={{fontSize: '18px', textAlign: "justify"}}>на воде тратится много калорий, так что перекусить точно захочется, а отдохнуть на воде попивая чай это отдельное удовольствие</p>
           <b style={{fontSize: '18px', textAlign: "justify"}}>Ваши любимые соусы, овощи</b>
@@ -178,40 +187,155 @@ const pronya = () =>  (
     <Row style={{padding: '40px 0'}}>
       <Col>
         <div className="container text">
-          <Carousel>
+          <Carousel interval={null}>
             <Carousel.Item>
               <div>
-                <StaticImage src="../../images/Splav/Prony/1.jpg" className="rounded" style={{height: '500'}} alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/1.JPG" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../../images/Splav/Prony/2.jpg" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/2.JPG" className="rounded" alt="Пороня"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../../images/Splav/Prony/3-1.jpg" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/3.JPG" className="rounded" alt="Проня"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../../images/Splav/Prony/4-2.jpg" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/4.JPG" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../../images/Splav/Prony/5.jpg" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/5.JPG" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../../images/Splav/Prony/10.jpg" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/6.JPG" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div>
-                <StaticImage  src="../../images/Splav/Prony/8.jpg" className="rounded" alt="Кердь"/>
+                <StaticImage  src="../../images/Splav/Kerd/7.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/8.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/9.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/10.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/11.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/12.JPG" className="rounded" alt="Пороня"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/13.JPG" className="rounded" alt="Проня"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/14.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/15.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/16.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/17.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/18.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/19.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/20.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/20-1.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/21.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/22.JPG" className="rounded" alt="Пороня"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/23.JPG" className="rounded" alt="Проня"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/24.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/25.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/26.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/27.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/28.JPG" className="rounded" alt="Кердь"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <StaticImage  src="../../images/Splav/Kerd/29.JPG" className="rounded" alt="Кердь"/>
               </div>
             </Carousel.Item>
           </Carousel>
