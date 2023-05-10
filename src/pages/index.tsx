@@ -2,61 +2,23 @@ import '../table/ka-bootstrap.scss';
 import 'moment/locale/ru'; // without this line it didn't work
 
 import { HeadFC } from 'gatsby';
-import { ITableProps, kaReducer, Table } from 'ka-table';
+import { ITableProps } from 'ka-table';
 import { DataType, SortingMode } from 'ka-table/enums';
-import { DispatchFunc } from 'ka-table/types';
 import moment from 'moment';
 import * as React from 'react';
 import Container from 'react-bootstrap/esm/Container';
 
 import data from '../data/converted';
-import { bootstrapChildComponents } from '../table/bootstrap-child-components';
 import Slider from './home/Slider';
 import Layout from './layout';
-
-const tablePropsInit: ITableProps = {
-  columns: [
-    { key: '1', title: 'Учреждение', dataType: DataType.String, colGroup: { width: 200 } },
-    { key: '2', title: 'Мероприятие', dataType: DataType.String, colGroup: { width: 200 } },
-    { key: '3', title: 'Дата', dataType: DataType.Date, colGroup: { width: 150 } },
-    { key: '4', title: 'Время', dataType: DataType.String, colGroup: { width: 120 } },
-    //{ key: '5', title: 'Column 4', dataType: DataType.String },
-    { key: '6', title: 'Организатор', dataType: DataType.String, colGroup: { width: 200 } },
-  ],
-  format: ({ column, value }) => {
-    if (column.dataType === DataType.Date){
-      return value &&  moment(value).format('DD.MM.YYYY') ;
-    }
-  },
-  data: data.map((d: any, index) => ({...d, index, 3: moment(d['3'], 'DD.MM.YYYY')})).filter((d: any) => d['3'].isAfter(moment().subtract(1, 'days'))),
-  rowKeyField: 'index',
-  sortingMode: SortingMode.Single,
-};
 
 const pageStyles = {
   color: "#232129",
   padding: "50px 0",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
-/**
- * https://alldocs.app/convert-word-docx-to-pandoc-json */
- /* const tableData: any[] = [];
-  console.log(data);
-  data.blocks[3].c[4].forEach((row:any, index:any) => {
-    const rowData: any = row.map((column:any) => column.map(c => c.c.reduce((acc: any, d: any) => {
-      acc += d.t === 'Str' ? d.c : ' ';
-      return acc;
-    }, '')).join('\r\n'));
-    rowData.index = index;
-    tableData.push(rowData);
-  });
-  console.log(data.blocks[2].c[4], tableData) */
 
 const IndexPage =() => {
-  const [tableProps, changeTableProps] = React.useState(tablePropsInit);
-  const dispatch: DispatchFunc = (action) => {
-    changeTableProps((prevState: ITableProps) => kaReducer(prevState, action));
-  };
   const [expanded, setExpanded] = React.useState(false);
   return (
     <Layout>
@@ -112,7 +74,7 @@ const IndexPage =() => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => 
+export const Head: HeadFC = () =>
 <>
 <title>В Пронске - Полезный сайт о Пронске и Пронском районе</title>
 <meta name="google-site-verification" content="lzKUzw_xnhZqxcWF81efDm5H_FDsd_wTPr4mORqtDs0" />
