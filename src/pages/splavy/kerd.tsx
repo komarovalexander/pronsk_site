@@ -87,7 +87,7 @@ const handleShow = () => setShow(true);
       <Col>
         <div className="container text">
           <h3 style={{textAlign: "center"}}>Маршрут</h3>
-          <iframe src="https://yandex.ru/maps/-/CCU85XCLdA" width="100%" height="400"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=39.507462%2C54.094567&mode=usermaps&source=constructorLink&um=constructor%3Ad4a86f6e3412d335a8d7923d41d748a35c0d1f7191a532d925b37ff1f62748dd&z=12" width="100%" height="400"></iframe>
         </div>
       </Col>
     </Row>
