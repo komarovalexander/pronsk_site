@@ -168,6 +168,8 @@ const pronya = () =>  (
           <i style={{fontSize: '18px', textAlign: 'justify'}}>Всё, что вам понадобится в походе - это личные вещи, которые поместятся в небольшой рюкзачок. Всё остальное мы вам предоставим!<br /></i>
           <b style={{fontSize: '18px', textAlign: "justify"}}>Средства личной гигиены</b>
           <p style={{fontSize: '18px', textAlign: "justify"}}>полотенце, мыло, зубная паста и щётка, туалетная бумага и т.д.</p>
+          <b style={{fontSize: '18px', textAlign: "justify"}}>Посуда</b>
+          <p style={{fontSize: '18px', textAlign: "justify"}}>тарелки, кружки, ложки</p>
           <b style={{fontSize: '18px', textAlign: "justify"}}>Питьевая вода</b>
           <p style={{fontSize: '18px', textAlign: "justify"}}>в удобной бутылке или нескольких маленьких, суммарно не менее 1,5 литров на человека</p>
           <b style={{fontSize: '18px', textAlign: "justify"}}>Запасная одежда</b>
@@ -178,7 +180,6 @@ const pronya = () =>  (
           <p style={{fontSize: '18px', textAlign: "justify"}}>на воде тратится много калорий, так что перекусить точно захочется, а отдохнуть на воде попивая чай это отдельное удовольствие</p>
           <b style={{fontSize: '18px', textAlign: "justify"}}>Ваши любимые соусы, овощи</b>
           <p style={{fontSize: '18px', textAlign: "justify"}}>чтобы шашлык стал еще вкуснее</p>
-          <b style={{fontSize: '18px', textAlign: "justify"}}>Кружки, ложки, тарелки</b>
         </div>
       </Col>
     </Row>
