@@ -1,5 +1,9 @@
 import { graphql, Link } from 'gatsby';
+import { Table } from 'ka-table';
 import React from 'react';
+import { Col, Container, Nav, Row } from 'react-bootstrap';
+
+import Layout from '../layout';
 
 const PostLink = ({ post }: any) => (
   <div>
@@ -18,7 +22,28 @@ const IndexPage = ({
     .filter((edge: any) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map((edge: any) => <PostLink key={edge.node.id} post={edge.node} />)
 
-  return <div>{Posts}</div>
+  return(
+  <Layout>
+    <Container style={{marginBottom: 50}}>
+        <Row style={{padding: '40px 0'}}>
+          <Col>
+            <Table
+              childComponents={{
+                cellText: {
+                  content: ({ column, value }) => {
+                    if(column.key === 'name'){
+                      return  <Nav.Link>{Posts}</Nav.Link>
+                    }
+                  }
+                }
+              }}
+              rowKeyField='id' 
+              columns={[{key: 'name', title: "Название"}]} data={[{ name: `${Posts.key}`}]}/>
+          </Col>
+        </Row>
+      </Container>
+  </Layout>
+  )
 }
 
 export default IndexPage

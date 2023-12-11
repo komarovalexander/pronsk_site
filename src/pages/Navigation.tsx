@@ -38,6 +38,7 @@ const Navigation = () => {
                 Separated link
               </NavDropdown.Item>
           </NavDropdown>*/}
+            <Nav.Link href="/blog/">Блог</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
