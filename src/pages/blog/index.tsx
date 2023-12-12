@@ -18,9 +18,8 @@ const IndexPage = ({
     allMarkdownRemark: { edges },
   },
 }: any) => {
-  const Posts = edges
-    .filter((edge: any) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map((edge: any) => <PostLink key={edge.node.id} post={edge.node} />)
+  const posts = edges
+    .map((edge: any) => edge.node)
 
   return(
   <Layout>
@@ -30,15 +29,15 @@ const IndexPage = ({
             <Table
               childComponents={{
                 cellText: {
-                  content: ({ column, value }) => {
+                  content: ({ column, rowData }) => {
                     if(column.key === 'name'){
-                      return  <Nav.Link>{Posts}</Nav.Link>
+                    return <PostLink post={rowData}/>
                     }
                   }
                 }
               }}
               rowKeyField='id' 
-              columns={[{key: 'name', title: "Название"}]} data={[{ name: `${Posts.key}`}]}/>
+              columns={[{key: 'name', title: "Название"}]} data={posts}/>
           </Col>
         </Row>
       </Container>
