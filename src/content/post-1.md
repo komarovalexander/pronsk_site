@@ -1,9 +1,8 @@
 ---
-slug: "my-first-blog-post1"
-date: "2022-11-24"
-title: "My first blog post"
+slug: 'michurin'
+date: '2022-11-24'
+title: 'Поездка на родину Мичурина. Деревня Мичуровка.'
 ---
-
 
 Добрый день мы с Рязани 3
 

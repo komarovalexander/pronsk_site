@@ -1,7 +1,7 @@
-import { graphql } from 'gatsby';
 import * as React from 'react';
 
 import Layout from '../layout';
+import { graphql } from 'gatsby';
 
 export default function BlogPostTemplate({
   data, // this prop will be injected by the GraphQL query below.
@@ -10,21 +10,19 @@ export default function BlogPostTemplate({
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
-        <div className="container text">
-          <div>
-            <h1>{frontmatter.title}</h1>
-            <h2>{frontmatter.date}</h2>
-            <div 
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
-          </div>
+      <div className='container text'>
+        <div>
+          <h1>{frontmatter.title}</h1>
+          <h2>{frontmatter.date}</h2>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
       </div>
     </Layout>
-  )
+  );
 }
 
 export const pageQuery = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
@@ -34,4 +32,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
