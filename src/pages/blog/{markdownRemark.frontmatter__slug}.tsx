@@ -13,7 +13,7 @@ export default function BlogPostTemplate({
       <div className='container text'>
         <div>
           <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
+          <p>{frontmatter.date}</p>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </div>
@@ -26,7 +26,7 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM DD, YYYY", locale:"ru")
         slug
         title
       }

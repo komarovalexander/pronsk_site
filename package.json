@@ -18,18 +18,20 @@
     "deploy": "gh-pages -d public"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
+    "@mdx-js/mdx": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
     "bootstrap": "^5.2.0",
     "gatsby": "^5.12.9",
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-mdx": "^5.12.3",
-    "gatsby-plugin-sass": "^5.21.0",
-    "gatsby-plugin-sharp": "^5.12.3",
-    "gatsby-plugin-sitemap": "^5.20.0",
+    "gatsby-plugin-sass": "^6.13.0",
+    "gatsby-plugin-sharp": "^5.13.0",
+    "gatsby-plugin-sitemap": "^6.13.0",
+    "gatsby-remark-copy-linked-files": "^6.13.0",
+    "gatsby-remark-images": "^7.13.0",
     "gatsby-source-filesystem": "^5.12.1",
-    "gatsby-transformer-remark": "^5.25.0",
+    "gatsby-transformer-remark": "^6.13.0",
     "gatsby-transformer-sharp": "^5.12.3",
     "ka-table": "^8.0.1",
     "moment": "^2.29.4",
@@ -40,11 +42,11 @@
     "sass": "^1.54.4"
   },
   "devDependencies": {
-    "@types/node": "^17.0.45",
+    "@types/node": "^20.10.6",
     "@types/react": "^18.0.17",
     "@types/react-big-calendar": "^1.6.0",
     "@types/react-dom": "^18.0.6",
-    "gh-pages": "^5.0.0",
-    "typescript": "^4.7.4"
+    "gh-pages": "^6.1.1",
+    "typescript": "^5.3.3"
   }
 }
