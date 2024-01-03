@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkpronsk_site=self.webpackChunkpronsk_site||[]).push([[206],{4576:function(e,n,t){t.r(n),t.d(n,{Head:function(){return l}});var r=t(7294),u=t(2752);n.default=function(e){var n=e.children;return r.createElement(r.Fragment,null,r.createElement(u.default,null),n)};var l=function(){return r.createElement("title",null,"В Пронске - Народный сайт Пронска и Пронского района")}}}]);
-//# sourceMappingURL=component---src-pages-layout-tsx-d81dc9182e9092d33ec0.js.map
