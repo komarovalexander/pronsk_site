@@ -72,7 +72,7 @@ const splavy = () => (
           <Carousel controls={false} indicators={false}>
             <Carousel.Item>
               <div>
-                <iframe width='100%' height='550' src="https://www.youtube.com/embed/sQ2tOg3mrrs?si=SADGqVcuJLkjJrQI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                <iframe width='100%' height='550' src="https://www.youtube.com/embed/sQ2tOg3mrrs?si=SADGqVcuJLkjJrQI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowfullscreen></iframe>
               </div>
             </Carousel.Item>
           </Carousel>
