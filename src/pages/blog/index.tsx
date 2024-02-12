@@ -1,8 +1,8 @@
 import { Col, Container, Nav, Row } from 'react-bootstrap';
 import { Link, graphql } from 'gatsby';
+import React, { useEffect } from 'react';
 
 import Layout from '../layout';
-import React from 'react';
 import { Table } from 'ka-table';
 
 const PostLink = ({ post }: any) => (
