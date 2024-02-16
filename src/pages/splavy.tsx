@@ -1,9 +1,9 @@
-import { Carousel, Col, Row } from 'react-bootstrap';
-import React, { CSSProperties } from 'react';
-
 import { HeadFC } from 'gatsby';
-import Layout from './layout';
 import { StaticImage } from 'gatsby-plugin-image';
+import React, { CSSProperties } from 'react';
+import { Carousel, Col, Row } from 'react-bootstrap';
+
+import Layout from './layout';
 
 const captionStyle: CSSProperties = {
   padding: '10px 30px',
@@ -59,9 +59,9 @@ const splavy = () => (
           </p>
           <p style={{ fontSize: '18px', textAlign: "justify" }}>📞 Звоните <a href="tel:+79521233539">+79521233539</a> уже сегодня или пишите в <a href="https://t.me/pronskie_splavy">мессенджеры</a>, чтобы организовать свое исключительное путешествие! Покажи, что ты готов к новым приключениям. 🌈🌊
           </p>
-          {/*<p style={{ fontSize: '18px', textAlign: "justify" }}>🚐 У нас также есть <a href="/splavy/rent">Прокат\Аренда</a> с доставкой и трансфером: У вас есть возможность организовать индивидуальный сплав по вашему маршруту или из предложенного нами.
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>🚐 У нас также есть <a href="/splavy/rent">Прокат-Аренда</a> с доставкой и трансфером: У вас есть возможность организовать индивидуальный сплав по вашему маршруту или из предложенного нами.
             Организуем удобный трансфер и доставку оборудования в начало маршрута и с финиша. Предоставляем байдарки на любую реку Рязанской области и не только!
-</p>*/}
+</p>
         </div>
       </Col>
     </Row>
@@ -109,7 +109,7 @@ const splavy = () => (
                 <StaticImage width={1000} src="../images/Splav/Prony/3day.jpg" className="card-img-top" alt="Кердь" style={{ width: '100%', height: 'auto' }} />
                 <div className="card-body">
                   <h5 className="card-title">3 Дня</h5>
-                  <p className="card-text">Цена 9000р. с человека, детям до 14 лет скидка 2000р.</p>
+                  <p className="card-text">Цена 8500р. с человека, детям до 14 лет скидка 2000р.</p>
                   <a href="/splavy/three_day" className="btn btn-primary">Подробнее</a>
                 </div>
               </div>
@@ -122,13 +122,13 @@ const splavy = () => (
     <Row style={{ padding: '40px 0' }}>
       <Col>
         <div className="container text">
-          <h3 style={{ textAlign: 'center', paddingBottom: 30 }}>Аренда и организация корпоратива</h3>
+          <h3 style={{ textAlign: 'center', paddingBottom: 30 }}>Прокат и организация корпоратива</h3>
           <div className="row">
             <div className="col">
               <div className="card">
                 <StaticImage width={1000} src="../images/Splav/Prony/rent.jpg" className="card-img-top" alt="Кердь" style={{ width: '100%', height: 'auto' }} />
                 <div className="card-body">
-                  <h5 className="card-title">Аренда с доставкой и трансфером</h5>
+                  <h5 className="card-title">Прокат-Аренда с доставкой и трансфером</h5>
                   <a href="/splavy/rent" className="btn btn-primary">Подробнее</a>
                 </div>
               </div>

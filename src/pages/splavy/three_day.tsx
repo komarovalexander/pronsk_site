@@ -1,14 +1,14 @@
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import 'moment/locale/ru'; // without this line it didn't work
 
-import { Calendar, momentLocalizer } from 'react-big-calendar';
-import { Carousel, Col, Row } from 'react-bootstrap';
-import React, { CSSProperties } from 'react';
-
 import { HeadFC } from 'gatsby';
-import Layout from '../layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import moment from 'moment';
+import React, { CSSProperties } from 'react';
+import { Calendar, momentLocalizer } from 'react-big-calendar';
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
+
+import Layout from '../layout';
 
 moment.locale('ru')
 
@@ -28,6 +28,15 @@ const calenderEvents = events.map(e => ({ title: e.title, start: moment(e.start,
 
 const three_day = () => (
   <Layout>
+    <Container>
+      <nav aria-label="breadcrumb" style={{ marginTop: 10 }}>
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item"><a href="/splavy/">Пронские сплавы</a></li>
+          <li className="breadcrumb-item active" aria-current="page">Проня (3 Дня)</li>
+        </ol>
+      </nav>
+    </Container>
+
     <Row style={{ padding: '40px 0' }}>
       <Col>
         <div className="container text">
@@ -36,7 +45,7 @@ const three_day = () => (
               <div>
                 <StaticImage src="../../images/Splav/Prony/3day.jpg" className="rounded" alt="Пронские сплавы" />
                 <Carousel.Caption style={captionStyle}>
-                  <h1>Кердь-Проня (2 Дня/1 Ночь)</h1>
+                  <h1>Проня (3 Дня)</h1>
                 </Carousel.Caption>
               </div>
             </Carousel.Item>
@@ -67,7 +76,7 @@ const three_day = () => (
           </p>
           <p style={{ fontSize: '18px', textAlign: "justify" }}>Отправляйтесь на приключение по реке Проня и откройте для себя всю ее красоту и магию! 🌄
           </p>
-          <i style={{ fontSize: '18px', textAlign: "justify" }}>Стоимость 3-дневного сплава 9000р. с человека, детям до 14 лет скидка 2000р. Входит:<br />
+          <i style={{ fontSize: '18px', textAlign: "justify" }}>Стоимость 3-дневного сплава 8500р. с человека, детям до 14 лет скидка 2000р. Входит:<br />
             - байдарки в собранном виде, спасжилеты, в т.ч. детские<br />
             - сопровождение<br />
             - палатки, мягкие матрасы в палатку, спальники<br />

@@ -1,14 +1,14 @@
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import 'moment/locale/ru'; // without this line it didn't work
 
-import { Calendar, momentLocalizer } from 'react-big-calendar';
-import { Carousel, Col, Row } from 'react-bootstrap';
-import React, { CSSProperties } from 'react';
-
 import { HeadFC } from 'gatsby';
-import Layout from '../layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import moment from 'moment';
+import React, { CSSProperties } from 'react';
+import { Calendar, momentLocalizer } from 'react-big-calendar';
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
+
+import Layout from '../layout';
 
 moment.locale('ru')
 
@@ -28,6 +28,15 @@ const calenderEvents = events.map(e => ({ title: e.title, start: moment(e.start,
 
 const rent = () => (
   <Layout>
+    <Container>
+      <nav aria-label="breadcrumb" style={{ marginTop: 10 }}>
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item"><a href="/splavy/">Пронские сплавы</a></li>
+          <li className="breadcrumb-item active" aria-current="page">Прокат-Аренда с доставкой и трансфером</li>
+        </ol>
+      </nav>
+    </Container>
+    
     <Row style={{ padding: '40px 0' }}>
       <Col>
         <div className="container text">
@@ -36,7 +45,7 @@ const rent = () => (
               <div>
                 <StaticImage src="../../images/Splav/Prony/rent.jpg" className="rounded" alt="Пронские сплавы" />
                 <Carousel.Caption style={captionStyle}>
-                  <h1>Аренда с доставкой и трансфером</h1>
+                  <h1>Прокат-Аренда с доставкой и трансфером</h1>
                 </Carousel.Caption>
               </div>
             </Carousel.Item>
