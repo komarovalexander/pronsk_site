@@ -4,6 +4,8 @@ import React, { CSSProperties } from 'react';
 import { HeadFC } from 'gatsby';
 import Layout from './layout';
 import { StaticImage } from 'gatsby-plugin-image';
+import bannerImage from '../images/Splav/index/banner.png';
+import logoImage from '../images/Splav/logo.png';
 
 const captionStyle: CSSProperties = {
   padding: '10px 30px',
@@ -13,23 +15,12 @@ const captionStyle: CSSProperties = {
 
 const splavy = () => (
   <Layout>
-    <Row style={{ padding: '40px 0' }}>
-      <Col>
-        <div className="container text">
-          <Carousel controls={false} indicators={false}>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../images/Splav/Prony/CollageProny3.jpg" className="rounded" alt="Пронские сплавы" />
-                <Carousel.Caption style={captionStyle}>
-                  <h1>Пронские сплавы</h1>
-                </Carousel.Caption>
-              </div>
-            </Carousel.Item>
-          </Carousel>
-          <i style={{ fontSize: '18px', textAlign: "justify" }}>*Бронирование мест по телефону <a href="tel:+79521233539">8(952)123-35-39.</a> <a href="https://vk.com/pronskie_splavy">Мы ВКонтакте</a></i>
-        </div>
-      </Col>
-    </Row>
+    <div className='main-banner' style={{ height: 1200, width: '100%', backgroundImage: `url(${bannerImage})`, backgroundSize: 'cover', backgroundPosition: 'bottom' }}>
+      <div className='header' style={{ padding: '32px 90px' }}>
+        <img src={logoImage} alt="Пронские сплавы логотип" style={{ height: 100, }} />
+        <div className='headerFont' style={{ color: 'white' }}>Погрузитесь</div>
+      </div>
+    </div>
 
     <Row style={{ backgroundColor: '#eef0f2', padding: '40px 0' }}>
       <Col>
@@ -183,7 +174,7 @@ const splavy = () => (
         </div>
       </Col>
     </Row> */}
-  </Layout>
+  </Layout >
 );
 
 export default splavy;
