@@ -15,10 +15,19 @@ const captionStyle: CSSProperties = {
 
 const splavy = () => (
   <Layout>
-    <div className='main-banner' style={{ height: 1200, width: '100%', backgroundImage: `url(${bannerImage})`, backgroundSize: 'cover', backgroundPosition: 'bottom' }}>
+    <div className='main-banner' style={{ height: 1200, width: '100%', background: `url(${bannerImage})`, backgroundSize: 'cover', backgroundPosition: 'bottom' }}>
       <div className='header' style={{ padding: '32px 90px' }}>
         <img src={logoImage} alt="Пронские сплавы логотип" style={{ height: 100, }} />
-        <div className='headerFont' style={{ color: 'white' }}>Погрузитесь</div>
+      </div>
+
+      <div style={{ color: 'white', textAlign: 'center', marginTop: 130 }}>
+        <div className='headerFont'>Погрузитесь</div>
+        <div className='h1Font' >в мир водных<br /> приключений</div>
+        <div className='d-flex justify-content-center headerText' style={{ marginTop: 30 }}>
+          <p style={{
+            maxWidth: 1000
+          }}>Ищете идеальный способ сбежать от городской суеты и ощутить вдохновение природы? Добро пожаловать в мир наших захватывающих путешествий на байдарках по чистым рекам Пронского района Рязанской области! 🌿</p>
+        </div>
       </div>
     </div>
 

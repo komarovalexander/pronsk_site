@@ -5,8 +5,30 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'grafita';
+    src: url('../../static/fonts/grafita/Grafita Special DEMO.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .headerFont {
     font-family: 'gilroy';
     letter-spacing: 19.8px;
     font-size: 36px;
+}
+
+.headerText {
+    font-family: 'gilroy';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+
+.h1Font {
+    font-family: 'grafita';
+    font-size: 150px;
+    line-height: normal;
 }
