@@ -1,5 +1,6 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import React, { CSSProperties } from 'react';
+import { header, logo, mainBanner, mainBannerText, mainBannerText1, mainBannerText2, mainBannerText2Br, mainBannerText3, mainBannerText3P } from './splavy.module.scss';
 
 import { HeadFC } from 'gatsby';
 import Layout from './layout';
@@ -7,26 +8,18 @@ import { StaticImage } from 'gatsby-plugin-image';
 import bannerImage from '../images/Splav/index/banner.png';
 import logoImage from '../images/Splav/logo.png';
 
-const captionStyle: CSSProperties = {
-  padding: '10px 30px',
-  backgroundColor: '#00000059'
-};
-
-
 const splavy = () => (
   <Layout>
-    <div className='main-banner' style={{ height: 1200, width: '100%', background: `url(${bannerImage})`, backgroundSize: 'cover', backgroundPosition: 'bottom' }}>
-      <div className='header' style={{ padding: '32px 90px' }}>
-        <img src={logoImage} alt="Пронские сплавы логотип" style={{ height: 100, }} />
+    <div className={mainBanner} style={{ background: `url(${bannerImage})` }}>
+      <div className={header} >
+        <img src={logoImage} className={logo} alt="Пронские сплавы логотип" />
       </div>
 
-      <div style={{ color: 'white', textAlign: 'center', marginTop: 130 }}>
-        <div className='headerFont'>Погрузитесь</div>
-        <div className='h1Font' >в мир водных<br /> приключений</div>
-        <div className='d-flex justify-content-center headerText' style={{ marginTop: 30 }}>
-          <p style={{
-            maxWidth: 1000
-          }}>Ищете идеальный способ сбежать от городской суеты и ощутить вдохновение природы? Добро пожаловать в мир наших захватывающих путешествий на байдарках по чистым рекам Пронского района Рязанской области! 🌿</p>
+      <div className={mainBannerText}>
+        <div className={`${mainBannerText1} headerFont`}>Погрузитесь</div>
+        <div className={`${mainBannerText2} h1Font`} >в мир<br className={mainBannerText2Br} /> водных<br /> приключений</div>
+        <div className={`${mainBannerText3} d-flex justify-content-center headerText`}>
+          <p className={mainBannerText3P}>Ищете идеальный способ сбежать от городской суеты и ощутить вдохновение природы? Добро пожаловать в мир наших захватывающих путешествий на байдарках по чистым рекам Пронского района Рязанской области! 🌿</p>
         </div>
       </div>
     </div>

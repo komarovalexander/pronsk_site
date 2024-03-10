@@ -1,0 +1,112 @@
+.mainBanner {
+    height: 1200px;
+    width: 100%;
+    background-size: cover !important;
+    background-position: bottom !important;
+}
+
+.header {
+    padding: 32px 90px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.mainBannerText {
+    color: white;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.mainBannerText1 {
+    font-size: 36px;
+    letter-spacing: 20px;
+}
+
+.mainBannerText2 {
+    font-size: 150px;
+    line-height: normal;
+}
+
+.mainBannerText2Br {
+    display: none;
+}
+
+.mainBannerText3 {
+    margin-top: 30px;
+}
+
+.mainBannerText3P {
+    max-width: 1000px;
+}
+
+
+@media (max-width: 1050px) {
+    .mainBanner {
+        height: 810px;
+        background-size: auto 100% !important;
+        background-position: center !important;
+    }
+
+    .header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .mainBannerText1 {
+        font-size: 30px;
+        letter-spacing: 20px;
+    }
+
+    .mainBannerText {
+        margin-top: 50px;
+    }
+
+    .mainBannerText2 {
+        font-size: 100px;
+    }
+
+    .mainBannerText3 {
+        margin-top: 50px;
+    }
+
+    .mainBannerText3P {
+        max-width: 700px;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .mainBanner {
+        height: 700px;
+        background-size: auto 100% !important;
+        background-position: center !important;
+    }
+
+    .header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .mainBannerText1 {
+        font-size: 20px;
+        letter-spacing: 15px;
+    }
+
+    .mainBannerText {
+        margin-top: 40px;
+    }
+
+    .mainBannerText2 {
+        font-size: 40px;
+    }
+
+    .mainBannerText2Br {
+        display: block;
+    }
+
+    .mainBannerText3 {
+        margin-top: 50px;
+    }
+}
