@@ -1,6 +1,6 @@
-import { Carousel, Col, Row } from 'react-bootstrap';
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
 import React, { CSSProperties } from 'react';
-import { header, logo, mainBanner, mainBannerText, mainBannerText1, mainBannerText2, mainBannerText2Br, mainBannerText3, mainBannerText3P } from './splavy.module.scss';
+import { block, container, feature, featureHeader, featureNumber, header, logo, mainBanner, mainBannerText, mainBannerText1, mainBannerText2, mainBannerText2Br, mainBannerText3, mainBannerText3P, row, rowHeader, rowImage, rowReversed, rowText, video, videoContainer } from './splavy.module.scss';
 
 import { HeadFC } from 'gatsby';
 import Layout from './layout';
@@ -21,6 +21,72 @@ const splavy = () => (
         <div className={`${mainBannerText3} d-flex justify-content-center headerText`}>
           <p className={mainBannerText3P}>Ищете идеальный способ сбежать от городской суеты и ощутить вдохновение природы? Добро пожаловать в мир наших захватывающих путешествий на байдарках по чистым рекам Пронского района Рязанской области! 🌿</p>
         </div>
+      </div>
+    </div>
+
+    <div className={container}>
+      <div className={`${rowHeader} headerFont`}>Наша миссия</div>
+      <div className={row}>
+        <div><StaticImage className={rowImage} src={'../images/Splav/index/1.jpeg'} alt={'Наша миссия'} /></div>
+        <div className={rowText}>
+          Мы хотим чтобы люди с разным опытом путешествий видели красоту природы вокруг нас.<br /><br />
+          Для новичков и для семей с детьми, и просто тех кто хочет отдохнуть на природе с комфортом - мы расчистили маршрут на реке Кердь которая впадает в Проню, с ночевкой в оборудованном глемпинге: с парковкой, душем, санузлом, всем необходимым оборудованием для отдыха, развлечений и различными вариантами размещения.
+          <br /><br />
+          Для опытных путешественников мы сами разрабатываем наши авторские маршруты по местам где редко бывает человек. <br /><br />
+          Мы влюблены в Пронский район Рязанской области и хотим, чтобы вы увидели его нашими глазами. Мы знаем здесь каждый уголок, и готовы поделиться с вами его историей и красотой.   </div>
+
+      </div>
+    </div>
+
+    <div className={container}>
+      <div className={`${rowHeader} headerFont`}>Наши преимущества</div>
+      <div className={`${row} ${rowReversed}`}>
+        <div><StaticImage className={rowImage} src={'../images/Splav/index/3.jpeg'} alt={'Пронские сплавы - Наши преимущества'} /></div>
+        <div className={rowText}>
+          <div className={feature}>
+            <div className={featureHeader}>
+              <span className={featureNumber}>01</span>Для всей семьи</div>
+            <div>Наши походы подходят для любого уровня подготовки. Пригласите семью и друзей. Для детей у нас большие скидки!</div>
+          </div>
+          <div className={feature}>
+            <div className={featureHeader}>
+              <span className={featureNumber}>02</span>Всё включено</div>
+            <div>Начиная от трансфера и предоставления всего необходимого оборудования для похода, заканчивая вкусным питанием на маршруте. Ваш отдых в надежных руках - вам только нужно расслабиться и получать удовольствие. Наши байдарки, местного Рязанского производства - удобные надежные и безопасные</div>
+          </div>
+          <div className={feature}>
+            <div className={featureHeader}>
+              <span className={featureNumber}>03</span>Мы живем приключениями</div>
+            <div>Наши гиды знают каждый поворот реки, они сделают все для вашего безопасного и захватывающего путешествия</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div className={`${row}`}>
+        <div><StaticImage className={rowImage} src={'../images/Splav/index/2.jpeg'} alt={'Пронские сплавы - повар и инструктор'} /></div>
+        <div className={rowText}>
+          <div className={feature}>
+            <div className={featureHeader}>
+              <span className={featureNumber}>04</span>Разнообразные маршруты</div>
+            <div>Хотите ли вы удалиться от цивилизации на несколько дней? Или хотите полностью комфортный отдых с душем и ночевкой в бунгало с двухспальной кроватью? - у нас есть маршрут для каждого.</div>
+          </div>
+          <div className={feature}>
+            <div className={featureHeader}>
+              <span className={featureNumber}>05</span>Вкусное питание</div>
+            <div>Наш походный повар готовит для вас вкусные блюда прямо на берегу, добавляя вкус к вашему приключению</div>
+          </div>
+          <div className={feature}>
+            <div className={featureHeader}>
+              <span className={featureNumber}>06</span>Ежедневные походы</div>
+            <div>Предлагаем сплавы каждый день, в том числе и в будни.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className={container}>
+      <div className={videoContainer}>
+        <iframe className={video} src="https://www.youtube.com/embed/sQ2tOg3mrrs?si=SADGqVcuJLkjJrQI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowfullscreen></iframe>
       </div>
     </div>
 
