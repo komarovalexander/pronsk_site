@@ -1,12 +1,16 @@
-import { Carousel, Col, Container, Row } from 'react-bootstrap';
-import React, { CSSProperties } from 'react';
-import { block, container, feature, featureHeader, featureNumber, header, logo, mainBanner, mainBannerText, mainBannerText1, mainBannerText2, mainBannerText2Br, mainBannerText3, mainBannerText3P, row, rowHeader, rowImage, rowReversed, rowText, video, videoContainer } from './splavy.module.scss';
-
 import { HeadFC } from 'gatsby';
-import Layout from './layout';
 import { StaticImage } from 'gatsby-plugin-image';
+import React, { CSSProperties } from 'react';
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
+
 import bannerImage from '../images/Splav/index/banner.png';
 import logoImage from '../images/Splav/logo.png';
+import Layout from './layout';
+import {
+  block, container, feature, featureHeader, featureNumber, header, linearBack, logo, mainBanner,
+  mainBannerText, mainBannerText1, mainBannerText2, mainBannerText2Br, mainBannerText3,
+  mainBannerText3P, row, rowHeader, rowImage, rowReversed, rowText, video, videoContainer,
+} from './splavy.module.scss';
 
 const splavy = () => (
   <Layout>
@@ -87,6 +91,32 @@ const splavy = () => (
     <div className={container}>
       <div className={videoContainer}>
         <iframe className={video} src="https://www.youtube.com/embed/sQ2tOg3mrrs?si=SADGqVcuJLkjJrQI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowfullscreen></iframe>
+      </div>
+    </div>
+
+   <div className={linearBack}>
+      <div className={container}>
+        <div className={`${rowHeader} headerFont`}>Наши маршруты</div>
+        <div className={row} style={{ alignItems: 'start'}}>
+            <div className={feature}>
+              <StaticImage className={rowImage} style={{marginBottom: 15}} src={'../images/Splav/index/5.jpg'} alt={'Пронские сплавы - 1 день'} />
+              <div className={featureHeader}>
+                1 День</div>
+              <div className={rowText}>Сплав по реке Кердь (приблизительно 2-3 часа), с трансфером из Пронска и инструктором. <br /> Цена 2000р с человека, детям до 14 лет скидка 1000р  до 18 лет скидка 1500р</div>
+            </div>
+
+            <div className={feature}>
+              <StaticImage className={rowImage} style={{marginBottom: 15}} src={'../images/Splav/index/6.jpg'} alt={'Пронские сплавы - 2 дня'} />
+              <div className={featureHeader}>2 Дня</div>
+              <div className={rowText}>Сплав по реке Кердь с впаданием в Проню. Ночёвка на Проне в оборудованом глемпинге. Питание, трансфер, инструкторы и ночёвка в собранных палатках включены в стоимость. <br /> Цена 7000р с человека, детям до 14 лет скидка 3000р, до 18 лет - 2000р</div>
+            </div>
+
+            <div className={feature}>
+              <StaticImage className={rowImage} style={{marginBottom: 15}} src={'../images/Splav/index/4.png'} alt={'Пронские сплавы - 3 дня'} />
+              <div className={featureHeader}>3 Дня</div>
+              <div className={rowText} >Автономный сплав по реке Проня на 3 дня в сопровождении инструктора, все необходимое оборудование мы предоставляем.<br />  Цена 8500р. с человека, детям до 18 лет скидка 2000р.</div>
+            </div>
+          </div>
       </div>
     </div>
 
@@ -217,7 +247,7 @@ const splavy = () => (
       </Col>
     </Row>
 
-    {/* 
+    {/*
     <Row style={{backgroundColor: '#eef0f2', padding: '40px 0'}}>
       <Col>
         <div className="container text">
