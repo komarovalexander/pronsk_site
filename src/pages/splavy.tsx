@@ -7,8 +7,8 @@ import bannerImage from '../images/Splav/index/banner.png';
 import logoImage from '../images/Splav/logo.png';
 import Layout from './layout';
 import {
-  block, container, feature, featureHeader, featureNumber, header, linearBack, logo, mainBanner,
-  mainBannerText, mainBannerText1, mainBannerText2, mainBannerText2Br, mainBannerText3,
+  block, button, container, feature, featureHeader, featureNumber, header, linearBack, logo,
+  mainBanner, mainBannerText, mainBannerText1, mainBannerText2, mainBannerText2Br, mainBannerText3,
   mainBannerText3P, row, rowHeader, rowImage, rowReversed, rowText, video, videoContainer,
 } from './splavy.module.scss';
 
@@ -103,110 +103,25 @@ const splavy = () => (
               <div className={featureHeader}>
                 1 День</div>
               <div className={rowText}>Сплав по реке Кердь (приблизительно 2-3 часа), с трансфером из Пронска и инструктором. <br /> Цена 2000р с человека, детям до 14 лет скидка 1000р  до 18 лет скидка 1500р</div>
+              <a className={button} href='/splavy/kerd'>Подробнее</a>
             </div>
 
             <div className={feature}>
               <StaticImage className={rowImage} style={{marginBottom: 15}} src={'../images/Splav/index/6.jpg'} alt={'Пронские сплавы - 2 дня'} />
               <div className={featureHeader}>2 Дня</div>
               <div className={rowText}>Сплав по реке Кердь с впаданием в Проню. Ночёвка на Проне в оборудованом глемпинге. Питание, трансфер, инструкторы и ночёвка в собранных палатках включены в стоимость. <br /> Цена 7000р с человека, детям до 14 лет скидка 3000р, до 18 лет - 2000р</div>
+              <a className={button} href="/splavy/pronya">Подробнее</a>
             </div>
 
             <div className={feature}>
               <StaticImage className={rowImage} style={{marginBottom: 15}} src={'../images/Splav/index/4.png'} alt={'Пронские сплавы - 3 дня'} />
               <div className={featureHeader}>3 Дня</div>
               <div className={rowText} >Автономный сплав по реке Проня на 3 дня в сопровождении инструктора, все необходимое оборудование мы предоставляем.<br />  Цена 8500р. с человека, детям до 18 лет скидка 2000р.</div>
+              <a className={button} href="three_day">Подробнее</a>
             </div>
           </div>
       </div>
     </div>
-
-    <Row style={{ backgroundColor: '#eef0f2', padding: '40px 0' }}>
-      <Col>
-        <div className="container text">
-          <h3 style={{ textAlign: 'center' }}>🌊 Погрузитесь в мир водных приключений с нами! 🚣‍♂️</h3>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>Ищете идеальный способ сбежать от городской суеты и ощутить вдохновение природы?
-            Добро пожаловать в мир наших захватывающих путешествий на байдарках по чистым рекам Пронского района Рязанской области! 🌿
-          </p>
-          <h4 style={{ textAlign: 'center' }}>🌅 Почему стоит выбрать нас?</h4>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>👨‍👩‍👧‍👦 Для всей семьи: Наши походы подходят для любого уровня подготовки.
-            Пригласите семью и друзей. Для детей у нас большие скидки!
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>✨ Сервис "все включено": Наслаждайтесь беззаботным приключением с нашим полным сервисом,
-            из необходимого вам понадобится только питьевая вода в удобной бутылке.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>👨‍🎓 Опытные гиды: Наши гиды живут приключениями, знают каждый поворот реки, они сделают все для вашего безопасного и захватывающего приключения.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🛶 Качественное снаряжение: Наши байдарки, местного Рязанского производства, удобные надежные и безопасные. К ним мы предоставляем все необходимые вещи нужные вам в походе: палатки, спальники, мягкие коврики, гермомешки, дождевики, спасательные жилеты и тд.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🌲 Разнообразные маршруты: От изолированных троп кристально чистых рек до живописных уголков природы — у нас есть маршрут для каждого.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🍲 Кулинарное волшебство на берегу реки: Наш опытный походный повар готовит для вас вкусные блюда прямо на берегу, добавляя вкус к вашему приключению.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🔄 Ежедневные сплавы: Предлагаем <b>сплавы каждый день</b>, в том числе и в будни.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🎉 Откройте новые горизонты вместе с нами! Забудьте о повседневности и наслаждайся звуками природы, птичьим пением и весельем в компаниях единомышленников.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>📞 Звоните <a href="tel:+79521233539">+79521233539</a> уже сегодня или пишите в <a href="https://t.me/pronskie_splavy">мессенджеры</a>, чтобы организовать свое исключительное путешествие! Покажи, что ты готов к новым приключениям. 🌈🌊
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🚐 У нас также есть <a href="/splavy/rent">Прокат-Аренда</a> с доставкой и трансфером: У вас есть возможность организовать индивидуальный сплав по вашему маршруту или из предложенного нами.
-            Организуем удобный трансфер и доставку оборудования в начало маршрута и с финиша. Предоставляем байдарки на любую реку Рязанской области и не только!
-          </p>
-        </div>
-      </Col>
-    </Row>
-
-    <Row style={{ padding: '40px 0' }}>
-      <Col>
-        <div className="container text">
-          <Carousel controls={false} indicators={false}>
-            <Carousel.Item>
-              <div>
-                <iframe width='100%' height='550' src="https://www.youtube.com/embed/sQ2tOg3mrrs?si=SADGqVcuJLkjJrQI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowfullscreen></iframe>
-              </div>
-            </Carousel.Item>
-          </Carousel>
-        </div>
-      </Col>
-    </Row>
-    <Row style={{ padding: '40px 0', backgroundColor: '#eef0f2', }}>
-      <Col>
-        <div className="container text">
-          <h3 style={{ textAlign: 'center', paddingBottom: 30 }}>Наши маршруты</h3>
-          <div className="row">
-            <div className="col" style={{ marginBottom: 10 }}>
-              <div className="card">
-                <StaticImage width={1000} src="../images/Splav/Prony/1day.jpg" className="card-img-top" alt="Кердь" style={{ width: '100%', height: 'auto' }} />
-                <div className="card-body">
-                  <h5 className="card-title">Экспресс-сплав</h5>
-                  <p className="card-text">Цена 2000/2500р. (будни/выходной) с человека, детям до 14 лет скидка 1000р.</p>
-                  <a href="/splavy/kerd" className="btn btn-primary">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card">
-                <StaticImage width={1000} src="../images/Splav/Prony/2day.jpg" className="card-img-top" alt="Проня" style={{ width: '100%', height: 'auto' }} />
-                <div className="card-body">
-                  <h5 className="card-title">2 Дня</h5>
-                  <p className="card-text">Цена 5500/6000р. (будни/выходной) с человка, детям до 14 лет скидка 2000р.</p>
-                  <a href="/splavy/pronya" className="btn btn-primary">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card">
-                <StaticImage width={1000} src="../images/Splav/Prony/3day.jpg" className="card-img-top" alt="Кердь" style={{ width: '100%', height: 'auto' }} />
-                <div className="card-body">
-                  <h5 className="card-title">3 Дня</h5>
-                  <p className="card-text">Цена 8500р. с человека, детям до 14 лет скидка 2000р.</p>
-                  <a href="/splavy/three_day" className="btn btn-primary">Подробнее</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Col>
-    </Row>
 
     <Row style={{ padding: '40px 0' }}>
       <Col>
