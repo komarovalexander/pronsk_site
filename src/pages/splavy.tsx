@@ -1,9 +1,9 @@
-import { Carousel, Col, Row } from 'react-bootstrap';
-import React, { CSSProperties } from 'react';
-
 import { HeadFC } from 'gatsby';
-import Layout from './layout';
 import { StaticImage } from 'gatsby-plugin-image';
+import React, { CSSProperties } from 'react';
+import { Carousel, Col, Row } from 'react-bootstrap';
+
+import Layout from './layout';
 
 const captionStyle: CSSProperties = {
   padding: '10px 30px',
@@ -99,7 +99,8 @@ const splavy = () => (
                 <StaticImage width={1000} src="../images/Splav/Prony/2day.jpg" className="card-img-top" alt="Проня" style={{ width: '100%', height: 'auto' }} />
                 <div className="card-body">
                   <h5 className="card-title">2 Дня</h5>
-                  <p className="card-text">Цена 5500/6000р. (будни/выходной) с человка, детям до 14 лет скидка 2000р.</p>
+                  <p className="card-text">Цена 6000р. (май-июнь), 7000р. (июль-август)
+                  <br/>Детям до 14 лет 4000р.</p>
                   <a href="/splavy/pronya" className="btn btn-primary">Подробнее</a>
                 </div>
               </div>
@@ -109,7 +110,8 @@ const splavy = () => (
                 <StaticImage width={1000} src="../images/Splav/Prony/3day.jpg" className="card-img-top" alt="Кердь" style={{ width: '100%', height: 'auto' }} />
                 <div className="card-body">
                   <h5 className="card-title">3 Дня</h5>
-                  <p className="card-text">Цена 8500р. с человека, детям до 14 лет скидка 2000р.</p>
+                  <p className="card-text">Цена 8500р. (май-июнь), 9500р. (июль-август)
+                  <br/>Детям до 14 лет 7500р.</p>
                   <a href="/splavy/three_day" className="btn btn-primary">Подробнее</a>
                 </div>
               </div>
