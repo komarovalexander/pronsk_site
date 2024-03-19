@@ -12,8 +12,11 @@ import {
   feedbackItem,
   feedbackItemDoubleQuote,
   feedbackItemText,
+  feedbackLink,
   feedbackPerson,
+  feedbackPersonDate,
   feedbackPersonImage,
+  feedbackPersonName,
   footer,
   footerLinks,
   grayBack,
@@ -49,6 +52,7 @@ import bannerImage from '../images/Splav/index/banner.png';
 import feedbackDoubleQuoteImage from '../images/Splav/index/15.svg';
 import feedbackImage from '../images/Splav/index/14.png';
 import logoImage from '../images/Splav/logo.png';
+import person2Image from '../images/Splav/index/16.jpeg';
 
 const splavy = () => (
   <Layout>
@@ -235,16 +239,6 @@ const splavy = () => (
 
       <div className={container} style={{ background: `url(${feedbackImage})`, backgroundPosition: 'bottom', backgroundSize: 'cover' }}>
         <div className={`${row} ${feedback}`}>
-          <div className={feedbackItem}>
-            <div className={feedbackItemText}>
-              <img src={feedbackDoubleQuoteImage} className={feedbackItemDoubleQuote} />
-              <p>Август' 23 кто бы мог подумать... но да! Сплав на байдарках в хорошей компании и при хорошей организации - это живописно, трудно, но весело, очень эмоционально и даже вкусно. Всем рекомедуем Пронские сплавы</p>
-              <div className={triangle}></div>
-            </div>
-            <div className={feedbackPerson}>
-              <img src={bannerImage} className={feedbackPersonImage} />
-            </div>
-          </div>
 
           <div className={feedbackItem}>
             <div className={feedbackItemText}>
@@ -254,19 +248,49 @@ const splavy = () => (
             </div>
             <div className={feedbackPerson}>
               <img src={bannerImage} className={feedbackPersonImage} />
+
+              <div style={{ position: 'relative' }}>
+                <div className={feedbackPersonName}>Ольга Голубева</div>
+                <div className={feedbackPersonDate}>2 авг 2023</div>
+                <a href="https://vk.com/wall138077588_960" target='_blank' className={feedbackLink}>ссылка на отзыв</a>
+              </div>
             </div>
           </div>
 
           <div className={feedbackItem}>
             <div className={feedbackItemText}>
               <img src={feedbackDoubleQuoteImage} className={feedbackItemDoubleQuote} />
-              <p>Август' 23 кто бы мог подумать... но да! Сплав на байдарках в хорошей компании и при хорошей организации - это живописно, трудно, но весело, очень эмоционально и даже вкусно. Всем рекомедуем Пронские сплавы</p>
+              <p>Сплав 29.07.23 по рекам Пронского района Кердь & Проня. Прошли около 18 км. <br />
+                Спасибо Роман Комаров, который контролировал наш процесс сплава ).<br />
+                Рекомендую,всем!</p>
+
               <div className={triangle}></div>
             </div>
             <div className={feedbackPerson}>
-              <img src={bannerImage} className={feedbackPersonImage} />
+              <StaticImage width={56} height={56} src={'../images/Splav/index/16.jpeg'} className={feedbackPersonImage} alt='' />
+              <div style={{ position: 'relative' }}>
+                <div className={feedbackPersonName}>Ольга Голубева</div>
+                <div className={feedbackPersonDate}>2 авг 2023</div>
+                <a href="https://vk.com/wall4302350_800" target='_blank' className={feedbackLink}>ссылка на отзыв</a>
+              </div>
             </div>
           </div>
+
+          <div className={feedbackItem}>
+            <div className={feedbackItemText}>
+              <img src={feedbackDoubleQuoteImage} className={feedbackItemDoubleQuote} />
+              <p>Сплав по реке Кердь в Рязанской области вместе с Пронскими сплавами -это было просто здорово. Нам с Геной очень понравился этот вид активного отдыха, а если ещё и организаторы классные - отдых становится незабываемым!</p>
+              <div className={triangle}></div>
+            </div>
+            <div className={feedbackPerson}>
+              <StaticImage width={56} height={56} src={'../images/Splav/index/16.jpeg'} className={feedbackPersonImage} alt='' />
+              <div style={{ position: 'relative' }}>
+                <div className={feedbackPersonName}>Karla Maratta</div>
+                <a href="https://vk.com/wall299994005_145" target='_blank' className={feedbackLink}>ссылка на отзыв</a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
