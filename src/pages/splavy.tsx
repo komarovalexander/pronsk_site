@@ -1,4 +1,3 @@
-import { Carousel, Col, Container, Row } from 'react-bootstrap';
 import React, { CSSProperties } from 'react';
 import {
   additionalFeature,
@@ -9,6 +8,7 @@ import {
   feature,
   featureHeader,
   featureNumber,
+  feedback,
   footer,
   footerLinks,
   grayBack,
@@ -40,6 +40,7 @@ import { HeadFC } from 'gatsby';
 import Layout from './layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import bannerImage from '../images/Splav/index/banner.png';
+import feedbackImage from '../images/Splav/index/14.png';
 import logoImage from '../images/Splav/logo.png';
 
 const splavy = () => (
@@ -224,6 +225,22 @@ const splavy = () => (
       </div>
     </div>
     <div>
+
+      <div className={container} style={{ background: `url(${feedbackImage})`, backgroundPosition: 'bottom', backgroundSize: 'cover' }}>
+        <div className={`${row} ${feedback}`}>
+          <div className={feature}>
+            <a href="https://pronyaglamping.ru/" target="_blank"><StaticImage className={partner} style={{ marginBottom: 15 }} src={'../images/Splav/index/10.png'} alt={'Пронские сплавы - глемпинг берег'} /></a>
+          </div>
+
+          <div className={feature}>
+            <a href="https://kayakstart.ru/" target="_blank"><StaticImage className={partner} style={{ marginBottom: 15 }} src={'../images/Splav/index/11.png'} alt={'Пронские сплавы - байдарки старт'} /></a>
+          </div>
+
+          <div className={feature}>
+            <a href="https://vk.com/pronsky_meat_shop" target="_blank"><StaticImage className={partner} style={{ marginBottom: 15 }} src={'../images/Splav/index/12.png'} alt={'Пронские сплавы - Пронский мясной цех'} /></a>
+          </div>
+        </div>
+      </div>
 
       <div className={footer} >
         <div><img src={logoImage} className={logo} alt="Пронские сплавы логотип" /></div>

@@ -191,6 +191,14 @@
     margin: 20px 0;
 }
 
+.feedback {
+    align-items: center;
+    justify-content: center;
+    background-position: bottom;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+
 @media (max-width: 1050px) {
     .mainBanner {
         height: 810px;
@@ -303,5 +311,9 @@
 
     .footerLinks {
         flex-direction: column;
+    }
+
+    .feedback {
+        margin-bottom: 40px;
     }
 }
