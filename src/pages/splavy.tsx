@@ -9,6 +9,11 @@ import {
   featureHeader,
   featureNumber,
   feedback,
+  feedbackItem,
+  feedbackItemDoubleQuote,
+  feedbackItemText,
+  feedbackPerson,
+  feedbackPersonImage,
   footer,
   footerLinks,
   grayBack,
@@ -31,6 +36,7 @@ import {
   rowSubHeader,
   rowText,
   tinyRow,
+  triangle,
   underlinedLink,
   video,
   videoContainer,
@@ -40,6 +46,7 @@ import { HeadFC } from 'gatsby';
 import Layout from './layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import bannerImage from '../images/Splav/index/banner.png';
+import feedbackDoubleQuoteImage from '../images/Splav/index/15.svg';
 import feedbackImage from '../images/Splav/index/14.png';
 import logoImage from '../images/Splav/logo.png';
 
@@ -228,16 +235,37 @@ const splavy = () => (
 
       <div className={container} style={{ background: `url(${feedbackImage})`, backgroundPosition: 'bottom', backgroundSize: 'cover' }}>
         <div className={`${row} ${feedback}`}>
-          <div className={feature}>
-            <a href="https://pronyaglamping.ru/" target="_blank"><StaticImage className={partner} style={{ marginBottom: 15 }} src={'../images/Splav/index/10.png'} alt={'Пронские сплавы - глемпинг берег'} /></a>
+          <div className={feedbackItem}>
+            <div className={feedbackItemText}>
+              <img src={feedbackDoubleQuoteImage} className={feedbackItemDoubleQuote} />
+              <p>Август' 23 кто бы мог подумать... но да! Сплав на байдарках в хорошей компании и при хорошей организации - это живописно, трудно, но весело, очень эмоционально и даже вкусно. Всем рекомедуем Пронские сплавы</p>
+              <div className={triangle}></div>
+            </div>
+            <div className={feedbackPerson}>
+              <img src={bannerImage} className={feedbackPersonImage} />
+            </div>
           </div>
 
-          <div className={feature}>
-            <a href="https://kayakstart.ru/" target="_blank"><StaticImage className={partner} style={{ marginBottom: 15 }} src={'../images/Splav/index/11.png'} alt={'Пронские сплавы - байдарки старт'} /></a>
+          <div className={feedbackItem}>
+            <div className={feedbackItemText}>
+              <img src={feedbackDoubleQuoteImage} className={feedbackItemDoubleQuote} />
+              <p>Август' 23 кто бы мог подумать... но да! Сплав на байдарках в хорошей компании и при хорошей организации - это живописно, трудно, но весело, очень эмоционально и даже вкусно. Всем рекомедуем Пронские сплавы</p>
+              <div className={triangle}></div>
+            </div>
+            <div className={feedbackPerson}>
+              <img src={bannerImage} className={feedbackPersonImage} />
+            </div>
           </div>
 
-          <div className={feature}>
-            <a href="https://vk.com/pronsky_meat_shop" target="_blank"><StaticImage className={partner} style={{ marginBottom: 15 }} src={'../images/Splav/index/12.png'} alt={'Пронские сплавы - Пронский мясной цех'} /></a>
+          <div className={feedbackItem}>
+            <div className={feedbackItemText}>
+              <img src={feedbackDoubleQuoteImage} className={feedbackItemDoubleQuote} />
+              <p>Август' 23 кто бы мог подумать... но да! Сплав на байдарках в хорошей компании и при хорошей организации - это живописно, трудно, но весело, очень эмоционально и даже вкусно. Всем рекомедуем Пронские сплавы</p>
+              <div className={triangle}></div>
+            </div>
+            <div className={feedbackPerson}>
+              <img src={bannerImage} className={feedbackPersonImage} />
+            </div>
           </div>
         </div>
       </div>

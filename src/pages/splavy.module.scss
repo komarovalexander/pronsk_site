@@ -197,6 +197,48 @@
     background-position: bottom;
     padding-bottom: 80px;
     margin-bottom: 80px;
+    gap: 30px;
+}
+
+.feedbackPerson {
+    display: flex;
+}
+
+.feedbackPersonImage {
+    border-radius: 20px;
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50px;
+
+}
+
+.feedbackItemText {
+    width: 350px;
+    background-color: white;
+    padding: 30px 16px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #4D3E37;
+    line-height: 20px;
+    font-family: 'gilroy';
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.feedbackItemDoubleQuote {
+    margin-bottom: 20px;
+}
+
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 13px 10px 0 10px;
+    border-color: #FFFFFF transparent transparent transparent;
+    transform: rotate(0deg);
+    position: absolute;
+    bottom: -13px;
 }
 
 @media (max-width: 1050px) {
