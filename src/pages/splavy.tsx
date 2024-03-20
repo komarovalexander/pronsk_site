@@ -145,21 +145,21 @@ const splavy = () => (
             <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../images/Splav/index/5.jpg'} alt={'Пронские сплавы - 1 день'} />
             <div className={featureHeader}>
               1 День</div>
-            <div className={rowText}>Сплав с инструктором по реке Кердь (приблизительно 2-3 часа), с трансфером из Пронска. <br /> Цена 2000р с человека, детям до 14 лет скидка 1000р  до 18 лет скидка 500р</div>
+            <div className={rowText}>Сплав с инструктором по реке Кердь (приблизительно 2-3 часа), с трансфером из Пронска. <br /><br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: 2000р с человека, детям до 14 лет скидка 1000р</div>
             <a className={button} href='/splavy/kerd'>Подробнее</a>
           </div>
 
           <div className={feature}>
             <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../images/Splav/index/8.jpg'} alt={'Пронские сплавы - 2 дня'} />
             <div className={featureHeader}>2 Дня</div>
-            <div className={rowText}>Сплав по реке Кердь с впаданием в Проню. Ночёвка на Проне в оборудованом глемпинге. Отдых в режиме всё включено: Питание, трансфер, инструкторы и собранные палатки и много другое. <br /> Цена 7000р с человека, детям до 14 лет скидка 3000р, до 18 лет - 2000р</div>
+            <div className={rowText}>Сплав по реке Кердь с впаданием в Проню. Ночёвка на Проне в оборудованом глемпинге. Отдых в режиме всё включено: Питание, трансфер, инструкторы и собранные палатки и много другое. <br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: 7000р с человека, детям до 14 лет скидка 3000р</div>
             <a className={button} href="/splavy/pronya">Подробнее</a>
           </div>
 
           <div className={feature}>
             <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../images/Splav/index/4.png'} alt={'Пронские сплавы - 3 дня'} />
             <div className={featureHeader}>3 Дня</div>
-            <div className={rowText} >Автономный сплав по реке Проня на 3 дня в сопровождении инструктора, все необходимое оборудование мы предоставляем.<br />  Цена 8500р. с человека, детям до 18 лет скидка 2000р.</div>
+            <div className={rowText} >Автономный сплав по реке Проня на 3 дня в сопровождении инструктора, все необходимое оборудование мы предоставляем.<br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: 8500р. с человека, детям до 14 лет скидка 2000р</div>
             <a className={button} href="three_day">Подробнее</a>
           </div>
         </div>
@@ -247,11 +247,11 @@ const splavy = () => (
               <div className={triangle}></div>
             </div>
             <div className={feedbackPerson}>
-              <img src={bannerImage} className={feedbackPersonImage} />
+              <StaticImage width={56} height={56} src={'../images/Splav/index/17.jpg'} className={feedbackPersonImage} alt='Света Варзина' />
 
               <div style={{ position: 'relative' }}>
-                <div className={feedbackPersonName}>Ольга Голубева</div>
-                <div className={feedbackPersonDate}>2 авг 2023</div>
+                <div className={feedbackPersonName}>Света Варзина</div>
+                <div className={feedbackPersonDate}>9 авг 2023</div>
                 <a href="https://vk.com/wall138077588_960" target='_blank' className={feedbackLink}>ссылка на отзыв</a>
               </div>
             </div>
@@ -267,7 +267,7 @@ const splavy = () => (
               <div className={triangle}></div>
             </div>
             <div className={feedbackPerson}>
-              <StaticImage width={56} height={56} src={'../images/Splav/index/16.jpeg'} className={feedbackPersonImage} alt='' />
+              <StaticImage width={56} height={56} src={'../images/Splav/index/16.jpeg'} className={feedbackPersonImage} alt='Ольга Голубева' />
               <div style={{ position: 'relative' }}>
                 <div className={feedbackPersonName}>Ольга Голубева</div>
                 <div className={feedbackPersonDate}>2 авг 2023</div>
@@ -283,9 +283,10 @@ const splavy = () => (
               <div className={triangle}></div>
             </div>
             <div className={feedbackPerson}>
-              <StaticImage width={56} height={56} src={'../images/Splav/index/16.jpeg'} className={feedbackPersonImage} alt='' />
+              <StaticImage width={56} height={56} src={'../images/Splav/index/18.jpeg'} className={feedbackPersonImage} alt='' />
               <div style={{ position: 'relative' }}>
-                <div className={feedbackPersonName}>Karla Maratta</div>
+                <div className={feedbackPersonName}>Наталья Слепцова</div>
+                <div className={feedbackPersonDate}>13 авг 2023</div>
                 <a href="https://vk.com/wall299994005_145" target='_blank' className={feedbackLink}>ссылка на отзыв</a>
               </div>
             </div>
