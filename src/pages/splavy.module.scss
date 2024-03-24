@@ -272,6 +272,10 @@
     font-family: 'gilroy';
     position: relative;
     margin-bottom: 20px;
+
+    a {
+        color: #4D3E37;
+    }
 }
 
 .feedbackItemDoubleQuote {
@@ -348,6 +352,7 @@
 @media (max-width: 750px) {
     .buttons {
         flex-direction: column;
+        flex-flow: column-reverse;
     }
 
     .container {
@@ -386,7 +391,7 @@
     }
 
     .mainBannerText {
-        margin-top: 40px;
+        margin: 40px 15px 0;
     }
 
     .mainBannerText2 {
