@@ -4,6 +4,9 @@ import {
   additionalFeatureHeader,
   block,
   button,
+  buttonMain,
+  buttonRoutes,
+  buttons,
   container,
   feature,
   featureHeader,
@@ -38,6 +41,7 @@ import {
   rowReversed,
   rowSubHeader,
   rowText,
+  social,
   tinyRow,
   triangle,
   underlinedLink,
@@ -52,7 +56,9 @@ import bannerImage from '../images/Splav/index/banner.png';
 import feedbackDoubleQuoteImage from '../images/Splav/index/15.svg';
 import feedbackImage from '../images/Splav/index/14.png';
 import logoImage from '../images/Splav/logo.png';
-import person2Image from '../images/Splav/index/16.jpeg';
+import odnoklassniki from '../images/odnoklassniki.svg';
+import { scrollToId } from '../utils';
+import vk from '../images/vk.svg';
 
 const splavy = () => (
   <Layout>
@@ -66,6 +72,12 @@ const splavy = () => (
         <div className={`${mainBannerText2} h1Font`} >в мир<br className={mainBannerText2Br} /> водных<br /> приключений</div>
         <div className={`${mainBannerText3} d-flex justify-content-center headerText`}>
           <p className={mainBannerText3P}>Ищете идеальный способ сбежать от городской суеты и ощутить вдохновение природы? Добро пожаловать в мир наших захватывающих путешествий на байдарках по чистым рекам Пронского района Рязанской области! 🌿</p>
+        </div>
+        <div className={buttons}>
+          <button className={buttonRoutes} onClick={() => {
+            scrollToId('#routes');
+          }}>Маршруты</button>
+          <a className={buttonMain} href='tel:+79521233539'>Звоните +79521233539</a>
         </div>
       </div>
     </div>
@@ -301,6 +313,10 @@ const splavy = () => (
           <a href="#routes">Маршруты</a>
           <a href="/splavy/rent/">Аренда</a>
           <a href="/splavy/company/">Организация корпоратива</a>
+        </div>
+        <div className={social}>
+          <a href="https://vk.com/pronskie_splavy" target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' /></a>
+          <a href="https://ok.ru/group/70000002650473" target='_blank' title="Одноклассники"><img src={odnoklassniki} alt='Одноклассники' /></a>
         </div>
       </div>
     </div>

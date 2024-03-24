@@ -175,6 +175,14 @@
     justify-content: center;
 }
 
+.buttons {
+    margin: 35px auto;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
 .button {
     display: flex;
     padding: 16px 64px;
@@ -190,6 +198,32 @@
     width: 220px;
     margin: 20px 0;
 }
+
+.buttonMain {
+    display: flex;
+    padding: 24px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: #FFF;
+    width: 285px;
+    font-size: 18px;
+    color: #4D3E37;
+    text-decoration: none;
+}
+
+.buttonRoutes {
+    border: 1px solid white;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 285px;
+    padding: 24px 0;
+    font-size: 18px;
+    background: transparent;
+}
+
 
 .feedback {
     align-items: center;
@@ -265,9 +299,14 @@
     left: 18px;
 }
 
+.social {
+    display: flex;
+    gap: 20px;
+}
+
 @media (max-width: 1050px) {
     .mainBanner {
-        height: 810px;
+        height: 900px;
         background-size: auto 100% !important;
         background-position: center !important;
     }
@@ -307,6 +346,10 @@
 }
 
 @media (max-width: 750px) {
+    .buttons {
+        flex-direction: column;
+    }
+
     .container {
         padding-top: 40px;
     }
@@ -327,7 +370,7 @@
     }
 
     .mainBanner {
-        height: 700px;
+        height: 900px;
         background-size: auto 100% !important;
         background-position: center !important;
     }
