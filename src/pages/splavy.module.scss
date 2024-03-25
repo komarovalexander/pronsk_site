@@ -10,6 +10,10 @@
     text-align: center;
 }
 
+.darkBack {
+    background-color: #052700;
+}
+
 .footer {
     padding: 24px 79px;
     text-align: center;
@@ -218,12 +222,19 @@
     color: white;
     border-radius: 4px;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
     width: 285px;
     padding: 24px 0;
     font-size: 18px;
     background: transparent;
 }
 
+.imageContainer {
+    margin-top: 80px;
+}
 
 .feedback {
     align-items: center;
@@ -350,9 +361,12 @@
 }
 
 @media (max-width: 750px) {
+    .columnReverseMobile {
+        flex-flow: column-reverse;
+    }
+
     .buttons {
         flex-direction: column;
-        flex-flow: column-reverse;
     }
 
     .container {
@@ -429,5 +443,9 @@
 
     .feedback {
         margin-bottom: 40px;
+    }
+
+    .imageContainer {
+        margin-top: 40px;
     }
 }

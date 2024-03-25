@@ -1,13 +1,13 @@
-import React, { CSSProperties } from 'react';
 import {
   additionalFeature,
   additionalFeatureHeader,
-  block,
   button,
   buttonMain,
   buttonRoutes,
   buttons,
+  columnReverseMobile,
   container,
+  darkBack,
   feature,
   featureHeader,
   featureNumber,
@@ -24,6 +24,7 @@ import {
   footerLinks,
   grayBack,
   header,
+  imageContainer,
   linearBack,
   logo,
   mainBanner,
@@ -51,6 +52,7 @@ import {
 
 import { HeadFC } from 'gatsby';
 import Layout from './layout';
+import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import bannerImage from '../images/Splav/index/banner.png';
 import feedbackDoubleQuoteImage from '../images/Splav/index/15.svg';
@@ -73,7 +75,7 @@ const splavy = () => (
         <div className={`${mainBannerText3} d-flex justify-content-center headerText`}>
           <p className={mainBannerText3P}>Ищете идеальный способ сбежать от городской суеты и ощутить вдохновение природы? Добро пожаловать в мир наших захватывающих путешествий на байдарках по чистым рекам Пронского района Рязанской области! 🌿</p>
         </div>
-        <div className={buttons}>
+        <div className={`${buttons} ${columnReverseMobile}`}>
           <button className={buttonRoutes} onClick={() => {
             scrollToId('#routes');
           }}>Маршруты</button>
@@ -232,7 +234,6 @@ const splavy = () => (
       </div>
     </div>
 
-
     <div className={grayBack}>
       <div className={container}>
         {/*<div className={`${rowSubHeader}`}>Почему выбирают нас</div>*/}
@@ -249,7 +250,7 @@ const splavy = () => (
     </div>
     <div>
 
-      <div className={container} style={{ background: `url(${feedbackImage})`, backgroundPosition: 'bottom', backgroundSize: 'cover' }}>
+      <div className={`${container} ${imageContainer}`} style={{ background: `url(${feedbackImage})`, backgroundPosition: 'bottom', backgroundSize: 'cover' }}>
         <div className={`${row} ${feedback}`}>
 
           <div className={feedbackItem}>
@@ -307,6 +308,24 @@ const splavy = () => (
         </div>
       </div>
 
+      <div className={darkBack}>
+        <div className={container} style={{
+          paddingTop: 40,
+          paddingBottom: 20
+        }}>
+          <div className={`${rowHeader} headerFont`} style={{ marginBottom: 0, color: 'white' }}>Узнай о нас больше</div>
+          <div className={row} style={{
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}>
+            <div className={buttons}>
+              <a className={buttonRoutes} href='https://vk.com/pronskie_splavy' target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' />Мы ВКонтакте</a>
+              <a className={buttonRoutes} href='https://ok.ru/group/70000002650473' target='_blank' title="Одноклассники"><img src={odnoklassniki} alt='Одноклассники' />Мы в одноклассниках</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className={footer} >
         <div><img src={logoImage} className={logo} alt="Пронские сплавы логотип" /></div>
         <div className={footerLinks} >
@@ -319,7 +338,7 @@ const splavy = () => (
           <a href="https://ok.ru/group/70000002650473" target='_blank' title="Одноклассники"><img src={odnoklassniki} alt='Одноклассники' /></a>
         </div>
       </div>
-    </div>
+    </div >
   </Layout >
 );
 
