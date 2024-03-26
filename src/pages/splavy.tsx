@@ -236,7 +236,7 @@ const splavy = () => (
       </div>
     </div>
 
-    <div className={container} >
+    {/*<div className={container} >
       <div className={`${rowHeader} headerFont`} >Частые вопросы</div>
       <div className={row} style={{
         alignItems: 'center',
@@ -247,7 +247,7 @@ const splavy = () => (
           <a className={buttonRoutes} href='https://ok.ru/group/70000002650473' target='_blank' title="Одноклассники"><img src={odnoklassniki} alt='Одноклассники' />Мы в одноклассниках</a>
         </div>
       </div>
-    </div>
+    </div>*/}
 
     <div className={grayBack}>
       <div className={container}>
