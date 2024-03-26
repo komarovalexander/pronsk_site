@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'gilroy';
+    src: url('../../static/fonts/gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'grafita';
+    src: url('../../static/fonts/grafita/Grafita Special DEMO.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    overflow: auto;
+}
+
+.headerFont {
+    font-family: 'gilroy';
+}
+
+.headerText {
+    font-family: 'gilroy';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+
+.h1Font {
+    font-family: 'grafita';
+}

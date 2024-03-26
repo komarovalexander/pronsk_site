@@ -1,10 +1,10 @@
 import '../table/ka-bootstrap.scss';
+import './styles.scss';
 
 import * as React from 'react';
 
 import { HeadFC } from 'gatsby';
 import Navigation from './Navigation';
-import Slider from './home/Slider';
 
 const pageStyles = {
   color: '#232129',
