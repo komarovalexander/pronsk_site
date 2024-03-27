@@ -362,12 +362,13 @@
 }
 
 @media (max-width: 750px) {
-    .columnReverseMobile {
-        flex-flow: column-reverse;
-    }
 
     .buttons {
         flex-direction: column;
+    }
+
+    .columnReverseMobile {
+        flex-flow: column-reverse;
     }
 
     .container {
