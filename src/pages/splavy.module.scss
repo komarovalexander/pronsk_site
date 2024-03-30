@@ -111,6 +111,11 @@
     height: 510px;
 }
 
+.partnerRow {
+    align-items: center;
+    justify-content: center;
+}
+
 .partner {
     width: 220px;
 }
@@ -432,6 +437,22 @@
 
     .linearBack {
         background: #F7F7F7;
+    }
+
+    .featureHeader {
+        font-size: 20px;
+    }
+
+    .partnerRow {
+        gap: 0;
+    }
+
+    .partner {
+        height: 220px;
+
+        img {
+            object-fit: contain !important;
+        }
     }
 
     .footer {
