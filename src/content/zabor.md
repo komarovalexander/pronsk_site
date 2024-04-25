@@ -106,7 +106,7 @@ _Поэтому наша цель была не просто построить 
 
 О том, как мы восстанавливали забор, вместо тысячи слов, расскажет это ускоренное видео, там показан практически весь процесс.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cT1_E7Zjjlk?si=cQOfzBTGiF4W1ank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/cT1_E7Zjjlk?si=cQOfzBTGiF4W1ank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Прямо у забора, под 3-10см слоем земли, нами был найден асфальт 60-70х годов прошлого века (почувствуй себя археологом), который кстати неплохо сохранился, мы часть его тоже расчистили.
 
