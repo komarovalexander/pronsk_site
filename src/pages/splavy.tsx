@@ -99,21 +99,21 @@ const splavy = () => (
             <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../images/Splav/index/5.jpg'} alt={'Пронские сплавы - 1 день'} />
             <h4 className={featureHeader}>
               1 День</h4>
-            <div className={rowText}>Сплав с инструктором по реке Кердь (приблизительно 2-3 часа), с трансфером из Пронска. <br /><br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: Цена 2000/2500р. (будни/выходной) с человека, <br /> детям до 14 лет скидка 1000р</div>
+            <div className={rowText}>Сплав с инструктором по реке Кердь (приблизительно 5 часов), с полноценным обедом и трансфером из Пронска. <br /><br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: Цена 3500₽ (май-июнь), 4500₽ (июль-август) <br /> детям до 14 лет 2000₽</div>
             <a className={button} href='/splavy/kerd'>Подробнее</a>
           </div>
 
           <div className={feature}>
             <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../images/Splav/index/8.jpg'} alt={'Пронские сплавы - 2 дня'} />
             <h4 className={featureHeader}>2 Дня (ночёвка в глемпинге)</h4>
-            <div className={rowText}>Сплав по реке Кердь с впаданием в Проню. Ночёвка на Проне в оборудованом глемпинге. Отдых в режиме всё включено: Питание, трансфер, инструкторы и собранные палатки и много другое. <br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: Цена 6000р. (май-июнь), 7000р. (июль-август), <br /> детям до 14 лет 4000р</div>
+            <div className={rowText}>Сплав по реке Кердь с впаданием в Проню. Ночёвка на Проне в оборудованом глемпинге. Отдых в режиме всё включено: Питание, трансфер, инструкторы и собранные палатки и много другое. <br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: Цена 6000₽ (май-июнь), 7000₽ (июль-август), <br /> детям до 14 лет 4000₽</div>
             <a className={button} href="/splavy/pronya">Подробнее</a>
           </div>
 
           <div className={feature}>
             <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../images/Splav/index/4.png'} alt={'Пронские сплавы - 3 дня'} />
             <h4 className={featureHeader}>3 Дня</h4>
-            <div className={rowText} >Автономный сплав по реке Проня на 3 дня в сопровождении инструктора, все необходимое оборудование мы предоставляем.<br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: Цена 8500р. (май-июнь), 9500р. (июль-август), <br /> детям до 14 лет скидка 2000р</div>
+            <div className={rowText} >Автономный сплав по реке Проня на 3 дня в сопровождении инструктора, все необходимое оборудование мы предоставляем.<br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: Цена 8500₽ (май-июнь), 9500₽ (июль-август), <br /> детям до 14 лет 7500₽</div>
             <a className={button} href="three_day">Подробнее</a>
           </div>
         </div>
