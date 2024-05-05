@@ -21,7 +21,7 @@ const kerd = () => {
         <nav aria-label="breadcrumb" style={{ marginTop: 10 }}>
           <ol className="breadcrumb">
             <li className="breadcrumb-item"><a href="/splavy/">Пронские сплавы</a></li>
-            <li className="breadcrumb-item active" aria-current="page">Экспресс-сплав река Кердь</li>
+            <li className="breadcrumb-item active" aria-current="page">Однодневный сплав, реки: Кердь и Проня</li>
           </ol>
         </nav>
       </Container>
