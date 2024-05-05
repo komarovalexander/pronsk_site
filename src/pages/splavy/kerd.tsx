@@ -224,7 +224,7 @@ export default kerd;
 
 export const Head: HeadFC = () =>
   <>
-    <title>Кердь дневной сплав на байдарках - Пронск, Рязанская область</title>
+    <title>Кердь и Проня дневной сплав на байдарках - Пронск, Рязанская область</title>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vpronske.ru/splavy/kerd/" />
     <meta property="og:title" content="Кердь-Проня (Дневной сплав)" />
