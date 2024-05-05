@@ -12,7 +12,15 @@
     font-style: normal;
 }
 
-body{
+@font-face {
+    font-family: 'molodo';
+    src: url('../../static/fonts/molodo/molodo-font.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
     overflow: auto;
 }
 
