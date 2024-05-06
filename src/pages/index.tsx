@@ -3,15 +3,10 @@ import 'moment/locale/ru'; // without this line it didn't work
 
 import * as React from 'react';
 
-import { DataType, SortingMode } from 'ka-table/enums';
-
 import Container from 'react-bootstrap/esm/Container';
 import { HeadFC } from 'gatsby';
-import { ITableProps } from 'ka-table';
 import Layout from './layout';
 import Slider from './home/Slider';
-import data from '../data/converted';
-import moment from 'moment';
 
 const pageStyles = {
   color: "#232129",
