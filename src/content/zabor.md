@@ -97,7 +97,7 @@ _Поэтому наша цель была не просто построить 
 
 На Пронской Металлобазе была заказана подставка под табличку, её там же и покрасили, очень удобно.
 
-<img style="height: 400px" src="https://sun9-26.userapi.com/impg/pl9e6S3VXxKT_RD0MGAjmO-KsQML_kg1vHUEGQ/mKAjZ96HcCc.jpg?size=1280x1008&quality=95&sign=bd8e929634cf6801e28fa467e23f87f0&type=album"/>
+<img style="max-height: 400px" src="https://sun9-26.userapi.com/impg/pl9e6S3VXxKT_RD0MGAjmO-KsQML_kg1vHUEGQ/mKAjZ96HcCc.jpg?size=1280x1008&quality=95&sign=bd8e929634cf6801e28fa467e23f87f0&type=album"/>
 
 <br/>
 <br/>
