@@ -4,8 +4,10 @@ import { container, header, links, linksMenu, menuButton } from './Navigation.mo
 
 import gerbImage from '../images/герб.png';
 import menuImage from '../images/menu.svg';
+import { useLocation } from '@reach/router';
 
 const Navigation = () => {
+  const location = useLocation();
   const [menuShown, setMenuShown] = React.useState(false);
   const activeItem = location.pathname.split('/')?.[1];
   return (
