@@ -7,6 +7,18 @@
     font-family: molodo;
 }
 
+.rowImage {
+    max-width: 800px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.rowTextHeader {
+    font-family: molodo;
+    font-size: 60px;
+    color: #2D2D2D;
+}
+
 .mainBannerImage {
     position: absolute;
     z-index: 0;

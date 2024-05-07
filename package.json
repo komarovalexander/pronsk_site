@@ -39,7 +39,6 @@
     "react-big-calendar": "^1.6.3",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.1.0",
-    "react-fontawesome": "^1.7.1",
     "sass": "^1.54.4"
   },
   "devDependencies": {

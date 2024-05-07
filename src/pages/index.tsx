@@ -4,18 +4,66 @@ import 'moment/locale/ru'; // without this line it didn't work
 import * as React from 'react';
 
 import {
+  additionalFeature,
+  additionalFeatureHeader,
+  button,
+  buttonMain,
+  buttonRoutes,
+  buttons,
+  columnReverseMobile,
+  container,
+  darkBack,
+  feature,
+  featureHeader,
+  featureNumber,
+  feedback,
+  feedbackItem,
+  feedbackItemDoubleQuote,
+  feedbackItemText,
+  feedbackLink,
+  feedbackPerson,
+  feedbackPersonDate,
+  feedbackPersonImage,
+  feedbackPersonName,
+  footer,
+  footerLinks,
+  grayBack,
+  header,
+  imageContainer,
+  linearBack,
+  logo,
+  mainBannerText2Br,
+  partner,
+  partnerRow,
+  row,
+  rowHeader,
+  rowImageBigHeight,
+  rowReversed,
+  rowText,
+  social,
+  tinyRow,
+  triangle,
+  underlinedLink,
+  video,
+  videoContainer,
+} from './splavy.module.scss';
+import {
   mainBanner,
   mainBannerImage,
   mainBannerText,
   mainBannerText1,
   mainBannerText2,
   mainBannerText3,
-  mainBannerText3P
+  mainBannerText3P,
+  rowImage,
+  rowTextHeader,
 } from './index.module.scss';
 
 import { HeadFC } from 'gatsby';
 import Layout from './layout';
 import { StaticImage } from 'gatsby-plugin-image';
+import gerbImage from '../images/герб.png';
+import vk from '../images/vk.svg';
 
 const IndexPage = () => {
   return (
@@ -33,7 +81,99 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+
+      <div className={container}>
+        <div className={`${row}`}>
+          <div><StaticImage className={rowImage} src={'../images/slider/musey.jpg'} alt={'Пронский краеведческий музей'} /></div>
+          <div className={rowText}>
+            <h4 className={rowTextHeader}>
+              Пронский краеведческий музей</h4>
+            <p>Картины. Старинная утварь. Интересные экскурсии. Постоянные и временные выставки.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className={container}>
+        <div className={`${row} ${rowReversed}`}>
+          <div><StaticImage className={rowImage} src={'../images/slider/церковь.png'} style={{ objectPosition: 'left center' }} alt={'Церкви'} /></div>
+          <div className={rowText}>
+            <h4 className={rowTextHeader}>
+              Нетронутая история</h4>
+            <p>Множества столетиями нетронутых Храмов можно найти в разных локациях района. Прошлое ближе чем кажется</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className={container}>
+        <div className={`${row}`}>
+          <div><StaticImage className={rowImage} src={'../images/slider/памятник.jpg'} alt={'Памятники ВОВ - Пронск'} /></div>
+          <div className={rowText}>
+            <h4 className={rowTextHeader}>
+              Никто не забыт</h4>
+            <p>Память, прошедшая через года, показана в виде величественных монументов в каждом поселении</p>
+          </div>
+        </div>
+      </div>
+
+      <div className={container}>
+        <div className={`${row} ${rowReversed}`}>
+          <div><StaticImage className={rowImage} src={'../images/slider/Рыбалка4.jpg'} style={{ objectFit: 'contain' }} alt={'Отдых на природе - Пронск'} /></div>
+          <div className={rowText}>
+            <h4 className={rowTextHeader}>
+              Отдых на природе</h4>
+            <p>Рыбалка, палатки, купание в чистых реках, посиделки у костра, <a href='/splavy'>сплавы на байдарках</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div className={container}>
+        <div className={`${row}`}>
+          <div><StaticImage className={rowImage} src={'https://sun9-51.userapi.com/impg/RmrEwjRBKqMwYd3868GGLyS_wUgZwgvHgf2O2w/XhJtnQCF5q8.jpg?size=1919x1080&quality=95&sign=b313febee77f290b6f37d2e70ff043c0&type=album'} alt={'Спасо-Преображенский Пронский монастырь'} /></div>
+          <div className={rowText}>
+            <h4 className={rowTextHeader}>
+              Спасо-Преображенский Пронский монастырь
+            </h4>
+            <p>Место силы земли Пронской, где всегда рады любым гостям</p>
+          </div>
+        </div>
+      </div>
+
+      <div className={container}>
+        <div className={`${row} ${rowReversed}`}>
+          <div><StaticImage className={rowImage} src={'../images/slider/артисты.jpeg'} style={{ objectFit: 'contain' }} alt={'Лучшие артисты - Пронск'} /></div>
+          <div className={rowText}>
+            <h4 className={rowTextHeader}>
+              Лучшие артисты</h4>
+            <p>Люди - главное достояние Пронского района</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className={container}>
+        <div className={`${row}`}>
+          <div><StaticImage className={rowImage} src={'https://sun9-50.userapi.com/impg/o0tHUVpQZOJ4kPlQIcF-UOWzQWJ_AvE2J4qgjQ/jqdPo64UMl8.jpg?size=1919x1280&quality=95&sign=993eabd477a08f02798d8927c1ed2c74&type=album'} alt={'Русская душа - Пронск'} /></div>
+          <div className={rowText}>
+            <h4 className={rowTextHeader}>
+              Почувствуйте Русскую душу
+            </h4>
+            <p>Народные коллективы и опытные наставники сохраняют и развивают Русскую культуру</p>
+          </div>
+        </div>
+      </div>
+
+      <div className={footer} style={{ marginTop: 80 }} >
+        <div><img src={gerbImage} className={logo} alt="Пронские сплавы логотип" /></div>
+        <div className={footerLinks} >
+          <a href="/splavy/">Пронские сплавы</a>
+          <a href="/blog/">Блог</a>
+        </div>
+        <div className={social}>
+          <a href="https://vk.com/v_pronske" target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' /></a>
+        </div>
+      </div>
+    </Layout >
   )
 }
 
