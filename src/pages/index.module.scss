@@ -1,0 +1,132 @@
+.mainBanner {
+    height: 900px;
+    width: 100%;
+    background-size: cover !important;
+    background-position: bottom !important;
+    position: relative;
+    font-family: molodo;
+}
+
+.rowImage {
+    max-width: 800px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.rowTextHeader {
+    font-family: molodo;
+    font-size: 60px;
+    color: #2D2D2D;
+}
+
+.mainBannerImage {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+
+    &:after {
+        content: "";
+        background: #0006;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+    }
+}
+
+
+.mainBannerText {
+    color: white;
+    text-align: center;
+    margin-top: 220px;
+}
+
+.mainBannerText1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 20px;
+    font-family: 'Gilroy';
+}
+
+.mainBannerText2 {
+    font-size: 240px;
+    line-height: normal;
+}
+
+.mainBannerText3 {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Gilroy';
+}
+
+.mainBannerText3P {
+    max-width: 1000px;
+}
+
+
+
+@media (max-width: 1050px) {
+    .mainBanner {
+        height: 900px;
+        background-size: auto 100% !important;
+        background-position: center !important;
+    }
+
+    .mainBannerText1 {
+        font-size: 30px;
+        letter-spacing: 20px;
+    }
+
+    .mainBannerText {
+        margin-top: 50px;
+    }
+
+    .mainBannerText2 {
+        font-size: 100px;
+    }
+
+    .mainBannerText3 {
+        margin-top: 50px;
+    }
+
+    .mainBannerText3P {
+        max-width: 700px;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .mainBanner {
+        height: 400px;
+        background-size: auto 100% !important;
+        background-position: center !important;
+    }
+
+    .mainBannerText1 {
+        margin-top: 80px;
+        font-size: 12px;
+        letter-spacing: 15px;
+    }
+
+    .mainBannerText {
+        margin: 40px 15px 0;
+    }
+
+    .mainBannerText2 {
+        margin-top: 10px;
+        font-size: 60px;
+    }
+
+    .mainBannerText3 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .rowImage {
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 60px;
+    }
+}

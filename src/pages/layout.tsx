@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
   }, []);
   return (
     <>
+
       <Navigation />
       {children}
     </>
@@ -42,4 +43,4 @@ const appendMetrika = () => {
   });`;
   document.body.appendChild(result);
 };
-export const Head: HeadFC = () => <title>В Пронске - Народный сайт Пронска и Пронского района</title>;
+export const Head: HeadFC = () => <><title>В Пронске - Народный сайт Пронска и Пронского района</title></>;

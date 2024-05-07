@@ -41,7 +41,6 @@ import {
   rowImage,
   rowImageBigHeight,
   rowReversed,
-  rowSubHeader,
   rowText,
   social,
   tinyRow,
