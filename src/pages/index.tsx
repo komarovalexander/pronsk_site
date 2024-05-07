@@ -63,6 +63,7 @@ import { HeadFC } from 'gatsby';
 import Layout from './layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import gerbImage from '../images/герб.png';
+import telegram from '../images/telegram.svg';
 import vk from '../images/vk.svg';
 
 const IndexPage = () => {
@@ -166,7 +167,27 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <div className={footer} style={{ marginTop: 80 }} >
+
+      <div className={darkBack}>
+        <div className={container} style={{
+          paddingTop: 40,
+          marginTop: 80,
+          paddingBottom: 20
+        }}>
+          <div className={`${rowHeader} headerFont`} style={{ marginBottom: 0, color: 'white' }}>Пронск в сети</div>
+          <div className={row} style={{
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}>
+            <div className={buttons}>
+              <a className={buttonRoutes} href='https://vk.com/v_pronske' target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' />Мы ВКонтакте</a>
+              <a className={buttonRoutes} href='https://t.me/v_pronske_chat' target='_blank' title="Телеграм"><img src={telegram} alt='Телеграм' />Чат в телеграм</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={footer} >
         <div><img src={gerbImage} className={logo} alt="Пронские сплавы логотип" /></div>
         <div className={footerLinks} >
           <a href="/splavy/">Пронские сплавы</a>
@@ -179,17 +200,6 @@ const IndexPage = () => {
 
 
 
-
-      {/*  <Container style={{ marginBottom: 50 }}>
-          <h3>Бесплатный прокат коньков</h3>
-          <p>
-            Коньки можно взять под роспись бесплатно в <a href="http://prdk.rzn.muzkult.ru/about">Пронском Районном Доме Культуры</a>.
-          </p>
-
-          <p>
-            Просьба возвращать коньки сразу после катания. В случае если после катания ДК уже закрыт - можно вернуть их сразу после открытия ДК.
-          </p>
-        </Container>*/}
     </Layout >
   )
 }
