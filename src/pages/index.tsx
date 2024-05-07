@@ -173,6 +173,20 @@ const IndexPage = () => {
           <a href="https://vk.com/v_pronske" target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' /></a>
         </div>
       </div>
+
+
+
+
+      {/*  <Container style={{ marginBottom: 50 }}>
+          <h3>Бесплатный прокат коньков</h3>
+          <p>
+            Коньки можно взять под роспись бесплатно в <a href="http://prdk.rzn.muzkult.ru/about">Пронском Районном Доме Культуры</a>.
+          </p>
+
+          <p>
+            Просьба возвращать коньки сразу после катания. В случае если после катания ДК уже закрыт - можно вернуть их сразу после открытия ДК.
+          </p>
+        </Container>*/}
     </Layout >
   )
 }
