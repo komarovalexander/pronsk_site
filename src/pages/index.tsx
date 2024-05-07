@@ -83,83 +83,83 @@ const IndexPage = () => {
       </div>
 
       <div className={container}>
-        <div className={`${row}`}>
-          <div><StaticImage className={rowImage} src={'../images/slider/musey.jpg'} alt={'Пронский краеведческий музей'} /></div>
+        <div className={`${row} ${rowReversed}`}>
           <div className={rowText}>
             <h4 className={rowTextHeader}>
               Пронский краеведческий музей</h4>
             <p>Картины. Старинная утварь. Интересные экскурсии. Постоянные и временные выставки.</p>
           </div>
+          <div><StaticImage className={rowImage} src={'../images/slider/musey.jpg'} alt={'Пронский краеведческий музей'} /></div>
         </div>
       </div>
 
       <div className={container}>
-        <div className={`${row} ${rowReversed}`}>
-          <div><StaticImage className={rowImage} src={'../images/slider/церковь.png'} style={{ objectPosition: 'left center' }} alt={'Церкви'} /></div>
+        <div className={`${row}`}>
           <div className={rowText}>
             <h4 className={rowTextHeader}>
               Нетронутая история</h4>
             <p>Множества столетиями нетронутых Храмов можно найти в разных локациях района. Прошлое ближе чем кажется</p>
           </div>
+          <div><StaticImage className={rowImage} src={'../images/slider/церковь.png'} style={{ objectPosition: 'left center' }} alt={'Церкви'} /></div>
         </div>
       </div>
 
 
       <div className={container}>
-        <div className={`${row}`}>
-          <div><StaticImage className={rowImage} src={'../images/slider/памятник.jpg'} alt={'Памятники ВОВ - Пронск'} /></div>
+        <div className={`${row} ${rowReversed}`}>
           <div className={rowText}>
             <h4 className={rowTextHeader}>
               Никто не забыт</h4>
             <p>Память, прошедшая через года, показана в виде величественных монументов в каждом поселении</p>
           </div>
-        </div>
-      </div>
-
-      <div className={container}>
-        <div className={`${row} ${rowReversed}`}>
-          <div><StaticImage className={rowImage} src={'../images/slider/Рыбалка4.jpg'} style={{ objectFit: 'contain' }} alt={'Отдых на природе - Пронск'} /></div>
-          <div className={rowText}>
-            <h4 className={rowTextHeader}>
-              Отдых на природе</h4>
-            <p>Рыбалка, палатки, купание в чистых реках, посиделки у костра, <a href='/splavy'>сплавы на байдарках</a></p>
-          </div>
+          <div><StaticImage className={rowImage} src={'../images/slider/памятник.jpg'} alt={'Памятники ВОВ - Пронск'} /></div>
         </div>
       </div>
 
       <div className={container}>
         <div className={`${row}`}>
-          <div><StaticImage className={rowImage} src={'https://sun9-51.userapi.com/impg/RmrEwjRBKqMwYd3868GGLyS_wUgZwgvHgf2O2w/XhJtnQCF5q8.jpg?size=1919x1080&quality=95&sign=b313febee77f290b6f37d2e70ff043c0&type=album'} alt={'Спасо-Преображенский Пронский монастырь'} /></div>
+          <div className={rowText}>
+            <h4 className={rowTextHeader}>
+              Отдых на природе</h4>
+            <p>Рыбалка, палатки, купание в чистых реках, посиделки у костра, <a href='/splavy'>сплавы на байдарках</a></p>
+          </div>
+          <div><StaticImage className={rowImage} src={'../images/slider/Рыбалка4.jpg'} style={{ objectFit: 'contain' }} alt={'Отдых на природе - Пронск'} /></div>
+        </div>
+      </div>
+
+      <div className={container}>
+        <div className={`${row} ${rowReversed}`}>
           <div className={rowText}>
             <h4 className={rowTextHeader}>
               Спасо-Преображенский Пронский монастырь
             </h4>
             <p>Место силы земли Пронской, где всегда рады любым гостям</p>
           </div>
+          <div><StaticImage className={rowImage} src={'https://sun9-51.userapi.com/impg/RmrEwjRBKqMwYd3868GGLyS_wUgZwgvHgf2O2w/XhJtnQCF5q8.jpg?size=1919x1080&quality=95&sign=b313febee77f290b6f37d2e70ff043c0&type=album'} alt={'Спасо-Преображенский Пронский монастырь'} /></div>
         </div>
       </div>
 
       <div className={container}>
-        <div className={`${row} ${rowReversed}`}>
-          <div><StaticImage className={rowImage} src={'../images/slider/артисты.jpeg'} style={{ objectFit: 'contain' }} alt={'Лучшие артисты - Пронск'} /></div>
+        <div className={`${row}`}>
           <div className={rowText}>
             <h4 className={rowTextHeader}>
               Лучшие артисты</h4>
             <p>Люди - главное достояние Пронского района</p>
           </div>
+          <div><StaticImage className={rowImage} src={'../images/slider/артисты.jpeg'} style={{ objectFit: 'contain' }} alt={'Лучшие артисты - Пронск'} /></div>
         </div>
       </div>
 
 
       <div className={container}>
-        <div className={`${row}`}>
-          <div><StaticImage className={rowImage} src={'https://sun9-50.userapi.com/impg/o0tHUVpQZOJ4kPlQIcF-UOWzQWJ_AvE2J4qgjQ/jqdPo64UMl8.jpg?size=1919x1280&quality=95&sign=993eabd477a08f02798d8927c1ed2c74&type=album'} alt={'Русская душа - Пронск'} /></div>
+        <div className={`${row} ${rowReversed}`}>
           <div className={rowText}>
             <h4 className={rowTextHeader}>
               Почувствуйте Русскую душу
             </h4>
             <p>Народные коллективы и опытные наставники сохраняют и развивают Русскую культуру</p>
           </div>
+          <div><StaticImage className={rowImage} src={'https://sun9-50.userapi.com/impg/o0tHUVpQZOJ4kPlQIcF-UOWzQWJ_AvE2J4qgjQ/jqdPo64UMl8.jpg?size=1919x1280&quality=95&sign=993eabd477a08f02798d8927c1ed2c74&type=album'} alt={'Русская душа - Пронск'} /></div>
         </div>
       </div>
 

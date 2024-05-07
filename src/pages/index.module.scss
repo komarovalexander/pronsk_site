@@ -99,13 +99,14 @@
 
 @media (max-width: 750px) {
     .mainBanner {
-        height: 900px;
+        height: 400px;
         background-size: auto 100% !important;
         background-position: center !important;
     }
 
     .mainBannerText1 {
-        font-size: 20px;
+        margin-top: 80px;
+        font-size: 12px;
         letter-spacing: 15px;
     }
 
@@ -114,10 +115,18 @@
     }
 
     .mainBannerText2 {
-        font-size: 40px;
+        margin-top: 10px;
+        font-size: 60px;
     }
 
     .mainBannerText3 {
-        margin-top: 50px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .rowImage {
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 60px;
     }
 }
