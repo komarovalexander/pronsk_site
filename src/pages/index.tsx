@@ -70,7 +70,10 @@ const IndexPage = () => {
     <Layout>
       <div className={mainBanner} >
         <StaticImage className={mainBannerImage} src={'https://sun9-7.userapi.com/impg/Dlsl9k0WQ1p62E4sLwfA1kh7fthIPOTBiSgPwA/VK2fvLBqZpY.jpg?size=2560x1707&quality=95&sign=4a3fbdf90ad21c77d72967c2159a09e0&type=album'} alt={'Пронские сплавы '} />
-        <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%' }}>
+        <div style={{
+          position: 'absolute', zIndex: 1, height: '100%', width: '100%',
+          top: 0
+        }}>
 
           <div className={mainBannerText}>
             <div className={`${mainBannerText1}`}>Добро пожаловать</div>
