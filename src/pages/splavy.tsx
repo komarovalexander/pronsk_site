@@ -75,7 +75,7 @@ const splavy = () => (
         <div className={mainBannerText}>
           <div className={`${mainBannerText1} headerFont`}>Погрузитесь</div>
           <div className={`${mainBannerText2} h1Font`} >в мир<br className={mainBannerText2Br} /> водных<br /> приключений</div>
-          <div className={`${mainBannerText3} d-flex justify-content-center headerText`}>
+          <div className={`${mainBannerText3} headerText`}>
             <p className={mainBannerText3P}>Ищете идеальный способ сбежать от городской суеты и ощутить вдохновение природы? Добро пожаловать в мир наших захватывающих путешествий на байдарках по чистым рекам Пронского района Рязанской области! 🌿</p>
           </div>
           <div className={`${buttons} ${columnReverseMobile}`}>
