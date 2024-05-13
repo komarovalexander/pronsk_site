@@ -1,6 +1,3 @@
-import 'react-big-calendar/lib/css/react-big-calendar.css';
-import 'moment/locale/ru'; // without this line it didn't work
-
 import { Carousel, Col, Container, Modal, Row } from 'react-bootstrap';
 import React, { CSSProperties } from 'react';
 

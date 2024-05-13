@@ -34,9 +34,7 @@
     "gatsby-transformer-remark": "^6.13.0",
     "gatsby-transformer-sharp": "^5.12.3",
     "ka-table": "^8.0.1",
-    "moment": "^2.29.4",
     "react": "^18.1.0",
-    "react-big-calendar": "^1.6.3",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.1.0",
     "sass": "^1.54.4"
@@ -44,7 +42,6 @@
   "devDependencies": {
     "@types/node": "^20.10.6",
     "@types/react": "^18.0.17",
-    "@types/react-big-calendar": "^1.6.0",
     "@types/react-dom": "^18.0.6",
     "gh-pages": "^6.1.1",
     "typescript": "^5.3.3"

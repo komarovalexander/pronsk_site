@@ -1,31 +1,14 @@
-import 'react-big-calendar/lib/css/react-big-calendar.css';
-import 'moment/locale/ru'; // without this line it didn't work
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
+import React, { CSSProperties } from 'react';
 
 import { HeadFC } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
-import moment from 'moment';
-import React, { CSSProperties } from 'react';
-import { Calendar, momentLocalizer } from 'react-big-calendar';
-import { Carousel, Col, Container, Row } from 'react-bootstrap';
-
 import Layout from '../layout';
+import { StaticImage } from 'gatsby-plugin-image';
 
-moment.locale('ru')
-
-const localizer = momentLocalizer(moment)
 const captionStyle: CSSProperties = {
   padding: '10px 30px',
   backgroundColor: '#00000059'
 };
-const events = [
-  {
-    end: '10.02.2023',
-    start: '09.02.2023',
-    title: '2-х дневный сплав забронирован. Осталось 6 мест на однодневный сплав'
-  }];
-
-const calenderEvents = events.map(e => ({ title: e.title, start: moment(e.start, 'DD.MM.YYYY'), end: moment(e.end, 'DD.MM.YYYY').add(1, 'd') }))
-
 const three_day = () => (
   <Layout>
     <Container>
@@ -76,8 +59,8 @@ const three_day = () => (
           </p>
           <p style={{ fontSize: '18px', textAlign: "justify" }}>Отправляйтесь на приключение по реке Проня и откройте для себя всю ее красоту и магию! 🌄
           </p>
-          <i style={{ fontSize: '18px', textAlign: "justify" }}><b>Стоимость 3-дневного сплава 8500р. (май-июнь)/9500р. (июль-август). <br/>Детям до 14 лет 7500р.</b>
-          <br/> Входит:<br/>
+          <i style={{ fontSize: '18px', textAlign: "justify" }}><b>Стоимость 3-дневного сплава 8500р. (май-июнь)/9500р. (июль-август). <br />Детям до 14 лет 7500р.</b>
+            <br /> Входит:<br />
             - байдарки в собранном виде, спасжилеты, в т.ч. детские<br />
             - сопровождение<br />
             - палатки, мягкие матрасы в палатку, спальники<br />

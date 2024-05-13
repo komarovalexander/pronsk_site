@@ -1,6 +1,3 @@
-import '../table/ka-bootstrap.scss';
-import 'moment/locale/ru'; // without this line it didn't work
-
 import * as React from 'react';
 
 import Container from 'react-bootstrap/esm/Container';

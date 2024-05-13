@@ -1,7 +1,3 @@
-import 'react-big-calendar/lib/css/react-big-calendar.css';
-import 'moment/locale/ru'; // without this line it didn't work
-
-import { Calendar, momentLocalizer } from 'react-big-calendar';
 import { Carousel, Col, Row } from 'react-bootstrap';
 import React, { CSSProperties } from 'react';
 
@@ -9,24 +5,11 @@ import Container from 'react-bootstrap/Container';
 import { HeadFC } from 'gatsby';
 import Layout from '../layout';
 import { StaticImage } from 'gatsby-plugin-image';
-import moment from 'moment';
 
-moment.locale('ru')
-
-const localizer = momentLocalizer(moment)
 const captionStyle: CSSProperties = {
   padding: '10px 30px',
   backgroundColor: '#00000059'
 };
-const events = [
-  {
-    end: '10.02.2023',
-    start: '09.02.2023',
-    title: '2-х дневный сплав забронирован. Осталось 6 мест на однодневный сплав'
-  }];
-
-const calenderEvents = events.map(e => ({ title: e.title, start: moment(e.start, 'DD.MM.YYYY'), end: moment(e.end, 'DD.MM.YYYY').add(1, 'd') }))
-
 const company = () => (
   <Layout>
 
