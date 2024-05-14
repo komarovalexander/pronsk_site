@@ -60,11 +60,6 @@ import telegram from '../../images/telegram.svg';
 import vk from '../../images/vk.svg';
 import whatsapp from '../../images/whatsapp.svg';
 
-const captionStyle: CSSProperties = {
-  padding: '10px 30px',
-  backgroundColor: '#00000059'
-};
-
 const pronya = () => (
   <Layout>
     <div className={container}>
