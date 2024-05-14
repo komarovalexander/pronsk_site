@@ -1,179 +1,138 @@
-import { Calendar, momentLocalizer } from 'react-big-calendar';
-import { Carousel, Col, Container, Row } from 'react-bootstrap';
 import React, { CSSProperties } from 'react';
+import {
+  additionalFeature,
+  additionalFeatureHeader,
+  button,
+  buttonMain,
+  buttonRoutes,
+  buttons,
+  columnReverseMobile,
+  container,
+  darkBack,
+  feature,
+  featureHeader,
+  featureNumber,
+  feedback,
+  feedbackItem,
+  feedbackItemDoubleQuote,
+  feedbackItemText,
+  feedbackLink,
+  feedbackPerson,
+  feedbackPersonDate,
+  feedbackPersonImage,
+  feedbackPersonName,
+  footer,
+  footerLinks,
+  grayBack,
+  header,
+  imageContainer,
+  linearBack,
+  logo,
+  mainBanner,
+  mainBannerText,
+  mainBannerText1,
+  mainBannerText2,
+  mainBannerText2Br,
+  mainBannerText3,
+  mainBannerText3P,
+  partner,
+  partnerRow,
+  row,
+  rowHeader,
+  rowImage,
+  rowImageBigHeight,
+  rowReversed,
+  rowText,
+  social,
+  tinyRow,
+  triangle,
+  underlinedLink,
+  video,
+  videoContainer,
+} from '../splavy.module.scss';
 
 import { HeadFC } from 'gatsby';
 import Layout from '../layout';
 import { StaticImage } from 'gatsby-plugin-image';
-
-const captionStyle: CSSProperties = {
-  padding: '10px 30px',
-  backgroundColor: '#00000059'
-};
+import logoImage from '../../images/Splav/logo.png';
+import odnoklassniki from '../../images/odnoklassniki.svg';
+import telegram from '../../images/telegram.svg';
+import vk from '../../images/vk.svg';
+import whatsapp from '../../images/whatsapp.svg';
 
 const rent = () => (
   <Layout>
-    <Container>
+    <div className={container} >
       <nav aria-label="breadcrumb" style={{ marginTop: 10 }}>
         <ol className="breadcrumb">
           <li className="breadcrumb-item"><a href="/splavy/">Пронские сплавы</a></li>
           <li className="breadcrumb-item active" aria-current="page">Прокат-Аренда с доставкой и трансфером</li>
         </ol>
       </nav>
-    </Container>
+    </div>
 
-    <Row style={{ padding: '40px 0' }}>
-      <Col>
-        <div className="container text">
-          <Carousel controls={false} indicators={false}>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Prony/rent.jpg" className="rounded" alt="Пронские сплавы" />
-                <Carousel.Caption style={captionStyle}>
-                  <h1>Прокат-Аренда с доставкой и трансфером</h1>
-                </Carousel.Caption>
-              </div>
-            </Carousel.Item>
-          </Carousel>
-        </div>
-      </Col>
-    </Row>
 
-    <Row style={{ backgroundColor: '#eef0f2', padding: '40px 0' }}>
-      <Col>
-        <div className="container text">
-          <h3 style={{ textAlign: 'center' }}>🌊 Погрузись мир водных приключение с нами! 🚣‍♂️</h3>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>Хочешь покорить водные просторы и насладиться красотами природы? Наша аренда байдарок предлагает идеальное решение для тебя!
-          </p>
-          <h4 style={{ textAlign: 'center' }}>🌅 Почему стоит выбрать нас?</h4>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🚐 Трансфер и доставка: Мы обеспечим полный сервис "под ключ" - трансфер от места встречи до начала маршрута и обратно,
-            а также доставку всего необходимого оборудования прямо на место.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🛶 Качественное снаряжение: Мы предоставляем современные и надежные байдарки, а также качественные палатки,
-            самонадувающиеся коврики с подушкой, теплые спальники и т.д., обеспечивая комфортный отдых на природе.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🌲 Разнообразие маршрутов: Исследуй водные просторы Рязанской области и за ее пределами!
-            Наши маршруты простираются от живописных рек и озер до уединенных водоемов, где ты сможешь насладиться природой в полной мере.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🕒 Гибкий график: Наши байдарки доступны для аренды в любое время. Планируй свое приключение так, как тебе удобно.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>👨‍👩‍👧‍👦 Для всей семьи: Аренда байдарок подходит для всех возрастов и уровней подготовки. Приглашай своих близких и друзей и отправляйтесь в увлекательное путешествие по воде!
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🎉 Открой новые горизонты вместе с нами! Забронируй байдарки уже сегодня по телефону <a href="tel:+79521233539">+79521233539</a> и отправляйся на водные приключения, создавая незабываемые воспоминания. 📞
-          </p>
-        </div>
-      </Col>
-    </Row>
+    <div className={mainBanner} >
+      <StaticImage style={{ position: 'absolute', zIndex: 0, height: '100%', width: '100%' }} src={'../../images/Splav/Prony/rent.jpg'} alt={'Пронские сплавы - Прокат-Аренда с доставкой и трансфером'} />
+      <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%' }}>
 
-    <Row style={{ padding: '40px 0' }}>
-      <Col>
-        <div className="container text" style={{ paddingTop: 30 }}>
-          <h3 style={{ textAlign: "center" }}>Стоимость оборудования за день (прокат от 2-х дней)</h3>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>
-            <i>Байдарка 2-х местная - 1800 р.<br />
-              Гермомешок - 200 р.<br />
-              Спальник - 300 р.<br />
-              Самонадувающийся коврик - 300 р.<br />
-              Палатка 4-х местная - 500 р.<br />
-            </i>
-          </p>
-        </div>
-        <Row style={{ padding: '40px 0' }}>
-          <Col>
-            <div className="container text">
-              <Carousel interval={null}>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/1.JPG" className="rounded" alt="Кердь" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/2.JPG" className="rounded" alt="Пороня" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/3.JPG" className="rounded" alt="Проня" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/4.JPG" className="rounded" alt="Кердь" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/5.JPG" className="rounded" alt="Кердь" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/6.JPG" className="rounded" alt="Кердь" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/7.JPG" className="rounded" alt="Кердь" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/8.JPG" className="rounded" alt="Кердь" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/9.JPG" className="rounded" alt="Кердь" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/10.JPG" className="rounded" alt="Кердь" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/11.JPG" className="rounded" alt="Кердь" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/12.JPG" className="rounded" alt="Пороня" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/13.JPG" className="rounded" alt="Проня" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/14.JPG" className="rounded" alt="Кердь" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/15.JPG" className="rounded" alt="Кердь" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/16.JPG" className="rounded" alt="Кердь" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div>
-                    <StaticImage src="../../images/Splav/Slider/17.JPG" className="rounded" alt="Кердь" />
-                  </div>
-                </Carousel.Item>
-              </Carousel>
+        <div className={mainBannerText}>
+          <div className={`${mainBannerText1} headerFont`}>
+
+
+            <h1>Прокат-Аренда с доставкой и трансфером</h1></div>
+          <div className={`${buttons} ${columnReverseMobile}`}>
+            <div style={{ display: 'flex', gap: 15, fontSize: 18, alignItems: 'center' }}>Пишите:
+              <a href="https://vk.me/pronskie_splavy" target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' /></a>
+              <a href="https://t.me/pronskie_splavy" target='_blank' title='Телеграм'><img src={telegram} alt='Телеграм' /></a>
+              <a href="https://wa.me/+79521233539" target='_blank' title='Вотсапп'><img src={whatsapp} alt='Вотсапп' /></a>
             </div>
-          </Col>
-        </Row>
-      </Col>
-    </Row>
-  </Layout>
+            <a className={buttonMain} href='tel:+79521233539'>Звоните +79521233539</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className={container}>
+      <div className="container text">
+        <h3 style={{ textAlign: 'center' }}>🌊 Погрузись мир водных приключение с нами! 🚣‍♂️</h3>
+        <p style={{ fontSize: '18px', textAlign: "justify" }}>Хочешь покорить водные просторы и насладиться красотами природы? Наша аренда байдарок предлагает идеальное решение для тебя!
+        </p>
+        <h4 style={{ textAlign: 'center' }}>🌅 Почему стоит выбрать нас?</h4>
+        <p style={{ fontSize: '18px', textAlign: "justify" }}>🚐 Трансфер и доставка: Мы обеспечим полный сервис "под ключ" - трансфер от места встречи до начала маршрута и обратно,
+          а также доставку всего необходимого оборудования прямо на место.
+        </p>
+        <p style={{ fontSize: '18px', textAlign: "justify" }}>🛶 Качественное снаряжение: Мы предоставляем современные и надежные байдарки, а также качественные палатки,
+          самонадувающиеся коврики с подушкой, теплые спальники и т.д., обеспечивая комфортный отдых на природе.
+        </p>
+        <p style={{ fontSize: '18px', textAlign: "justify" }}>🌲 Разнообразие маршрутов: Исследуй водные просторы Рязанской области и за ее пределами!
+          Наши маршруты простираются от живописных рек и озер до уединенных водоемов, где ты сможешь насладиться природой в полной мере.
+        </p>
+        <p style={{ fontSize: '18px', textAlign: "justify" }}>🕒 Гибкий график: Наши байдарки доступны для аренды в любое время. Планируй свое приключение так, как тебе удобно.
+        </p>
+        <p style={{ fontSize: '18px', textAlign: "justify" }}>👨‍👩‍👧‍👦 Для всей семьи: Аренда байдарок подходит для всех возрастов и уровней подготовки. Приглашай своих близких и друзей и отправляйтесь в увлекательное путешествие по воде!
+        </p>
+        <p style={{ fontSize: '18px', textAlign: "justify" }}>🎉 Открой новые горизонты вместе с нами! Забронируй байдарки уже сегодня по телефону <a href="tel:+79521233539">+79521233539</a> и отправляйся на водные приключения, создавая незабываемые воспоминания. 📞
+        </p>
+      </div>
+    </div>
+
+
+    <div className={container}>
+      <div className="container text" style={{ paddingTop: 30 }}>
+        <h3 style={{ textAlign: "center" }}>Стоимость оборудования за день (прокат от 2-х дней)</h3>
+        <p style={{ fontSize: '18px', textAlign: "justify" }}>
+          <i>Байдарка 2-х местная - 1800 р.<br />
+            Гермомешок - 200 р.<br />
+            Спальник - 300 р.<br />
+            Самонадувающийся коврик - 300 р.<br />
+            Палатка 4-х местная - 500 р.<br />
+          </i>
+        </p>
+      </div>
+    </div>
+
+  </Layout >
 );
 
 export default rent;
