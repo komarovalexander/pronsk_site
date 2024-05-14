@@ -46,7 +46,7 @@ const IndexPage = () => {
           <div className={mainBannerText}>
             <div className={`${mainBannerText1}`}>Добро пожаловать</div>
             <div className={`${mainBannerText2}`} >В Пронск</div>
-            <div className={`${mainBannerText3} d-flex justify-content-center`}>
+            <div className={`${mainBannerText3}`}>
               <p className={mainBannerText3P}>Город с красивейшей природой, богатой историей, и приветливыми людьми</p>
             </div>
           </div>
