@@ -242,6 +242,9 @@
 
 .imageContainer {
     margin-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+    overflow: hidden;
 }
 
 .feedback {
@@ -249,7 +252,6 @@
     justify-content: center;
     background-position: bottom;
     padding-bottom: 80px;
-    margin-bottom: 80px;
     gap: 30px;
 }
 
@@ -281,7 +283,7 @@
 }
 
 .feedbackItemText {
-    width: 350px;
+    max-width: 350px;
     background-color: white;
     padding: 30px 16px;
     border-radius: 10px;

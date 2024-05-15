@@ -62,7 +62,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import ThreeDays from './splavy/routes/ThreeDays';
 import TwoDays from './splavy/routes/TwoDays';
 import feedbackDoubleQuoteImage from '../images/Splav/index/15.svg';
-import feedbackImage from '../images/Splav/index/14.png';
 import logoImage from '../images/Splav/logo.png';
 import odnoklassniki from '../images/odnoklassniki.svg';
 import { scrollToId } from '../utils';
@@ -136,7 +135,7 @@ const splavy = () => (
     <div className={container}>
       <h3 className={`${rowHeader} headerFont`}>Наши преимущества</h3>
       <div className={`${row} ${rowReversed}`}>
-        <div><StaticImage className={rowImage} src={'../images/Splav/index/3.jpeg'} alt={'Пронские сплавы - Наши преимущества'} /></div>
+        <div><StaticImage width={800} className={rowImage} src={'../images/Splav/index/3.jpeg'} alt={'Пронские сплавы - Наши преимущества'} /></div>
         <div className={rowText}>
           <div className={feature}>
             <h4 className={featureHeader}>
@@ -158,7 +157,7 @@ const splavy = () => (
       <br />
       <br />
       <div className={`${row}`}>
-        <div><StaticImage className={rowImage} src={'../images/Splav/index/2.jpeg'} alt={'Пронские сплавы - повар и инструктор'} /></div>
+        <div><StaticImage className={rowImage} width={800} src={'../images/Splav/index/2.jpeg'} alt={'Пронские сплавы - повар и инструктор'} /></div>
         <div className={rowText}>
           <div className={feature}>
             <h4 className={featureHeader}>
@@ -226,9 +225,10 @@ const splavy = () => (
     <HowToGetToUs />
 
     <div>
-      <div className={`${container} ${imageContainer}`} style={{ background: `url(${feedbackImage})`, backgroundPosition: 'bottom', backgroundSize: 'cover' }}>
-        <div className={`${row} ${feedback}`}>
+      <div className={`${container} ${imageContainer}`}>
 
+        <StaticImage width={1400} style={{ position: 'absolute', zIndex: 0, bottom: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'bottom' }} src={'../images/Splav/index/feedback.jpg'} alt={'Пронские сплавы - отзывы'} />
+        <div className={`${row} ${feedback}`} style={{ position: 'relative' }}>
           <div className={feedbackItem}>
             <div className={feedbackItemText}>
               <img src={feedbackDoubleQuoteImage} className={feedbackItemDoubleQuote} />
