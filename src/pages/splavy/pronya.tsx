@@ -53,7 +53,10 @@ import {
   videoContainer,
 } from './splavy_detail.module.scss';
 
+import ContactUs from './ContactUs';
+import Glamping from './routes/Glamping';
 import { HeadFC } from 'gatsby';
+import HowToGetToUs from './HowToGetToUs';
 import Layout from '../layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import logoImage from '../../images/Splav/logo.png';
@@ -81,8 +84,10 @@ const pronya = () => (
           <div className={mainBannerText} style={{ backgroundColor: '#5C8300AA' }}>
             <div className={`${mainBannerText1} headerFont`}><h1>Кердь-Проня (2 Дня)</h1></div>
             <div className={`${mainBannerText3} headerText`}>
-              <p className={mainBannerText3P}>
-                Сплав по реке Кердь с впаданием в Проню и финишем в древнем городе Пронске.  <br />Отдых в режиме всё включено: Питание, трансфер, инструкторы, палатки и много другое. Ночевка на нашей оборудованной стоянке на реке Кердь.</p>
+              <div>
+                <p className={mainBannerText3P}>
+                  Сплав по реке Кердь с впаданием в Проню и финишем в древнем городе Пронске.  <br />Отдых в режиме всё включено: Питание, трансфер, инструкторы, палатки и много другое. Ночевка на нашей оборудованной стоянке на реке Кердь.</p>
+              </div>
             </div>
             <div className={`${mainBannerText3} headerText`}>
               <div>
@@ -91,231 +96,131 @@ const pronya = () => (
                 <div style={{ fontSize: 12 }}>*Бронирование производится по 50% предоплате. <br /> **В случае отказа более чем за 7 дней до мероприятия, предоплата возвращается в полном объеме</div>
               </div>
             </div>
-            <div className={`${buttons} ${columnReverseMobile}`}>
-              <div style={{ display: 'flex', gap: 15, fontSize: 18, alignItems: 'center' }}>Пишите:
-                <a href="https://vk.me/pronskie_splavy" target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' /></a>
-                <a href="https://t.me/pronskie_splavy" target='_blank' title='Телеграм'><img src={telegram} alt='Телеграм' /></a>
-                <a href="https://wa.me/+79521233539" target='_blank' title='Вотсапп'><img src={whatsapp} alt='Вотсапп' /></a>
-              </div>
-              <a className={buttonMain} href='tel:+79521233539'>Звоните +79521233539</a>
+            <ContactUs />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className={container} style={{
+      paddingTop: 40,
+      paddingBottom: 20
+    }}>
+      <h3 className={`${rowHeader} headerFont`}>🚣‍♂️ Примерная программа слава</h3>
+      <div className={`${row} ${rowReversed}`}>
+        <div><StaticImage className={rowImage} width={800} src={'../../images/Splav/2days/pronya-1.jpeg'} alt={'Пронские сплавы - Сплав Кердь-Проня (2 Дня) - 1 день'} /></div>
+        <div className={rowText}>
+          <i style={{ fontSize: '18px', textAlign: "justify" }}>День 1</i>
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>
+            10:00 – встреча в р.п. Пронск, трансфер на место старта.<br />
+            10:30 - инструктаж, получение снаряжение, загрузка байдарок, старт<br />
+            11:00 - сплав на байдарках с остановками для фотографирования и купания<br />
+            13:00 - обед на стоянке, отдых<br />
+            14:00 - сплав на байдарках с остановками для фотографирования и купания<br />
+            17:00 – прибытие в точку ночлега, отдых<br />
+            19:00 - ужин, душевные посиделки у костра
+          </p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div className={`${row}`}>
+        <div><StaticImage className={rowImage} src={'../../images/Splav/2days/pronya-2-3.JPG'} alt={'Пронские сплавы - Сплав Кердь-Проня (2 Дня) - 2 день'} /></div>
+        <div className={rowText}>
+          <i style={{ fontSize: '18px', textAlign: "justify" }}>День 2</i>
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>
+            09:00 – подъем, завтрак<br />
+            11:00 - сплав на байдарках с остановками для фотографирования и купания<br />
+            13:00 - обед на финише, конец путешествия<br /><br />
+
+            *так же в маршрут входит посещение <a href="/blog/pronsk/#pokrovka">Покровского бугра</a><br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className={grayBack}>
+      <div className={container}>
+        <h3 className={`${rowHeader} headerFont`}>В цену входит</h3>
+
+        <div className={row}>
+          <div>
+            <b style={{ fontSize: '18px', textAlign: "justify" }}>🚣‍♂️ Оборудование для сплава</b>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Байдарки в собранном виде, гермомешки, спасжилеты, в т.ч. детские, дождевики</p>
+            <b style={{ fontSize: '18px', textAlign: "justify" }}>⛺️ Оборудование для комфортного сна на природе</b>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Палатки, мягкие коврики в палатку, спальники, подготовленное для отдыха и ночлега место</p>
+            <b style={{ fontSize: '18px', textAlign: "justify" }}>🍲 Трехразовое горячее питание</b>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Обед, ужин, завтрак, обед. Все 2 дня наш опытный повар готовит для вас лучшие походные блюда, добавляя вкус к вашему приключению.</p>
+            <b style={{ fontSize: '18px', textAlign: "justify" }}>🚍 Трансфер</b>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Трансфер к месту старта и обратно</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className={container}>
+        <div className="container text">
+          <h3 className={`${rowHeader} headerFont`}>Что взять с собой</h3>
+          <div className={row}>
+            <div>
+              <b style={{ fontSize: '18px', textAlign: "justify" }}>🚿 Средства личной гигиены</b>
+              <p style={{ fontSize: '18px', textAlign: "justify" }}>полотенце, мыло, зубная паста и щётка, туалетная бумага и т.д.</p>
+              <b style={{ fontSize: '18px', textAlign: "justify" }}>💧 Питьевая вода</b>
+              <p style={{ fontSize: '18px', textAlign: "justify" }}>в удобной бутылке или нескольких маленьких, суммарно не менее 1,5 литров на человека</p>
+              <b style={{ fontSize: '18px', textAlign: "justify" }}>👕 Запасная одежда</b>
+              <p style={{ fontSize: '18px', textAlign: "justify" }}>теплый свитер, теплые носки, обувь в байдарку (сланцы, кроксы), обувь на стоянку (кроссовки, кеды), головной убор, солнцезащитные очки, ветровка, шорты, спортивные штаны</p>
+              <b style={{ fontSize: '18px', textAlign: "justify" }}>☀️ Крем от загара и средство от комаров </b>
+              <p style={{ fontSize: '18px', textAlign: "justify" }}>пригодится вам, если вы склонны к обгоранию кожи на солнце</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+
+
     <div className={container}>
-      <h3 className={`${rowHeader} headerFont`}>🚣‍♂️ Особенность маршрута</h3>
-      <div className={`${row} ${rowReversed}`}>
-        <div><StaticImage className={rowImage} src={'../../images/Splav/index/3.jpeg'} alt={'Пронские сплавы - Наши преимущества'} /></div>
-        <div className={rowText}>
-          <div className={feature}>
-            <h4 className={featureHeader}>
-              <span className={featureNumber}>01</span>Отдых на природе</h4>
-            <div>Оборудованная стоянка для ночлега с нашими палатками и всем необходимым оборудование.</div>
-          </div>
-          <div className={feature}>
-            <h4 className={featureHeader}>
-              <span className={featureNumber}>02</span>Для всей семьи</h4>
-            <div>Наши походы подходят для любого уровня подготовки.
-              Пригласите семью и друзей. Для детей у нас большие скидки!</div>
-          </div>
-          <div className={feature}>
-            <h4 className={featureHeader}>
-              <span className={featureNumber}>03</span>Сервис "все включено"</h4>
-            <div>Наслаждайтесь беззаботным приключением с нашим полным сервисом,
-              из необходимого вам понадобится только питьевая вода в удобной бутылке.</div>
-          </div>
-          <div className={feature}>
-            <h4 className={featureHeader}>
-              <span className={featureNumber}>04</span>Опытные гиды</h4>
-            <div>Наши профессиональные гиды знают каждый поворот реки, безопасное и захватывающее приключение.</div>
-          </div>
-        </div>
-      </div>
-      <br />
-      <br />
-      <div className={`${row}`}>
-        <div><StaticImage className={rowImage} src={'../../images/Splav/index/2.jpeg'} alt={'Пронские сплавы - повар и инструктор'} /></div>
-        <div className={rowText}>
-          <div className={feature}>
-            <h4 className={featureHeader}>
-              <span className={featureNumber}>05</span>Качественное снаряжение</h4>
-            <div>Мы предоставляем современные и надежные байдарки, чтобы ваше путешествие было комфортным и беззаботным.</div>
-          </div>
-          <div className={feature}>
-            <h4 className={featureHeader}>
-              <span className={featureNumber}>06</span>Вкусное питание</h4>
-            <div>Наш опытный повар готовит для вас лучшие походные блюда, добавляя вкус к вашему приключению.</div>
-          </div>
-          <div className={feature}>
-            <h4 className={featureHeader}>
-              <span className={featureNumber}>07</span>Рыбалка</h4>
-            <div>Река обильна разнообразной рыбой, что делает ее прекрасным местом для рыболовства.</div>
-          </div>
-          <div className={feature}>
-            <h4 className={featureHeader}>
-              <span className={featureNumber}>08</span>Ежедневные сплавы</h4>
-            <div>Предлагаем <b>сплавы каждый день</b>, в том числе и в будни.</div>
-          </div>
+      <h3 className={`${rowHeader} headerFont`}>Кому идеально подходит маршрут?</h3>
+      <div className={row}>
+        <div>
+          <b style={{ fontSize: '18px', textAlign: "justify" }}>👨‍👩‍👧‍👦 Семейным</b>
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>Байдарки безопасные и очень устойчивые. На речке Кердь хорошее течение есть перекаты но нет опасных порогов - это значит что путешествие будет безопасным и не скучным. 2 дня сплава  (1 ночь в палатке) - идеальное количество дней для знакомства семьи с нашим видом туризма</p>
+          <b style={{ fontSize: '18px', textAlign: "justify" }}>🤟 Компаниям друзей</b>
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>Вместе побыть на природе, расслабиться и не думать о мелочах, наслаждаясь общением друг с другом</p>
+          <b style={{ fontSize: '18px', textAlign: "justify" }}>🛶 Ищущим новых интересных знакомств и впечатлений</b>
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>Это же интересно оказываться в нестандартной для себя ситуации и знакомить с новыми людьми, не правда ли?</p>
+          <b style={{ fontSize: '18px', textAlign: "justify" }}>🐟 Рыболовам</b>
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>На остановках можно рыбачить, вечером и на рассвете клёв хороший</p>
+          <b style={{ fontSize: '18px', textAlign: "justify" }}>👨‍💼 Коллегам</b>
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>Провести время совместно проходя маршрут, пообщаться в максимально неформальной обстановке, за два дня сплава многое можно обсудить</p>
+          <b style={{ fontSize: '18px', textAlign: "justify" }}>🙂 На самом деле всем кто любит приключения</b>
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>Откройте красоту Пронского района, Рязанской области вместе с нами</p>
         </div>
       </div>
     </div>
 
-    <div className={container}>
-
-      <br /> Входит:<br />
-      - байдарки в собранном виде, спасжилеты, в т.ч. детские<br />
-      - сопровождение<br />
-      - палатки, мягкие матрасы в палатку, спальники<br />
-      - личная посуда<br />
-      - гермомешки<br />
-      - трехразовое горячее питание<br />
-      - подготовленное для отдыха и ночлега место<br />
-      - трансфер к месту старта и обратно<br />
-      - дождевики<br />
-      <b style={{ fontSize: '18px', textAlign: "justify" }}>Для бронирования и по всем возникающим вопросам звоните или пишите в мессенджеры по телефону <a href="tel:+79521233539">8(952)123-35-39</a> (<a href="https://vk.com/pronskie_splavy">Мы ВКонтакте</a>).<br /></b>
-      <i style={{ fontSize: '18px', textAlign: "justify" }}>*Бронирование производится по 50% предоплате.
-        В случае отказа более чем за 7 дней до мероприятия, предоплата возвращается в полном объеме</i>
-    </div>
+    <HowToGetToUs />
 
     <div className={container}>
-      <div className="container text" style={{ paddingTop: 30 }}>
-        <h3 style={{ textAlign: "center" }}>Примерная программа двухдневного сплава</h3>
-        <i style={{ fontSize: '18px', textAlign: "justify" }}>День 1</i>
-        <p style={{ fontSize: '18px', textAlign: "justify" }}>
-          10:00 – встреча в р.п. Пронск, трансфер на место старта.<br />
-          10:30 - инструктаж, получение снаряжение, загрузка байдарок, старт<br />
-          11:00 - сплав на байдарках с остановками для фотографирования и купания<br />
-          13:00 - обед на стоянке, отдых<br />
-          14:00 - сплав на байдарках с остановками для фотографирования и купания<br />
-          17:00 – прибытие в точку ночлега, отдых<br />
-          19:00 - ужин, душевные посиделки у костра
-        </p>
-        <i style={{ fontSize: '18px', textAlign: "justify" }}>День 2</i>
-        <p style={{ fontSize: '18px', textAlign: "justify" }}>
-          09:00 – подъем, завтрак<br />
-          11:00 - сплав на байдарках с остановками для фотографирования и купания<br />
-          13:00 - обед на финише, конец путешествия<br />
-          так же в маршрут входит посещение <a href="/blog/pronsk/#pokrovka">Покровского бугра</a><br />
-        </p>
-      </div>
-    </div>
-
-    <div className={container}>
-      <div className={videoContainer}>
-        <iframe className={video} src="https://www.youtube.com/embed/sQ2tOg3mrrs?si=SADGqVcuJLkjJrQI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <div className={container}>
-      <div className="container text">
-        <h3 style={{ textAlign: 'center' }}>Что взять с собой в поход</h3>
-        <b style={{ fontSize: '18px', textAlign: "justify" }}>🚿 Средства личной гигиены</b>
-        <p style={{ fontSize: '18px', textAlign: "justify" }}>полотенце, мыло, зубная паста и щётка, туалетная бумага и т.д.</p>
-        <b style={{ fontSize: '18px', textAlign: "justify" }}>💧 Питьевая вода</b>
-        <p style={{ fontSize: '18px', textAlign: "justify" }}>в удобной бутылке или нескольких маленьких, суммарно не менее 1,5 литров на человека</p>
-        <b style={{ fontSize: '18px', textAlign: "justify" }}>👕 Запасная одежда</b>
-        <p style={{ fontSize: '18px', textAlign: "justify" }}>теплый свитер, теплые носки, обувь в байдарку (сланцы, кроксы), обувь на стоянку (кроссовки, кеды), головной убор, солнцезащитные очки, ветровка, шорты, спортивные штаны</p>
-        <b style={{ fontSize: '18px', textAlign: "justify" }}>☀️ Крем от загара и средство от комаров </b>
-        <p style={{ fontSize: '18px', textAlign: "justify" }}>пригодится вам, если вы склонны к обгоранию кожи на солнце</p>
-        <p style={{ fontSize: '18px', textAlign: 'justify' }}>🎒 Всё, что вам понадобится в походе - это личные вещи, которые поместятся в небольшой рюкзачок. <b>Всё остальное мы вам предоставим!</b></p>
-      </div>
-    </div>
-    {/*<Row style={{ padding: '40px 0' }}>
-      <Col>
-        <div className="container text">
-          <Carousel interval={null}>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/1.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/2.JPG" className="rounded" alt="Пороня" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/3.JPG" className="rounded" alt="Проня" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/4.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/5.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/6.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/7.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/8.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/9.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/10.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/11.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/12.JPG" className="rounded" alt="Пороня" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/13.JPG" className="rounded" alt="Проня" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/14.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/15.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/16.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/17.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-          </Carousel>
+      <h3 id="routes" className={`${rowHeader} headerFont`}>Также может быть интересно</h3>
+      <div className={row} style={{ alignItems: 'start' }}>
+        <div className={feature}>
+          <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../../images/Splav/index/3days.jpg'} alt={'Пронские сплавы - 3 дня'} />
+          <h4 className={featureHeader}>3 Дня, река Проня</h4>
+          <div className={rowText} style={{ maxWidth: 800 }}>Автономный сплав по реке Проня на 3 дня в сопровождении инструктора, все необходимое оборудование мы предоставляем.<br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: 8500₽ (май-июнь), 9500₽ (июль-август), <br /> детям до 14 лет 7500₽</div>
+          <a className={button} href="/splavy/three_day">Подробнее</a>
         </div>
-      </Col>
-        </Row>*/}
-    <div className={footer} >
+        <div className={feature}>
+          <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../../images/Splav/index/5.jpg'} alt={'Пронские сплавы - 1 день'} />
+          <h4 className={featureHeader}>
+            1 День</h4>
+          <div className={rowText} style={{ maxWidth: 800 }}>Сплав с инструктором по рекам Кердь и Проня, с полноценным обедом и трансфером из Пронска. <br /><br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: 3500₽ (май-июнь), 4500₽ (июль-август) <br /> детям до 14 лет 2000₽</div>
+          <a className={button} href='/splavy/kerd'>Подробнее</a>
+        </div>
+        <Glamping />
+      </div>
+    </div>
+    <div className={footer} style={{ marginTop: 80 }} >
       <div><img src={logoImage} className={logo} alt="Пронские сплавы логотип" /></div>
       <div className={footerLinks} >
         <a href="/splavy#routes">Маршруты</a>

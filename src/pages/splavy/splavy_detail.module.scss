@@ -425,12 +425,16 @@
     }
 
     .mainBannerText1 {
-        font-size: 20px;
+        font-size: 16px;
         letter-spacing: 15px;
+
+        h1 {
+            margin: 0;
+        }
     }
 
     .mainBannerText {
-        margin: 40px 15px 0;
+        margin: 0;
     }
 
     .mainBannerText2 {
@@ -442,7 +446,8 @@
     }
 
     .mainBannerText3 {
-        margin-top: 50px;
+        margin-top: 20px;
+
     }
 
     .additionalFeatureHeader {

@@ -50,7 +50,10 @@ import {
   videoContainer,
 } from './splavy.module.scss';
 
+import ContactUs from './splavy/ContactUs';
+import Glamping from './splavy/routes/Glamping';
 import { HeadFC } from 'gatsby';
+import HowToGetToUs from './splavy/HowToGetToUs';
 import Layout from './layout';
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -59,9 +62,7 @@ import feedbackImage from '../images/Splav/index/14.png';
 import logoImage from '../images/Splav/logo.png';
 import odnoklassniki from '../images/odnoklassniki.svg';
 import { scrollToId } from '../utils';
-import telegram from '../images/telegram.svg';
 import vk from '../images/vk.svg';
-import whatsapp from '../images/whatsapp.svg';
 
 const splavy = () => (
   <Layout>
@@ -78,14 +79,8 @@ const splavy = () => (
           <div className={`${mainBannerText3} headerText`}>
             <p className={mainBannerText3P}>Ищете идеальный способ сбежать от городской суеты и ощутить вдохновение природы? Добро пожаловать в мир наших захватывающих путешествий на байдарках по чистым рекам Пронского района Рязанской области! 🌿</p>
           </div>
-          <div className={`${buttons} ${columnReverseMobile}`}>
-            <div style={{ display: 'flex', gap: 15, fontSize: 18, alignItems: 'center' }}>Пишите:
-              <a href="https://vk.me/pronskie_splavy" target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' /></a>
-              <a href="https://t.me/pronskie_splavy" target='_blank' title='Телеграм'><img src={telegram} alt='Телеграм' /></a>
-              <a href="https://wa.me/+79521233539" target='_blank' title='Вотсапп'><img src={whatsapp} alt='Вотсапп' /></a>
-            </div>
-            <a className={buttonMain} href='tel:+79521233539'>Звоните +79521233539</a>
-          </div>
+
+          <ContactUs />
         </div>
       </div>
     </div>
@@ -103,7 +98,7 @@ const splavy = () => (
           <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../images/Splav/index/3days.jpg'} alt={'Пронские сплавы - 3 дня'} />
           <h4 className={featureHeader}>3 Дня, река Проня</h4>
           <div className={rowText} style={{ maxWidth: 800 }}>Автономный сплав по реке Проня на 3 дня в сопровождении инструктора, все необходимое оборудование мы предоставляем.<br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: 8500₽ (май-июнь), 9500₽ (июль-август), <br /> детям до 14 лет 7500₽</div>
-          <a className={button} href="three_day">Подробнее</a>
+          <a className={button} href="/splavy/three_day">Подробнее</a>
         </div>
       </div>
       <div className={row} style={{ alignItems: 'start' }}>
@@ -114,12 +109,7 @@ const splavy = () => (
           <div className={rowText} style={{ maxWidth: 800 }}>Сплав с инструктором по рекам Кердь и Проня, с полноценным обедом и трансфером из Пронска. <br /><br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: 3500₽ (май-июнь), 4500₽ (июль-август) <br /> детям до 14 лет 2000₽</div>
           <a className={button} href='/splavy/kerd'>Подробнее</a>
         </div>
-        <div className={feature}>
-          <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../images/Splav/index/4.png'} alt={'Пронские сплавы - 3 дня'} />
-          <h4 className={featureHeader}>Сплав с ночёвкой в Глемпинге Берег на Проне</h4>
-          <div className={rowText} style={{ maxWidth: 800 }}>На природу со всеми благами цивилизации! <br /> Сплав с инструктором до Глемпинга по рекам Кердь и Проня. Разные варианты размещения: от палаток с удобными спальным оборудованием или шатров с кроватями, до бунгало с двухспальной кроватью, диваном и отдельным душем.<br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: от 8000₽, <br /> детям до 14 лет 6000₽</div>
-          <a className={button} href="three_day">Подробнее</a>
-        </div>
+        <Glamping />
 
 
       </div>
@@ -245,20 +235,7 @@ const splavy = () => (
       </div>
     </div>*/}
 
-    <div className={grayBack}>
-      <div className={container}>
-        {/*<div className={`${rowSubHeader}`}>Почему выбирают нас</div>*/}
-        <h3 className={`${rowHeader} headerFont`}>Как до нас добраться</h3>
-        <div className={`${row} ${tinyRow}`}>
-          <div className={rowText}>
-            Мы находимся в Рязанской области, Пронский район.<br />
-            Добраться до р.п. Пронск можно на общественном транспорте или собственном автомобиле, для вас будет бесплатная охраняемая парковка.<br />
-            Мы всего в 50 км от Рязани.
-          </div>
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A77d7e495cb017ecead7fa8df335a1c15454e29de12272bda8c806e292d3a9852&amp;source=constructor" width="100%" height="400"></iframe>
-        </div>
-      </div>
-    </div>
+    <HowToGetToUs />
 
     <div>
       <div className={`${container} ${imageContainer}`} style={{ background: `url(${feedbackImage})`, backgroundPosition: 'bottom', backgroundSize: 'cover' }}>
