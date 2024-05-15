@@ -58,7 +58,9 @@ import Glamping from './routes/Glamping';
 import { HeadFC } from 'gatsby';
 import HowToGetToUs from './HowToGetToUs';
 import Layout from '../layout';
+import OneDay from './routes/OneDay';
 import { StaticImage } from 'gatsby-plugin-image';
+import ThreeDays from './routes/ThreeDays';
 import logoImage from '../../images/Splav/logo.png';
 import odnoklassniki from '../../images/odnoklassniki.svg';
 import telegram from '../../images/telegram.svg';
@@ -204,19 +206,8 @@ const pronya = () => (
     <div className={container}>
       <h3 id="routes" className={`${rowHeader} headerFont`}>Также может быть интересно</h3>
       <div className={row} style={{ alignItems: 'start' }}>
-        <div className={feature}>
-          <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../../images/Splav/index/3days.jpg'} alt={'Пронские сплавы - 3 дня'} />
-          <h4 className={featureHeader}>3 Дня, река Проня</h4>
-          <div className={rowText} style={{ maxWidth: 800 }}>Автономный сплав по реке Проня на 3 дня в сопровождении инструктора, все необходимое оборудование мы предоставляем.<br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: 8500₽ (май-июнь), 9500₽ (июль-август), <br /> детям до 14 лет 7500₽</div>
-          <a className={button} href="/splavy/three_day">Подробнее</a>
-        </div>
-        <div className={feature}>
-          <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../../images/Splav/index/5.jpg'} alt={'Пронские сплавы - 1 день'} />
-          <h4 className={featureHeader}>
-            1 День</h4>
-          <div className={rowText} style={{ maxWidth: 800 }}>Сплав с инструктором по рекам Кердь и Проня, с полноценным обедом и трансфером из Пронска. <br /><br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: 3500₽ (май-июнь), 4500₽ (июль-август) <br /> детям до 14 лет 2000₽</div>
-          <a className={button} href='/splavy/kerd'>Подробнее</a>
-        </div>
+        <ThreeDays />
+        <OneDay />
         <Glamping />
       </div>
     </div>

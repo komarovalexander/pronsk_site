@@ -55,8 +55,11 @@ import Glamping from './splavy/routes/Glamping';
 import { HeadFC } from 'gatsby';
 import HowToGetToUs from './splavy/HowToGetToUs';
 import Layout from './layout';
+import OneDay from './splavy/routes/OneDay';
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
+import ThreeDays from './splavy/routes/ThreeDays';
+import TwoDays from './splavy/routes/TwoDays';
 import feedbackDoubleQuoteImage from '../images/Splav/index/15.svg';
 import feedbackImage from '../images/Splav/index/14.png';
 import logoImage from '../images/Splav/logo.png';
@@ -88,27 +91,11 @@ const splavy = () => (
     <div className={container}>
       <h3 id="routes" className={`${rowHeader} headerFont`}>Наши маршруты</h3>
       <div className={row} style={{ alignItems: 'start' }}>
-        <div className={feature}>
-          <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../images/Splav/index/8.jpg'} alt={'Пронские сплавы - 2 дня'} />
-          <h4 className={featureHeader}>2 Дня, реки Кердь-Проня</h4>
-          <div className={rowText} style={{ maxWidth: 800 }}>Сплав по реке Кердь с впаданием в Проню и финишем в древнем городе Пронске. Отдых в режиме всё включено: Питание, трансфер, инструкторы, палатки и много другое. Ночевка на нашей оборудованной стоянке на реке Кердь.<br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: 6000₽ (май-июнь), 7000₽ (июль-август), <br /> детям до 14 лет 4000₽</div>
-          <a className={button} href="/splavy/pronya">Подробнее</a>
-        </div>
-        <div className={feature}>
-          <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../images/Splav/index/3days.jpg'} alt={'Пронские сплавы - 3 дня'} />
-          <h4 className={featureHeader}>3 Дня, река Проня</h4>
-          <div className={rowText} style={{ maxWidth: 800 }}>Автономный сплав по реке Проня на 3 дня в сопровождении инструктора, все необходимое оборудование мы предоставляем.<br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: 8500₽ (май-июнь), 9500₽ (июль-август), <br /> детям до 14 лет 7500₽</div>
-          <a className={button} href="/splavy/three_day">Подробнее</a>
-        </div>
+        <TwoDays />
+        <ThreeDays />
       </div>
       <div className={row} style={{ alignItems: 'start' }}>
-        <div className={feature}>
-          <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../images/Splav/index/5.jpg'} alt={'Пронские сплавы - 1 день'} />
-          <h4 className={featureHeader}>
-            1 День</h4>
-          <div className={rowText} style={{ maxWidth: 800 }}>Сплав с инструктором по рекам Кердь и Проня, с полноценным обедом и трансфером из Пронска. <br /><br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: 3500₽ (май-июнь), 4500₽ (июль-август) <br /> детям до 14 лет 2000₽</div>
-          <a className={button} href='/splavy/kerd'>Подробнее</a>
-        </div>
+        <OneDay />
         <Glamping />
 
 

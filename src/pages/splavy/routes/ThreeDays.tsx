@@ -1,0 +1,21 @@
+import {
+    button,
+    feature,
+    featureHeader,
+    rowImage,
+    rowText,
+} from '../splavy_detail.module.scss';
+
+import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
+
+const ThreeDays = () => (
+    <div className={feature}>
+        <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../../../images/Splav/index/3days.jpg'} alt={'Пронские сплавы - 3 дня'} />
+        <h4 className={featureHeader}>3 Дня, река Проня</h4>
+        <div className={rowText} style={{ maxWidth: 800 }}>Автономный сплав по реке Проня на 3 дня в сопровождении инструктора, все необходимое оборудование мы предоставляем.<br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: 8500₽ (май-июнь), 9500₽ (июль-август), <br /> детям до 14 лет 7500₽</div>
+        <a className={button} href="/splavy/three_day">Подробнее</a>
+    </div>
+);
+
+export default ThreeDays;
