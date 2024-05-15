@@ -57,6 +57,7 @@ import HowToGetToUs from './splavy/HowToGetToUs';
 import Layout from './layout';
 import OneDay from './splavy/routes/OneDay';
 import React from 'react';
+import SplavyFooter from './splavy/Footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import ThreeDays from './splavy/routes/ThreeDays';
 import TwoDays from './splavy/routes/TwoDays';
@@ -314,21 +315,7 @@ const splavy = () => (
 
         </div>
       </div>*/}
-      <div className={footer} >
-        <div><img src={logoImage} className={logo} alt="Пронские сплавы логотип" /></div>
-        <div className={footerLinks} >
-          <a href="#routes" onClick={(e) => {
-            scrollToId('#routes');
-            e.preventDefault();
-          }}>Маршруты</a>
-          <a href="/splavy/rent/">Аренда</a>
-          <a href="/splavy/company/">Организация корпоратива</a>
-        </div>
-        <div className={social}>
-          <a href="https://vk.com/pronskie_splavy" target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' /></a>
-          <a href="https://ok.ru/group/70000002650473" target='_blank' title="Одноклассники"><img src={odnoklassniki} alt='Одноклассники' /></a>
-        </div>
-      </div>
+      <SplavyFooter scrollToRoutes />
     </div >
   </Layout >
 );

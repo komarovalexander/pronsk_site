@@ -59,6 +59,7 @@ import { HeadFC } from 'gatsby';
 import HowToGetToUs from './HowToGetToUs';
 import Layout from '../layout';
 import OneDay from './routes/OneDay';
+import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import ThreeDays from './routes/ThreeDays';
 import logoImage from '../../images/Splav/logo.png';
@@ -211,18 +212,7 @@ const pronya = () => (
         <Glamping />
       </div>
     </div>
-    <div className={footer} style={{ marginTop: 80 }} >
-      <div><img src={logoImage} className={logo} alt="Пронские сплавы логотип" /></div>
-      <div className={footerLinks} >
-        <a href="/splavy#routes">Маршруты</a>
-        <a href="/splavy/rent/">Аренда</a>
-        <a href="/splavy/company/">Организация корпоратива</a>
-      </div>
-      <div className={social}>
-        <a href="https://vk.com/pronskie_splavy" target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' /></a>
-        <a href="https://ok.ru/group/70000002650473" target='_blank' title="Одноклассники"><img src={odnoklassniki} alt='Одноклассники' /></a>
-      </div>
-    </div>
+    <SplavyFooter style={{ marginTop: 80 }} />
   </Layout >
 );
 
