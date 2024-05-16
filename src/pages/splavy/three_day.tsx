@@ -79,7 +79,7 @@ const three_day = () => (
       <StaticImage style={{ position: 'absolute', zIndex: 0, height: '100%', width: '100%' }} src={'../../images/Splav/index/3days.jpg'} alt={'Пронские сплавы - Проня 3 дня'} />
       <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%' }}>
         <div className={container}>
-          <div className={mainBannerText} style={{ backgroundColor: '#609ad6BB' }}>
+          <div className={mainBannerText} style={{ backgroundColor: '#153452BB' }}>
             <div className={`${mainBannerText1} headerFont`}><h1>Проня (3 Дня)</h1></div>
             <div className={`${mainBannerText3} headerText`}>
               <div>

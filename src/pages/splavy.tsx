@@ -112,7 +112,7 @@ const splavy = () => (
 
             <div className={additionalFeature}>
               <h4 className={additionalFeatureHeader}>
-                Прокат с доставкой и трансфером
+                <a href="/splavy/rent/" style={{ color: 'white', textDecoration: 'none' }}>Прокат с доставкой и трансфером</a>
               </h4>
               <a className={underlinedLink} href="/splavy/rent/">Узнать больше</a>
             </div>
@@ -123,7 +123,7 @@ const splavy = () => (
 
             <div className={additionalFeature}>
               <h4 className={additionalFeatureHeader}>
-                Организация корпоратива
+                <a href="/splavy/company/" style={{ color: 'white', textDecoration: 'none' }}>Организация корпоратива</a>
               </h4>
               <a className={underlinedLink} href="/splavy/company/">Узнать больше</a>
             </div>
