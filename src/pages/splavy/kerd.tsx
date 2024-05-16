@@ -81,7 +81,7 @@ const kerd = () => {
         <StaticImage style={{ position: 'absolute', zIndex: 0, height: '100%', width: '100%' }} src={'../../images/Splav/Prony/1day.jpg'} alt={'Пронские сплавы '} />
         <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%' }}>
           <div className={container}>
-            <div className={mainBannerText} style={{ backgroundColor: '#fc9718AA' }}>
+            <div className={mainBannerText} style={{ backgroundColor: '#03040277' }}>
               <div className={`${mainBannerText1} headerFont`}><h1>Кердь и Проня (1 день)</h1></div>
               <div className={`${mainBannerText3} headerText`}>
                 <div>
@@ -91,7 +91,7 @@ const kerd = () => {
               </div>
               <div className={`${mainBannerText3} headerText`}>
                 <div>
-                  Цена: 3500₽, <br /> детям до 14 лет 2000₽
+                  Цена: 3500₽ (май-июнь), 4500₽ (июль-август), <br /> детям до 14 лет 2000₽
                   <br />
                   <div style={{ fontSize: 12 }}>*Бронирование производится по 50% предоплате. <br /> **В случае отказа более чем за 7 дней до мероприятия, предоплата возвращается в полном объеме</div>
                 </div>
