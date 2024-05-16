@@ -163,7 +163,7 @@ const rent = () => (
       </div>
     </div>
     <div className={container}>
-      <h3 id="routes" className={`${rowHeader} headerFont`}>Также с нами можно пойти в полностью организованное нами путешествие</h3>
+      <h3 id="routes" className={`${rowHeader} headerFont`}>Также с нами можно отправиться в полностью организованное нами путешествие:</h3>
       <div className={row} style={{ alignItems: 'start' }}>
         <TwoDays />
         <ThreeDays />
