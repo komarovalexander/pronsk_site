@@ -12,7 +12,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 const link = '/splavy/kerd';
 const OneDay = () => (
     <div className={feature}>
-        <StaticImage className={rowImage} style={{ marginBottom: 15 }} width={660} src={'../../../images/Splav/index/5.jpg'} alt={'Пронские сплавы - 1 день'} />
+        <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../../../images/Splav/index/5.jpg'} alt={'Пронские сплавы - 1 день'} />
         <a style={{ textDecoration: 'none' }} href={link}>
             <h4 className={featureHeader}>
                 1 День</h4>
