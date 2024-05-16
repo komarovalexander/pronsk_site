@@ -2,6 +2,8 @@ import React, { CSSProperties } from 'react';
 import {
   additionalFeature,
   additionalFeatureHeader,
+  breadcrumb,
+  breadcrumbItem,
   button,
   buttonMain,
   buttonRoutes,
@@ -49,45 +51,45 @@ import {
   underlinedLink,
   video,
   videoContainer,
-} from '../splavy.module.scss';
+} from './splavy_detail.module.scss';
 
+import ContactUs from './ContactUs';
+import Glamping from './routes/Glamping';
 import { HeadFC } from 'gatsby';
+import HowToGetToUs from './HowToGetToUs';
 import Layout from '../layout';
+import OneDay from './routes/OneDay';
+import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
-import logoImage from '../../images/Splav/logo.png';
-import odnoklassniki from '../../images/odnoklassniki.svg';
-import telegram from '../../images/telegram.svg';
-import vk from '../../images/vk.svg';
-import whatsapp from '../../images/whatsapp.svg';
+import ThreeDays from './routes/ThreeDays';
+import TwoDays from './routes/TwoDays';
 
 const rent = () => (
   <Layout>
-    <div className={container} >
+    <div className={container} style={{ paddingTop: 0 }}>
       <nav aria-label="breadcrumb" style={{ marginTop: 10 }}>
-        <ol className="breadcrumb">
-          <li className="breadcrumb-item"><a href="/splavy/">Пронские сплавы</a></li>
-          <li className="breadcrumb-item active" aria-current="page">Прокат-Аренда с доставкой и трансфером</li>
+        <ol className={breadcrumb}>
+          <li className={breadcrumbItem}><a href="/splavy/">Пронские сплавы</a></li>
+          <li className={breadcrumbItem}>/</li>
+          <li className={breadcrumbItem} aria-current="page">Прокат-Аренда с доставкой и трансфером</li>
         </ol>
       </nav>
     </div>
 
 
     <div className={mainBanner} >
-      <StaticImage style={{ position: 'absolute', zIndex: 0, height: '100%', width: '100%' }} src={'../../images/Splav/Prony/rent.jpg'} alt={'Пронские сплавы - Прокат-Аренда с доставкой и трансфером'} />
+      <StaticImage style={{ position: 'absolute', zIndex: 0, height: '100%', width: '100%' }} src={'../../images/Splav/index/6.jpg'} alt={'Пронские сплавы '} />
       <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%' }}>
-
-        <div className={mainBannerText}>
-          <div className={`${mainBannerText1} headerFont`}>
-
-
-            <h1>Прокат-Аренда с доставкой и трансфером</h1></div>
-          <div className={`${buttons} ${columnReverseMobile}`}>
-            <div style={{ display: 'flex', gap: 15, fontSize: 18, alignItems: 'center' }}>Пишите:
-              <a href="https://vk.me/pronskie_splavy" target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' /></a>
-              <a href="https://t.me/pronskie_splavy" target='_blank' title='Телеграм'><img src={telegram} alt='Телеграм' /></a>
-              <a href="https://wa.me/+79521233539" target='_blank' title='Вотсапп'><img src={whatsapp} alt='Вотсапп' /></a>
+        <div className={container}>
+          <div className={mainBannerText} style={{ backgroundColor: '#c11b2066' }}>
+            <div className={`${mainBannerText1} headerFont`}><h1>Прокат-Аренда с доставкой и трансфером</h1></div>
+            <div className={`${mainBannerText3} headerText`}>
+              <div>
+                <p className={mainBannerText3P}>
+                  🌊 🚣‍♂️ Хочешь покорить водные просторы и насладиться красотами природы? Наша аренда байдарок предлагает идеальное решение для тебя!</p>
+              </div>
             </div>
-            <a className={buttonMain} href='tel:+79521233539'>Звоните +79521233539</a>
+            <ContactUs />
           </div>
         </div>
       </div>
@@ -95,42 +97,83 @@ const rent = () => (
 
     <div className={container}>
       <div className="container text">
-        <h3 style={{ textAlign: 'center' }}>🌊 Погрузись мир водных приключение с нами! 🚣‍♂️</h3>
-        <p style={{ fontSize: '18px', textAlign: "justify" }}>Хочешь покорить водные просторы и насладиться красотами природы? Наша аренда байдарок предлагает идеальное решение для тебя!
-        </p>
-        <h4 style={{ textAlign: 'center' }}>🌅 Почему стоит выбрать нас?</h4>
-        <p style={{ fontSize: '18px', textAlign: "justify" }}>🚐 Трансфер и доставка: Мы обеспечим полный сервис "под ключ" - трансфер от места встречи до начала маршрута и обратно,
-          а также доставку всего необходимого оборудования прямо на место.
-        </p>
-        <p style={{ fontSize: '18px', textAlign: "justify" }}>🛶 Качественное снаряжение: Мы предоставляем современные и надежные байдарки, а также качественные палатки,
-          самонадувающиеся коврики с подушкой, теплые спальники и т.д., обеспечивая комфортный отдых на природе.
-        </p>
-        <p style={{ fontSize: '18px', textAlign: "justify" }}>🌲 Разнообразие маршрутов: Исследуй водные просторы Рязанской области и за ее пределами!
-          Наши маршруты простираются от живописных рек и озер до уединенных водоемов, где ты сможешь насладиться природой в полной мере.
-        </p>
-        <p style={{ fontSize: '18px', textAlign: "justify" }}>🕒 Гибкий график: Наши байдарки доступны для аренды в любое время. Планируй свое приключение так, как тебе удобно.
-        </p>
-        <p style={{ fontSize: '18px', textAlign: "justify" }}>👨‍👩‍👧‍👦 Для всей семьи: Аренда байдарок подходит для всех возрастов и уровней подготовки. Приглашай своих близких и друзей и отправляйтесь в увлекательное путешествие по воде!
-        </p>
-        <p style={{ fontSize: '18px', textAlign: "justify" }}>🎉 Открой новые горизонты вместе с нами! Забронируй байдарки уже сегодня по телефону <a href="tel:+79521233539">+79521233539</a> и отправляйся на водные приключения, создавая незабываемые воспоминания. 📞
-        </p>
+        <h3 className={`${rowHeader} headerFont`}>Стоимость оборудования за день <br /> (прокат от 2-х дней)</h3>
+        <div className={row}>
+          <div>
+            <b style={{ fontSize: '18px', textAlign: "justify" }}>🚣‍♂️ Оборудование для сплава</b>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Байдарка 2-х местная + вёсла - 1800 р.</p>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Гермомешок - 200 р.</p>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Спасательный жилет - 200 р.</p>
+            <b style={{ fontSize: '18px', textAlign: "justify" }}>⛺️ Оборудование для комфортного сна на природе</b>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Спальник - 300 р.</p>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Самонадувающийся коврик - 400 р.</p>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Палатка 4-х местная - 500 р.</p>
+
+            <div style={{ fontSize: 12 }}>*Бронирование производится по 50% предоплате. <br /> **В случае отказа более чем за 7 дней до мероприятия, предоплата возвращается в полном объеме</div>
+
+          </div>
+        </div>
       </div>
     </div>
 
 
     <div className={container}>
-      <div className="container text" style={{ paddingTop: 30 }}>
-        <h3 style={{ textAlign: "center" }}>Стоимость оборудования за день (прокат от 2-х дней)</h3>
-        <p style={{ fontSize: '18px', textAlign: "justify" }}>
-          <i>Байдарка 2-х местная - 1800 р.<br />
-            Гермомешок - 200 р.<br />
-            Спальник - 300 р.<br />
-            Самонадувающийся коврик - 300 р.<br />
-            Палатка 4-х местная - 500 р.<br />
-          </i>
-        </p>
+      <h3 className={`${rowHeader} headerFont`}>Почему стоит выбрать нас?</h3>
+      <div className={`${row} ${rowReversed}`}>
+        <div><StaticImage width={800} className={rowImage} src={'../../images/Splav/rent/rent-1.jpeg'} alt={'Пронские сплавы - Почему стоит выбрать нас?'} /></div>
+        <div className={rowText}>
+          <div className={feature}>
+            <h4 className={featureHeader}>
+              <span className={featureNumber}>01</span>Доставка оборудования до старта</h4>
+            <div>Мы доставим всё необходимого оборудования прямо на ваш маршрут и заберем с финиша. Стоимость доставки рассчитывается отдельно и зависит от удаленности маршрута от города Пронска</div>
+          </div>
+          <div className={feature}>
+            <h4 className={featureHeader}>
+              <span className={featureNumber}>02</span>Трансфер</h4>
+            <div>У нас есть возможность заказать трансфер до начала вашего маршрута и с финиша</div>
+          </div>
+          <div className={feature}>
+            <h4 className={featureHeader}>
+              <span className={featureNumber}>03</span>Разнообразие маршрутов</h4>
+            <div>Если вы хотите попробовать пройти по нашим маршрутам самостоятельно, на арендованном оборудовании, мы с радостью вам о них расскажем. У нас очень красивая природа и мы её ценим и бережём</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div className={`${row}`}>
+        <div><StaticImage className={rowImage} width={800} src={'../../images/Splav/rent/rent-2.jpeg'} alt={'Пронские сплавы - повар и инструктор'} /></div>
+        <div className={rowText}>
+          <div className={feature}>
+            <h4 className={featureHeader}>
+              <span className={featureNumber}>04</span>Гибкий график</h4>
+            <div>Наши байдарки доступны для аренды в любое время. Планируй свое приключение так, как вам удобно</div>
+          </div>
+          <div className={feature}>
+            <h4 className={featureHeader}>
+              <span className={featureNumber}>05</span>Большое количество байдарок</h4>
+            <div>У вас собирается большая компания? Да это же отлично! Мы можем предоставить байдарки для компаний до 48 человек! Нужно больше? - Звоните, мы найдем решение</div>
+          </div>
+          <div className={feature}>
+            <h4 className={featureHeader}>
+              <span className={featureNumber}>06</span>Вы сами планируете свой поход</h4>
+            <div>При Аренде, мы - ваш инструмент который надежно доставит вам необходимое оборудование, а вы сами организатор и имеете больше гибкости для планирования, мы лишь можем вам подсказать и дать советы. У нас так же имеются <a href="#routes">Организованные маршруты</a>, и если у вас нет опыта походов советуем начать с них - там мы все приготовим под ключ</div>
+          </div>
+        </div>
       </div>
     </div>
+    <div className={container}>
+      <h3 id="routes" className={`${rowHeader} headerFont`}>Также с нами можно пойти в полностью организованное нами путешествие</h3>
+      <div className={row} style={{ alignItems: 'start' }}>
+        <TwoDays />
+        <ThreeDays />
+      </div>
+      <div className={row} style={{ alignItems: 'start' }}>
+        <OneDay />
+        <Glamping />
+      </div>
+    </div>
+    <SplavyFooter scrollToRoutes />
 
   </Layout >
 );
