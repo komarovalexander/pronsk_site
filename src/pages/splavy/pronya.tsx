@@ -62,11 +62,6 @@ import OneDay from './routes/OneDay';
 import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import ThreeDays from './routes/ThreeDays';
-import logoImage from '../../images/Splav/logo.png';
-import odnoklassniki from '../../images/odnoklassniki.svg';
-import telegram from '../../images/telegram.svg';
-import vk from '../../images/vk.svg';
-import whatsapp from '../../images/whatsapp.svg';
 
 const pronya = () => (
   <Layout>
@@ -128,7 +123,7 @@ const pronya = () => (
       <br />
       <br />
       <div className={`${row}`}>
-        <div><StaticImage className={rowImage} src={'../../images/Splav/2days/pronya-2-3.JPG'} alt={'Пронские сплавы - Сплав Кердь-Проня (2 Дня) - 2 день'} /></div>
+        <div><StaticImage className={rowImage} width={800} src={'../../images/Splav/2days/pronya-2-3.JPG'} alt={'Пронские сплавы - Сплав Кердь-Проня (2 Дня) - 2 день'} /></div>
         <div className={rowText}>
           <i style={{ fontSize: '18px', textAlign: "justify" }}>День 2</i>
           <p style={{ fontSize: '18px', textAlign: "justify" }}>
