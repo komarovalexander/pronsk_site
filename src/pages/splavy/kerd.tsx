@@ -79,9 +79,9 @@ const kerd = () => {
 
       <div className={mainBanner} >
         <StaticImage style={{ position: 'absolute', zIndex: 0, height: '100%', width: '100%' }} src={'../../images/Splav/Prony/1day.jpg'} alt={'Пронские сплавы '} />
-        <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%' }}>
+        <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%', backgroundColor: '#03040277' }}>
           <div className={container}>
-            <div className={mainBannerText} style={{ backgroundColor: '#03040277' }}>
+            <div className={mainBannerText}>
               <div className={`${mainBannerText1} headerFont`}><h1>Кердь и Проня (1 день)</h1></div>
               <div className={`${mainBannerText3} headerText`}>
                 <div>

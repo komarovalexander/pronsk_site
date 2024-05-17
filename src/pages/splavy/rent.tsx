@@ -79,9 +79,9 @@ const rent = () => (
 
     <div className={mainBanner} >
       <StaticImage style={{ position: 'absolute', zIndex: 0, height: '100%', width: '100%' }} src={'../../images/Splav/index/6.jpg'} alt={'Пронские сплавы '} />
-      <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%' }}>
+      <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%', backgroundColor: '#520A0C77' }}>
         <div className={container}>
-          <div className={mainBannerText} style={{ backgroundColor: '#520A0C77' }}>
+          <div className={mainBannerText}>
             <div className={`${mainBannerText1} headerFont`}><h1>Прокат-Аренда с доставкой и трансфером</h1></div>
             <div className={`${mainBannerText3} headerText`}>
               <div>
