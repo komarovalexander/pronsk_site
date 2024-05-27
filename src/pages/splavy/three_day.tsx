@@ -1,169 +1,147 @@
-import 'react-big-calendar/lib/css/react-big-calendar.css';
-import 'moment/locale/ru'; // without this line it didn't work
-
-import { HeadFC } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
-import moment from 'moment';
 import React, { CSSProperties } from 'react';
-import { Calendar, momentLocalizer } from 'react-big-calendar';
-import { Carousel, Col, Container, Row } from 'react-bootstrap';
+import {
+  additionalFeature,
+  additionalFeatureHeader,
+  breadcrumb,
+  breadcrumbItem,
+  button,
+  buttonMain,
+  buttonRoutes,
+  buttons,
+  columnReverseMobile,
+  container,
+  darkBack,
+  feature,
+  featureHeader,
+  featureNumber,
+  feedback,
+  feedbackItem,
+  feedbackItemDoubleQuote,
+  feedbackItemText,
+  feedbackLink,
+  feedbackPerson,
+  feedbackPersonDate,
+  feedbackPersonImage,
+  feedbackPersonName,
+  footer,
+  footerLinks,
+  grayBack,
+  header,
+  imageContainer,
+  linearBack,
+  logo,
+  mainBanner,
+  mainBannerText,
+  mainBannerText1,
+  mainBannerText2,
+  mainBannerText2Br,
+  mainBannerText3,
+  mainBannerText3P,
+  partner,
+  partnerRow,
+  row,
+  rowHeader,
+  rowImage,
+  rowImageBigHeight,
+  rowReversed,
+  rowText,
+  social,
+  tinyRow,
+  triangle,
+  underlinedLink,
+  video,
+  videoContainer,
+} from './splavy_detail.module.scss';
 
+import ContactUs from './ContactUs';
+import Glamping from './routes/Glamping';
+import { HeadFC } from 'gatsby';
+import HowToGetToUs from './HowToGetToUs';
 import Layout from '../layout';
-
-moment.locale('ru')
-
-const localizer = momentLocalizer(moment)
-const captionStyle: CSSProperties = {
-  padding: '10px 30px',
-  backgroundColor: '#00000059'
-};
-const events = [
-  {
-    end: '10.02.2023',
-    start: '09.02.2023',
-    title: '2-х дневный сплав забронирован. Осталось 6 мест на однодневный сплав'
-  }];
-
-const calenderEvents = events.map(e => ({ title: e.title, start: moment(e.start, 'DD.MM.YYYY'), end: moment(e.end, 'DD.MM.YYYY').add(1, 'd') }))
+import OneDay from './routes/OneDay';
+import SplavyFooter from './Footer';
+import { StaticImage } from 'gatsby-plugin-image';
+import TwoDays from './routes/TwoDays';
 
 const three_day = () => (
   <Layout>
-    <Container>
+    <div className={container} style={{ paddingTop: 0 }}>
       <nav aria-label="breadcrumb" style={{ marginTop: 10 }}>
-        <ol className="breadcrumb">
-          <li className="breadcrumb-item"><a href="/splavy/">Пронские сплавы</a></li>
-          <li className="breadcrumb-item active" aria-current="page">Проня (3 Дня)</li>
+        <ol className={breadcrumb}>
+          <li className={breadcrumbItem}><a href="/splavy/">Пронские сплавы</a></li>
+          <li className={breadcrumbItem}>/</li>
+          <li className={breadcrumbItem} aria-current="page">Проня (3 Дня)</li>
         </ol>
       </nav>
-    </Container>
+    </div>
 
-    <Row style={{ padding: '40px 0' }}>
-      <Col>
-        <div className="container text">
-          <Carousel controls={false} indicators={false}>
-            <Carousel.Item>
+    <div className={mainBanner} >
+      <StaticImage style={{ position: 'absolute', zIndex: 0, height: '100%', width: '100%' }} src={'../../images/Splav/index/3days.jpg'} alt={'Пронские сплавы - Проня 3 дня'} />
+      <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%', backgroundColor: '#153452BB' }}>
+        <div className={container}>
+          <div className={mainBannerText}>
+            <div className={`${mainBannerText1} headerFont`}><h1>Проня (3 Дня)</h1></div>
+            <div className={`${mainBannerText3} headerText`}>
               <div>
-                <StaticImage src="../../images/Splav/Prony/3day.jpg" className="rounded" alt="Пронские сплавы" />
-                <Carousel.Caption style={captionStyle}>
-                  <h1>Проня (3 Дня)</h1>
-                </Carousel.Caption>
+                <p className={mainBannerText3P}>
+                  Сплав по Проне 3 дня</p>
               </div>
-            </Carousel.Item>
-          </Carousel>
+            </div>
+            <div className={`${mainBannerText3} headerText`}>
+              <div>
+                Цена: Стоимость 3-дневного сплава 8500р.(май-июнь) / 9500р.(июль-август), <br /> детям до 14 лет 7500р.
+                <br />
+                <div style={{ fontSize: 12 }}>*Бронирование производится по 50% предоплате. <br /> **В случае отказа более чем за 7 дней до мероприятия, предоплата возвращается в полном объеме</div>
+              </div>
+            </div>
+            <ContactUs />
+          </div>
         </div>
-      </Col>
-    </Row>
+      </div>
+    </div>
 
-    <Row style={{ backgroundColor: '#eef0f2', padding: '40px 0' }}>
-      <Col>
-        <div className="container text">
-          <h3 style={{ textAlign: 'center' }}>🚣‍♂️ Особеность маршрута</h3>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>👨‍👩‍👧‍👦 Для всей семьи: Наши походы подходят для любого уровня подготовки, от новичков до опытных каякеров.
-            Пригласите семью и друзей. Для детей у нас большие скидки!
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>✨ Сервис "все включено": Наслаждайтесь беззаботным приключением с нашим полным сервисом,
-            из необходимого вам понадобится только питьевая вода в удобной бутылке.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>👨‍🎓 Опытные гиды: Наши профессиональные гиды знают каждый поворот реки, безопасное и захватывающее приключение.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🛶 Качественное снаряжение: Мы предоставляем современные и надежные байдарки, чтобы ваше путешествие было комфортным и беззаботным.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🍲 Кулинарное волшебство на берегу реки: Наш опытный походный повар готовит для вас изысканные блюда прямо на берегу, добавляя вкус к вашему приключению.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🎣 Рыбалка: Река обильна разнообразной рыбой, что делает ее прекрасным местом для рыболовства.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>🌅 Неповторимые закаты: Заканчивайте день, наслаждаясь невероятными закатами над водой Прони. Этот момент станет идеальным завершением вашего дня на реке.
-          </p>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>Отправляйтесь на приключение по реке Проня и откройте для себя всю ее красоту и магию! 🌄
-          </p>
-          <i style={{ fontSize: '18px', textAlign: "justify" }}><b>Стоимость 3-дневного сплава 8500р. (май-июнь)/9500р. (июль-август). <br/>Детям до 14 лет 7500р.</b>
-          <br/> Входит:<br/>
-            - байдарки в собранном виде, спасжилеты, в т.ч. детские<br />
-            - сопровождение<br />
-            - палатки, мягкие матрасы в палатку, спальники<br />
-            - личная посуда<br />
-            - гермомешки<br />
-            - трехразовое горячее питание<br />
-            - трансфер к месту старта и обратно<br />
-            - дождевики<br /></i>
-          <b style={{ fontSize: '18px', textAlign: "justify" }}>Для бронирования и по всем возникающим вопросам звоните или пишите в мессенджеры по телефону <a href="tel:+79521233539">8(952)123-35-39</a> (<a href="https://vk.com/pronskie_splavy">Мы ВКонтакте</a>).<br /></b>
-          <i style={{ fontSize: '18px', textAlign: "justify" }}>*Бронирование производится по 50% предоплате.
-            В случае отказа за 7 дней до мероприятия, предоплата возвращается в полном объеме.</i>
-        </div>
-      </Col>
-    </Row>
 
-    {/* карта */}
-    {/* <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A32cdf8701bc032eaf53d635a839918cbb5ccf218ea8d0e38e90e714ac113ac6c&amp;source=constructor" width="979" height="406" frameborder="0"></iframe> */}
-
-    {/* <Row style={{padding: '40px 0'}}>
-      <Col>
-        <div className="container text">
-          <h3 style={{textAlign: 'center'}}>График занятости путешествий</h3>
-          <i style={{fontSize: '18px', textAlign: "justify"}}>* Бронирование производится по 50% предоплате.
-          В случае отказа за 3 дня до мероприятия, предоплата возвращается в полном объеме.</i>
-          <Calendar
-            localizer={localizer}
-            culture={'ru'}
-            startAccessor="start"
-            endAccessor="end"
-            style={{ height: 500 }}
-            views={['month']}
-            events={calenderEvents}
-            messages={ {
-              previous: 'Предыдущий',
-              next: 'Следующий',
-              today: `Сегодня`,
-            }}
-          />
-        </div>
-        <div className="container text" style={{paddingTop: 30}}>
-          <b style={{fontSize: '18px', textAlign: "justify"}}>Примерная программа однодневного сплава:<br /></b>
-          <i style={{fontSize: '18px', textAlign: "justify"}}>День 1</i>
-          <p style={{fontSize: '18px', textAlign: "justify"}}>
-          12:00 – прибытие в р.п. Пронск к нашему дому, трансфер на место старта.<br />
-          12:30 - инструктаж, получение снаряжение, загрузка байдарок, старт<br />
-          13:00 - сплав на байдарках с остановками для фотографирования и купания<br />
-          15:00 - горячий обед на свободной стоянке, отдых<br />
-          16:00 - сплав на байдарках с остановками для фотографирования и купания<br />
-          19:00 – встречаем вас с готовым лагерем, игры на берегу, ужин, душевные посиделки у костра
-          </p>
-          <i style={{fontSize: '18px', textAlign: "justify"}}>День 2</i>
-          <p style={{fontSize: '18px', textAlign: "justify"}}>
-          09:00 – подъем, завтрак<br />
-          10:30 - сплав на байдарках с остановками для фотографирования и купания<br />
-          14:00 - финиширование у Пронского моста, обратный трансфер к дому<br />
-          </p>
-          <p style={{fontSize: '18px', textAlign: "justify"}}>
-          Все передвижения проходят на байдарках, не отягощенных грузом, так как все нужные вещи для лагеря мы берем на себя и подготавливаем его во время вашего сплава.
-          Это значительно сэкономит и время, и силы участников. На лёгких байдарках передвигаться значительно веселее и комфортнее.</p>
-        </div>
-      </Col>
-    </Row> */}
-
-    <Row style={{ padding: '40px 0' }}>
-      <Col>
-        <div className="container text" style={{ paddingTop: 30 }}>
-          <h3 style={{ textAlign: "center" }}>Примерная программа 3-дневного сплава</h3>
+    <div className={container} style={{
+      paddingTop: 40,
+      paddingBottom: 20
+    }}>
+      <h3 className={`${rowHeader} headerFont`}>🚣‍♂️ Примерная программа слава</h3>
+      <div className={`${row} ${rowReversed}`}>
+        <div><StaticImage className={rowImage} width={800} src={'../../images/Splav/3days/3days-1.jpeg'} alt={'Пронские сплавы - Сплав Кердь-Проня (2 Дня) - 1 день'} /></div>
+        <div className={rowText}>
           <i style={{ fontSize: '18px', textAlign: "justify" }}>День 1</i>
           <p style={{ fontSize: '18px', textAlign: "justify" }}>
-            10:00 – прибытие в р.п. Пронск в Глемпинг берег, трансфер на место старта.<br />
+            10:00 – встреча в р.п. Пронск, трансфер на место старта.<br />
             11:00 - инструктаж, получение снаряжение, загрузка байдарок, старт<br />
             11:30 - сплав на байдарках с остановками для фотографирования и купания<br />
             13:00 - обед на стоянке, отдых<br />
             14:00 - сплав на байдарках с остановками для фотографирования и купания<br />
-            17:00 – финиширование, отдых<br />
+            17:00 – прибытие на месте ночлега, отдых<br />
             19:00 - ужин, душевные посиделки у костра
           </p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div className={`${row}`}>
+        <div><StaticImage className={rowImage} src={'../../images/Splav/3days/3days-2.jpeg'} height={600} width={800} alt={'Пронские сплавы - Сплав Кердь-Проня (2 Дня) - 2 день'} /></div>
+        <div className={rowText}>
           <i style={{ fontSize: '18px', textAlign: "justify" }}>День 2</i>
           <p style={{ fontSize: '18px', textAlign: "justify" }}>
             09:00 – подъем, завтрак<br />
             10:00 - сплав на байдарках с остановками для фотографирования и купания<br />
             13:00 - обед на стоянке, отдых<br />
             14:00 - сплав на байдарках с остановками для фотографирования и купания<br />
-            17:00 – финиширование, отдых<br />
+            17:00 – прибытие на месте ночлега, отдых<br />
             19:00 - ужин, душевные посиделки у костра
           </p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div className={`${row} ${rowReversed}`}>
+        <div><StaticImage className={rowImage} width={800} src={'../../images/Splav/3days/3days-3.jpeg'} alt={'Пронские сплавы - Сплав Кердь-Проня (2 Дня) - 1 день'} /></div>
+        <div className={rowText}>
           <i style={{ fontSize: '18px', textAlign: "justify" }}>День 3</i>
           <p style={{ fontSize: '18px', textAlign: "justify" }}>
             09:00 – подъем, завтрак<br />
@@ -172,128 +150,82 @@ const three_day = () => (
             15:00 - обратный трансфер<br />
           </p>
         </div>
-        <div className="container text">
-          <Carousel controls={false} indicators={false}>
-            <Carousel.Item>
-              <div>
-                <iframe width='100%' height='500' src="https://www.youtube.com/embed/sQ2tOg3mrrs?si=SADGqVcuJLkjJrQI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowfullscreen></iframe>
-              </div>
-            </Carousel.Item>
-          </Carousel>
-        </div>
-      </Col>
-    </Row>
+      </div>
+    </div>
 
-    <Row style={{ backgroundColor: '#eef0f2', padding: '40px 0' }}>
-      <Col>
-        <div className="container text">
-          <h3 style={{ textAlign: 'center' }}>Что взять с собой в поход</h3>
-          <b style={{ fontSize: '18px', textAlign: "justify" }}>🚿 Средства личной гигиены</b>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>полотенце, мыло, зубная паста и щётка, туалетная бумага и т.д.</p>
-          <b style={{ fontSize: '18px', textAlign: "justify" }}>💧 Питьевая вода</b>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>в удобной бутылке или нескольких маленьких, суммарно не менее 1,5 литров на человека</p>
-          <b style={{ fontSize: '18px', textAlign: "justify" }}>👕 Запасная одежда</b>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>теплый свитер, теплые носки, обувь в байдарку (сланцы, кроксы), обувь на стоянку (кроссовки, кеды), головной убор, солнцезащитные очки, ветровка, шорты, спортивные штаны</p>
-          <b style={{ fontSize: '18px', textAlign: "justify" }}>☀️ Крем от загара и средство от комаров </b>
-          <p style={{ fontSize: '18px', textAlign: "justify" }}>пригодится вам, если вы склонны к обгоранию кожи на солнце</p>
-          <p style={{ fontSize: '18px', textAlign: 'justify' }}>🎒 Всё, что вам понадобится в походе - это личные вещи, которые поместятся в небольшой рюкзачок. <b>Всё остальное мы вам предоставим!</b></p>
-        </div>
-      </Col>
-    </Row>
 
-    <Row style={{ padding: '40px 0' }}>
-      <Col>
-        <div className="container text">
-          <Carousel interval={null}>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/1.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/2.JPG" className="rounded" alt="Пороня" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/3.JPG" className="rounded" alt="Проня" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/4.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/5.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/6.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/7.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/8.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/9.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/10.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/11.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/12.JPG" className="rounded" alt="Пороня" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/13.JPG" className="rounded" alt="Проня" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/14.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/15.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/16.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div>
-                <StaticImage src="../../images/Splav/Slider/17.JPG" className="rounded" alt="Кердь" />
-              </div>
-            </Carousel.Item>
-          </Carousel>
+
+    <div className={grayBack}>
+      <div className={container}>
+        <h3 className={`${rowHeader} headerFont`}>В цену входит</h3>
+
+        <div className={row}>
+          <div>
+            <b style={{ fontSize: '18px', textAlign: "justify" }}>🚣‍♂️ Оборудование для сплава</b>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Байдарки в собранном виде, гермомешки, спасжилеты, в т.ч. детские, дождевики</p>
+            <b style={{ fontSize: '18px', textAlign: "justify" }}>⛺️ Оборудование для комфортного сна на природе</b>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Палатки, мягкие коврики в палатку, спальники, подготовленное для отдыха и ночлега место</p>
+            <b style={{ fontSize: '18px', textAlign: "justify" }}>🍲 Трехразовое горячее питание</b>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Обед, ужин, завтрак, обед. Все 2 дня наш опытный повар готовит для вас лучшие походные блюда, добавляя вкус к вашему приключению.</p>
+            <b style={{ fontSize: '18px', textAlign: "justify" }}>🚍 Трансфер</b>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Трансфер от Пронска к месту старта и обратно</p>
+          </div>
         </div>
-      </Col>
-    </Row>
+      </div>
+
+
+      <div className={container}>
+        <div className="container text">
+          <h3 className={`${rowHeader} headerFont`}>Что взять с собой</h3>
+          <div className={row}>
+            <div>
+              <b style={{ fontSize: '18px', textAlign: "justify" }}>🚿 Средства личной гигиены</b>
+              <p style={{ fontSize: '18px', textAlign: "justify" }}>полотенце, мыло, зубная паста и щётка, туалетная бумага и т.д.</p>
+              <b style={{ fontSize: '18px', textAlign: "justify" }}>💧 Питьевая вода</b>
+              <p style={{ fontSize: '18px', textAlign: "justify" }}>в удобной бутылке или нескольких маленьких, суммарно не менее 1,5 литров на человека</p>
+              <b style={{ fontSize: '18px', textAlign: "justify" }}>👕 Запасная одежда</b>
+              <p style={{ fontSize: '18px', textAlign: "justify" }}>теплый свитер, теплые носки, обувь в байдарку (сланцы, кроксы), обувь на стоянку (кроссовки, кеды), головной убор, солнцезащитные очки, ветровка, шорты, спортивные штаны</p>
+              <b style={{ fontSize: '18px', textAlign: "justify" }}>☀️ Крем от загара и средство от комаров </b>
+              <p style={{ fontSize: '18px', textAlign: "justify" }}>пригодится вам, если вы склонны к обгоранию кожи на солнце</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div className={container}>
+      <h3 className={`${rowHeader} headerFont`}>Кому идеально подходит маршрут?</h3>
+      <div className={row}>
+        <div>
+          <b style={{ fontSize: '18px', textAlign: "justify" }}>👨‍👩‍👧‍👦 Семейным</b>
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>Байдарки безопасные и очень устойчивые. На речке Проня хорошее течение есть перекаты но нет опасных порогов - это значит что путешествие будет безопасным и не скучным. 3 дня сплава  (2 ночи в палатке) - идеальное количество дней для время проведения с семьей на природе</p>
+          <b style={{ fontSize: '18px', textAlign: "justify" }}>🤟 Компаниям друзей</b>
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>Вместе побыть на природе, расслабиться и не думать о мелочах, наслаждаясь общением друг с другом</p>
+          <b style={{ fontSize: '18px', textAlign: "justify" }}>🛶 Ищущим новых интересных знакомств и впечатлений</b>
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>Это же интересно оказываться в нестандартной для себя ситуации и знакомить с новыми людьми, не правда ли?</p>
+          <b style={{ fontSize: '18px', textAlign: "justify" }}>🐟 Рыболовам</b>
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>На остановках можно рыбачить, вечером и на рассвете клёв хороший</p>
+          <b style={{ fontSize: '18px', textAlign: "justify" }}>👨‍💼 Коллегам</b>
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>Провести время совместно проходя маршрут, пообщаться в максимально неформальной обстановке, за два дня сплава многое можно обсудить</p>
+          <b style={{ fontSize: '18px', textAlign: "justify" }}>🙂 На самом деле всем кто любит приключения</b>
+          <p style={{ fontSize: '18px', textAlign: "justify" }}>Откройте красоту Пронского района, Рязанской области вместе с нами</p>
+        </div>
+      </div>
+    </div>
+
+    <HowToGetToUs />
+
+    <div className={container}>
+      <h3 id="routes" className={`${rowHeader} headerFont`}>Также может быть интересно</h3>
+      <div className={row} style={{ alignItems: 'start' }}>
+        <TwoDays />
+        <OneDay />
+        <Glamping />
+      </div>
+    </div>
+    <SplavyFooter style={{ marginTop: 80 }} />
   </Layout>
 );
 

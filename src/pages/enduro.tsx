@@ -1,12 +1,11 @@
-import '../table/ka-bootstrap.scss';
-import 'moment/locale/ru'; // without this line it didn't work
-
 import * as React from 'react';
 
-import Container from 'react-bootstrap/esm/Container';
 import { HeadFC } from 'gatsby';
 import Layout from './layout';
 import { StaticImage } from 'gatsby-plugin-image/dist/src/components/static-image.server';
+import {
+  container,
+} from './splavy.module.scss';
 
 const pageStyles = {
   color: '#232129',
@@ -20,7 +19,7 @@ const EnduroPage = () => {
         style={pageStyles}
         className='content'
       >
-        <Container style={{ marginBottom: 50 }}>
+        <div className={container}>
           <h3>Запись на турнир</h3>
           <iframe
             src='https://docs.google.com/forms/d/e/1FAIpQLSdNCOOk22OiKfga_3pqHjMlsaZshtlbSSP-T-dDGWXFPCAonQ/viewform?embedded=true'
@@ -43,7 +42,7 @@ const EnduroPage = () => {
             alt='В Пронске'
             style={{ marginLeft: 2 }}
           />
-        </Container>
+        </div>
       </main>
     </Layout>
   );

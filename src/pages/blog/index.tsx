@@ -1,9 +1,13 @@
-import { Col, Container, Nav, Row } from 'react-bootstrap';
+import 'ka-table/style.scss';
+
 import { Link, graphql } from 'gatsby';
-import React, { useEffect } from 'react';
 
 import Layout from '../layout';
+import React from 'react';
 import { Table } from 'ka-table';
+import {
+  container,
+} from '../splavy.module.scss';
 
 const PostLink = ({ post }: any) => (
   <div>
@@ -21,26 +25,22 @@ const IndexPage = ({
   const posts = edges.map((edge: any) => edge.node);
   return (
     <Layout>
-      <Container style={{ marginBottom: 50 }}>
-        <Row style={{ padding: '40px 0' }}>
-          <Col>
-            <Table
-              childComponents={{
-                cellText: {
-                  content: ({ column, rowData }) => {
-                    if (column.key === 'name') {
-                      return <PostLink post={rowData} />;
-                    }
-                  },
-                },
-              }}
-              rowKeyField='id'
-              columns={[{ key: 'name', title: 'Название' }]}
-              data={posts}
-            />
-          </Col>
-        </Row>
-      </Container>
+      <div className={container} style={{ paddingTop: 40 }}>
+        <Table
+          childComponents={{
+            cellText: {
+              content: ({ column, rowData }) => {
+                if (column.key === 'name') {
+                  return <PostLink post={rowData} />;
+                }
+              },
+            },
+          }}
+          rowKeyField='id'
+          columns={[{ key: 'name', title: 'Название' }]}
+          data={posts}
+        />
+      </div>
     </Layout>
   );
 };

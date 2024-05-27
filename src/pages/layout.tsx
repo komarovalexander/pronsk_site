@@ -1,16 +1,9 @@
-import '../table/ka-bootstrap.scss';
 import './styles.scss';
 
 import * as React from 'react';
 
 import { HeadFC } from 'gatsby';
 import Navigation from './Navigation';
-
-const pageStyles = {
-  color: '#232129',
-  padding: '50px 0',
-  fontFamily: '-apple-system, Roboto, sans-serif, serif',
-};
 
 const Layout = ({ children }) => {
   React.useEffect(() => {

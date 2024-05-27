@@ -1,51 +1,18 @@
-import '../table/ka-bootstrap.scss';
-import 'moment/locale/ru'; // without this line it didn't work
-
 import * as React from 'react';
 
 import {
-  additionalFeature,
-  additionalFeatureHeader,
-  button,
-  buttonMain,
   buttonRoutes,
   buttons,
-  columnReverseMobile,
   container,
   darkBack,
-  feature,
-  featureHeader,
-  featureNumber,
-  feedback,
-  feedbackItem,
-  feedbackItemDoubleQuote,
-  feedbackItemText,
-  feedbackLink,
-  feedbackPerson,
-  feedbackPersonDate,
-  feedbackPersonImage,
-  feedbackPersonName,
   footer,
   footerLinks,
-  grayBack,
-  header,
-  imageContainer,
-  linearBack,
   logo,
-  mainBannerText2Br,
-  partner,
-  partnerRow,
   row,
   rowHeader,
-  rowImageBigHeight,
   rowReversed,
   rowText,
   social,
-  tinyRow,
-  triangle,
-  underlinedLink,
-  video,
-  videoContainer,
 } from './splavy.module.scss';
 import {
   mainBanner,
@@ -79,7 +46,7 @@ const IndexPage = () => {
           <div className={mainBannerText}>
             <div className={`${mainBannerText1}`}>Добро пожаловать</div>
             <div className={`${mainBannerText2}`} >В Пронск</div>
-            <div className={`${mainBannerText3} d-flex justify-content-center`}>
+            <div className={`${mainBannerText3}`}>
               <p className={mainBannerText3P}>Город с красивейшей природой, богатой историей, и приветливыми людьми</p>
             </div>
           </div>

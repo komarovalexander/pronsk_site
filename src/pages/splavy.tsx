@@ -50,18 +50,22 @@ import {
   videoContainer,
 } from './splavy.module.scss';
 
+import ContactUs from './splavy/ContactUs';
+import Glamping from './splavy/routes/Glamping';
 import { HeadFC } from 'gatsby';
+import HowToGetToUs from './splavy/HowToGetToUs';
 import Layout from './layout';
+import OneDay from './splavy/routes/OneDay';
 import React from 'react';
+import SplavyFooter from './splavy/Footer';
 import { StaticImage } from 'gatsby-plugin-image';
+import ThreeDays from './splavy/routes/ThreeDays';
+import TwoDays from './splavy/routes/TwoDays';
 import feedbackDoubleQuoteImage from '../images/Splav/index/15.svg';
-import feedbackImage from '../images/Splav/index/14.png';
 import logoImage from '../images/Splav/logo.png';
 import odnoklassniki from '../images/odnoklassniki.svg';
 import { scrollToId } from '../utils';
-import telegram from '../images/telegram.svg';
 import vk from '../images/vk.svg';
-import whatsapp from '../images/whatsapp.svg';
 
 const splavy = () => (
   <Layout>
@@ -75,73 +79,54 @@ const splavy = () => (
         <div className={mainBannerText}>
           <div className={`${mainBannerText1} headerFont`}>Погрузитесь</div>
           <div className={`${mainBannerText2} h1Font`} >в мир<br className={mainBannerText2Br} /> водных<br /> приключений</div>
-          <div className={`${mainBannerText3} d-flex justify-content-center headerText`}>
+          <div className={`${mainBannerText3} headerText`}>
             <p className={mainBannerText3P}>Ищете идеальный способ сбежать от городской суеты и ощутить вдохновение природы? Добро пожаловать в мир наших захватывающих путешествий на байдарках по чистым рекам Пронского района Рязанской области! 🌿</p>
           </div>
-          <div className={`${buttons} ${columnReverseMobile}`}>
-            <div style={{ display: 'flex', gap: 15, fontSize: 18, alignItems: 'center' }}>Пишите:
-              <a href="https://vk.me/pronskie_splavy" target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' /></a>
-              <a href="https://t.me/pronskie_splavy" target='_blank' title='Телеграм'><img src={telegram} alt='Телеграм' /></a>
-              <a href="https://wa.me/+79521233539" target='_blank' title='Вотсапп'><img src={whatsapp} alt='Вотсапп' /></a>
-            </div>
-            <a className={buttonMain} href='tel:+79521233539'>Звоните +79521233539</a>
-          </div>
+
+          <ContactUs />
         </div>
       </div>
     </div>
+
+    <div className={container}>
+      <h3 id="routes" className={`${rowHeader} headerFont`}>Наши маршруты</h3>
+      <div className={row} style={{ alignItems: 'start' }}>
+        <TwoDays />
+        <ThreeDays />
+      </div>
+      <div className={row} style={{ alignItems: 'start' }}>
+        <OneDay />
+        <Glamping />
+
+
+      </div>
+    </div>
+
 
     <div className={linearBack}>
       <div className={container}>
-        <h3 id="routes" className={`${rowHeader} headerFont`}>Наши маршруты</h3>
+        <h3 className={`${rowHeader} headerFont`}>Дополнительные услуги</h3>
         <div className={row} style={{ alignItems: 'start' }}>
-          <div className={feature}>
-            <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../images/Splav/index/5.jpg'} alt={'Пронские сплавы - 1 день'} />
-            <h4 className={featureHeader}>
-              1 День</h4>
-            <div className={rowText}>Сплав с инструктором по рекам Кердь и Проня, с полноценным обедом и трансфером из Пронска. <br /><br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: 3500₽ (май-июнь), 4500₽ (июль-август) <br /> детям до 14 лет 2000₽</div>
-            <a className={button} href='/splavy/kerd'>Подробнее</a>
+          <div className={feature} style={{ position: 'relative' }}>
+            <StaticImage className={`${rowImage} ${rowImageBigHeight}`} style={{ marginBottom: 15 }} src={'../images/Splav/index/6.jpg'} alt={'Пронские сплавы - прокат'} />
+
+            <div className={additionalFeature}>
+              <h4 className={additionalFeatureHeader}>
+                <a href="/splavy/rent/" style={{ color: 'white', textDecoration: 'none' }}>Прокат с доставкой и трансфером</a>
+              </h4>
+              <a className={underlinedLink} href="/splavy/rent/">Узнать больше</a>
+            </div>
           </div>
 
-          <div className={feature}>
-            <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../images/Splav/index/8.jpg'} alt={'Пронские сплавы - 2 дня'} />
-            <h4 className={featureHeader}>2 Дня (ночёвка в глемпинге)</h4>
-            <div className={rowText}>Сплав по реке Кердь с впаданием в Проню. Ночёвка на Проне в оборудованом глемпинге. Отдых в режиме всё включено: Питание, трансфер, инструкторы и собранные палатки и много другое. <br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: Цена 6000₽ (май-июнь), 7000₽ (июль-август), <br /> детям до 14 лет 4000₽</div>
-            <a className={button} href="/splavy/pronya">Подробнее</a>
-          </div>
+          <div className={feature} style={{ position: 'relative' }}>
+            <StaticImage className={`${rowImage} ${rowImageBigHeight}`} style={{ marginBottom: 15 }} src={'../images/Splav/index/9.jpeg'} alt={'Пронские сплавы - организация корпоратива'} />
 
-          <div className={feature}>
-            <StaticImage className={rowImage} style={{ marginBottom: 15 }} src={'../images/Splav/index/4.png'} alt={'Пронские сплавы - 3 дня'} />
-            <h4 className={featureHeader}>3 Дня</h4>
-            <div className={rowText} >Автономный сплав по реке Проня на 3 дня в сопровождении инструктора, все необходимое оборудование мы предоставляем.<br /> <br /> <b style={{ color: '#3D3D3D' }}>Цена</b>: Цена 8500₽ (май-июнь), 9500₽ (июль-август), <br /> детям до 14 лет 7500₽</div>
-            <a className={button} href="three_day">Подробнее</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div className={container}>
-      <h3 className={`${rowHeader} headerFont`}>Дополнительные услуги</h3>
-      <div className={row} style={{ alignItems: 'start' }}>
-        <div className={feature} style={{ position: 'relative' }}>
-          <StaticImage className={`${rowImage} ${rowImageBigHeight}`} style={{ marginBottom: 15 }} src={'../images/Splav/index/6.jpg'} alt={'Пронские сплавы - прокат'} />
-
-          <div className={additionalFeature}>
-            <h4 className={additionalFeatureHeader}>
-              Прокат с доставкой и трансфером
-            </h4>
-            <a className={underlinedLink} href="/splavy/rent/">Узнать больше</a>
-          </div>
-        </div>
-
-        <div className={feature} style={{ position: 'relative' }}>
-          <StaticImage className={`${rowImage} ${rowImageBigHeight}`} style={{ marginBottom: 15 }} src={'../images/Splav/index/9.jpeg'} alt={'Пронские сплавы - организация корпоратива'} />
-
-          <div className={additionalFeature}>
-            <h4 className={additionalFeatureHeader}>
-              Организация корпоратива
-            </h4>
-            <a className={underlinedLink} href="/splavy/company/">Узнать больше</a>
+            <div className={additionalFeature}>
+              <h4 className={additionalFeatureHeader}>
+                <a href="/splavy/company/" style={{ color: 'white', textDecoration: 'none' }}>Организация корпоратива</a>
+              </h4>
+              <a className={underlinedLink} href="/splavy/company/">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
@@ -150,7 +135,7 @@ const splavy = () => (
     <div className={container}>
       <h3 className={`${rowHeader} headerFont`}>Наши преимущества</h3>
       <div className={`${row} ${rowReversed}`}>
-        <div><StaticImage className={rowImage} src={'../images/Splav/index/3.jpeg'} alt={'Пронские сплавы - Наши преимущества'} /></div>
+        <div><StaticImage width={800} className={rowImage} src={'../images/Splav/index/3.jpeg'} alt={'Пронские сплавы - Наши преимущества'} /></div>
         <div className={rowText}>
           <div className={feature}>
             <h4 className={featureHeader}>
@@ -172,7 +157,7 @@ const splavy = () => (
       <br />
       <br />
       <div className={`${row}`}>
-        <div><StaticImage className={rowImage} src={'../images/Splav/index/2.jpeg'} alt={'Пронские сплавы - повар и инструктор'} /></div>
+        <div><StaticImage className={rowImage} width={800} src={'../images/Splav/index/2.jpeg'} alt={'Пронские сплавы - повар и инструктор'} /></div>
         <div className={rowText}>
           <div className={feature}>
             <h4 className={featureHeader}>
@@ -237,25 +222,13 @@ const splavy = () => (
       </div>
     </div>*/}
 
-    <div className={grayBack}>
-      <div className={container}>
-        {/*<div className={`${rowSubHeader}`}>Почему выбирают нас</div>*/}
-        <h3 className={`${rowHeader} headerFont`}>Как до нас добраться</h3>
-        <div className={`${row} ${tinyRow}`}>
-          <div className={rowText}>
-            Мы находимся в Рязанской области, Пронский район.<br />
-            Добраться до р.п. Пронск можно на общественном транспорте или собственном автомобиле, для вас будет бесплатная охраняемая парковка.<br />
-            Мы всего в 50 км от Рязани.
-          </div>
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A77d7e495cb017ecead7fa8df335a1c15454e29de12272bda8c806e292d3a9852&amp;source=constructor" width="100%" height="400"></iframe>
-        </div>
-      </div>
-    </div>
+    <HowToGetToUs />
 
     <div>
-      <div className={`${container} ${imageContainer}`} style={{ background: `url(${feedbackImage})`, backgroundPosition: 'bottom', backgroundSize: 'cover' }}>
-        <div className={`${row} ${feedback}`}>
+      <div className={`${container} ${imageContainer}`}>
 
+        <StaticImage width={1400} style={{ position: 'absolute', zIndex: 0, bottom: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'bottom' }} src={'../images/Splav/index/feedback.jpg'} alt={'Пронские сплавы - отзывы'} />
+        <div className={`${row} ${feedback}`} style={{ position: 'relative' }}>
           <div className={feedbackItem}>
             <div className={feedbackItemText}>
               <img src={feedbackDoubleQuoteImage} className={feedbackItemDoubleQuote} />
@@ -342,21 +315,7 @@ const splavy = () => (
 
         </div>
       </div>*/}
-      <div className={footer} >
-        <div><img src={logoImage} className={logo} alt="Пронские сплавы логотип" /></div>
-        <div className={footerLinks} >
-          <a href="#routes" onClick={(e) => {
-            scrollToId('#routes');
-            e.preventDefault();
-          }}>Маршруты</a>
-          <a href="/splavy/rent/">Аренда</a>
-          <a href="/splavy/company/">Организация корпоратива</a>
-        </div>
-        <div className={social}>
-          <a href="https://vk.com/pronskie_splavy" target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' /></a>
-          <a href="https://ok.ru/group/70000002650473" target='_blank' title="Одноклассники"><img src={odnoklassniki} alt='Одноклассники' /></a>
-        </div>
-      </div>
+      <SplavyFooter scrollToRoutes />
     </div >
   </Layout >
 );

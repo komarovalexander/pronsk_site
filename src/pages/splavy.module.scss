@@ -61,6 +61,8 @@
 
 .mainBannerText3 {
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .mainBannerText3P {
@@ -147,6 +149,7 @@
     color: #3D3D3D;
     font-family: 'gilroy';
     font-size: 26px;
+    margin-bottom: 10px;
 }
 
 .grayBack {
@@ -240,6 +243,9 @@
 
 .imageContainer {
     margin-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+    overflow: hidden;
 }
 
 .feedback {
@@ -247,7 +253,6 @@
     justify-content: center;
     background-position: bottom;
     padding-bottom: 80px;
-    margin-bottom: 80px;
     gap: 30px;
 }
 
@@ -256,7 +261,7 @@
     margin-top: 30px;
     gap: 16px;
     background-color: #00000077;
-    padding: 5px 5px 0 5px;
+    padding: 5px;
     border-radius: 10px;
     align-items: center;
 }
@@ -279,7 +284,7 @@
 }
 
 .feedbackItemText {
-    width: 350px;
+    max-width: 350px;
     background-color: white;
     padding: 30px 16px;
     border-radius: 10px;
@@ -317,7 +322,7 @@
     transform: rotate(0deg);
     position: absolute;
     bottom: -13px;
-    left: 18px;
+    left: 22px;
 }
 
 .social {

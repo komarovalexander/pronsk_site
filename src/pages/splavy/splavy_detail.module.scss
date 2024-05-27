@@ -1,0 +1,495 @@
+.mainBanner {
+    height: 900px;
+    width: 100%;
+    background-size: cover !important;
+    background-position: bottom !important;
+    position: relative;
+}
+
+.header {
+    padding: 32px 90px;
+    text-align: center;
+}
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 20px;
+}
+
+.breadcrumbItem a {
+    color: #4D3E37;
+}
+
+.darkBack {
+    background-color: #052700;
+}
+
+.footer {
+    padding: 24px 79px;
+    text-align: center;
+    background-color: #4D3E37;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footerLinks {
+    display: flex;
+    gap: 20px;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.logo {
+    height: 100px;
+}
+
+.mainBannerText {
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mainBannerText1 {
+    font-size: 36px;
+    letter-spacing: 10px;
+}
+
+.mainBannerText2 {
+    font-size: 150px;
+    line-height: normal;
+}
+
+.mainBannerText2Br {
+    display: none;
+}
+
+.mainBannerText3 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainBannerText3P {
+    max-width: 1000px;
+}
+
+.rowSubHeader {
+    letter-spacing: 15px;
+    text-align: center;
+    font-family: 'gilroy';
+}
+
+.rowHeader {
+    font-size: 40px;
+    letter-spacing: 6px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.row {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.rowReversed {
+    flex-direction: row-reverse;
+}
+
+.linearBack {
+    background: linear-gradient(to bottom, transparent 50%, #F7F7F7 50%);
+    padding-bottom: 100px;
+}
+
+.rowImage {
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.rowImageBigHeight {
+    height: 510px;
+}
+
+.partnerRow {
+    align-items: center;
+    justify-content: center;
+}
+
+.partner {
+    width: 220px;
+}
+
+.rowText {
+    max-width: 500px;
+    color: #6D6D6D;
+    font-family: 'gilroy';
+}
+
+.tinyRow {
+    max-width: 1120px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.feature {
+    margin-top: 20px;
+}
+
+.featureNumber {
+    color: #9B9B9B;
+    font-family: 'gilroy';
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.featureHeader {
+    color: #3D3D3D;
+    font-family: 'gilroy';
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.grayBack {
+    background-color: #F7F7F7;
+    padding-bottom: 80px;
+    margin-top: 40px;
+}
+
+.additionalFeature {
+    color: white;
+    font-family: 'gilroy';
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+    background-color: #3D3D3D77;
+    padding: 5px;
+}
+
+.additionalFeatureHeader {
+    font-size: 26px;
+}
+
+.underlinedLink {
+    color: white;
+    text-decoration-style: dotted;
+    font-size: 18px;
+}
+
+.video {
+    width: 1100px;
+    height: 550px;
+}
+
+.videoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    margin: 35px auto;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    padding: 16px 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px solid #FF7B22;
+    color: #FF7B22;
+    text-decoration: none;
+    cursor: pointer;
+    width: auto;
+    width: 220px;
+    margin: 20px 0;
+}
+
+.buttonMain {
+    display: flex;
+    padding: 24px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: #FFF;
+    width: 285px;
+    font-size: 18px;
+    color: #4D3E37;
+    text-decoration: none;
+}
+
+.buttonRoutes {
+    border: 1px solid white;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 285px;
+    padding: 24px 0;
+    font-size: 18px;
+    background: transparent;
+}
+
+.imageContainer {
+    margin-top: 80px;
+}
+
+.feedback {
+    align-items: center;
+    justify-content: center;
+    background-position: bottom;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+    gap: 30px;
+}
+
+.feedbackPerson {
+    display: flex;
+    margin-top: 30px;
+    gap: 16px;
+    background-color: #00000077;
+    padding: 5px 5px 0 5px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.feedbackPersonImage {
+    border-radius: 20px;
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.feedbackPersonName {
+    color: white;
+}
+
+.feedbackPersonDate {
+    color: white;
+    opacity: 0.7;
+}
+
+.feedbackItemText {
+    width: 350px;
+    background-color: white;
+    padding: 30px 16px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #4D3E37;
+    line-height: 20px;
+    font-family: 'gilroy';
+    position: relative;
+    margin-bottom: 20px;
+
+    a {
+        color: #4D3E37;
+    }
+}
+
+.feedbackItemDoubleQuote {
+    margin-bottom: 20px;
+}
+
+.feedbackLink {
+    color: white;
+    text-decoration-style: dotted;
+    font-size: 12px;
+    opacity: 0.6;
+    position: relative;
+    top: -7px;
+}
+
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 13px 10px 0 10px;
+    border-color: #FFFFFF transparent transparent transparent;
+    transform: rotate(0deg);
+    position: absolute;
+    bottom: -13px;
+    left: 18px;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 1050px) {
+    .mainBanner {
+        height: 900px;
+        background-size: auto 100% !important;
+        background-position: center !important;
+    }
+
+
+    .video {
+        width: 100%;
+        height: 350px;
+    }
+
+    .header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .mainBannerText1 {
+        font-size: 30px;
+    }
+
+    .mainBannerText {
+        margin-top: 50px;
+    }
+
+    .mainBannerText2 {
+        font-size: 100px;
+    }
+
+    .mainBannerText3 {
+        margin-top: 50px;
+    }
+
+    .mainBannerText3P {
+        max-width: 700px;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .columnReverseMobile {
+        flex-flow: column-reverse;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .rowHeader {
+        font-size: 26px;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .rowImageBigHeight {
+        height: 450px;
+    }
+
+    .mainBanner {
+        height: 900px;
+        background-size: auto 100% !important;
+        background-position: center !important;
+    }
+
+    .header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .mainBannerText1 {
+        font-size: 16px;
+
+        h1 {
+            margin: 0;
+        }
+    }
+
+    .mainBannerText {
+        margin: 0;
+    }
+
+    .mainBannerText2 {
+        font-size: 40px;
+    }
+
+    .mainBannerText2Br {
+        display: block;
+    }
+
+    .mainBannerText3 {
+        margin-top: 20px;
+
+    }
+
+    .additionalFeatureHeader {
+        font-size: 18px;
+    }
+
+    .grayBack {
+        padding-bottom: 40px;
+    }
+
+    .linearBack {
+        background: #F7F7F7;
+    }
+
+    .featureHeader {
+        font-size: 20px;
+    }
+
+    .partnerRow {
+        gap: 0;
+    }
+
+    .partner {
+        height: 220px;
+
+        img {
+            object-fit: contain !important;
+        }
+    }
+
+    .footer {
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    .footerLinks {
+        flex-direction: column;
+    }
+
+    .feedback {
+        margin-bottom: 40px;
+    }
+
+    .imageContainer {
+        margin-top: 40px;
+    }
+}
