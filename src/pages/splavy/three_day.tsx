@@ -238,10 +238,9 @@ export default three_day;
 
 export const Head: HeadFC = () =>
   <>
-    <title>Проня 2дня/1ночь, сплавы на байдарках - Пронск, Рязанская область</title>
+    <title>Проня 3 дня, сплавы на байдарках - Пронск, Рязанская область</title>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vpronske.ru/splavy/three_day/" />
-    <meta property="og:title" content="Проня (2 Дня/1 Ночь)" />
-    <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
-    <meta property="og:image" content="https://vpronske.ru/splavy/three_day/CollageProny1.png" />
+    <meta property="og:title" content="Проня 3 дня, Пронские сплавы, Рязанская область" />
+    <meta property="og:description" content="Сплавы на байдарках - Пронск, Рязанская область" />
   </>
