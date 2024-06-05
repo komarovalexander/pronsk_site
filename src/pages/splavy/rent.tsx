@@ -54,7 +54,6 @@ import {
 } from './splavy_detail.module.scss';
 
 import ContactUs from './ContactUs';
-import Glamping from './routes/Glamping';
 import { HeadFC } from 'gatsby';
 import HowToGetToUs from './HowToGetToUs';
 import Layout from '../layout';
@@ -165,12 +164,9 @@ const rent = () => (
     <div className={container}>
       <h3 id="routes" className={`${rowHeader} headerFont`}>Также с нами можно отправиться в полностью организованное нами путешествие:</h3>
       <div className={row} style={{ alignItems: 'start' }}>
+        <OneDay />
         <TwoDays />
         <ThreeDays />
-      </div>
-      <div className={row} style={{ alignItems: 'start' }}>
-        <OneDay />
-        <Glamping />
       </div>
     </div>
     <SplavyFooter scrollToRoutes />

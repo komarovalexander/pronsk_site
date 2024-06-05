@@ -54,7 +54,6 @@ import {
 } from './splavy_detail.module.scss';
 
 import ContactUs from './ContactUs';
-import Glamping from './routes/Glamping';
 import { HeadFC } from 'gatsby';
 import HowToGetToUs from './HowToGetToUs';
 import Layout from '../layout';
@@ -227,7 +226,6 @@ const three_day = () => (
       <div className={row} style={{ alignItems: 'start' }}>
         <TwoDays />
         <OneDay />
-        <Glamping />
       </div>
     </div>
     <SplavyFooter style={{ marginTop: 80 }} />

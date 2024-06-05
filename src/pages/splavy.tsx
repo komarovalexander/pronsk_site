@@ -91,14 +91,9 @@ const splavy = () => (
     <div className={container}>
       <h3 id="routes" className={`${rowHeader} headerFont`}>Наши маршруты</h3>
       <div className={row} style={{ alignItems: 'start' }}>
+        <OneDay />
         <TwoDays />
         <ThreeDays />
-      </div>
-      <div className={row} style={{ alignItems: 'start' }}>
-        <OneDay />
-        <Glamping />
-
-
       </div>
     </div>
 

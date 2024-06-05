@@ -54,7 +54,6 @@ import {
 } from './splavy_detail.module.scss';
 
 import ContactUs from './ContactUs';
-import Glamping from './routes/Glamping';
 import { HeadFC } from 'gatsby';
 import HowToGetToUs from './HowToGetToUs';
 import Layout from '../layout';
@@ -76,7 +75,7 @@ const pronya = () => (
     </div>
 
     <div className={mainBanner} >
-      <StaticImage style={{ position: 'absolute', zIndex: 0, height: '100%', width: '100%' }} src={'../../images/Splav/index/8.jpg'} alt={'Пронские сплавы '} />
+      <StaticImage style={{ position: 'absolute', zIndex: 0, height: '100%', width: '100%' }} src={'../../images/Splav/index/4.png'} alt={'Пронские сплавы '} />
       <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%', backgroundColor: 'rgba(3, 4, 2, 0.6)' }}>
         <div className={container}>
           <div className={mainBannerText}>
@@ -106,7 +105,7 @@ const pronya = () => (
     }}>
       <h3 className={`${rowHeader} headerFont`}>🚣‍♂️ Примерная программа слава</h3>
       <div className={`${row} ${rowReversed}`}>
-        <div><StaticImage className={rowImage} width={800} src={'../../images/Splav/2days/pronya-1.jpeg'} alt={'Пронские сплавы - Сплав Кердь-Проня (2 Дня) - 1 день'} /></div>
+        <div><StaticImage className={rowImage} width={800} src={'../../images/Splav/index/8.jpg'} alt={'Пронские сплавы - Сплав Кердь-Проня (2 Дня) - 1 день'} /></div>
         <div className={rowText}>
           <i style={{ fontSize: '18px', textAlign: "justify" }}>День 1</i>
           <p style={{ fontSize: '18px', textAlign: "justify" }}>
@@ -204,7 +203,6 @@ const pronya = () => (
       <div className={row} style={{ alignItems: 'start' }}>
         <ThreeDays />
         <OneDay />
-        <Glamping />
       </div>
     </div>
     <SplavyFooter style={{ marginTop: 80 }} />
