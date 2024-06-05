@@ -145,7 +145,7 @@ export const Head: HeadFC = () =>
     <title>Прокат-Аренда с доставкой и трансфером - Пронск, Рязанская область</title>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vpronske.ru/splavy/company/" />
-    <meta property="og:title" content="Проня (2 Дня/1 Ночь)" />
+    <meta property="og:title" content="Организация корпоративов - Пронские сплавы" />
     <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
     <meta property="og:image" content="https://vpronske.ru/splavy/three_day/CollageProny1.png" />
   </>

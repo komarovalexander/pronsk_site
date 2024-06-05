@@ -69,7 +69,7 @@ const pronya = () => (
         <ol className={breadcrumb}>
           <li className={breadcrumbItem}><a href="/splavy/">Пронские сплавы</a></li>
           <li className={breadcrumbItem}>/</li>
-          <li className={breadcrumbItem} aria-current="page">Сплав Кердь-Проня (2 Дня)</li>
+          <li className={breadcrumbItem} aria-current="page">2 Дня, Кердь и Проня, ночевка в Глемпинге</li>
         </ol>
       </nav>
     </div>
@@ -79,7 +79,7 @@ const pronya = () => (
       <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%', backgroundColor: 'rgba(3, 4, 2, 0.6)' }}>
         <div className={container}>
           <div className={mainBannerText}>
-            <div className={`${mainBannerText1} headerFont`}><h1>Кердь-Проня (2 Дня)</h1></div>
+            <div className={`${mainBannerText1} headerFont`}><h1>2 Дня сплава, ночевка в Глемпинге</h1></div>
             <div className={`${mainBannerText3} headerText`}>
               <div>
                 <p className={mainBannerText3P}>
@@ -216,7 +216,7 @@ export const Head: HeadFC = () =>
     <title>Проня 2дня/1ночь, сплавы на байдарках - Пронск, Рязанская область</title>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vpronske.ru/splavy/pronya/" />
-    <meta property="og:title" content="Проня (2 Дня/1 Ночь)" />
+    <meta property="og:title" content="2 Дня сплава, Кердь - Проня, ночевка в Глемпинге" />
     <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
     <meta property="og:image" content="https://vpronske.ru/splavy/pronya/CollageProny1.png" />
   </>
