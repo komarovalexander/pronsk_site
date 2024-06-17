@@ -61,6 +61,7 @@ import OneDay from './routes/OneDay';
 import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import ThreeDays from './routes/ThreeDays';
+import { routesConfig } from './routes/config';
 
 const pronya = () => (
   <Layout>
@@ -69,7 +70,7 @@ const pronya = () => (
         <ol className={breadcrumb}>
           <li className={breadcrumbItem}><a href="/splavy/">Пронские сплавы</a></li>
           <li className={breadcrumbItem}>/</li>
-          <li className={breadcrumbItem} aria-current="page">2 Дня, Кердь и Проня, ночевка в Глемпинге</li>
+          <li className={breadcrumbItem} aria-current="page">{routesConfig.twoDays.title}</li>
         </ol>
       </nav>
     </div>
@@ -79,16 +80,16 @@ const pronya = () => (
       <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%', backgroundColor: 'rgba(3, 4, 2, 0.6)' }}>
         <div className={container}>
           <div className={mainBannerText}>
-            <div className={`${mainBannerText1} headerFont`}><h1>2 Дня сплава, ночевка в Глемпинге</h1></div>
+            <div className={`${mainBannerText1} headerFont`}><h1>{routesConfig.twoDays.title}</h1></div>
             <div className={`${mainBannerText3} headerText`}>
               <div>
                 <p className={mainBannerText3P}>
-                  Сплав по реке Кердь с впаданием в Проню и финишем в древнем городе Пронске.  <br />Отдых в режиме всё включено: Питание, трансфер, инструкторы, палатки и много другое. Ночевка на нашей оборудованной стоянке на реке Кердь.</p>
+                  {routesConfig.twoDays.description}</p>
               </div>
             </div>
             <div className={`${mainBannerText3} headerText`}>
               <div>
-                Цена: 6000₽ (май-июнь), 7000₽ (июль-август), <br /> детям до 14 лет 4000₽
+                Цена: {routesConfig.twoDays.price}
                 <br />
                 <div style={{ fontSize: 12 }}>*Бронирование производится по 50% предоплате. <br /> **В случае отказа более чем за 7 дней до мероприятия, предоплата возвращается в полном объеме</div>
               </div>
@@ -216,7 +217,7 @@ export const Head: HeadFC = () =>
     <title>Проня 2дня/1ночь, сплавы на байдарках - Пронск, Рязанская область</title>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vpronske.ru/splavy/pronya/" />
-    <meta property="og:title" content="2 Дня сплава, Кердь - Проня, ночевка в Глемпинге" />
+    <meta property="og:title" content={routesConfig.twoDays.title} />
     <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
     <meta property="og:image" content="https://vpronske.ru/splavy/pronya/CollageProny1.png" />
   </>

@@ -61,6 +61,7 @@ import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import ThreeDays from './routes/ThreeDays';
 import TwoDays from './routes/TwoDays';
+import { routesConfig } from './routes/config';
 
 const kerd = () => {
 
@@ -71,7 +72,7 @@ const kerd = () => {
           <ol className={breadcrumb}>
             <li className={breadcrumbItem}><a href="/splavy/">Пронские сплавы</a></li>
             <li className={breadcrumbItem}>/</li>
-            <li className={breadcrumbItem} aria-current="page">Кердь и Проня (1 день)</li>
+            <li className={breadcrumbItem} aria-current="page">{routesConfig.oneDay.title}</li>
           </ol>
         </nav>
       </div>
@@ -81,18 +82,18 @@ const kerd = () => {
         <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%', backgroundColor: '#03040277' }}>
           <div className={container}>
             <div className={mainBannerText}>
-              <div className={`${mainBannerText1} headerFont`}><h1>Кердь и Проня (1 день)</h1></div>
+              <div className={`${mainBannerText1} headerFont`}><h1>{routesConfig.oneDay.title}</h1></div>
               <div className={`${mainBannerText3} headerText`}>
                 <div>
                   <p className={mainBannerText3P}>
-                    Однодневный сплав: реки Кердь и Проня с сопровождением и горячим вкусным обедом на природе.
+                    {routesConfig.oneDay.description}
                     <br />
                   </p>
                 </div>
               </div>
               <div className={`${mainBannerText3} headerText`}>
                 <div>
-                  Цена: 3500₽ (май-июнь), 4500₽ (июль-август), <br /> детям до 14 лет 2000₽
+                  Цена: {routesConfig.oneDay.price}
                   <br />
                   <div style={{ fontSize: 12 }}>*Бронирование производится по 50% предоплате. <br /> **В случае отказа более чем за 7 дней до мероприятия, предоплата возвращается в полном объеме</div>
                 </div>
@@ -178,7 +179,7 @@ export const Head: HeadFC = () =>
     <title>Кердь и Проня дневной сплав на байдарках - Пронск, Рязанская область</title>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vpronske.ru/splavy/kerd/" />
-    <meta property="og:title" content="Кердь-Проня (Дневной сплав)" />
+    <meta property="og:title" content={routesConfig.oneDay.title} />
     <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
     <meta property="og:image" content="https://vpronske.ru/splavy/kerd/CollageKerd.png" />
   </>

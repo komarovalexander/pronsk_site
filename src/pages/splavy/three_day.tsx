@@ -61,6 +61,7 @@ import OneDay from './routes/OneDay';
 import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import TwoDays from './routes/TwoDays';
+import { routesConfig } from './routes/config';
 
 const three_day = () => (
   <Layout>
@@ -69,7 +70,7 @@ const three_day = () => (
         <ol className={breadcrumb}>
           <li className={breadcrumbItem}><a href="/splavy/">Пронские сплавы</a></li>
           <li className={breadcrumbItem}>/</li>
-          <li className={breadcrumbItem} aria-current="page">Проня (3 Дня)</li>
+          <li className={breadcrumbItem} aria-current="page">{routesConfig.threeDays.title}</li>
         </ol>
       </nav>
     </div>
@@ -79,21 +80,17 @@ const three_day = () => (
       <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%', backgroundColor: 'rgba(3, 4, 2, 0.6)' }}>
         <div className={container}>
           <div className={mainBannerText}>
-            <div className={`${mainBannerText1} headerFont`}><h1>Проня (3 Дня)</h1></div>
+            <div className={`${mainBannerText1} headerFont`}><h1>{routesConfig.threeDays.title}</h1></div>
             <div className={`${mainBannerText3} headerText`}>
               <div>
                 <p className={mainBannerText3P}>
-                  Трехдневное путешествие по Проне на байдарках.
-                  <br />
-                  Отдых в режиме всё включено: Питание, трансфер, инструкторы, палатки и много другое.
-                  <br />
-                  Идеальный способ отдохнуть, познакомиться с новыми людьми и перезагрузиться на новые свершения.
+                  {routesConfig.threeDays.description}
                 </p>
               </div>
             </div>
             <div className={`${mainBannerText3} headerText`}>
               <div>
-                Цена: Стоимость 3-дневного сплава 8500р.(май-июнь) / 9500р.(июль-август), <br /> детям до 14 лет 7500р.
+                Цена: {routesConfig.threeDays.price}
                 <br />
                 <div style={{ fontSize: 12 }}>*Бронирование производится по 50% предоплате. <br /> **В случае отказа более чем за 7 дней до мероприятия, предоплата возвращается в полном объеме</div>
               </div>
@@ -239,6 +236,6 @@ export const Head: HeadFC = () =>
     <title>Проня 3 дня, сплавы на байдарках - Пронск, Рязанская область</title>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vpronske.ru/splavy/three_day/" />
-    <meta property="og:title" content="Проня 3 дня, Пронские сплавы, Рязанская область" />
+    <meta property="og:title" content={routesConfig.threeDays.title} />
     <meta property="og:description" content="Сплавы на байдарках - Пронск, Рязанская область" />
   </>
