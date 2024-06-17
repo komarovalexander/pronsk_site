@@ -8,7 +8,7 @@ import {
 
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { routesConfig } from './config';
+import { routesConfig } from '../../config';
 
 const link = '/splavy/kerd';
 const OneDay = () => (
