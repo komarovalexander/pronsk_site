@@ -31,3 +31,5 @@ export const routesConfig: {
             Идеальный способ отдохнуть, познакомиться с новыми людьми и перезагрузиться на новые свершения.</>
     },
 };
+
+export default routesConfig;

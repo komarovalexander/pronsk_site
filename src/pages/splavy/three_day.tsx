@@ -61,7 +61,7 @@ import OneDay from './routes/OneDay';
 import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import TwoDays from './routes/TwoDays';
-import { routesConfig } from '../config';
+import { routesConfig } from '../../config';
 
 const three_day = () => (
   <Layout>
