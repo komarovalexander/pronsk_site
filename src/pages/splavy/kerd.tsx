@@ -157,6 +157,11 @@ const kerd = () => {
       </div>
 
 
+      <div className={container}>
+        <div className={videoContainer}>
+          <iframe className={video} src="https://www.youtube.com/embed/2KkbJCEnjAA?si=LKBAoWAuyNqgXU8Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowfullscreen></iframe>
+        </div>
+      </div>
 
       <HowToGetToUs />
 
