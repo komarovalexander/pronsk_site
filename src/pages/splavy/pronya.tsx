@@ -148,6 +148,8 @@ const pronya = () => (
             <p style={{ fontSize: '18px', textAlign: "justify" }}>Обед, ужин, завтрак, обед. Все 2 дня наш опытный повар готовит для вас лучшие походные блюда, добавляя вкус к вашему приключению.</p>
             <b style={{ fontSize: '18px', textAlign: "justify" }}>🚍 Трансфер</b>
             <p style={{ fontSize: '18px', textAlign: "justify" }}>Трансфер от Пронска к месту старта и обратно</p>
+            <b style={{ fontSize: '18px', textAlign: "justify" }}>🕵️‍♂️ Сопровождение в пути</b>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Наш гид будет с вами на всём маршруте</p>
           </div>
         </div>
       </div>
@@ -233,7 +235,7 @@ export default pronya;
 
 export const Head: HeadFC = () =>
   <>
-    <title>Проня 2дня/1ночь, сплавы на байдарках - Пронск, Рязанская область</title>
+    <title>{routesConfig.twoDays.title}, сплавы на байдарках - Пронск, Рязанская область</title>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vpronske.ru/splavy/pronya/" />
     <meta property="og:title" content={routesConfig.twoDays.title} />
