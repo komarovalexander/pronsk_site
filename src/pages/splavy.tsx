@@ -187,7 +187,7 @@ const splavy = () => (
       <div className={`${row} ${partnerRow}`}>
 
         <div className={feature}>
-          <a href="https://pronyaglamping.ru/" target="_blank"><StaticImage className={partner} src={'../images/Splav/index/10.png'} alt={'Пронские сплавы - глемпинг берег'} /></a>
+          <a href="https://pronyaglamping.ru/" target="_blank"><StaticImage className={partner} src={'../images/Splav/index/10.png'} alt={'Пронские сплавы - глэмпинг берег'} /></a>
         </div>
 
         <div className={feature}>
@@ -296,20 +296,6 @@ const splavy = () => (
           </div>
         </div>
       </div>
-
-      {/*  <div className={container}>
-        <h3 className={`${rowHeader} headerFont`}>Наша миссия</h3>
-        <div className={row}>
-          <div><StaticImage className={rowImage} src={'../images/Splav/index/1.jpeg'} alt={'Наша миссия'} /></div>
-          <div className={rowText}>
-            Мы хотим чтобы люди с разным опытом путешествий видели красоту природы вокруг нас.<br /><br />
-            Для новичков и для семей с детьми, и просто тех кто хочет отдохнуть на природе с комфортом - мы расчистили маршрут на реке Кердь которая впадает в Проню, с ночевкой в оборудованном глемпинге: с парковкой, душем, санузлом, всем необходимым оборудованием для отдыха, развлечений и различными вариантами размещения.
-            <br /><br />
-            Для опытных путешественников мы сами разрабатываем наши авторские маршруты по местам где редко бывает человек. <br /><br />
-            Мы влюблены в Пронский район Рязанской области и хотим, чтобы вы увидели его нашими глазами. Мы знаем здесь каждый уголок, и готовы поделиться с вами его историей и красотой.   </div>
-
-        </div>
-      </div>*/}
       <SplavyFooter scrollToRoutes />
     </div >
   </Layout >

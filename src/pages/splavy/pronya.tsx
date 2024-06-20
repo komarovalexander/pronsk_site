@@ -155,13 +155,13 @@ const pronya = () => (
       </div>
 
       <div className={container}>
-        <h3 id="nightPrice" className={`${rowHeader} headerFont`}>Отдельно оплачивается проживание в глемпинге "Берег"</h3>
+        <h3 id="nightPrice" className={`${rowHeader} headerFont`}>Отдельно оплачивается проживание в глэмпинге "Берег"</h3>
         <div className={row}><p>В зависимости от пожеланий к условиям ночевки, можно выбрать различные варианты размещения:</p></div>
         <div className={row} style={{ alignItems: 'start' }}>
           <div className={feature}>
             <StaticImage className={rowImage} style={{ marginBottom: 15 }} width={660} src={'../../images/Splav/glamp/tent.jpg'} alt={'Пронские сплавы - 3 дня'} />
-            <h4 className={featureHeader}>Палатко-место в глемпинге - 2000₽ за место</h4>
-            <div className={rowText} style={{ maxWidth: 800 }}>Вся инфраструктура глемпинга - электричество, душ, туалет доступна тем кто проживает в палатках. <br />Можно приехать со своей палаткой, но также оборудование для комфортного сна на природе до 4х человек на одно палатко-место наша команда предоставляет бесплатно (палатку на 3-4 человека, мягкие коврики в палатку, спальники). Нужно лишь оплатить место под палатку на территории глемпинга</div>
+            <h4 className={featureHeader}>Палатко-место в глэмпинге - 2000₽ за место</h4>
+            <div className={rowText} style={{ maxWidth: 800 }}>Вся инфраструктура глэмпинга - электричество, душ, туалет доступна тем кто проживает в палатках. <br />Можно приехать со своей палаткой, но также оборудование для комфортного сна на природе до 4х человек на одно палатко-место наша команда предоставляет бесплатно (палатку на 3-4 человека, мягкие коврики в палатку, спальники). Нужно лишь оплатить место под палатку на территории глэмпинга</div>
           </div>
           <div className={feature}>
             <StaticImage className={rowImage} style={{ marginBottom: 15 }} width={660} src={'../../images/Splav/glamp/shater.jpg'} alt={'Пронские сплавы - 3 дня'} />
@@ -171,7 +171,7 @@ const pronya = () => (
           <div className={feature}>
             <iframe width="100%" style={{ aspectRatio: 1.5, borderRadius: 10 }} src="https://www.youtube.com/embed/SvdLRZnBj14?si=ojVk7uKLGefcfX6E" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             <h4 className={featureHeader}>Сафари-тент - 6500₽ - за домик </h4>
-            <div className={rowText} style={{ maxWidth: 800 }}>Уютный красивый домик на природе на территории глемпинга с двухспальной кроватью, диваном, личным туалетом, душем, микроволновкой, чайником и холодильником. Для 2х человек, дополнительно бесплатно можно подселить 1 взрослого или 2х детей</div>
+            <div className={rowText} style={{ maxWidth: 800 }}>Уютный красивый домик на природе на территории глэмпинга с двухспальной кроватью, диваном, личным туалетом, душем, микроволновкой, чайником и холодильником. Для 2х человек, дополнительно бесплатно можно подселить 1 взрослого или 2х детей</div>
           </div>
         </div>
       </div>
