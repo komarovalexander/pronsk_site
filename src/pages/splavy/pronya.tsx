@@ -156,7 +156,7 @@ const pronya = () => (
 
       <div className={container}>
         <h3 id="nightPrice" className={`${rowHeader} headerFont`}>Отдельно оплачивается проживание в глемпинге "Берег"</h3>
-        <div className={row}><p>В зависимости от пожеланий к условиям ночевки можно выбрать различные варианты размещения:</p></div>
+        <div className={row}><p>В зависимости от пожеланий к условиям ночевки, можно выбрать различные варианты размещения:</p></div>
         <div className={row} style={{ alignItems: 'start' }}>
           <div className={feature}>
             <StaticImage className={rowImage} style={{ marginBottom: 15 }} width={660} src={'../../images/Splav/glamp/tent.jpg'} alt={'Пронские сплавы - 3 дня'} />
