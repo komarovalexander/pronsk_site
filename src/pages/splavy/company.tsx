@@ -124,7 +124,7 @@ const company = () => (
 
     <div className={container}>
       <div className={videoContainer}>
-        <iframe className={video} src="https://www.youtube.com/embed/sQ2tOg3mrrs?si=SADGqVcuJLkjJrQI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowfullscreen></iframe>
+        <iframe className={video} src="https://www.youtube.com/embed/pHLYDAfRuvQ?si=ZL6mJSr74jPwxM7c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowFullScreen></iframe>
       </div>
     </div>
 
