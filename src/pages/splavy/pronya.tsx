@@ -165,7 +165,7 @@ const pronya = () => (
           </div>
           <div className={feature}>
             <StaticImage className={rowImage} style={{ marginBottom: 15 }} width={660} src={'../../images/Splav/glamp/shater.jpg'} alt={'Пронские сплавы - 3 дня'} />
-            <h4 className={featureHeader}>Шатёр - 3500₽ - за весь шатёр</h4>
+            <h4 className={featureHeader}>Шатёр - 4000₽ - за весь шатёр</h4>
             <div className={rowText} style={{ maxWidth: 800 }}>Просторный шатёр с двумя кроватями, с собственной территорией, светом и электричеством. Для 2х человек, дополнительно в наших спальниках можем подселить одного взрослого или 2х детей бесплатно</div>
           </div>
           <div className={feature}>
