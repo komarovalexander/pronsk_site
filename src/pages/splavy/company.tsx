@@ -123,6 +123,7 @@ const company = () => (
     </div>
 
     <div className={container}>
+      <h4 style={{ textAlign: 'center' }}>Видео корпоратива, организованного нами, для команды <a href="https://vk.com/rizur">«НПО Ризур»</a></h4>
       <div className={videoContainer}>
         <iframe className={video} src="https://www.youtube.com/embed/pHLYDAfRuvQ?si=ZL6mJSr74jPwxM7c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowFullScreen></iframe>
       </div>
@@ -145,7 +146,7 @@ export default company;
 
 export const Head: HeadFC = () =>
   <>
-    <title>Прокат-Аренда с доставкой и трансфером - Пронск, Рязанская область</title>
+    <title>Организация корпоративов - Пронские сплавы - Пронск, Рязанская область</title>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vpronske.ru/splavy/company/" />
     <meta property="og:title" content="Организация корпоративов - Пронские сплавы" />
