@@ -119,7 +119,7 @@ const rent = () => (
     </div>
 
 
-    <div className={container}>
+    {/*<div className={container}>
       <h3 className={`${rowHeader} headerFont`}>Почему стоит выбрать нас?</h3>
       <div className={`${row} ${rowReversed}`}>
         <div><StaticImage width={800} className={rowImage} src={'../../images/Splav/rent/rent-1.jpeg'} alt={'Пронские сплавы - Почему стоит выбрать нас?'} /></div>
@@ -163,9 +163,10 @@ const rent = () => (
           </div>
         </div>
       </div>
-    </div>
+</div>*/}
     <div className={container}>
-      <h3 id="routes" className={`${rowHeader} headerFont`}>Также с нами можно отправиться в полностью организованное нами путешествие:</h3>
+      {/*<h3 id="routes" className={`${rowHeader} headerFont`}>Также с нами можно отправиться в полностью организованное нами путешествие:</h3>*/}
+      <h3 id="routes" className={`${rowHeader} headerFont`}>Варианты полностью организованных нами путешествий:</h3>
       <div className={row} style={{ alignItems: 'start' }}>
         <OneDay />
         <TwoDays />
