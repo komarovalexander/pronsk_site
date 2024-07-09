@@ -101,18 +101,7 @@ const splavy = () => (
     <div className={linearBack}>
       <div className={container}>
         <h3 className={`${rowHeader} headerFont`}>Дополнительные услуги</h3>
-        <div className={row} style={{ alignItems: 'start' }}>
-          <div className={feature} style={{ position: 'relative' }}>
-            <StaticImage className={`${rowImage} ${rowImageBigHeight}`} style={{ marginBottom: 15 }} src={'../images/Splav/index/6.jpg'} alt={'Пронские сплавы - прокат'} />
-
-            <div className={additionalFeature}>
-              <h4 className={additionalFeatureHeader}>
-                <a href="/splavy/rent/" style={{ color: 'white', textDecoration: 'none' }}>Прокат с доставкой и трансфером</a>
-              </h4>
-              <a className={underlinedLink} href="/splavy/rent/">Узнать больше</a>
-            </div>
-          </div>
-
+        <div className={row} style={{ alignItems: 'start', justifyContent: 'center' }}>
           <div className={feature} style={{ position: 'relative' }}>
             <StaticImage className={`${rowImage} ${rowImageBigHeight}`} style={{ marginBottom: 15 }} src={'../images/Splav/index/9.jpeg'} alt={'Пронские сплавы - организация корпоратива'} />
 
@@ -123,6 +112,18 @@ const splavy = () => (
               <a className={underlinedLink} href="/splavy/company/">Узнать больше</a>
             </div>
           </div>
+
+          {/*<div className={feature} style={{ position: 'relative' }}>
+            <StaticImage className={`${rowImage} ${rowImageBigHeight}`} style={{ marginBottom: 15 }} src={'../images/Splav/index/6.jpg'} alt={'Пронские сплавы - прокат'} />
+
+            <div className={additionalFeature}>
+              <h4 className={additionalFeatureHeader}>
+                <a href="/splavy/rent/" style={{ color: 'white', textDecoration: 'none' }}>Прокат с доставкой и трансфером</a>
+              </h4>
+              <a className={underlinedLink} href="/splavy/rent/">Узнать больше</a>
+            </div>
+</div>*/}
+
         </div>
       </div>
     </div>
