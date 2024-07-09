@@ -101,7 +101,7 @@ const splavy = () => (
     <div className={linearBack}>
       <div className={container}>
         <h3 className={`${rowHeader} headerFont`}>Дополнительные услуги</h3>
-        <div className={row} style={{ alignItems: 'start', justifyContent: 'center' }}>
+        <div className={row} style={{ alignItems: 'start' }}>
           <div className={feature} style={{ position: 'relative' }}>
             <StaticImage className={`${rowImage} ${rowImageBigHeight}`} style={{ marginBottom: 15 }} src={'../images/Splav/index/9.jpeg'} alt={'Пронские сплавы - организация корпоратива'} />
 
@@ -113,7 +113,7 @@ const splavy = () => (
             </div>
           </div>
 
-          {/*<div className={feature} style={{ position: 'relative' }}>
+          <div className={feature} style={{ position: 'relative' }}>
             <StaticImage className={`${rowImage} ${rowImageBigHeight}`} style={{ marginBottom: 15 }} src={'../images/Splav/index/6.jpg'} alt={'Пронские сплавы - прокат'} />
 
             <div className={additionalFeature}>
@@ -122,7 +122,7 @@ const splavy = () => (
               </h4>
               <a className={underlinedLink} href="/splavy/rent/">Узнать больше</a>
             </div>
-          </div>*/}
+          </div>
 
         </div>
       </div>
