@@ -52,6 +52,7 @@ import {
   video,
   videoContainer,
 } from './splavy_detail.module.scss';
+import { foodConfig, routesConfig } from '../../config';
 
 import ContactUs from './ContactUs';
 import { HeadFC } from 'gatsby';
@@ -61,7 +62,6 @@ import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import ThreeDays from './routes/ThreeDays';
 import TwoDays from './routes/TwoDays';
-import { routesConfig } from '../../config';
 
 const kerd = () => {
 
@@ -132,7 +132,11 @@ const kerd = () => {
             <b style={{ fontSize: '18px', textAlign: "justify" }}>🚣‍♂️ Оборудование для сплава</b>
             <p style={{ fontSize: '18px', textAlign: "justify" }}>Байдарки в собранном виде, гермомешки, спасжилеты, в т.ч. детские, дождевики</p>
             <b style={{ fontSize: '18px', textAlign: "justify" }}>🍲 Горячее питание</b>
-            <p style={{ fontSize: '18px', textAlign: "justify" }}>Полноценный обед у реки</p>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>
+              <b style={{ fontSize: '14px' }}>обед</b>: {foodConfig.lunch}
+              <br />
+              <i style={{ fontSize: '14px' }}>{foodConfig.note}</i>
+            </p>
             <b style={{ fontSize: '18px', textAlign: "justify" }}>🚍 Трансфер</b>
             <p style={{ fontSize: '18px', textAlign: "justify" }}>Трансфер от Пронска к месту старта и обратно</p>
             <b style={{ fontSize: '18px', textAlign: "justify" }}>🕵️‍♂️ Сопровождение в пути</b>

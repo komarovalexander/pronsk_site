@@ -52,6 +52,7 @@ import {
   video,
   videoContainer,
 } from './splavy_detail.module.scss';
+import { foodConfig, routesConfig } from '../../config';
 
 import ContactUs from './ContactUs';
 import { HeadFC } from 'gatsby';
@@ -61,7 +62,6 @@ import OneDay from './routes/OneDay';
 import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import ThreeDays from './routes/ThreeDays';
-import { routesConfig } from '../../config';
 
 const pronya = () => (
   <Layout>
@@ -145,6 +145,19 @@ const pronya = () => (
             <b style={{ fontSize: '18px', textAlign: "justify" }}>🚣‍♂️ Оборудование для сплава</b>
             <p style={{ fontSize: '18px', textAlign: "justify" }}>Байдарки в собранном виде, гермомешки, спасжилеты, в т.ч. детские, дождевики</p>
             <b style={{ fontSize: '18px', textAlign: "justify" }}>🍲 Трехразовое горячее питание</b>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>
+              <b style={{ fontSize: '14px' }}>обед (день 1)</b>: {foodConfig.lunch}
+              <br />
+              <b style={{ fontSize: '14px' }}>ужин</b>: {foodConfig.dinner}
+              <br />
+              <b style={{ fontSize: '14px' }}>завтрак</b>: {foodConfig.breakFast}
+              <br />
+              <b style={{ fontSize: '14px' }}>обед (день 2)</b>: {foodConfig.lunch2}
+              <br />
+              <i style={{ fontSize: '14px' }}>{foodConfig.base}</i>
+              <br />
+              <i style={{ fontSize: '14px' }}>{foodConfig.note}</i>
+            </p>
             <p style={{ fontSize: '18px', textAlign: "justify" }}>Обед, ужин, завтрак, обед. Все 2 дня наш опытный повар готовит для вас лучшие походные блюда, добавляя вкус к вашему приключению.</p>
             <b style={{ fontSize: '18px', textAlign: "justify" }}>🚍 Трансфер</b>
             <p style={{ fontSize: '18px', textAlign: "justify" }}>Трансфер от Пронска к месту старта и обратно</p>
