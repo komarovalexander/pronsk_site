@@ -175,7 +175,7 @@ const pronya = () => (
           <div className={feature}>
             <StaticImage className={rowImage} style={{ marginBottom: 15 }} width={660} src={'../../images/Splav/glamp/tent.jpg'} alt={'Пронские сплавы - 3 дня'} />
             <h4 className={featureHeader}>Палатка - включена в стоимость</h4>
-            <div className={rowText} style={{ maxWidth: 800 }}>Вся инфраструктура глэмпинга - электричество, душ, туалет доступна тем кто проживает в палатках. <br />Мы предоставляем палатку на 3-4 человека, мягкие коврики в палатку, спальники</div>
+            <div className={rowText} style={{ maxWidth: 800 }}>Вся инфраструктура глэмпинга - электричество, душ, туалет доступна тем кто проживает в палатках. <br />Мы предоставляем палатку на 2-4 человека, мягкие коврики в палатку, спальники</div>
           </div>
           <div className={feature}>
             <StaticImage className={rowImage} style={{ marginBottom: 15 }} width={660} src={'../../images/Splav/glamp/shater.jpg'} alt={'Пронские сплавы - 3 дня'} />
