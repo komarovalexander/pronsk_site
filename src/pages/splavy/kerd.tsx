@@ -60,7 +60,6 @@ import HowToGetToUs from './HowToGetToUs';
 import Layout from '../layout';
 import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
-import ThreeDays from './routes/ThreeDays';
 import TwoDays from './routes/TwoDays';
 
 const kerd = () => {
@@ -79,7 +78,7 @@ const kerd = () => {
 
       <div className={mainBanner} >
         <StaticImage style={{ position: 'absolute', zIndex: 0, height: '100%', width: '100%' }} src={'../../images/Splav/Prony/1day.jpg'} alt={'Пронские сплавы '} />
-        <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%', backgroundColor: '#03040277' }}>
+        <div style={{ position: 'absolute', zIndex: 1, height: '100%', width: '100%', backgroundColor: '#03040299' }}>
           <div className={container}>
             <div className={mainBannerText}>
               <div className={`${mainBannerText1} headerFont`}><h1>{routesConfig.oneDay.title}</h1></div>
@@ -91,19 +90,28 @@ const kerd = () => {
                   </p>
                 </div>
               </div>
-              <div className={`${mainBannerText3} headerText`}>
-                <div>
-                  Цена: {routesConfig.oneDay.price}
-                  <br />
-                  <div style={{ fontSize: 12 }}>*Бронирование производится по 50% предоплате. <br /> **В случае отказа более чем за 7 дней до мероприятия, предоплата возвращается в полном объеме</div>
-                </div>
-              </div>
               <ContactUs />
             </div>
           </div>
         </div>
       </div>
 
+      <div className={grayBack} style={{ marginTop: 0 }}>
+        <div className={container} style={{
+          paddingTop: 40,
+          paddingBottom: 20
+        }}>
+          <h3 className={`${rowHeader} headerFont`} style={{ marginBottom: 0 }}>Цена</h3>
+          <div className={`${row}`} style={{ textAlign: 'center' }}>
+            <div className={`${mainBannerText3} headerText`} style={{ width: '100%' }}>
+              <div>
+                {routesConfig.oneDay.price}
+                <div style={{ fontSize: 12 }}>*Бронирование производится по 50% предоплате. <br /> **В случае отказа более чем за 7 дней до мероприятия, предоплата возвращается в полном объеме</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className={container} style={{
         paddingTop: 40,
@@ -179,7 +187,6 @@ const kerd = () => {
       <div className={container}>
         <h3 id="routes" className={`${rowHeader} headerFont`}>Также может быть интересно</h3>
         <div className={row} style={{ alignItems: 'start' }}>
-          <ThreeDays />
           <TwoDays />
         </div>
       </div>

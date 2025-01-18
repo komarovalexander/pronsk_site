@@ -61,7 +61,6 @@ import Layout from '../layout';
 import OneDay from './routes/OneDay';
 import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
-import ThreeDays from './routes/ThreeDays';
 
 const pronya = () => (
   <Layout>
@@ -87,19 +86,28 @@ const pronya = () => (
                   {routesConfig.twoDays.description}</p>
               </div>
             </div>
-            <div className={`${mainBannerText3} headerText`}>
-              <div>
-                Цена сплава: {routesConfig.twoDays.price}
-                <br />
-                <div style={{ fontSize: 12 }}>*Бронирование производится по 50% предоплате. <br /> **В случае отказа более чем за 7 дней до мероприятия, предоплата возвращается в полном объеме</div>
-              </div>
-            </div>
             <ContactUs />
           </div>
         </div>
       </div>
     </div>
 
+    <div className={grayBack} style={{ marginTop: 0 }}>
+      <div className={container} style={{
+        paddingTop: 40,
+        paddingBottom: 20
+      }}>
+        <h3 className={`${rowHeader} headerFont`} style={{ marginBottom: 0 }}>Цена</h3>
+        <div className={`${row}`} style={{ textAlign: 'center' }}>
+          <div className={`${mainBannerText3} headerText`} style={{ width: '100%' }}>
+            <div>
+              {routesConfig.twoDays.price}
+              <div style={{ fontSize: 12 }}>*Бронирование производится по 50% предоплате. <br /> **В случае отказа более чем за 7 дней до мероприятия, предоплата возвращается в полном объеме</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div className={container} style={{
       paddingTop: 40,
       paddingBottom: 20
@@ -239,7 +247,6 @@ const pronya = () => (
     <div className={container}>
       <h3 id="routes" className={`${rowHeader} headerFont`}>Также может быть интересно</h3>
       <div className={row} style={{ alignItems: 'start' }}>
-        <ThreeDays />
         <OneDay />
       </div>
     </div>

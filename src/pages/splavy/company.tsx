@@ -1,66 +1,25 @@
 import React, { CSSProperties } from 'react';
 import {
-  additionalFeature,
-  additionalFeatureHeader,
   breadcrumb,
   breadcrumbItem,
-  button,
-  buttonMain,
-  buttonRoutes,
-  buttons,
-  columnReverseMobile,
   container,
-  darkBack,
-  feature,
-  featureHeader,
-  featureNumber,
-  feedback,
-  feedbackItem,
-  feedbackItemDoubleQuote,
-  feedbackItemText,
-  feedbackLink,
-  feedbackPerson,
-  feedbackPersonDate,
-  feedbackPersonImage,
-  feedbackPersonName,
-  footer,
-  footerLinks,
-  grayBack,
-  header,
-  imageContainer,
-  linearBack,
-  logo,
   mainBanner,
   mainBannerText,
   mainBannerText1,
-  mainBannerText2,
-  mainBannerText2Br,
   mainBannerText3,
   mainBannerText3P,
-  partner,
-  partnerRow,
   row,
   rowHeader,
-  rowImage,
-  rowImageBigHeight,
-  rowReversed,
-  rowText,
-  social,
-  tinyRow,
-  triangle,
-  underlinedLink,
   video,
   videoContainer,
 } from './splavy_detail.module.scss';
 
 import ContactUs from './ContactUs';
 import { HeadFC } from 'gatsby';
-import HowToGetToUs from './HowToGetToUs';
 import Layout from '../layout';
 import OneDay from './routes/OneDay';
 import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
-import ThreeDays from './routes/ThreeDays';
 import TwoDays from './routes/TwoDays';
 
 const company = () => (
@@ -135,7 +94,6 @@ const company = () => (
       <div className={row} style={{ alignItems: 'start' }}>
         <OneDay />
         <TwoDays />
-        <ThreeDays />
       </div>
     </div>
     <SplavyFooter scrollToRoutes />

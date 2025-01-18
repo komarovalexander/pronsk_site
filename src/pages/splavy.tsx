@@ -59,7 +59,6 @@ import OneDay from './splavy/routes/OneDay';
 import React from 'react';
 import SplavyFooter from './splavy/Footer';
 import { StaticImage } from 'gatsby-plugin-image';
-import ThreeDays from './splavy/routes/ThreeDays';
 import TwoDays from './splavy/routes/TwoDays';
 import feedbackDoubleQuoteImage from '../images/Splav/index/15.svg';
 import logoImage from '../images/Splav/logo.png';
@@ -93,7 +92,6 @@ const splavy = () => (
       <div className={row} style={{ alignItems: 'start' }}>
         <OneDay />
         <TwoDays />
-        <ThreeDays />
       </div>
     </div>
 
