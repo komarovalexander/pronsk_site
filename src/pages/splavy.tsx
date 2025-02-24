@@ -65,6 +65,7 @@ import logoImage from '../images/Splav/logo.png';
 import odnoklassniki from '../images/odnoklassniki.svg';
 import { scrollToId } from '../utils';
 import vk from '../images/vk.svg';
+import { splavyVideoMain } from '../config';
 
 const splavy = () => (
   <Layout>
@@ -174,7 +175,7 @@ const splavy = () => (
 
     <div className={container}>
       <div className={videoContainer}>
-        <iframe className={video} src="https://www.youtube.com/embed/sQ2tOg3mrrs?si=SADGqVcuJLkjJrQI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowfullscreen></iframe>
+        {splavyVideoMain}
       </div>
     </div>
 

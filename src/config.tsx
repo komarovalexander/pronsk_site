@@ -15,6 +15,10 @@ export const foodConfig = {
     note: '* если вы не едите свинину по вере, или вегетарианец, или имеете ещё какие-либо ограничения по питанию, просим заранее предупредить нас - мы скорректируем меню для вас'
 }
 
+export const splavyVideoMain = <iframe src="https://vkvideo.ru/video_ext.php?oid=230237580&id=456239795&hd=3" width="1100" height="550" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>;
+export const splavyBirdVideo = <iframe src="https://vkvideo.ru/video_ext.php?oid=-213925828&id=456239077&hd=3" width="1100" height="550" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>;
+export const rizurVideo = <iframe src="https://vk.com/video_ext.php?oid=-34648558&id=456239277&hd=3" width="1100" height="550" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>;
+
 export const routesConfig: {
     twoDays: RouteConfigItem;
     oneDay: RouteConfigItem;

@@ -52,7 +52,7 @@ import {
   video,
   videoContainer,
 } from './splavy_detail.module.scss';
-import { foodConfig, routesConfig } from '../../config';
+import { foodConfig, routesConfig, splavyBirdVideo } from '../../config';
 
 import ContactUs from './ContactUs';
 import { HeadFC } from 'gatsby';
@@ -178,7 +178,7 @@ const kerd = () => {
 
       <div className={container}>
         <div className={videoContainer}>
-          <iframe className={video} src="https://www.youtube.com/embed/2KkbJCEnjAA?si=LKBAoWAuyNqgXU8Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowfullscreen></iframe>
+          {splavyBirdVideo}
         </div>
       </div>
 

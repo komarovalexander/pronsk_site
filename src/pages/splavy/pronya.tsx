@@ -193,7 +193,7 @@ const pronya = () => (
             <div className={rowText} style={{ maxWidth: 800 }}>Просторный шатёр с двумя кроватями, с собственной территорией, светом и электричеством. Для 2х человек, дополнительно в наших спальниках можем подселить одного взрослого или 2х детей</div>
           </div>
           <div className={feature}>
-            <iframe width="100%" style={{ aspectRatio: 1.5, borderRadius: 10 }} src="https://www.youtube.com/embed/SvdLRZnBj14?si=ojVk7uKLGefcfX6E" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <StaticImage className={rowImage} style={{ marginBottom: 15 }} width={660} src={'../../images/Splav/glamp/safari.jpeg'} alt={'Пронские сплавы - 3 дня'} />
             <h4 className={featureHeader}>Сафари-тент: +4500₽, за домик </h4>
             <div className={rowText} style={{ maxWidth: 800 }}>Уютный красивый домик на природе на территории глэмпинга с двухспальной кроватью, диваном, личным туалетом, душем, микроволновкой, чайником и холодильником. Для 2х человек, дополнительно можно подселить 1 взрослого или 2х детей</div>
           </div>

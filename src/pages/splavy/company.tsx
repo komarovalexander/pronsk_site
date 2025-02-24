@@ -21,6 +21,7 @@ import OneDay from './routes/OneDay';
 import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import TwoDays from './routes/TwoDays';
+import { rizurVideo } from '../../config';
 
 const company = () => (
   <Layout>
@@ -84,7 +85,7 @@ const company = () => (
     <div className={container}>
       <h4 style={{ textAlign: 'center' }}>Видео корпоратива, организованного нами, для команды <a href="https://vk.com/rizur">«НПО Ризур»</a></h4>
       <div className={videoContainer}>
-        <iframe className={video} src="https://www.youtube.com/embed/pHLYDAfRuvQ?si=ZL6mJSr74jPwxM7c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowFullScreen></iframe>
+        {rizurVideo}
       </div>
     </div>
 
