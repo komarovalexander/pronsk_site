@@ -187,14 +187,10 @@ const pronya = () => (
             <h4 className={featureHeader}>Палатка - включена в стоимость</h4>
             <div className={rowText} style={{ maxWidth: 800 }}>Вся инфраструктура глэмпинга - электричество, душ, туалет доступна тем кто проживает в палатках. <br />Мы предоставляем палатку на 2-4 человека, мягкие коврики в палатку, спальники</div>
           </div>
-          <div className={feature}>
-            <StaticImage className={rowImage} style={{ marginBottom: 15 }} width={660} src={'../../images/Splav/glamp/shater.jpg'} alt={'Пронские сплавы - 3 дня'} />
-            <h4 className={featureHeader}>Шатёр: +2000₽, за весь шатёр</h4>
-            <div className={rowText} style={{ maxWidth: 800 }}>Просторный шатёр с двумя кроватями, с собственной территорией, светом и электричеством. Для 2х человек, дополнительно в наших спальниках можем подселить одного взрослого или 2х детей</div>
-          </div>
+          
           <div className={feature}>
             <StaticImage className={rowImage} style={{ marginBottom: 15 }} width={660} src={'../../images/Splav/glamp/safari.jpeg'} alt={'Пронские сплавы - 3 дня'} />
-            <h4 className={featureHeader}>Сафари-тент: +4500₽, за домик </h4>
+            <h4 className={featureHeader}>Сафари-тент: +5000₽, за домик </h4>
             <div className={rowText} style={{ maxWidth: 800 }}>Уютный красивый домик на природе на территории глэмпинга с двухспальной кроватью, диваном, личным туалетом, душем, микроволновкой, чайником и холодильником. Для 2х человек, дополнительно можно подселить 1 взрослого или 2х детей</div>
           </div>
         </div>
