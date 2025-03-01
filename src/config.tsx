@@ -18,7 +18,7 @@ export const foodConfig = {
 export const splavyVideoMain = <iframe src="https://vkvideo.ru/video_ext.php?oid=230237580&id=456239795&hd=3" width="1100" height="550" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>;
 export const splavyBirdVideo = <iframe src="https://vkvideo.ru/video_ext.php?oid=-213925828&id=456239077&hd=3" width="1100" height="550" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>;
 export const rizurVideo = <iframe src="https://vk.com/video_ext.php?oid=-34648558&id=456239277&hd=3" width="1100" height="550" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>;
-// <div style={{fontSize: 12}}>Для детей до 8 лет дополнительные скидки</div>
+
 export const routesConfig: {
     twoDays: RouteConfigItem;
     oneDay: RouteConfigItem;
@@ -28,7 +28,8 @@ export const routesConfig: {
         price: <>
             Стоимость 1-дневного сплава утром и под закат (в будни и выходные):<br />
             апрель-май: взрослый - 3500₽, детский до 14 лет - 2500₽<br />
-            июнь-сентябрь: взрослый - 4500₽, детский до 14 лет - 3500₽<br /></>,
+            июнь-сентябрь: взрослый - 4500₽, детский до 14 лет - 3500₽<br />
+            <div style={{fontSize: 12}}>* Для детей до 8 лет дополнительные скидки</div></>,
         description: <>Однодневный сплав: реки Кердь и Проня с сопровождением и горячим вкусным обедом на природе.</>
     },
     twoDays: {
@@ -36,7 +37,8 @@ export const routesConfig: {
         price: <>
         Стоимость 1-дневного сплава утром и под закат (в будни и выходные):<br />
         май: взрослый - 7500₽, детский до 14 лет - 4500₽<br />
-        июнь-сентябрь: взрослый - 8500₽, детский до 14 лет - 6500₽<br /></>,
+        июнь-сентябрь: взрослый - 8500₽, детский до 14 лет - 6500₽<br />
+        <div style={{fontSize: 12}}>* Для детей до 8 лет дополнительные скидки</div></>,
         description: <>Сплав по реке Кердь с впаданием в Проню и финишем в древнем городе Пронске. Ночевка на территории глемпинга на природе, со всеми удобствами цивилизации. Горячее питание на протяжении всего путешествия включено в стоимость.</>
     },
 };
