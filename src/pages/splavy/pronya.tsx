@@ -190,7 +190,7 @@ const pronya = () => (
           
           <div className={feature}>
             <StaticImage className={rowImage} style={{ marginBottom: 15 }} width={660} src={'../../images/Splav/glamp/safari.jpeg'} alt={'Пронские сплавы - 3 дня'} />
-            <h4 className={featureHeader}>Сафари-тент: +5000₽, за домик </h4>
+            <h4 className={featureHeader}>Сафари-тент: +7000₽, за домик </h4>
             <div className={rowText} style={{ maxWidth: 800 }}>Уютный красивый домик на природе на территории глэмпинга с двухспальной кроватью, диваном, личным туалетом, душем, микроволновкой, чайником и холодильником. Для 2х человек, дополнительно можно подселить 1 взрослого или 2х детей</div>
           </div>
         </div>
