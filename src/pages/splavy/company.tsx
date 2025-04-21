@@ -31,7 +31,7 @@ const company = () => (
         <ol className={breadcrumb}>
           <li className={breadcrumbItem}><a href="/splavy/">Пронские сплавы</a></li>
           <li className={breadcrumbItem}>/</li>
-          <li className={breadcrumbItem} aria-current="page">Прокат-Аренда с доставкой и трансфером</li>
+          <li className={breadcrumbItem} aria-current="page">Организация корпоратива</li>
         </ol>
       </nav>
     </div>
