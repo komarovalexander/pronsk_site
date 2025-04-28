@@ -171,7 +171,7 @@ const pronya = () => (
               <i style={{ fontSize: '14px' }}>{foodConfig.note}</i>
             </p>
             <b style={{ fontSize: '18px', textAlign: "justify" }}>🚍 Трансфер</b>
-            <p style={{ fontSize: '18px', textAlign: "justify" }}>Трансфер от Пронска к месту старта и обратно</p>
+            <p style={{ fontSize: '18px', textAlign: "justify" }}>Трансфер от Пронска к месту старта</p>
             <b style={{ fontSize: '18px', textAlign: "justify" }}>🕵️‍♂️ Сопровождение в пути</b>
             <p style={{ fontSize: '18px', textAlign: "justify" }}>Наш гид будет с вами на всём маршруте</p>
           </div>
