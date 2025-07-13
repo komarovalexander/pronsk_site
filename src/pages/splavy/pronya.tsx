@@ -267,8 +267,8 @@ const pronya = () => (
               Любой уровень комфорта доступен на сплаве!
             </p>
             <p>
-              Если вы приезжаете издалека - то вы можете приехать за день до сплава, переночевать в удобном для вас варианте размещения, и с утра
-              отправиться на сплав.
+              Если вы приезжаете издалека - то вы можете приехать за день до сплава, переночевать в удобном для вас варианте размещения, и с
+              утра отправиться на сплав.
             </p>
             <p>В зависимости от пожеланий к условиям ночёвки, можно выбрать различные варианты размещения:</p>
           </div>
@@ -301,6 +301,7 @@ const pronya = () => (
               src='https://vk.com/video_ext.php?oid=-213925828&id=456239141&hd=2&autoplay=1'
               width='660'
               height={440}
+              style={{ maxWidth: '100%' }}
               allow='autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;'
               frameborder='0'
               allowfullscreen
@@ -342,6 +343,7 @@ const pronya = () => (
               src='https://vk.com/video_ext.php?oid=-213925828&id=456239140&hd=2&autoplay=1'
               width='660'
               height={440}
+              style={{ maxWidth: '100%' }}
               allow='autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;'
               frameborder='0'
               allowfullscreen
