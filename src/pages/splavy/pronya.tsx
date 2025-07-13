@@ -228,7 +228,7 @@ const pronya = () => (
             <b style={{ fontSize: '18px', textAlign: 'justify' }}>⛺️ Оборудование для комфортного сна на природе</b>
             <p style={{ fontSize: '18px', textAlign: 'justify' }}>
               Палатки, мягкие коврики в палатку, спальники, подготовленное для отдыха и ночлега место. На выбор у нас есть также{' '}
-              <a href='#nightPrice'>другие варианты ночевки</a>
+              <a href='#night'>другие варианты ночевки</a>
             </p>
             <b style={{ fontSize: '18px', textAlign: 'justify' }}>🍲 Трехразовое горячее питание</b>
             <p style={{ fontSize: '18px', textAlign: 'justify' }}>
@@ -254,7 +254,7 @@ const pronya = () => (
 
       <div className={container}>
         <h3
-          id='nightPrice'
+          id='night'
           className={`${rowHeader} headerFont`}
         >
           Варианты ночёвки
@@ -302,7 +302,7 @@ const pronya = () => (
               width='660'
               height={440}
               style={{ maxWidth: '100%' }}
-              allow='autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;'
+              allow='encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;'
               frameborder='0'
               allowfullscreen
             ></iframe>
@@ -344,7 +344,7 @@ const pronya = () => (
               width='660'
               height={440}
               style={{ maxWidth: '100%' }}
-              allow='autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;'
+              allow='encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;'
               frameborder='0'
               allowfullscreen
             ></iframe>
