@@ -61,6 +61,7 @@ import ContactUs from './ContactUs';
 import SplavyFooter from './Footer';
 import HowToGetToUs from './HowToGetToUs';
 import OneDay from './routes/OneDay';
+import CompanyItem from './routes/CompanyItem';
 
 const pronya = () => (
   <Layout>
@@ -438,6 +439,7 @@ const pronya = () => (
         style={{ alignItems: 'start' }}
       >
         <OneDay />
+        <CompanyItem />
       </div>
     </div>
     <SplavyFooter style={{ marginTop: 80 }} />
