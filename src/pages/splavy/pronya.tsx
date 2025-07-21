@@ -183,7 +183,7 @@ const pronya = () => (
             <br />
             19:40 - поход на гору "Гневна" под закат
             <br />
-            21:00 - душевные посиделки у костра с музыкантом
+            20:30 - душевные посиделки у костра с музыкантом
             <br />
           </p>
         </div>
@@ -301,10 +301,10 @@ const pronya = () => (
               className={rowImage}
               style={{ marginBottom: 15 }}
               width={660}
-              src={'../../images/Splav/glamp/safari.jpeg'}
+              src={'../../images/Splav/glamp/shater.JPG'}
               alt={'Пронские сплавы - 2 дня'}
             />
-            <h4 className={featureHeader}>Сафари-тент для двоих - от 5100 Р./сутки</h4>
+            <h4 className={featureHeader}>Сафари-тент, общий душ и туалет - от 6100 Р./сутки</h4>
             <div
               className={rowText}
               style={{ maxWidth: 800 }}
@@ -329,7 +329,7 @@ const pronya = () => (
               frameborder='0'
               allowfullscreen
             ></iframe>
-            <h4 className={featureHeader}>Сафари-тент для троих - от 7100 Р./сутки</h4>
+            <h4 className={featureHeader}>Сафари-тент, душ и туалет в номере - от 7600 Р./сутки</h4>
             <div
               className={rowText}
               style={{ maxWidth: 800 }}
