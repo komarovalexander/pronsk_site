@@ -167,7 +167,7 @@ const pronya = () => (
         <div className={rowText}>
           <i style={{ fontSize: '18px', textAlign: 'justify' }}>День 1</i>
           <p style={{ fontSize: '18px', textAlign: 'justify' }}>
-            10:00 – встреча в Глемпинге "Берег" р.п. Пронск, подготовка к сплаву
+            10:00 – встреча в Глемпинге "Берег" в Пронске, подготовка к сплаву
             <br />
             10:30 -  трансфер до места старта
             <br />
