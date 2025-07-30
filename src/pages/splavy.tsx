@@ -62,7 +62,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import TwoDays from './splavy/routes/TwoDays';
 import feedbackDoubleQuoteImage from '../images/Splav/index/15.svg';
 import logoImage from '../images/Splav/logo.png';
-import odnoklassniki from '../images/odnoklassniki.svg';
 import { scrollToId } from '../utils';
 import vk from '../images/vk.svg';
 import { splavyVideoMain } from '../config';
@@ -204,19 +203,6 @@ const splavy = () => (
       </div>
     </div>
 
-    {/*<div className={container} >
-      <div className={`${rowHeader} headerFont`} >Частые вопросы</div>
-      <div className={row} style={{
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}>
-        <div className={buttons}>
-          <a className={buttonRoutes} href='https://vk.com/pronskie_splavy' target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' />Мы ВКонтакте</a>
-          <a className={buttonRoutes} href='https://ok.ru/group/70000002650473' target='_blank' title="Одноклассники"><img src={odnoklassniki} alt='Одноклассники' />Мы в одноклассниках</a>
-        </div>
-      </div>
-    </div>*/}
-
     <HowToGetToUs />
 
     <div>
@@ -291,7 +277,6 @@ const splavy = () => (
           }}>
             <div className={buttons}>
               <a className={buttonRoutes} href='https://vk.com/pronskie_splavy' target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' />Мы ВКонтакте</a>
-              <a className={buttonRoutes} href='https://ok.ru/group/70000002650473' target='_blank' title="Одноклассники"><img src={odnoklassniki} alt='Одноклассники' />Мы в одноклассниках</a>
             </div>
           </div>
         </div>

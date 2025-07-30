@@ -154,7 +154,7 @@ const pronya = () => (
         paddingBottom: 20,
       }}
     >
-      <h3 className={`${rowHeader} headerFont`}>🚣‍♂️ Примерная программа слава</h3>
+      <h3 className={`${rowHeader} headerFont`}>🚣‍♂️ Примерная программа сплава</h3>
       <div className={`${row} ${rowReversed}`}>
         <div>
           <StaticImage

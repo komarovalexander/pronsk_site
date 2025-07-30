@@ -2,7 +2,6 @@ import React, { CSSProperties } from 'react';
 import { footer, footerTop, footerLinks, logo, social, footerBottom } from './splavy_detail.module.scss';
 
 import logoImage from '../../images/Splav/logo.png';
-import odnoklassniki from '../../images/odnoklassniki.svg';
 import { scrollToId } from '../../utils';
 import vk from '../../images/vk.svg';
 
@@ -44,16 +43,6 @@ const SplavyFooter = ({ scrollToRoutes, style }: { scrollToRoutes?: boolean; sty
           <img
             src={vk}
             alt='ВКонтакте'
-          />
-        </a>
-        <a
-          href='https://ok.ru/group/70000002650473'
-          target='_blank'
-          title='Одноклассники'
-        >
-          <img
-            src={odnoklassniki}
-            alt='Одноклассники'
           />
         </a>
       </div>
