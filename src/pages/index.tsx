@@ -148,7 +148,7 @@ const IndexPage = () => {
           }}>
             <div className={buttons}>
               <a className={buttonRoutes} href='https://vk.com/v_pronske' target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' />Мы ВКонтакте</a>
-              <a className={buttonRoutes} href='https://t.me/v_pronske_chat' target='_blank' title="Телеграм"><img src={telegram} alt='Телеграм' />Чат в телеграм</a>
+              <a className={buttonRoutes} href='https://t.me/+VSRt1ZFWllcyMzUy' target='_blank' title="Телеграм"><img src={telegram} alt='Телеграм' />Чат в телеграм</a>
             </div>
           </div>
         </div>
