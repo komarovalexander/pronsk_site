@@ -48,10 +48,12 @@ const SplavyFooter = ({ scrollToRoutes, style }: { scrollToRoutes?: boolean; sty
       </div>
     </div>
     <div className={footerBottom}>
-        {/*<div>Сведения об организации:</div>
+        {/*
+        <div>Сведения об организации:</div>
         <div>ИП Комаров Константин Сергеевич</div>
         <div>ИНН 621104048199</div>
-        <div>ОГРН ИП 323623400030082</div>*/}
+        <div>ОГРН ИП 323623400030082</div>
+        */}
     </div>
   </div>
 );
