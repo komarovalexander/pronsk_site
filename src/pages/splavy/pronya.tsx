@@ -281,12 +281,12 @@ const pronya = () => (
           <div className={feature}>
             <StaticImage
               className={rowImage}
-              style={{ marginBottom: 15 }}
-              width={660}
+              style={{ marginBottom: 15, width: '660px !important' }}
               src={'../../images/Splav/glamp/tent.jpg'}
               alt={'Пронские сплавы - 2 дня'}
             />
-            <h4 className={featureHeader}>Палатка - включена в стоимость сплава</h4>
+            <h4 className={featureHeader}>Палатка</h4>
+            <p>включена в стоимость сплава</p>
             <div
               className={rowText}
               style={{ maxWidth: 800 }}
@@ -304,7 +304,8 @@ const pronya = () => (
               src={'../../images/Splav/glamp/shater.JPG'}
               alt={'Пронские сплавы - 2 дня'}
             />
-            <h4 className={featureHeader}>Сафари-тент, общий душ и туалет - от 6100 Р./сутки</h4>
+            <h4 className={featureHeader}>Сафари-тент, общий душ и туалет</h4>
+            <p>пн-чт 6000₽/сутки, пт-вс 7000₽/сутки</p>
             <div
               className={rowText}
               style={{ maxWidth: 800 }}
@@ -329,7 +330,8 @@ const pronya = () => (
               frameborder='0'
               allowfullscreen
             ></iframe>
-            <h4 className={featureHeader}>Сафари-тент, душ и туалет в номере - от 7600 Р./сутки</h4>
+            <h4 className={featureHeader}>Сафари-тент, душ и туалет в номере</h4>
+            <p>пн-чт 8000₽/сутки, пт-вс 8500₽/сутки</p>
             <div
               className={rowText}
               style={{ maxWidth: 800 }}
@@ -349,7 +351,8 @@ const pronya = () => (
               frameborder='0'
               allowfullscreen
             ></iframe>
-            <h4 className={featureHeader}>Сканди дом - от 8100 Р./сутки </h4>
+            <h4 className={featureHeader}>Сканди дом</h4>
+            <p>от 8100₽/сутки</p>
             <div
               className={rowText}
               style={{ maxWidth: 800 }}
