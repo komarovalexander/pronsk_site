@@ -352,7 +352,7 @@ const pronya = () => (
               allowfullscreen
             ></iframe>
             <h4 className={featureHeader}>Сканди дом</h4>
-            <p>от 8100₽/сутки</p>
+            <p>от 10 000₽/сутки</p>
             <div
               className={rowText}
               style={{ maxWidth: 800 }}
