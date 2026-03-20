@@ -281,7 +281,7 @@ const pronya = () => (
           <div className={feature}>
             <StaticImage
               className={rowImage}
-              style={{ marginBottom: 15, width: '660px !important' }}
+              style={{ marginBottom: 15, maxWidth: '660px !important' }}
               src={'../../images/Splav/glamp/tent.jpg'}
               alt={'Пронские сплавы - 2 дня'}
             />
