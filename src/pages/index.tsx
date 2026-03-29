@@ -32,6 +32,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import gerbImage from '../images/герб.png';
 import telegram from '../images/telegram.svg';
 import vk from '../images/vk.svg';
+import max from '../images/max.svg';
 
 const IndexPage = () => {
   return (
@@ -148,6 +149,7 @@ const IndexPage = () => {
           }}>
             <div className={buttons}>
               <a className={buttonRoutes} href='https://vk.com/v_pronske' target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' />Мы ВКонтакте</a>
+              <a className={buttonRoutes} href='https://max.ru/join/UPqeSztstQjJMD4Io3rBs_7uTYfkJwpWOmllqGSugKE' target='_blank' title="MAX"><img src={max} alt='MAX' />Чат в MAX</a>
               <a className={buttonRoutes} href='https://t.me/+VSRt1ZFWllcyMzUy' target='_blank' title="Телеграм"><img src={telegram} alt='Телеграм' />Чат в телеграм</a>
             </div>
           </div>
