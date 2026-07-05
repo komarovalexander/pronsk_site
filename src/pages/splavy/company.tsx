@@ -18,6 +18,7 @@ import ContactUs from './ContactUs';
 import { HeadFC } from 'gatsby';
 import Layout from '../layout';
 import OneDay from './routes/OneDay';
+import DayNight from './routes/DayNight';
 import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import TwoDays from './routes/TwoDays';
@@ -50,7 +51,6 @@ const company = () => (
                     🌊 🚣‍♂️ Организуй незабываемый корпоративный сплав на байдарках с нами! <br />Хотите подарить своей команде незабываемый отдых и укрепить ее дух единства? Приглашаем вас на наши корпоративные сплавы на байдарках,
                     где каждый участник получит заряд энергии, вдохновения и новых впечатлений!</p>
                 </div>
-                <div style={{ fontSize: 14 }}>* Цена договорная, для больших компаний скидки</div>
               </div>
             </div>
             <ContactUs />
@@ -94,6 +94,7 @@ const company = () => (
       <h3 id="routes" className={`${rowHeader} headerFont`}>Также у нас имеются регулярные групповые походы:</h3>
       <div className={row} style={{ alignItems: 'start' }}>
         <OneDay />
+        <DayNight />
         <TwoDays />
       </div>
     </div>

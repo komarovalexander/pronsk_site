@@ -1,6 +1,4 @@
 import {
-  additionalFeature,
-  additionalFeatureHeader,
   button,
   buttonMain,
   buttonRoutes,
@@ -25,7 +23,6 @@ import {
   grayBack,
   header,
   imageContainer,
-  linearBack,
   logo,
   mainBanner,
   mainBannerText,
@@ -41,22 +38,22 @@ import {
   rowImage,
   rowImageBigHeight,
   rowReversed,
+  routesRow,
   rowText,
   social,
   tinyRow,
   triangle,
-  underlinedLink,
   video,
   videoContainer,
 } from './splavy.module.scss';
 
 import ContactUs from './splavy/ContactUs';
-import Glamping from './splavy/routes/Glamping';
 import { HeadFC } from 'gatsby';
 import HowToGetToUs from './splavy/HowToGetToUs';
 import Layout from './layout';
 import OneDay from './splavy/routes/OneDay';
 import DayNight from './splavy/routes/DayNight';
+import CompanyItem from './splavy/routes/CompanyItem';
 import React from 'react';
 import SplavyFooter from './splavy/Footer';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -90,43 +87,14 @@ const splavy = () => (
 
     <div className={container}>
       <h3 id="routes" className={`${rowHeader} headerFont`}>Наши маршруты</h3>
-      <div className={row} style={{ alignItems: 'start' }}>
+      <div className={routesRow}>
         <OneDay />
         <DayNight />
         <TwoDays />
+        <CompanyItem />
       </div>
     </div>
 
-
-    <div className={linearBack}>
-      <div className={container}>
-        <h3 className={`${rowHeader} headerFont`}>Дополнительные услуги</h3>
-        <div className={row} style={{ alignItems: 'start', justifyContent: 'center' }}>
-          <div className={feature} style={{ position: 'relative' }}>
-            <StaticImage className={`${rowImage} ${rowImageBigHeight}`} style={{ marginBottom: 15 }} src={'../images/Splav/index/9.jpeg'} alt={'Пронские сплавы - организация корпоратива'} />
-
-            <div className={additionalFeature}>
-              <h4 className={additionalFeatureHeader}>
-                <a href="/splavy/company/" style={{ color: 'white', textDecoration: 'none' }}>Организация корпоратива</a>
-              </h4>
-              <a className={underlinedLink} href="/splavy/company/">Узнать больше</a>
-            </div>
-          </div>
-
-          {/*<div className={feature} style={{ position: 'relative' }}>
-            <StaticImage className={`${rowImage} ${rowImageBigHeight}`} style={{ marginBottom: 15 }} src={'../images/Splav/index/6.jpg'} alt={'Пронские сплавы - прокат'} />
-
-            <div className={additionalFeature}>
-              <h4 className={additionalFeatureHeader}>
-                <a href="/splavy/rent/" style={{ color: 'white', textDecoration: 'none' }}>Прокат с доставкой и трансфером</a>
-              </h4>
-              <a className={underlinedLink} href="/splavy/rent/">Узнать больше</a>
-            </div>
-</div>*/}
-
-        </div>
-      </div>
-    </div>
 
     <div className={container}>
       <h3 className={`${rowHeader} headerFont`}>Наши преимущества</h3>

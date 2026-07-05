@@ -88,6 +88,14 @@
     padding-top: 80px;
 }
 
+.routesRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    align-items: start;
+    margin: 0 10px;
+}
+
 .row {
     display: flex;
     gap: 60px;
@@ -393,6 +401,11 @@
 
     .row {
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .routesRow {
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 
