@@ -61,6 +61,7 @@ import Layout from '../layout';
 import SplavyFooter from './Footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import TwoDays from './routes/TwoDays';
+import DayNight from './routes/DayNight';
 import CompanyItem from './routes/CompanyItem';
 
 const kerd = () => {
@@ -250,6 +251,7 @@ const kerd = () => {
           className={row}
           style={{ alignItems: 'start' }}
         >
+          <DayNight />
           <TwoDays />
           <CompanyItem />
         </div>

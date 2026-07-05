@@ -56,6 +56,7 @@ import { HeadFC } from 'gatsby';
 import HowToGetToUs from './splavy/HowToGetToUs';
 import Layout from './layout';
 import OneDay from './splavy/routes/OneDay';
+import DayNight from './splavy/routes/DayNight';
 import React from 'react';
 import SplavyFooter from './splavy/Footer';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -91,6 +92,7 @@ const splavy = () => (
       <h3 id="routes" className={`${rowHeader} headerFont`}>Наши маршруты</h3>
       <div className={row} style={{ alignItems: 'start' }}>
         <OneDay />
+        <DayNight />
         <TwoDays />
       </div>
     </div>
