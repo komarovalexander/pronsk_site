@@ -16,7 +16,7 @@ const ContactUs = () => (
       <a href="https://vk.me/pronskie_splavy" target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' /></a>
       <a href="https://max.ru/u/f9LHodD0cOINzigoTSFKq_6tVl3JkXYO3EeYvQK4XJ5mPuye_FTwl-H8il0" target='_blank' title='MAX'><img src={max} alt='MAX' /></a>
       <a href="https://t.me/pronskie_splavy" target='_blank' title='Телеграм'><img src={telegram} alt='Телеграм' /></a>
-      <a href="https://wa.me/+79521233539" target='_blank' title='Вотсапп'><img src={whatsapp} alt='Вотсапп' /></a>
+      {/* <a href="https://wa.me/+79521233539" target='_blank' title='Вотсапп'><img src={whatsapp} alt='Вотсапп' /></a> */}
     </div>
     <a className={buttonMain} href='tel:+79521233539'>Звоните +79521233539</a>
   </div>
