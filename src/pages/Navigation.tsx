@@ -28,6 +28,7 @@ const Navigation = () => {
       <div className={links}>
         <a className={activeItem === '' ? 'active' : undefined} href="/">Главная</a>
         <a className={activeItem === 'splavy' ? 'active' : undefined} href="/splavy/">Пронские сплавы</a>
+        <a className={activeItem === 'enduro' ? 'active' : undefined} href="/enduro/">Эндуро</a>
         <a className={activeItem === 'blog' ? 'active' : undefined} href="/blog/">Блог</a>
       </div>
       <div style={{ display: 'flex', alignItems: 'center', gap: 30, padding: 20 }} className={linksMenu}>
@@ -38,6 +39,7 @@ const Navigation = () => {
         <div className='linksMenuList' style={menuShown ? {} : { display: 'none' }}>
           <a className={activeItem === '' ? 'active' : undefined} href="/">Главная</a>
           <a className={activeItem === 'splavy' ? 'active' : undefined} href="/splavy/">Пронские сплавы</a>
+          <a className={activeItem === 'enduro' ? 'active' : undefined} href="/enduro/">Эндуро</a>
           <a className={activeItem === 'blog' ? 'active' : undefined} href="/blog/">Блог</a>
         </div>
       </div>

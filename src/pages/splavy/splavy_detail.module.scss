@@ -134,6 +134,31 @@
   margin: 0 10px;
 }
 
+.classesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 320px));
+  gap: 60px;
+  justify-content: center;
+  margin: 0 10px;
+
+  .feature {
+    display: grid;
+    grid-template-rows: 420px auto;
+    justify-items: center;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+
+    > :first-child {
+      align-self: end;
+    }
+
+    > :last-child {
+      align-self: start;
+    }
+  }
+}
+
 .rowReversed {
   flex-direction: row-reverse;
 }
@@ -369,6 +394,11 @@
 }
 
 @media (max-width: 1050px) {
+  .classesGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
   .mainBanner {
     height: 900px;
     background-size: auto 100% !important;
@@ -407,6 +437,10 @@
 }
 
 @media (max-width: 750px) {
+  .classesGrid {
+    grid-template-columns: minmax(0, 320px);
+  }
+
   .buttons {
     flex-direction: column;
   }

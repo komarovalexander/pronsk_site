@@ -93,7 +93,7 @@ const IndexPage = () => {
           <div className={rowText}>
             <h4 className={rowTextHeader}>
               Отдых на природе</h4>
-            <p>Рыбалка, палатки, купание в чистых реках, посиделки у костра, <a href='/splavy'>сплавы на байдарках</a></p>
+            <p>Рыбалка, палатки, купание в чистых реках, посиделки у костра, <a href='/splavy'>сплавы на байдарках</a>, <a href='/enduro/'>эндуро «Косопузые»</a></p>
           </div>
           <div><StaticImage className={rowImage} src={'../images/slider/Рыбалка4.jpg'} style={{ objectFit: 'contain' }} alt={'Отдых на природе - Пронск'} /></div>
         </div>
@@ -160,6 +160,7 @@ const IndexPage = () => {
         <div><img src={gerbImage} className={logo} alt="Пронские сплавы логотип" /></div>
         <div className={footerLinks} >
           <a href="/splavy/">Пронские сплавы</a>
+          <a href="/enduro/">Эндуро</a>
           <a href="/blog/">Блог</a>
         </div>
         <div className={social}>

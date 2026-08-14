@@ -142,7 +142,7 @@ title: 'Куда сходить, что посмотреть и стоит ли 
 
 ![](https://sun9-67.userapi.com/impg/BK4bCzQjf-pNzQEySwJtigJq8Y5Iy_rkN_-sNQ/6CWsY59D3lU.jpg?size=2560x1707&quality=95&sign=17f71bdf3199b177dd81e0ea1104e3b4&type=album)
 
-Группа ВК: [Enduro Пронск "КОСОПУЗЫЕ"](https://vk.com/public197036793)
+Группа ВК: [Enduro Пронск "КОСОПУЗЫЕ"](https://vk.com/public197036793) · [Страница на сайте](/enduro/)
 
 ##### Проголодались а продукты из супермаркета уже надоели?
 
