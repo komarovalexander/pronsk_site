@@ -325,10 +325,16 @@ export const Head: HeadFC = () => (
     <meta property='og:type' content='website' />
     <meta property='og:url' content='https://vpronske.ru/enduro/' />
     <meta property='og:title' content='Эндуро Пронск «Косопузые» — гонка 5–6 сентября' />
+    <meta property='og:image' content='https://vpronske.ru/images/enduro/preview.jpg' />
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='630' />
+    <meta property='og:image:alt' content='Участники эндуро-гонки «Косопузые» перед стартом' />
     <meta
       property='og:description'
       content='Команда эндуро из Пронска и гонка «Косопузые» в лесу Шарки 5–6 сентября. Регистрация, классы бронза / серебро / золото.'
     />
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta name='twitter:image' content='https://vpronske.ru/images/enduro/preview.jpg' />
     <meta name='description' content='Enduro Пронск Косопузые: тренировки и гонка 5–6 сентября в лесу Шарки' />
   </>
 );
