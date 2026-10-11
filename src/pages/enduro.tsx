@@ -115,7 +115,7 @@ const EnduroPage = () => (
             </div>
             <div className={`${buttons} ${columnReverseMobile}`}>
               <a className={buttonMain} href='#race'>
-                Гонка 5–6 сентября
+                Следующая гонка — в 2027
               </a>
               <div style={{ display: 'flex', gap: 15, fontSize: 18, alignItems: 'center' }}>
                 Наш чат:
@@ -134,15 +134,24 @@ const EnduroPage = () => (
     <div className={container} id='race'>
       <h3 className={`${rowHeader} headerFont`} style={{ marginBottom: 20 }}>Эндуро-Гонка «Косопузые», Пронск, лес Шарки </h3>
 
+      <div style={{ maxWidth: 800, margin: '0 auto 30px', fontSize: 18, textAlign: 'center' }}>
+        <p style={{ fontSize: 22, fontWeight: 600, marginBottom: 10 }}>Гонка 5–6 сентября 2026 года прошла!</p>
+        <p style={{ marginTop: 0 }}>
+          Спасибо гонщикам, зрителям и партнёрам — всем, кто был с нами в лесу Шарки.
+        </p>
+        <p>
+          Следующая гонка «Косопузые» пройдёт в 2027 году. Дату и старт регистрации объявим в группе ВКонтакте и в нашем
+          чате — подписывайтесь, чтобы не пропустить.
+        </p>
+      </div>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-
         <a
           className={button}
-          href={REGISTRATION_URL}
+          href={VK_GROUP_URL}
           target='_blank'
           rel='noreferrer'
         >
-          Регистрация на гонку
+          Следить за новостями
         </a>
       </div>
       <div style={{ marginTop: 0 }}>
@@ -159,8 +168,8 @@ const EnduroPage = () => (
               <div style={{ marginBottom: 20, display: 'flex', justifyContent: 'space-between', gap: 20 }}>
                 <div className={feature}>
                   <h4 className={featureHeader}>
-                    Дата</h4>
-                  <div>5–6 сентября 2026</div>
+                    Следующая гонка</h4>
+                  <div>2027 год, дата уточняется</div>
                 </div>
                 <div className={feature}>
                   <h4 className={featureHeader}>
@@ -321,20 +330,20 @@ export default EnduroPage;
 
 export const Head: HeadFC = () => (
   <>
-    <title>Эндуро Пронск «Косопузые» — гонка 5–6 сентября 2026</title>
+    <title>Эндуро Пронск «Косопузые»</title>
     <meta property='og:type' content='website' />
     <meta property='og:url' content='https://vpronske.ru/enduro/' />
-    <meta property='og:title' content='Эндуро Пронск «Косопузые» — гонка 5–6 сентября' />
+    <meta property='og:title' content='Эндуро Пронск «Косопузые» — следующая гонка в 2027 году' />
     <meta property='og:image' content='https://vpronske.ru/images/enduro/preview.jpg' />
     <meta property='og:image:width' content='1200' />
     <meta property='og:image:height' content='630' />
     <meta property='og:image:alt' content='Участники эндуро-гонки «Косопузые» перед стартом' />
     <meta
       property='og:description'
-      content='Команда эндуро из Пронска и гонка «Косопузые» в лесу Шарки 5–6 сентября. Регистрация, классы бронза / серебро / золото.'
+      content='Команда эндуро из Пронска. Гонка «Косопузые» 5–6 сентября 2026 года в лесу Шарки прошла, следующая — в 2027 году. Классы бронза / серебро / золото.'
     />
     <meta name='twitter:card' content='summary_large_image' />
     <meta name='twitter:image' content='https://vpronske.ru/images/enduro/preview.jpg' />
-    <meta name='description' content='Enduro Пронск Косопузые: тренировки и гонка 5–6 сентября в лесу Шарки' />
+    <meta name='description' content='Enduro Пронск Косопузые: тренировки в лесу Шарки, гонка 2026 года прошла, следующая — в 2027 году' />
   </>
 );
