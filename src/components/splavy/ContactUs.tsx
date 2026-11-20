@@ -2,7 +2,7 @@ import {
   buttonMain,
   buttons,
   columnReverseMobile,
-} from './splavy_detail.module.scss';
+} from '../../pages/splavy/splavy_detail.module.scss';
 
 import React from 'react';
 import telegram from '../../images/telegram.svg';

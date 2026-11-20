@@ -2,6 +2,16 @@
 slug: 'golovnin'
 date: '2026-02-04'
 title: 'Василий Михайлович Головнин'
+description: 'Биография Василия Михайловича Головнина — русского адмирала и мореплавателя: кругосветные экспедиции, японский плен и служба флоту.'
+section: 'seafarers'
+additionalSections: ['local-people']
+image: '/images/Golovnin_VM.jpg'
+author: 'anastasia-sarycheva'
+categories: ['people']
+related: ['kruzenshtern', 'lazarev', 'zagoskin']
+sources:
+  - title: 'Василий Михайлович Головнин — Википедия'
+    url: 'https://ru.wikipedia.org/wiki/Головнин,_Василий_Михайлович'
 ---
 
 <img src="/images/Golovnin_VM.jpg"  width="350"/>
@@ -35,4 +45,4 @@ title: 'Василий Михайлович Головнин'
 
 ---
 
-Автор статьи: [Анастасия Сарычева](https://vk.com/id94863460)
+Автор статьи: [Анастасия Сарычева](/authors/anastasia-sarycheva/)

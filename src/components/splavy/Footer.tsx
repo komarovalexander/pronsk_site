@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import { footer, footerTop, footerLinks, logo, social, footerBottom } from './splavy_detail.module.scss';
+import { footer, footerTop, footerLinks, logo, social, footerBottom } from '../../pages/splavy/splavy_detail.module.scss';
 
 import logoImage from '../../images/Splav/logo.png';
 import { scrollToId } from '../../utils';

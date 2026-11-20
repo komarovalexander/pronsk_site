@@ -2,6 +2,15 @@
 slug: 'tyanshanskiy'
 date: '2026-03-20'
 title: 'Пётр Петрович Семёнов Тянь-Шанский - ведущий исследователь центральной Азии'
+description: 'Пётр Семёнов-Тян-Шанский: биография географа и путешественника, исследования Центральной Азии и вклад в развитие Русского географического общества.'
+section: 'travelers'
+image: '/images/tyanshanskiy.jpeg'
+author: 'anastasia-sarycheva'
+categories: ['people']
+related: ['venukov', 'zagoskin', 'michurin']
+sources:
+  - title: 'Пётр Петрович Семёнов-Тян-Шанский — Википедия'
+    url: 'https://ru.wikipedia.org/wiki/Семёнов-Тян-Шанский,_Пётр_Петрович'
 ---
 
 <img src="/images/tyanshanskiy.jpeg"  width="350"/>
@@ -41,4 +50,4 @@ title: 'Пётр Петрович Семёнов Тянь-Шанский - ве�
 
 ---
 
-Автор статьи: [Анастасия Сарычева](https://vk.com/id94863460)
+Автор статьи: [Анастасия Сарычева](/authors/anastasia-sarycheva/)

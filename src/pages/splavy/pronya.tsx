@@ -53,14 +53,15 @@ import {
 
 import { HeadFC } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import Layout from '../layout';
-import ContactUs from './ContactUs';
-import SplavyFooter from './Footer';
-import HowToGetToUs from './HowToGetToUs';
-import AccommodationOptions from './AccommodationOptions';
-import OneDay from './routes/OneDay';
-import DayNight from './routes/DayNight';
-import CompanyItem from './routes/CompanyItem';
+import Layout from '../../components/Layout';
+import Seo from '../../components/Seo';
+import ContactUs from '../../components/splavy/ContactUs';
+import SplavyFooter from '../../components/splavy/Footer';
+import HowToGetToUs from '../../components/splavy/HowToGetToUs';
+import AccommodationOptions from '../../components/splavy/AccommodationOptions';
+import OneDay from '../../components/splavy/routes/OneDay';
+import DayNight from '../../components/splavy/routes/DayNight';
+import CompanyItem from '../../components/splavy/routes/CompanyItem';
 
 const pronya = () => (
   <Layout>
@@ -121,12 +122,12 @@ const pronya = () => (
           paddingBottom: 20,
         }}
       >
-        <h3
+        <h2
           className={`${rowHeader} headerFont`}
           style={{ marginBottom: 0 }}
         >
           Цена
-        </h3>
+        </h2>
         <div
           className={`${row}`}
           style={{ textAlign: 'center' }}
@@ -153,7 +154,7 @@ const pronya = () => (
         paddingBottom: 20,
       }}
     >
-      <h3 className={`${rowHeader} headerFont`}>🚣‍♂️ Примерная программа сплава</h3>
+      <h2 className={`${rowHeader} headerFont`}>🚣‍♂️ Примерная программа сплава</h2>
       <div className={`${row} ${rowReversed}`}>
         <div>
           <StaticImage
@@ -218,7 +219,7 @@ const pronya = () => (
 
     <div className={grayBack}>
       <div className={container}>
-        <h3 className={`${rowHeader} headerFont`}>В цену входит</h3>
+        <h2 className={`${rowHeader} headerFont`}>В цену входит</h2>
         <div className={row}>
           <div>
             <b style={{ fontSize: '18px', textAlign: 'justify' }}>🚣‍♂️ Оборудование для сплава</b>
@@ -256,12 +257,12 @@ const pronya = () => (
 
       <div className={container}>
         <div className='container text'>
-          <h3
+          <h2
             className={`${rowHeader} headerFont`}
             id='take_it'
           >
             Что взять с собой
-          </h3>
+          </h2>
           <div className={row}>
             <div>
               <b style={{ fontSize: '18px', textAlign: 'justify' }}>🚿 Средства личной гигиены</b>
@@ -284,7 +285,7 @@ const pronya = () => (
     </div>
 
     <div className={container}>
-      <h3 className={`${rowHeader} headerFont`}>Кому идеально подходит маршрут?</h3>
+      <h2 className={`${rowHeader} headerFont`}>Кому идеально подходит маршрут?</h2>
       <div className={row}>
         <div>
           <b style={{ fontSize: '18px', textAlign: 'justify' }}>👨‍👩‍👧‍👦 Семейным</b>
@@ -317,12 +318,12 @@ const pronya = () => (
     <HowToGetToUs />
 
     <div className={container}>
-      <h3
+      <h2
         id='routes'
         className={`${rowHeader} headerFont`}
       >
         Также может быть интересно
-      </h3>
+      </h2>
       <div
         className={row}
         style={{ alignItems: 'start' }}
@@ -338,28 +339,12 @@ const pronya = () => (
 
 export default pronya;
 
-export const Head: HeadFC = () => (
-  <>
-    <title>{routesConfig.twoDays.title}, сплавы на байдарках - Пронск, Рязанская область</title>
-    <meta
-      property='og:type'
-      content='website'
-    />
-    <meta
-      property='og:url'
-      content='https://vpronske.ru/splavy/pronya/'
-    />
-    <meta
-      property='og:title'
-      content={routesConfig.twoDays.title}
-    />
-    <meta
-      property='og:description'
-      content='Cплавы на байдарках - Пронск, Рязанская область'
-    />
-    <meta
-      property='og:image'
-      content='https://vpronske.ru/splavy/pronya/CollageProny1.png'
-    />
-  </>
+export const Head: HeadFC = ({ location }) => (
+  <Seo
+    title='Двухдневный сплав по Керди и Проне — Пронские сплавы'
+    description='Двухдневный сплав на байдарках с ночёвкой в глэмпинге, питанием, оборудованием, инструкторами и трансфером. Маршрут по рекам Кердь и Проня в Пронском районе.'
+    pathname={location.pathname}
+    image='/images/splavy-cover.jpg'
+    imageAlt='Двухдневный сплав на байдарках по рекам Кердь и Проня'
+  />
 );

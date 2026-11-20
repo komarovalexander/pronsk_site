@@ -18,15 +18,16 @@ import {
   videoContainer,
 } from './splavy_detail.module.scss';
 
-import ContactUs from './ContactUs';
+import ContactUs from '../../components/splavy/ContactUs';
 import { HeadFC } from 'gatsby';
-import HowToGetToUs from './HowToGetToUs';
-import Layout from '../layout';
-import SplavyFooter from './Footer';
-import AccommodationOptions from './AccommodationOptions';
+import HowToGetToUs from '../../components/splavy/HowToGetToUs';
+import Layout from '../../components/Layout';
+import Seo from '../../components/Seo';
+import SplavyFooter from '../../components/splavy/Footer';
+import AccommodationOptions from '../../components/splavy/AccommodationOptions';
 import { StaticImage } from 'gatsby-plugin-image';
-import OneDay from './routes/OneDay';
-import TwoDays from './routes/TwoDays';
+import OneDay from '../../components/splavy/routes/OneDay';
+import TwoDays from '../../components/splavy/routes/TwoDays';
 
 const DayNightPage = () => (
   <Layout>
@@ -69,9 +70,9 @@ const DayNightPage = () => (
 
     <div className={grayBack} style={{ marginTop: 0 }}>
       <div className={container} style={{ paddingTop: 40, paddingBottom: 20 }}>
-        <h3 className={`${rowHeader} headerFont`} style={{ marginBottom: 0 }}>
+        <h2 className={`${rowHeader} headerFont`} style={{ marginBottom: 0 }}>
           Цена
-        </h3>
+        </h2>
         <div className={row} style={{ textAlign: 'center' }}>
           <div className={`${mainBannerText3} headerText`} style={{ width: '100%' }}>
             <div>
@@ -87,7 +88,7 @@ const DayNightPage = () => (
     </div>
 
     <div className={container} style={{ paddingTop: 40, paddingBottom: 20 }}>
-      <h3 className={`${rowHeader} headerFont`}>🚣‍♂️ Примерная программа</h3>
+      <h2 className={`${rowHeader} headerFont`}>🚣‍♂️ Примерная программа</h2>
       <div className={`${row} ${rowReversed}`}>
         <div>
           <StaticImage
@@ -130,7 +131,7 @@ const DayNightPage = () => (
 
     <div className={grayBack}>
       <div className={container}>
-        <h3 className={`${rowHeader} headerFont`}>В цену входит</h3>
+        <h2 className={`${rowHeader} headerFont`}>В цену входит</h2>
         <div className={row}>
           <div>
             <b style={{ fontSize: '18px', textAlign: 'justify' }}>🚣‍♂️ Оборудование для сплава</b>
@@ -164,7 +165,7 @@ const DayNightPage = () => (
     <AccommodationOptions />
 
     <div className={container}>
-      <h3 className={`${rowHeader} headerFont`}>Что взять с собой</h3>
+      <h2 className={`${rowHeader} headerFont`}>Что взять с собой</h2>
       <div className={row}>
         <div>
           <b style={{ fontSize: '18px', textAlign: 'justify' }}>🚿 Средства личной гигиены</b>
@@ -186,9 +187,9 @@ const DayNightPage = () => (
     <HowToGetToUs />
 
     <div className={container}>
-      <h3 id='routes' className={`${rowHeader} headerFont`}>
+      <h2 id='routes' className={`${rowHeader} headerFont`}>
         Также может быть интересно
-      </h3>
+      </h2>
       <div className={row} style={{ alignItems: 'start' }}>
         <OneDay />
         <TwoDays />
@@ -200,13 +201,12 @@ const DayNightPage = () => (
 
 export default DayNightPage;
 
-export const Head: HeadFC = () => (
-  <>
-    <title>{routesConfig.dayNight.title}, сплавы на байдарках — Пронск, Рязанская область</title>
-    <meta property='og:type' content='website' />
-    <meta property='og:url' content='https://vpronske.ru/splavy/day-night/' />
-    <meta property='og:title' content={routesConfig.dayNight.title} />
-    <meta property='og:description' content='Сплав на байдарках с ночёвкой в глэмпинге и завтраком — Пронск, Рязанская область' />
-    <meta property='og:image' content='https://vpronske.ru/splavy/pronya/CollageProny1.png' />
-  </>
+export const Head: HeadFC = ({ location }) => (
+  <Seo
+    title='Сплав день-ночь по Керди и Проне с ночёвкой — Пронск'
+    description='Сплав на байдарках с ночёвкой в глэмпинге, ужином у костра и завтраком. Оборудование, питание, инструктор и трансфер из Пронска включены.'
+    pathname={location.pathname}
+    image='/images/splavy-cover.jpg'
+    imageAlt='Сплав на байдарках с ночёвкой в глэмпинге в Пронске'
+  />
 );

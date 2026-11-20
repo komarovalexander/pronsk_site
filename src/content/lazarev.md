@@ -2,6 +2,15 @@
 slug: 'lazarev'
 date: '2026-04-20'
 title: 'Михаил Петрович Лазарев — адмирал, путешественник и командир Русского флота Чёрного моря.'
+description: 'Михаил Лазарев: биография русского адмирала и мореплавателя, кругосветные экспедиции, участие в открытии Антарктиды и командование Черноморским флотом.'
+section: 'seafarers'
+image: '/images/lazarev.jpg'
+author: 'anastasia-sarycheva'
+categories: ['people']
+related: ['avinov', 'golovnin', 'kruzenshtern']
+sources:
+  - title: 'Михаил Петрович Лазарев — Википедия'
+    url: 'https://ru.wikipedia.org/wiki/Лазарев,_Михаил_Петрович'
 ---
 
 <img style="height: 400px" src="/images/lazarev.jpg"/>
@@ -39,4 +48,4 @@ title: 'Михаил Петрович Лазарев — адмирал, пут�
 
 ---
 
-Автор статьи: [Анастасия Сарычева](https://vk.com/id94863460)
+Автор статьи: [Анастасия Сарычева](/authors/anastasia-sarycheva/)

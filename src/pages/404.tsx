@@ -1,5 +1,6 @@
 import { HeadFC, Link } from 'gatsby';
 import * as React from 'react';
+import Seo from '../components/Seo';
 
 const pageStyles = {
   color: "#232129",
@@ -29,4 +30,6 @@ const NotFoundPage = () => {
 
 export default NotFoundPage
 
-export const Head: HeadFC = () => <title>404</title>
+export const Head: HeadFC = ({ location }) => (
+  <Seo title='Страница не найдена — В Пронске' pathname={location.pathname} noindex />
+);

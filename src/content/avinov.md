@@ -2,6 +2,15 @@
 slug: 'avinov'
 date: '2026-03-29'
 title: 'Александр Павлович Авинов – адмирал, исследователь, командир, мореплаватель.'
+description: 'Биография Александра Павловича Авинова: военно-морская служба, командование кораблями, путешествия и исследовательская деятельность русского адмирала.'
+section: 'seafarers'
+image: '/images/avinov.png'
+author: 'anastasia-sarycheva'
+categories: ['people']
+related: ['lazarev', 'golovnin', 'kruzenshtern']
+sources:
+  - title: 'Александр Павлович Авинов — Википедия'
+    url: 'https://ru.wikipedia.org/wiki/Авинов,_Александр_Павлович'
 ---
 
 <img style="height: 400px" src="/images/avinov.png"/>
@@ -30,4 +39,4 @@ title: 'Александр Павлович Авинов – адмирал, и�
 
 ---
 
-Автор статьи: [Анастасия Сарычева](https://vk.com/id94863460)
+Автор статьи: [Анастасия Сарычева](/authors/anastasia-sarycheva/)

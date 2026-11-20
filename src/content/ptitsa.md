@@ -2,6 +2,15 @@
 slug: 'ptitsa'
 date: '2026-07-08'
 title: 'Клавдий Борисович Птица — выдающийся русский хормейстер, педагог и музыкально-общественный деятель.'
+description: 'Клавдий Птица — хормейстер, педагог и музыкально-общественный деятель: биография, работа с хоровыми коллективами и связь с Пронским краем.'
+section: 'local-people'
+image: '/images/ptitsa.jpg'
+author: 'anastasia-sarycheva'
+categories: ['people']
+related: ['michurin', 'boklevsky', 'pronsk']
+sources:
+  - title: 'Клавдий Борисович Птица — Википедия'
+    url: 'https://ru.wikipedia.org/wiki/Птица,_Клавдий_Борисович'
 ---
 
 <img style="height: 400px" src="/images/ptitsa.jpg" alt="Клавдий Борисович Птица"/>
@@ -32,4 +41,4 @@ title: 'Клавдий Борисович Птица — выдающийся р
 
 ---
 
-Автор статьи: [Анастасия Сарычева](https://vk.com/id94863460)
+Автор статьи: [Анастасия Сарычева](/authors/anastasia-sarycheva/)

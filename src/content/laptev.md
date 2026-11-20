@@ -2,6 +2,15 @@
 slug: 'laptev'
 date: '2026-06-28'
 title: 'Харитон Прокофьевич Лаптев — русский полярный исследователь'
+description: 'Харитон Лаптев — русский полярный исследователь: биография, Великая Северная экспедиция, изучение побережья Сибири и наследие мореплавателя.'
+section: 'seafarers'
+image: '/images/laptev.png'
+author: 'anastasia-sarycheva'
+categories: ['people']
+related: ['dezhnev', 'sedov', 'wrangel']
+sources:
+  - title: 'Харитон Прокофьевич Лаптев — Википедия'
+    url: 'https://ru.wikipedia.org/wiki/Лаптев,_Харитон_Прокофьевич'
 ---
 
 <img style="height: 400px" src="/images/laptev.png" alt="Харитон Прокофьевич Лаптев"/>
@@ -30,4 +39,4 @@ title: 'Харитон Прокофьевич Лаптев — русский п
 
 ---
 
-Автор статьи: [Анастасия Сарычева](https://vk.com/id94863460)
+Автор статьи: [Анастасия Сарычева](/authors/anastasia-sarycheva/)

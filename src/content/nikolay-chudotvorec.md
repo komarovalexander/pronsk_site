@@ -2,6 +2,15 @@
 slug: 'nikolay-chudotvorec'
 date: '2026-04-21'
 title: 'Николай Чудотворец — покровитель путешественников и моряков'
+description: 'Почему Николая Чудотворца считают покровителем путешественников и моряков: предания, почитание святого и связь с культурой мореплавателей.'
+section: 'seafarers'
+image: '/images/nikolay_chudotvorec.png'
+author: 'anastasia-sarycheva'
+categories: ['history', 'people']
+related: ['konyukhov', 'sedov', 'lazarev']
+sources:
+  - title: 'Николай Чудотворец — Википедия'
+    url: 'https://ru.wikipedia.org/wiki/Николай_Чудотворец'
 ---
 
 <img style="height: 400px" src="/images/nikolay_chudotvorec.png"/>
@@ -27,4 +36,4 @@ title: 'Николай Чудотворец — покровитель путе�
 
 ---
 
-Автор статьи: [Анастасия Сарычева](https://vk.com/id94863460)
+Автор статьи: [Анастасия Сарычева](/authors/anastasia-sarycheva/)

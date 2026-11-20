@@ -2,15 +2,20 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `pronsk_site`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `В Пронске — народный сайт Пронска и Пронского района`,
+    description: `Достопримечательности Пронска и Пронского района, местная история, сплавы на байдарках, эндуро и полезная информация для жителей и гостей.`,
+    siteUrl: `https://vpronske.ru`
   },
-  pathPrefix: "pronsk_site",
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-sass", "gatsby-plugin-sitemap", {
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-sass", {
+    resolve: `gatsby-plugin-sitemap`,
+    options: {
+      excludes: [`/404/`],
+    },
+  }, {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/Герб.png"

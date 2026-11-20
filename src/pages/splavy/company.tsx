@@ -14,14 +14,15 @@ import {
   videoContainer,
 } from './splavy_detail.module.scss';
 
-import ContactUs from './ContactUs';
+import ContactUs from '../../components/splavy/ContactUs';
 import { HeadFC } from 'gatsby';
-import Layout from '../layout';
-import OneDay from './routes/OneDay';
-import DayNight from './routes/DayNight';
-import SplavyFooter from './Footer';
+import Layout from '../../components/Layout';
+import Seo from '../../components/Seo';
+import OneDay from '../../components/splavy/routes/OneDay';
+import DayNight from '../../components/splavy/routes/DayNight';
+import SplavyFooter from '../../components/splavy/Footer';
 import { StaticImage } from 'gatsby-plugin-image';
-import TwoDays from './routes/TwoDays';
+import TwoDays from '../../components/splavy/routes/TwoDays';
 import { rizurVideo } from '../../config';
 
 const company = () => (
@@ -61,7 +62,7 @@ const company = () => (
 
     <div className={container}>
       <div className="container text">
-        <h4 style={{ textAlign: 'center' }}>🌟 Почему стоит выбрать сплав на байдарках для корпоратива?</h4>
+        <h2 style={{ textAlign: 'center' }}>🌟 Почему стоит выбрать сплав на байдарках для корпоратива?</h2>
         <div className={row}>
           <div>
             <p style={{ fontSize: '18px', textAlign: "justify" }}>✅ Наше мероприятие на байдарках способствует
@@ -83,7 +84,7 @@ const company = () => (
     </div>
 
     <div className={container}>
-      <h4 style={{ textAlign: 'center' }}>Видео корпоратива, организованного нами, для команды <a href="https://vk.com/rizur">«НПО Ризур»</a></h4>
+      <h2 style={{ textAlign: 'center' }}>Видео корпоратива, организованного нами, для команды <a href="https://vk.com/rizur">«НПО Ризур»</a></h2>
       <div className={videoContainer}>
         {rizurVideo}
       </div>
@@ -91,7 +92,7 @@ const company = () => (
 
 
     <div className={container}>
-      <h3 id="routes" className={`${rowHeader} headerFont`}>Также у нас имеются регулярные групповые походы:</h3>
+      <h2 id="routes" className={`${rowHeader} headerFont`}>Также у нас имеются регулярные групповые походы:</h2>
       <div className={row} style={{ alignItems: 'start' }}>
         <OneDay />
         <DayNight />
@@ -104,12 +105,12 @@ const company = () => (
 
 export default company;
 
-export const Head: HeadFC = () =>
-  <>
-    <title>Организация корпоративов - Пронские сплавы - Пронск, Рязанская область</title>
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://vpronske.ru/splavy/company/" />
-    <meta property="og:title" content="Организация корпоративов - Пронские сплавы" />
-    <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
-    <meta property="og:image" content="https://vpronske.ru/splavy/three_day/CollageProny1.png" />
-  </>
+export const Head: HeadFC = ({ location }) => (
+  <Seo
+    title='Корпоративный сплав на байдарках в Пронске — Пронские сплавы'
+    description='Организация корпоративных сплавов на байдарках в Пронском районе под ключ: маршрут, инструкторы, оборудование, питание и трансфер для вашей команды.'
+    pathname={location.pathname}
+    image='/images/splavy-cover.jpg'
+    imageAlt='Корпоративный сплав на байдарках в Пронске'
+  />
+);

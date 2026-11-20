@@ -1,7 +1,8 @@
 import React from 'react';
 import { graphql, HeadFC, useStaticQuery } from 'gatsby';
 import { GatsbyImage, getImage, IGatsbyImageData, StaticImage } from 'gatsby-plugin-image';
-import Layout from './layout';
+import Layout from '../components/Layout';
+import Seo from '../components/Seo';
 import vk from '../images/vk.svg';
 import telegram from '../images/telegram.svg';
 import enduroLogo from '../images/enduro/logo.png';
@@ -132,7 +133,7 @@ const EnduroPage = () => (
       </div>
     </div>
     <div className={container} id='race'>
-      <h3 className={`${rowHeader} headerFont`} style={{ marginBottom: 20 }}>Эндуро-Гонка «Косопузые», Пронск, лес Шарки </h3>
+      <h2 className={`${rowHeader} headerFont`} style={{ marginBottom: 20 }}>Эндуро-Гонка «Косопузые», Пронск, лес Шарки </h2>
 
       <div style={{ maxWidth: 800, margin: '0 auto 30px', fontSize: 18, textAlign: 'center' }}>
         <p style={{ fontSize: 22, fontWeight: 600, marginBottom: 10 }}>Гонка 5–6 сентября 2026 года прошла!</p>
@@ -167,18 +168,18 @@ const EnduroPage = () => (
             <div className={rowText} style={{ maxWidth: 'none' }}>
               <div style={{ marginBottom: 20, display: 'flex', justifyContent: 'space-between', gap: 20 }}>
                 <div className={feature}>
-                  <h4 className={featureHeader}>
-                    Следующая гонка</h4>
+                  <h3 className={featureHeader}>
+                    Следующая гонка</h3>
                   <div>2027 год, дата уточняется</div>
                 </div>
                 <div className={feature}>
-                  <h4 className={featureHeader}>
-                    Место</h4>
+                  <h3 className={featureHeader}>
+                    Место</h3>
                   <div>Пронск, лес Шарки</div>
                 </div>
                 <div className={feature}>
-                  <h4 className={featureHeader}>
-                    Координаты</h4>
+                  <h3 className={featureHeader}>
+                    Координаты</h3>
                   <div>39.578099, 54.143658</div>
                 </div>
 
@@ -216,7 +217,7 @@ const EnduroPage = () => (
 
 
     <div className={container} style={{ paddingTop: 50, paddingBottom: 40 }}>
-      <h3 className={`${rowHeader} headerFont`}>Классы</h3>
+      <h2 className={`${rowHeader} headerFont`}>Классы</h2>
       <div className={classesGrid}>
         <div className={feature}>
           <StaticImage
@@ -226,7 +227,7 @@ const EnduroPage = () => (
             imgStyle={{ objectFit: 'contain' }}
           />
           <div>
-            <h4 className={featureHeader}>Серебро</h4>
+            <h3 className={featureHeader}>Серебро</h3>
             <p className={rowText}>Для опытных райдеров, готовых к серьёзной трассе.</p>
           </div>
         </div>
@@ -238,7 +239,7 @@ const EnduroPage = () => (
             imgStyle={{ objectFit: 'contain' }}
           />
           <div>
-            <h4 className={featureHeader}>Золото</h4>
+            <h3 className={featureHeader}>Золото</h3>
             <p className={rowText}>Для тех, кто готов выжимать максимум.</p>
           </div>
         </div>
@@ -250,7 +251,7 @@ const EnduroPage = () => (
             imgStyle={{ objectFit: 'contain' }}
           />
           <div>
-            <h4 className={featureHeader}>Бронза</h4>
+            <h3 className={featureHeader}>Бронза</h3>
             <p className={rowText}>Для первых уверенных шагов на эндуро-трассе.</p>
           </div>
         </div>
@@ -259,7 +260,7 @@ const EnduroPage = () => (
 
     {/*<div className={grayBack}>
       <div className={container} style={{ paddingTop: 40, paddingBottom: 20 }}>
-        <h3 className={`${rowHeader} headerFont`}>Условия участия</h3>
+        <h2 className={`${rowHeader} headerFont`}>Условия участия</h2>
         <div className={row}>
           <div style={{ maxWidth: 800, margin: '0 auto', fontSize: 18 }}>
             <ul>
@@ -273,14 +274,14 @@ const EnduroPage = () => (
     </div>*/}
     <div className={grayBack}>
       <div className={container} style={{ paddingTop: 20, paddingBottom: 40 }}>
-        <h3 className={`${rowHeader} headerFont`}>Галерея</h3>
+        <h2 className={`${rowHeader} headerFont`}>Галерея</h2>
         <EnduroGallery />
       </div>
     </div>
 
     {/*<div className={grayBack}>
       <div className={container} style={{ paddingTop: 40, paddingBottom: 20 }}>
-        <h3 className={`${rowHeader} headerFont`}>Кто такие «Косопузые»</h3>
+        <h2 className={`${rowHeader} headerFont`}>Кто такие «Косопузые»</h2>
         <div className={`${row} ${rowReversed}`}>
           <div>
             <StaticImage
@@ -328,22 +329,12 @@ const EnduroPage = () => (
 
 export default EnduroPage;
 
-export const Head: HeadFC = () => (
-  <>
-    <title>Эндуро Пронск «Косопузые»</title>
-    <meta property='og:type' content='website' />
-    <meta property='og:url' content='https://vpronske.ru/enduro/' />
-    <meta property='og:title' content='Эндуро Пронск «Косопузые» — следующая гонка в 2027 году' />
-    <meta property='og:image' content='https://vpronske.ru/images/enduro/preview.jpg' />
-    <meta property='og:image:width' content='1200' />
-    <meta property='og:image:height' content='630' />
-    <meta property='og:image:alt' content='Участники эндуро-гонки «Косопузые» перед стартом' />
-    <meta
-      property='og:description'
-      content='Команда эндуро из Пронска. Гонка «Косопузые» 5–6 сентября 2026 года в лесу Шарки прошла, следующая — в 2027 году. Классы бронза / серебро / золото.'
-    />
-    <meta name='twitter:card' content='summary_large_image' />
-    <meta name='twitter:image' content='https://vpronske.ru/images/enduro/preview.jpg' />
-    <meta name='description' content='Enduro Пронск Косопузые: тренировки в лесу Шарки, гонка 2026 года прошла, следующая — в 2027 году' />
-  </>
+export const Head: HeadFC = ({ location }) => (
+  <Seo
+    title='Эндуро Пронск «Косопузые» — гонки и тренировки'
+    description='Команда эндуро из Пронска: тренировки в лесу Шарки, фотографии и новости гонки «Косопузые». Следующая гонка запланирована на 2027 год.'
+    pathname={location.pathname}
+    image='/images/enduro/preview.jpg'
+    imageAlt='Участники эндуро-гонки «Косопузые» перед стартом'
+  />
 );

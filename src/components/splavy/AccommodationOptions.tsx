@@ -8,13 +8,13 @@ import {
   rowHeader,
   rowImage,
   rowText,
-} from './splavy_detail.module.scss';
+} from '../../pages/splavy/splavy_detail.module.scss';
 
 const AccommodationOptions = () => (
   <div className={container}>
-    <h3 id='night' className={`${rowHeader} headerFont`}>
+    <h2 id='night' className={`${rowHeader} headerFont`}>
       Варианты ночёвки
-    </h3>
+    </h2>
     <div className={row}>
       <div>
         <p>
@@ -37,7 +37,7 @@ const AccommodationOptions = () => (
           src={'../../images/Splav/glamp/tent.jpg'}
           alt='Пронские сплавы - проживание'
         />
-        <h4 className={featureHeader}>Палатка</h4>
+        <h3 className={featureHeader}>Палатка</h3>
         <p>включена в стоимость сплава</p>
         <div className={rowText} style={{ maxWidth: 800 }}>
           Вся инфраструктура глэмпинга — электричество, душ, туалет доступна тем, кто проживает в палатках. <br />
@@ -53,7 +53,7 @@ const AccommodationOptions = () => (
           src={'../../images/Splav/glamp/shater.JPG'}
           alt='Пронские сплавы - проживание'
         />
-        <h4 className={featureHeader}>Сафари-тент, общий душ и туалет</h4>
+        <h3 className={featureHeader}>Сафари-тент, общий душ и туалет</h3>
         <p>пн-чт 6000₽/сутки, пт-вс 7000₽/сутки</p>
         <div className={rowText} style={{ maxWidth: 800 }}>
           Просторный сафари-тент оборудован помостом и электричеством. В сафари: две кровати с матрасами, одеялами, подушками, полотенцами;
@@ -74,7 +74,7 @@ const AccommodationOptions = () => (
           allowFullScreen
           title='Сафари-тент с душем и туалетом в номере'
         />
-        <h4 className={featureHeader}>Сафари-тент, душ и туалет в номере</h4>
+        <h3 className={featureHeader}>Сафари-тент, душ и туалет в номере</h3>
         <p>пн-чт 8000₽/сутки, пт-вс 8500₽/сутки</p>
         <div className={rowText} style={{ maxWidth: 800 }}>
           Уютный сафари-тент на берегу реки. Великолепные закаты с вашей террасы! В тенте санузел с душевой, мини-кухня со всем необходимым,
@@ -93,7 +93,7 @@ const AccommodationOptions = () => (
           allowFullScreen
           title='Сканди дом'
         />
-        <h4 className={featureHeader}>Сканди дом</h4>
+        <h3 className={featureHeader}>Сканди дом</h3>
         <p>от 10 000₽/сутки</p>
         <div className={rowText} style={{ maxWidth: 800 }}>
           Приватная закрытая территория, где расположены два одинаковых дома и беседка. Трехкомнатный дом со всеми удобствами на берегу реки.

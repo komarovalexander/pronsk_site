@@ -54,15 +54,16 @@ import {
 } from './splavy_detail.module.scss';
 import { foodConfig, routesConfig, splavyBirdVideo } from '../../config';
 
-import ContactUs from './ContactUs';
+import ContactUs from '../../components/splavy/ContactUs';
 import { HeadFC } from 'gatsby';
-import HowToGetToUs from './HowToGetToUs';
-import Layout from '../layout';
-import SplavyFooter from './Footer';
+import HowToGetToUs from '../../components/splavy/HowToGetToUs';
+import Layout from '../../components/Layout';
+import Seo from '../../components/Seo';
+import SplavyFooter from '../../components/splavy/Footer';
 import { StaticImage } from 'gatsby-plugin-image';
-import TwoDays from './routes/TwoDays';
-import DayNight from './routes/DayNight';
-import CompanyItem from './routes/CompanyItem';
+import TwoDays from '../../components/splavy/routes/TwoDays';
+import DayNight from '../../components/splavy/routes/DayNight';
+import CompanyItem from '../../components/splavy/routes/CompanyItem';
 
 const kerd = () => {
   return (
@@ -127,12 +128,12 @@ const kerd = () => {
             paddingBottom: 20,
           }}
         >
-          <h3
+          <h2
             className={`${rowHeader} headerFont`}
             style={{ marginBottom: 0 }}
           >
             Цена
-          </h3>
+          </h2>
           <div
             className={`${row}`}
             style={{ textAlign: 'center' }}
@@ -160,7 +161,7 @@ const kerd = () => {
           paddingBottom: 20,
         }}
       >
-        <h3 className={`${rowHeader} headerFont`}>🚣‍♂️ Примерная программа сплава</h3>
+        <h2 className={`${rowHeader} headerFont`}>🚣‍♂️ Примерная программа сплава</h2>
         <div className={`${row} ${rowReversed}`}>
           <div>
             <StaticImage
@@ -195,7 +196,7 @@ const kerd = () => {
       </div>
 
       <div className={container}>
-        <h3 className={`${rowHeader} headerFont`}>В цену входит</h3>
+        <h2 className={`${rowHeader} headerFont`}>В цену входит</h2>
 
         <div className={row}>
           <div>
@@ -220,7 +221,7 @@ const kerd = () => {
 
       <div className={container}>
         <div className='container text'>
-          <h3 className={`${rowHeader} headerFont`}>Что взять с собой</h3>
+          <h2 className={`${rowHeader} headerFont`}>Что взять с собой</h2>
           <div className={row}>
             <div>
               <b style={{ fontSize: '18px', textAlign: 'justify' }}>💧 Питьевая вода</b>
@@ -241,12 +242,12 @@ const kerd = () => {
       <HowToGetToUs />
 
       <div className={container}>
-        <h3
+        <h2
           id='routes'
           className={`${rowHeader} headerFont`}
         >
           Также может быть интересно
-        </h3>
+        </h2>
         <div
           className={row}
           style={{ alignItems: 'start' }}
@@ -263,28 +264,12 @@ const kerd = () => {
 
 export default kerd;
 
-export const Head: HeadFC = () => (
-  <>
-    <title>Кердь и Проня дневной сплав на байдарках - Пронск, Рязанская область</title>
-    <meta
-      property='og:type'
-      content='website'
-    />
-    <meta
-      property='og:url'
-      content='https://vpronske.ru/splavy/kerd/'
-    />
-    <meta
-      property='og:title'
-      content={routesConfig.oneDay.title}
-    />
-    <meta
-      property='og:description'
-      content='Cплавы на байдарках - Пронск, Рязанская область'
-    />
-    <meta
-      property='og:image'
-      content='https://vpronske.ru/splavy/kerd/CollageKerd.png'
-    />
-  </>
+export const Head: HeadFC = ({ location }) => (
+  <Seo
+    title='Однодневный сплав по рекам Кердь и Проня — Пронские сплавы'
+    description='Однодневный сплав на байдарках по Керди и Проне с инструктором, горячим обедом, оборудованием и трансфером из Пронска. Программа, цена и что взять с собой.'
+    pathname={location.pathname}
+    image='/images/splavy-cover.jpg'
+    imageAlt='Однодневный сплав на байдарках по рекам Кердь и Проня'
+  />
 );

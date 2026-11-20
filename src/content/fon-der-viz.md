@@ -2,6 +2,15 @@
 slug: 'fon-der-viz'
 date: '2026-04-26'
 title: 'Павел Павлович Фон-Дервиз'
+description: 'Павел Павлович фон Дервиз: история семьи, усадьба и конный завод в Старожилове, Пронская женская гимназия и судьба просветителя.'
+section: 'local-people'
+image: '/images/fon-der-viz.png'
+author: 'anastasia-sarycheva'
+categories: ['places', 'history', 'people']
+related: ['krasnaya-shkola', 'zabor', 'pronsk']
+sources:
+  - title: 'Павел Павлович фон Дервиз — Данковская центральная библиотека'
+    url: 'https://dankov-library.ru/grazhdane/fon-derviz-pavel-pavlovich-1870-1943'
 ---
 
 <img src="/images/fon-der-viz.png" width="550" />
@@ -68,4 +77,6 @@ title: 'Павел Павлович Фон-Дервиз'
 
 ---
 
-Автор статьи: [Анастасия Сарычева](https://vk.com/id94863460)
+Читайте также: [3D-модель Пронской Красной школы](/blog/krasnaya-shkola/) и [путеводитель по достопримечательностям Пронска](/blog/pronsk/).
+
+Автор статьи: [Анастасия Сарычева](/authors/anastasia-sarycheva/)

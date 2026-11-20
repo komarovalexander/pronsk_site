@@ -2,6 +2,16 @@
 slug: 'venukov'
 date: '2026-03-15'
 title: 'Михаил Иванович Венюков - географ, путешественник'
+description: 'Михаил Венюков: биография географа и путешественника, исследования России и других стран, научные труды и вклад в изучение географии.'
+section: 'travelers'
+additionalSections: ['local-people']
+image: '/images/venukov.jpeg'
+author: 'anastasia-sarycheva'
+categories: ['people']
+related: ['tyanshanskiy', 'golovnin', 'zagoskin']
+sources:
+  - title: 'Михаил Иванович Венюков — Википедия'
+    url: 'https://ru.wikipedia.org/wiki/Венюков,_Михаил_Иванович'
 ---
 
 <img src="/images/venukov.jpeg"  width="350"/>
@@ -33,4 +43,4 @@ title: 'Михаил Иванович Венюков - географ, путе�
 
 ---
 
-Автор статьи: [Анастасия Сарычева](https://vk.com/id94863460)
+Автор статьи: [Анастасия Сарычева](/authors/anastasia-sarycheva/)

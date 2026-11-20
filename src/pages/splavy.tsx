@@ -47,17 +47,18 @@ import {
   videoContainer,
 } from './splavy.module.scss';
 
-import ContactUs from './splavy/ContactUs';
+import ContactUs from '../components/splavy/ContactUs';
 import { HeadFC } from 'gatsby';
-import HowToGetToUs from './splavy/HowToGetToUs';
-import Layout from './layout';
-import OneDay from './splavy/routes/OneDay';
-import DayNight from './splavy/routes/DayNight';
-import CompanyItem from './splavy/routes/CompanyItem';
+import HowToGetToUs from '../components/splavy/HowToGetToUs';
+import Layout from '../components/Layout';
+import Seo from '../components/Seo';
+import OneDay from '../components/splavy/routes/OneDay';
+import DayNight from '../components/splavy/routes/DayNight';
+import CompanyItem from '../components/splavy/routes/CompanyItem';
 import React from 'react';
-import SplavyFooter from './splavy/Footer';
+import SplavyFooter from '../components/splavy/Footer';
 import { StaticImage } from 'gatsby-plugin-image';
-import TwoDays from './splavy/routes/TwoDays';
+import TwoDays from '../components/splavy/routes/TwoDays';
 import feedbackDoubleQuoteImage from '../images/Splav/index/15.svg';
 import logoImage from '../images/Splav/logo.png';
 import { scrollToId } from '../utils';
@@ -75,9 +76,9 @@ const splavy = () => (
 
         <div className={mainBannerText}>
           <div className={`${mainBannerText1} headerFont`}>Погрузитесь</div>
-          <div className={`${mainBannerText2} h1Font`} >в мир<br className={mainBannerText2Br} /> водных<br /> приключений</div>
+          <h1 className={`${mainBannerText2} h1Font`} style={{ margin: 0 }}>в мир<br className={mainBannerText2Br} /> водных<br /> приключений</h1>
           <div className={`${mainBannerText3} headerText`}>
-            <p className={mainBannerText3P}>Ищете идеальный способ сбежать от городской суеты и ощутить вдохновение природы? Добро пожаловать в мир наших захватывающих путешествий на байдарках по чистым рекам Пронского района Рязанской области! 🌿</p>
+            <p className={mainBannerText3P}><strong>Сплавы на байдарках в Пронске и Пронском районе</strong> — идеальный способ сбежать от городской суеты и ощутить вдохновение природы. Добро пожаловать в мир наших захватывающих путешествий по чистым рекам Рязанской области! 🌿</p>
           </div>
 
           <ContactUs />
@@ -86,7 +87,7 @@ const splavy = () => (
     </div>
 
     <div className={container}>
-      <h3 id="routes" className={`${rowHeader} headerFont`}>Наши маршруты</h3>
+      <h2 id="routes" className={`${rowHeader} headerFont`}>Наши маршруты</h2>
       <div className={routesRow}>
         <OneDay />
         <DayNight />
@@ -97,23 +98,23 @@ const splavy = () => (
 
 
     <div className={container}>
-      <h3 className={`${rowHeader} headerFont`}>Наши преимущества</h3>
+      <h2 className={`${rowHeader} headerFont`}>Наши преимущества</h2>
       <div className={`${row} ${rowReversed}`}>
         <div><StaticImage width={800} className={rowImage} src={'../images/Splav/index/3.jpeg'} alt={'Пронские сплавы - Наши преимущества'} /></div>
         <div className={rowText}>
           <div className={feature}>
-            <h4 className={featureHeader}>
-              <span className={featureNumber}>01</span>Для всей семьи</h4>
+            <h3 className={featureHeader}>
+              <span className={featureNumber}>01</span>Для всей семьи</h3>
             <div>Наши походы подходят для любого уровня подготовки. Пригласите семью и друзей. Для детей у нас большие скидки!</div>
           </div>
           <div className={feature}>
-            <h4 className={featureHeader}>
-              <span className={featureNumber}>02</span>Всё включено</h4>
+            <h3 className={featureHeader}>
+              <span className={featureNumber}>02</span>Всё включено</h3>
             <div>Начиная от трансфера и предоставления необходимого оборудования для похода, заканчивая вкусным питанием на маршруте. Ваш отдых в надежных руках - вам только нужно расслабиться и получать удовольствие. Наши байдарки, местного Рязанского производства - удобные надежные и безопасные</div>
           </div>
           <div className={feature}>
-            <h4 className={featureHeader}>
-              <span className={featureNumber}>03</span>Мы живем приключениями</h4>
+            <h3 className={featureHeader}>
+              <span className={featureNumber}>03</span>Мы живем приключениями</h3>
             <div>Наши гиды знают каждый поворот реки, они сделают все для вашего безопасного и захватывающего путешествия</div>
           </div>
         </div>
@@ -124,18 +125,18 @@ const splavy = () => (
         <div><StaticImage className={rowImage} width={800} src={'../images/Splav/index/2.jpeg'} alt={'Пронские сплавы - повар и инструктор'} /></div>
         <div className={rowText}>
           <div className={feature}>
-            <h4 className={featureHeader}>
-              <span className={featureNumber}>04</span>Разнообразные маршруты</h4>
+            <h3 className={featureHeader}>
+              <span className={featureNumber}>04</span>Разнообразные маршруты</h3>
             <div>Хотите ли вы удалиться от цивилизации на несколько дней? Или хотите полностью комфортный отдых с душем и ночевкой в бунгало с двухспальной кроватью? - у нас есть маршрут для каждого</div>
           </div>
           <div className={feature}>
-            <h4 className={featureHeader}>
-              <span className={featureNumber}>05</span>Вкусное питание</h4>
+            <h3 className={featureHeader}>
+              <span className={featureNumber}>05</span>Вкусное питание</h3>
             <div>Наш походный повар готовит для вас вкусные блюда прямо на берегу, добавляя вкус к вашему приключению</div>
           </div>
           <div className={feature}>
-            <h4 className={featureHeader}>
-              <span className={featureNumber}>06</span>Ежедневные походы</h4>
+            <h3 className={featureHeader}>
+              <span className={featureNumber}>06</span>Ежедневные походы</h3>
             <div>Предлагаем сплавы каждый день, в том числе и в будни</div>
           </div>
         </div>
@@ -152,7 +153,7 @@ const splavy = () => (
 
 
     <div className={container}>
-      <h3 className={`${rowHeader} headerFont`} style={{ marginBottom: 0 }}>Наши партнёры</h3>
+      <h2 className={`${rowHeader} headerFont`} style={{ marginBottom: 0 }}>Наши партнёры</h2>
       <div className={`${row} ${partnerRow}`}>
 
         <div className={feature}>
@@ -258,12 +259,12 @@ const splavy = () => (
 
 export default splavy;
 
-export const Head: HeadFC = () =>
-  <>
-    <title>Пронские сплавы на байдарках - Рязанская область</title>
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://vpronske.ru/splavy/" />
-    <meta property="og:title" content="Пронские сплавы" />
-    <meta property="og:description" content="Cплавы на байдарках - Пронск, Рязанская область" />
-    <meta property="og:image" content="https://vpronske.ru/static/banner-9d3d031189a9504700fa5a4803d8fe90.png" />
-  </>
+export const Head: HeadFC = ({ location }) => (
+  <Seo
+    title='Пронские сплавы на байдарках — Пронск, Рязанская область'
+    description='Однодневные и двухдневные сплавы на байдарках по рекам Кердь и Проня. Инструкторы, оборудование, питание, трансфер и ночёвка в глэмпинге.'
+    pathname={location.pathname}
+    image='/images/splavy-cover.jpg'
+    imageAlt='Сплавы на байдарках по рекам Пронского района'
+  />
+);

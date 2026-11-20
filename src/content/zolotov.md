@@ -2,6 +2,15 @@
 slug: 'zolotov'
 date: '2026-03-25'
 title: 'Василий Антонович Золотов - писатель, прозаик, путешественник и участник Великой Отечественной Войны.'
+description: 'Василий Золотов: биография писателя, прозаика и путешественника, участие в Великой Отечественной войне, поездки и литературное наследие.'
+section: 'local-people'
+image: '/images/zolotov.png'
+author: 'anastasia-sarycheva'
+categories: ['people']
+related: ['boklevsky', 'michurin', 'ptitsa']
+sources:
+  - title: 'Василий Антонович Золотов — Википедия'
+    url: 'https://ru.wikipedia.org/wiki/Золотов,_Василий_Антонович'
 ---
 
 <img style="height: 400px" src="/images/zolotov.png"/>
@@ -26,4 +35,4 @@ title: 'Василий Антонович Золотов - писатель, п�
 
 ---
 
-Автор статьи: [Анастасия Сарычева](https://vk.com/id94863460)
+Автор статьи: [Анастасия Сарычева](/authors/anastasia-sarycheva/)

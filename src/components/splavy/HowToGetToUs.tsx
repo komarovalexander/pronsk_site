@@ -5,7 +5,7 @@ import {
     rowHeader,
     rowText,
     tinyRow,
-} from '../splavy.module.scss';
+} from '../../pages/splavy.module.scss';
 
 import React from 'react';
 
@@ -13,7 +13,7 @@ const HowToGetToUs = () => (
     <div className={grayBack}>
         <div className={container}>
             {/*<div className={`${rowSubHeader}`}>Почему выбирают нас</div>*/}
-            <h3 className={`${rowHeader} headerFont`}>Как до нас добраться</h3>
+            <h2 className={`${rowHeader} headerFont`}>Как до нас добраться</h2>
             <div className={`${row} ${tinyRow}`}>
                 <div className={rowText}>
                     Мы находимся в Рязанской области, Пронский район.<br />

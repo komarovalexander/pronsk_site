@@ -2,6 +2,15 @@
 slug: 'sedov'
 date: '2026-06-30'
 title: 'Георгий Яковлевич Седов — русский полярный исследователь и мореплаватель.'
+description: 'Георгий Седов: биография русского полярного исследователя, гидрографические экспедиции и поход к Северному полюсу на судне «Святой Фока».'
+section: 'seafarers'
+image: '/images/sedov.jpg'
+author: 'anastasia-sarycheva'
+categories: ['people']
+related: ['konyukhov', 'laptev', 'dezhnev']
+sources:
+  - title: 'Георгий Яковлевич Седов — Википедия'
+    url: 'https://ru.wikipedia.org/wiki/Седов,_Георгий_Яковлевич'
 ---
 
 <img style="height: 400px" src="/images/sedov.jpg" alt="Георгий Яковлевич Седов"/>
@@ -54,4 +63,4 @@ title: 'Георгий Яковлевич Седов — русский поля
 
 ---
 
-Автор статьи: [Анастасия Сарычева](https://vk.com/id94863460)
+Автор статьи: [Анастасия Сарычева](/authors/anastasia-sarycheva/)

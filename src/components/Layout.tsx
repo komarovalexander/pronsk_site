@@ -1,11 +1,10 @@
-import './styles.scss';
+import '../pages/styles.scss';
 
 import * as React from 'react';
 
-import { HeadFC } from 'gatsby';
 import Navigation from './Navigation';
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   React.useEffect(() => {
     appendMetrika();
   }, []);
@@ -36,4 +35,3 @@ const appendMetrika = () => {
   });`;
   document.body.appendChild(result);
 };
-export const Head: HeadFC = () => <><title>В Пронске - Народный сайт Пронска и Пронского района</title></>;

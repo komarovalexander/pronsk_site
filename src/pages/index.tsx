@@ -22,12 +22,14 @@ import {
   mainBannerText2,
   mainBannerText3,
   mainBannerText3P,
+  guideLink,
   rowImage,
   rowTextHeader,
 } from './index.module.scss';
 
 import { HeadFC } from 'gatsby';
-import Layout from './layout';
+import Layout from '../components/Layout';
+import Seo from '../components/Seo';
 import { StaticImage } from 'gatsby-plugin-image';
 import gerbImage from '../images/герб.png';
 import telegram from '../images/telegram.svg';
@@ -46,7 +48,7 @@ const IndexPage = () => {
 
           <div className={mainBannerText}>
             <div className={`${mainBannerText1}`}>Добро пожаловать</div>
-            <div className={`${mainBannerText2}`} >В Пронск</div>
+            <h1 className={`${mainBannerText2}`} style={{ margin: 0 }}>В Пронск</h1>
             <div className={`${mainBannerText3}`}>
               <p className={mainBannerText3P}>Город с красивейшей природой, богатой историей, и приветливыми людьми</p>
             </div>
@@ -57,9 +59,11 @@ const IndexPage = () => {
       <div className={container}>
         <div className={`${row} ${rowReversed}`}>
           <div className={rowText}>
-            <h4 className={rowTextHeader}>
-              Пронский краеведческий музей</h4>
-            <p>Картины. Старинная утварь. Интересные экскурсии. Постоянные и временные выставки.</p>
+            <h2 className={rowTextHeader}>
+              <a href='/blog/pronsk/'>Достопримечательности Пронска</a>
+            </h2>
+            <p>Собрали 15 интересных мест в городе и районе: музей, монастырь, храмы, Покровский бугор, пещеры и активный отдых.</p>
+            <p><a className={guideLink} href='/blog/pronsk/'><strong>Открыть путеводитель с маршрутом, картой и фотографиями</strong></a></p>
           </div>
           <div><StaticImage className={rowImage} src={'../images/slider/musey.jpg'} alt={'Пронский краеведческий музей'} /></div>
         </div>
@@ -68,8 +72,8 @@ const IndexPage = () => {
       <div className={container}>
         <div className={`${row}`}>
           <div className={rowText}>
-            <h4 className={rowTextHeader}>
-              Нетронутая история</h4>
+            <h2 className={rowTextHeader}>
+              <a href='/blog/#places'>Нетронутая история</a></h2>
             <p>Множества столетиями нетронутых Храмов можно найти в разных локациях района. Прошлое ближе чем кажется</p>
           </div>
           <div><StaticImage className={rowImage} src={'../images/slider/церковь.png'} style={{ objectPosition: 'left center' }} alt={'Церкви'} /></div>
@@ -80,8 +84,8 @@ const IndexPage = () => {
       <div className={container}>
         <div className={`${row} ${rowReversed}`}>
           <div className={rowText}>
-            <h4 className={rowTextHeader}>
-              Никто не забыт</h4>
+            <h2 className={rowTextHeader}>
+              Никто не забыт</h2>
             <p>Память, прошедшая через года, показана в виде величественных монументов в каждом поселении</p>
           </div>
           <div><StaticImage className={rowImage} src={'../images/slider/памятник.jpg'} alt={'Памятники ВОВ - Пронск'} /></div>
@@ -91,8 +95,8 @@ const IndexPage = () => {
       <div className={container}>
         <div className={`${row}`}>
           <div className={rowText}>
-            <h4 className={rowTextHeader}>
-              Отдых на природе</h4>
+            <h2 className={rowTextHeader}>
+              Отдых на природе</h2>
             <p>Рыбалка, палатки, купание в чистых реках, посиделки у костра, <a href='/splavy'>сплавы на байдарках</a>, <a href='/enduro/'>эндуро «Косопузые»</a></p>
           </div>
           <div><StaticImage className={rowImage} src={'../images/slider/Рыбалка4.jpg'} style={{ objectFit: 'contain' }} alt={'Отдых на природе - Пронск'} /></div>
@@ -102,9 +106,9 @@ const IndexPage = () => {
       <div className={container}>
         <div className={`${row} ${rowReversed}`}>
           <div className={rowText}>
-            <h4 className={rowTextHeader}>
-              Спасо-Преображенский Пронский монастырь
-            </h4>
+            <h2 className={rowTextHeader}>
+              <a href='/blog/pronsk/#monastery'>Спасо-Преображенский Пронский монастырь</a>
+            </h2>
             <p>Место силы земли Пронской, где всегда рады любым гостям</p>
           </div>
           <div><StaticImage className={rowImage} src={'https://sun9-51.userapi.com/impg/RmrEwjRBKqMwYd3868GGLyS_wUgZwgvHgf2O2w/XhJtnQCF5q8.jpg?size=1919x1080&quality=95&sign=b313febee77f290b6f37d2e70ff043c0&type=album'} alt={'Спасо-Преображенский Пронский монастырь'} /></div>
@@ -114,8 +118,8 @@ const IndexPage = () => {
       <div className={container}>
         <div className={`${row}`}>
           <div className={rowText}>
-            <h4 className={rowTextHeader}>
-              Лучшие артисты</h4>
+            <h2 className={rowTextHeader}>
+              <a href='/blog/#local-people'>Лучшие артисты</a></h2>
             <p>Люди - главное достояние Пронского района</p>
           </div>
           <div><StaticImage className={rowImage} src={'../images/slider/артисты.jpeg'} style={{ objectFit: 'contain' }} alt={'Лучшие артисты - Пронск'} /></div>
@@ -126,9 +130,9 @@ const IndexPage = () => {
       <div className={container}>
         <div className={`${row} ${rowReversed}`}>
           <div className={rowText}>
-            <h4 className={rowTextHeader}>
+            <h2 className={rowTextHeader}>
               Почувствуйте Русскую душу
-            </h4>
+            </h2>
             <p>Народные коллективы и опытные наставники сохраняют и развивают Русскую культуру</p>
           </div>
           <div><StaticImage className={rowImage} src={'https://sun9-50.userapi.com/impg/o0tHUVpQZOJ4kPlQIcF-UOWzQWJ_AvE2J4qgjQ/jqdPo64UMl8.jpg?size=1919x1280&quality=95&sign=993eabd477a08f02798d8927c1ed2c74&type=album'} alt={'Русская душа - Пронск'} /></div>
@@ -162,6 +166,7 @@ const IndexPage = () => {
           <a href="/splavy/">Пронские сплавы</a>
           <a href="/enduro/">Эндуро</a>
           <a href="/blog/">Блог</a>
+          <a href="/authors/">Авторы и источники</a>
         </div>
         <div className={social}>
           <a href="https://vk.com/v_pronske" target='_blank' title='ВКонтакте'><img src={vk} alt='ВКонтакте' /></a>
@@ -176,8 +181,12 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () =>
-  <>
-    <title>В Пронске - Полезный сайт о Пронске и Пронском районе</title>
-    <meta name="google-site-verification" content="lzKUzw_xnhZqxcWF81efDm5H_FDsd_wTPr4mORqtDs0" />
-  </>
+export const Head: HeadFC = ({ location }) => (
+  <Seo
+    title='В Пронске — достопримечательности, история и отдых в Пронском районе'
+    description='Народный сайт Пронска и Пронского района: достопримечательности, местная история, сплавы на байдарках, эндуро и полезная информация для гостей.'
+    pathname={location.pathname}
+  >
+    <meta name='google-site-verification' content='lzKUzw_xnhZqxcWF81efDm5H_FDsd_wTPr4mORqtDs0' />
+  </Seo>
+);

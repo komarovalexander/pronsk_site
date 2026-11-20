@@ -2,6 +2,15 @@
 slug: 'malakhov'
 date: '2026-04-15'
 title: 'Михаил Георгиевич Малахов — человек, человек, покоривший полюс и вдохновивший Рязань.'
+description: 'Биография рязанского полярного исследователя Михаила Малахова: арктические экспедиции, достижения и связь его имени с Рязанским краем.'
+section: 'seafarers'
+image: '/images/malakhov.jpg'
+author: 'anastasia-sarycheva'
+categories: ['people']
+related: ['sedov', 'konyukhov', 'laptev']
+sources:
+  - title: 'Михаил Георгиевич Малахов — Википедия'
+    url: 'https://ru.wikipedia.org/wiki/Малахов,_Михаил_Георгиевич'
 ---
 
 <img style="height: 400px" src="/images/malakhov.jpg"/>
@@ -28,4 +37,4 @@ title: 'Михаил Георгиевич Малахов — человек, ч�
 
 ---
 
-Автор статьи: [Анастасия Сарычева](https://vk.com/id94863460)
+Автор статьи: [Анастасия Сарычева](/authors/anastasia-sarycheva/)
